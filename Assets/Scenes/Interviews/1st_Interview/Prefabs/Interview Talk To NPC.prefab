@@ -1,0 +1,672 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6563154561774741776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6563154561774741778}
+  - component: {fileID: 6563154561774741777}
+  - component: {fileID: 6563154561774742252}
+  - component: {fileID: 6563154561774741779}
+  - component: {fileID: 6563154561774742253}
+  - component: {fileID: 6563154561774742254}
+  - component: {fileID: 6563154561774742255}
+  - component: {fileID: 6563154561774742248}
+  m_Layer: 0
+  m_Name: Interview Talk To NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6563154561774741778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6563154561774741777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e7d77132e0020448da57ba25ab75ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected_experience:
+    name: 
+    personality: 0
+    teamwork: 0
+    independence: 0
+    leadership: 0
+    empathy: 0
+    problemSolving: 0
+    timeManagement: 0
+    communication: 0
+    food: 0
+    art: 0
+    science: 0
+    technology: 0
+  questionCount: 0
+  dialogueText: {fileID: 0}
+--- !u!114 &6563154561774742252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - '#MULTI_START#Here is your mock interview! I am going to give you a quick introduction
+    on how interviews work in I Inc. Your interviewer will be here shortly, so let''s
+    make this quick. '
+  - The idea behind an interview is for you to impress your interviewer and to really
+    strut your stuff! You will be able to show off your skills and use your experience
+    to win your interviewer over!
+  - "During an interview you\u2019ll have questions and answers show up on the screen.
+    \ Depending on the quality of your answer, your assertion meter will go up. The
+    higher it is, the more likely you are to leave an impression on your interviewer."
+  - "Remember this is here to help you, so don\u2019t worry if you don\u2019t choose
+    an answer with high assertion; you\u2019ll have other opportunities!"
+  - So, as an example...
+  - '#QUESTION# 7'
+  - "For some other questions you\u2019ll also have the option to select an applicable
+    experience. For these questions, you should choose an experience you\u2019ve gathered
+    from around the town and apply them to the situation asked."
+  - You may not have an applicable experience to every question asked so there is
+    always a default answer you can resort to.
+  - So, as an example...
+  - '#QUESTION# 8'
+  - So, as our final question...
+  - '#QUESTION# 9'
+  - That'll be it for our interviewing practice. It looks like we're ending just in
+    time too. Here comes Tiffany now, good luck!
+  - "Good luck @!\r\n"
+  - '#INVOKE_EVENT#Hello, @. I am #NPC_NAME#, It is very nice to meet you.'
+  - '#INVOKE_EVENT#*0*I saw on your resume that this is the first job you have applied
+    to in a long time, so I hope you are not nervous to speak with me today.'
+  - '#QUESTION# 0 #INVOKE_EVENT#*0*'
+  - '#QUESTION# 1 #INVOKE_EVENT#*6*'
+  - '#QUESTION# 2 #INVOKE_EVENT#*0*'
+  - '#QUESTION# 3 #INVOKE_EVENT#*6*'
+  - '#QUESTION# 4 #INVOKE_EVENT#*0*'
+  - '#QUESTION# 5 #INVOKE_EVENT#*6*'
+  - '#QUESTION# 6 #INVOKE_EVENT#*0*'
+  - '#INVOKE_EVENT#*0*So to sum this interview up... #FEEDBACK#'
+  - '#INVOKE_EVENT#*4*'
+  NPCName: Robert
+  Known: 1
+  NameBox: {fileID: 0}
+  messageCount: 0
+  ImageToShow: {fileID: 0}
+  YesButton: {fileID: 0}
+  NoButton: {fileID: 0}
+  messageDone: 0
+  isItem: 0
+  EnemyCommunications: 0
+  change_state: 1
+  repeating_dialogue: 0
+  Dialogue_Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: change_expression_int
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Reveal Face
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6563154561774742252}
+        m_MethodName: Change_Name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Tiffany Watson
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Generic Transition
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: reset_meter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  end_dialogue_event:
+    m_PersistentCalls:
+      m_Calls: []
+  Events:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: change_expression_int
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Generic Transition
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: change_expression_int
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Generic Transition
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: change_expression_int
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Generic Transition
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: change_expression_int
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Generic Transition
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Load_Scene_By_Name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: World Map
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: set_sortingOrder
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: World Map
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: change_expression_int
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: World Map
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Generic Transition
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6563154561774742254}
+        m_MethodName: Add_Job_To_Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: World Map
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6563154561774742255}
+        m_MethodName: add_exp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6563154561774742254}
+        m_MethodName: Fail_Interview
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: World Map
+          m_BoolArgument: 0
+        m_CallState: 2
+  target_text: {fileID: 0}
+  prev_position: {x: 0, y: 0, z: 0}
+--- !u!82 &6563154561774741779
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &6563154561774742253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24860d8bb3bec9046ac5d9aa2e424869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 0}
+  talkToNPC: {fileID: 0}
+  influence_Meter: {fileID: 0}
+  current_question:
+    question: This is a null question...
+    responses:
+    - experience_name: 
+      Reaction:
+      - How did this happen???
+      meter_gain: 0
+    default_response:
+      experience_name: 
+      Reaction:
+      - How did this happen???
+      meter_gain: 0
+  experience_questions:
+  - question: Exp Question 1
+    responses:
+    - experience_name: Good Situational
+      Reaction:
+      - This is the good situational reaction...
+      - cool...
+      meter_gain: 0.5
+    - experience_name: Bad Situational
+      Reaction:
+      - This is the bad situational reaction...
+      - not so cool...
+      meter_gain: 0.1
+    default_response:
+      experience_name: 
+      Reaction:
+      - hmm...
+      - default response...
+      meter_gain: 0
+  - question: Exp Question 2
+    responses:
+    - experience_name: Good Skill
+      Reaction:
+      - This is the good skill reaction...
+      - cool...
+      meter_gain: 0.5
+    - experience_name: Bad Skill
+      Reaction:
+      - This is the bad skill reaction...
+      - not so cool...
+      meter_gain: 0.1
+    default_response:
+      experience_name: 
+      Reaction:
+      - hmm...
+      - default 2nd response...
+      meter_gain: 0
+  - question: Exp Question 3
+    responses:
+    - experience_name: Good Situational
+      Reaction:
+      - This is the good situational reaction...
+      - cool...
+      meter_gain: 0.5
+    - experience_name: Bad Situational
+      Reaction:
+      - This is the bad situational reaction...
+      - not so cool...
+      meter_gain: 0.1
+    default_response:
+      experience_name: 
+      Reaction:
+      - hmm...
+      - default response...
+      meter_gain: 0
+  win_reaction:
+  - 'Congratulations @, based on your experience and this interview, I am pleased
+    to inform you that you are being offered the position. #INVOKE_EVENT#*7*'
+  - Remember, when interviewing, the employer is looking to learn about you and your
+    experiences. Your job during an interview is to tell your story while also showing
+    your drive to work at the company. Good job!
+  - '#INVOKE_EVENT#*5*#FADE_OUT#That concludes our interview! We''ll communicate later.'
+  mid_reaction:
+  - 'Congratulations @, based on your experience and this interview, I am pleased
+    to inform you that you are being offered the position. #INVOKE_EVENT#*7*'
+  - Please remember that the interview is about telling your story while showcasing
+    your skills and experience that fit the job. In the future, remember to practice
+    your responses to questions and to pick accurate examples to talk about.
+  - '#INVOKE_EVENT#*5*#FADE_OUT#That concludes our interview! We''ll communicate later.'
+  lose_reaction:
+  - 'Thank you for applying for the position @. While your qualifications are very
+    nice, unfortunately we will not be moving forward with your application at this
+    time. Please remember to practice your responses to common interview questions
+    and to pick accurate examples to talk about. Interviews can be stressful, and
+    the most important thing to remember is to be yourself and try to answer the questions
+    to the best of your ability. #INVOKE_EVENT#*1*'
+  - "Intro / Tell me about  yourself specific: When answering these questions, the
+    interviewer is looking for what makes you fit into the \u201Cculture\u201D of
+    the company. Culture being the environment the company tries to maintain and the
+    values that the company uses as their identity. #INVOKE_EVENT#*8*"
+  - "These types of questions are asked to showcase: what research you have done into
+    the company; what skills do you have that the company would see as an asset; what
+    your ambitions and general demeanor are; and finally, what makes you unique. These
+    questions are asked in a variety of ways, and in general, if you know what the
+    question\u2019s purpose is, you can tailor your answer to fit it. This takes some
+    practice, so make sure to practice when you can.\r\n"
+  - 'Behavior specific: When answering these questions the interviewer is looking
+    for how you tackle a problem. They are looking to see what your thought process
+    is like in certain situations as well as how you handled them.'
+  - ' Because of the variety of questions asked, they are looking at situations you
+    may not have thought of or questions which seem to be traps. These questions are
+    usually answered in the S.T.A.R. format: Start off with the situation or context;
+    Describe the task that needed to be completed, Describe what actions you took
+    to complete the task, the result of actions on the task; finally, a sentence stating
+    what you would have done differently in hindsight.'
+  - 'The overall takeaway is: to showcase that your previous work experience is valuable
+    for your future at the company. Remember to practice these types of questions
+    and to think of some situations you feel best represent the situation asked about.
+    #INVOKE_EVENT#*5*#FADE_OUT#'
+  testo: 0
+--- !u!114 &6563154561774742254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df51e9a6a5b30440b2da42dbf0fbb4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  job:
+    Company: Pizza Place
+    Title: Worker
+    Income: 0
+    Supervisor: Tiffany Watson
+    Schedule: 00010101010100
+--- !u!114 &6563154561774742255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a510ab74ac391d499f848ceebf9fa67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: 0
+  name: Pizza Planet
+  personality: 0
+  teamwork: 0
+  independence: 0
+  leadership: 0
+  empathy: 0
+  problemSolving: 0
+  timeManagement: 0
+  communication: 0
+  food: 0
+  art: 0
+  science: 0
+  technology: 0
+  experience:
+    name: 
+    personality: 0
+    teamwork: 0
+    independence: 0
+    leadership: 0
+    empathy: 0
+    problemSolving: 0
+    timeManagement: 0
+    communication: 0
+    food: 0
+    art: 0
+    science: 0
+    technology: 0
+--- !u!114 &6563154561774742248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563154561774741776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6536bad92e30d4d9cc103c64eb1dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  job:
+    Company: Pizza Place
+    Title: Worker
+    Income: 0
+    Supervisor: 
+    Schedule: 
+  talkToNPC: {fileID: 0}
+  succeeded_dialogue: []
+  failed_dialogue:
+  - HA!
+  - You Failed!
+  debug_win: 0
+  debug_fail: 0
+  insert_message_at_front: 1

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tiffany_Anim
+  m_Controller: {fileID: 9100000, guid: 7e46b7b86321da54db2b81931418d17a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 1e05753805d64ab4da9c593517c7e176, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 64cf0f0c5a20b0e4eadc6e2762425ccb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cbd1d446d473d2d4b9de01dc63ca5792, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8076cddc9e6b67346819e164b1d27ee0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 5ae3df67a4195e14c85791e6f3f67595, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f4b9c52b369f4784f9950bfb8a222395, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e9f322cf27571824280105af03a1cbf7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 957c90c4ee40a8b408985d7a867b7089, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b96fdaa7e70c5454c83599be98869d31, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 306884f406738a748a7aa19ecccfc74f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0095a4fb6d468ec42982ebd58b167589, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 653b2d655f1db6747a4c430db6a29e3e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b8b92f9d4f7e2fa49837a3b0e83ff01b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 05996cef9b2716f4791a1b724a3d948f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4b1e43ce540a523408665d3935da98bc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a709f39d7ef95e14ca2ccb997e3bea9b, type: 2}
