@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: a574da0b09a9db244ab329dc86b75784
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1669420421148292806
+    second: NPC_Beach_Bum_0
+  - first:
+      213: 8471288041684895583
+    second: NPC_Beach_Bum_1
+  - first:
+      213: 6469241825846244199
+    second: NPC_Beach_Bum_2
+  - first:
+      213: 3810796232758106079
+    second: NPC_Beach_Bum_3
+  - first:
+      213: 146669843407654801
+    second: NPC_Beach_Bum_4
+  - first:
+      213: 6936423282092714007
+    second: NPC_Beach_Bum_5
+  - first:
+      213: 117006962496234440
+    second: NPC_Beach_Bum_6
+  - first:
+      213: 4597339930050333335
+    second: NPC_Beach_Bum_7
+  - first:
+      213: 1619029211145701990
+    second: NPC_Beach_Bum_8
+  - first:
+      213: -3683531300038816359
+    second: NPC_Beach_Bum_9
+  - first:
+      213: -6763125605290295533
+    second: NPC_Beach_Bum_10
+  - first:
+      213: -4597348120850938531
+    second: NPC_Beach_Bum_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 390
+        width: 129
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b683372f7edeea747b16bc11c4438646
+      internalID: 1669420421148292806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 390
+        width: 126
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614f59c1c4bd5d448abda48721e7ce17
+      internalID: 8471288041684895583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 390
+        width: 129
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a464bc80d83f9a4dbcf62787117b412
+      internalID: 6469241825846244199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 390
+        width: 84
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47a6317064a7ea499a0af96832af600
+      internalID: 3810796232758106079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_4
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 390
+        width: 102
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03611b351e1eb2548a6b07909dc12eb1
+      internalID: 146669843407654801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_5
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 390
+        width: 84
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05578ddc39c9afd449892722dce8e994
+      internalID: 6936423282092714007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 18
+        width: 129
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ceffd867f0e2f4d81f6f5a0d2c6dbb
+      internalID: 117006962496234440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 18
+        width: 126
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f012773ff5b39841b192af87789454b
+      internalID: 4597339930050333335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 18
+        width: 129
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95678124f18a0824099c28753951d8c9
+      internalID: 1619029211145701990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 18
+        width: 81
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bd6910003e22b45bff3fdff779ed41
+      internalID: -3683531300038816359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_10
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 18
+        width: 99
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1a369615281554e9019e1c19b46824
+      internalID: -6763125605290295533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Beach_Bum_11
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 18
+        width: 81
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9c6552efe289e47a1701d6b5a76334
+      internalID: -4597348120850938531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
