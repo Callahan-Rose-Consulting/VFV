@@ -58,7 +58,9 @@ public class Questionnaire : MonoBehaviour
     InputField TourBranchInput;
     InputField VolunteerInput;
 
-    //Remove characters that aren't allowed in name text. Specifically used on the players name to prevent text file name errors.
+    //This function is called once after the player enters their name to remove characters that aren't allowed in file names.
+    //This funciton also removes characters to the in-game player name and can be checked by talking to Rob in the center of the world map at game start.
+    //created by Don Murphy
     public static string CleanString(string dirtyString)
     {
         string removeChars = "\"!@#$%^&*()_+={}[]|:;<>?/~`,\\";
@@ -174,7 +176,7 @@ public class Questionnaire : MonoBehaviour
     public void SaveStats()
     {
         print("debug: start saveStats");
-        //Remove characters that aren't allowed in name text
+
       
         if (NameInputField.text == "")
         {
@@ -186,7 +188,7 @@ public class Questionnaire : MonoBehaviour
         PlayerPrefs.SetInt("ProfessionalismLevel", Professionalism.Level);
         PlayerPrefs.SetInt("CommunicationLevel", Communication.Level);
         PlayerPrefs.SetInt("CritThinkingLevel", CritThinking.Level);
-        PlayerPrefs.SetString("PlayerName", CleanString(NameInputField.text));
+        PlayerPrefs.SetString("PlayerName", CleanString(NameInputField.text)); //change by Don Murphy to clean name input
         PlayerPrefs.Save();
         print("Saved Player Data");
         SceneManager.LoadScene("World Map");
