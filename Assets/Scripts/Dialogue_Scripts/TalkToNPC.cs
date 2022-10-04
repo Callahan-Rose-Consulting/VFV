@@ -146,9 +146,8 @@ public class TalkToNPC : MonoBehaviour
     //      or UpdatePlayerResults ("Final Technology", "mytext.txt")
     //NOTE: playerFileName should be used as the second parameter because that is the variable that stores the file name of the current session.
     //created by Don Murphy
-    void UpdatePlayerResults(string statName, string FileToUpdate)
+    void UpdatePlayerResults(string resultName, string FileToUpdate)
     {
-        
         string playerFileName = FileToUpdate;
 
         var lines = File.ReadAllLines(playerFileName); //read file into lines var
@@ -157,39 +156,55 @@ public class TalkToNPC : MonoBehaviour
         foreach (string s in lines) //iterate though all strings in file
         {
             i++;
-            string finalStatRegex = @"^\s+-" + statName + @"_*:\s*\d*\s?$"; //Match for Final Stats section
 
-            Match matchString = Regex.Match(s, finalStatRegex); //UPDATE for multiple matches
-            Match matchNum = Regex.Match(lines[i], @"\d+"); //Match num in string
-
-            if (matchString.Success) //string match from file
+            //Final Self Assesment
+            if (s.Contains("Final"))
             {
-                Debug.Log("String match line: " + i + " | ");
+                string finalStatRegex = @"^\s+-" + resultName + @"_*:\s*\d*\s?$"; //Match for Final Stats section
 
-                if (matchNum.Success)// number match from string
+                Match matchFinalStat = Regex.Match(s, finalStatRegex); //UPDATE for multiple matches
+                Match matchNum = Regex.Match(lines[i], @"\d+"); //Match num in string
+
+                if (matchFinalStat.Success && matchNum.Success) //string match from file
                 {
                     if (Int32.TryParse(matchNum.Value, out int val))
                     {
-                        Debug.Log("Found NUM " + matchNum + " | ");
-
                         val++; //increase leadership value by 1
 
-                        lines[i] = Regex.Replace(matchString.ToString(), matchNum.ToString(), val.ToString()); //(input, pattern, replacement)  (original string, found num, updated num)
-
-                        Debug.Log("Updated to NUM " + val + "\n");
-
-                    }
-                    else
-                    {
-                        Debug.Log("ERROR:Line " + i + " unable to convert " + matchNum.Value + " to an INT for update");
+                        lines[i] = Regex.Replace(matchFinalStat.ToString(), matchNum.ToString(), val.ToString()); //(input, pattern, replacement)  (original string, found num, updated num)
                     }
                 }
             }
 
+            //Videos Watched
+            else if (s.Contains("Video"))
+            {
+                string InterviewRegex = @"\s*-[a-zA-Z]+:" + resultName + "_+: NO";
+
+                Match matchVideo = Regex.Match(s, InterviewRegex);
+                Match matchAnswerNO = Regex.Match(s, "NO");
+                if (matchVideo.Success && matchAnswerNO.Success)
+                {
+                    lines[i] = Regex.Replace(matchVideo.ToString(), matchAnswerNO.ToString(), "YES");
+
+                }
+            }
+            //Informational Books Read
+            else if (s.Contains("Book"))
+            {
+            }
+            // Interview Performance STAR
+            else if (s.Contains("STAR"))
+            {
+            }
+            // Interview Performance VALUE
+            else if (s.Contains("VALUE"))
+            {
+            }
         }
         File.WriteAllLines(playerFileName, lines); //rewerite file with update
-
     }
+
 
 
 
