@@ -256,7 +256,7 @@ public class TalkToNPC : MonoBehaviour
 
     void Awake()
     {
-        
+        //Make If statements here for videos
 
         initialize_components();
 
