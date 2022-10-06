@@ -146,7 +146,7 @@ public class TalkToNPC : MonoBehaviour
     //      or UpdatePlayerResults ("Final Technology", "mytext.txt")
     //NOTE: playerFileName should be used as the second parameter because that is the variable that stores the file name of the current session.
     //created by Don Murphy
-    void UpdatePlayerResults(string resultName, string FileToUpdate)
+    public static void UpdatePlayerResults(string resultName, string FileToUpdate)
     {
         string playerFileName = FileToUpdate;
 

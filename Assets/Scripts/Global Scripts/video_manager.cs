@@ -20,6 +20,58 @@ public class video_manager : MonoBehaviour
 
     public void play_video_clip(Video_manager_clip vmc) 
     {
+        
+       /*
+         Created by Chase Best and Don Murphy
+         These if/ else if statements start when a video is played and call UpdatePlayerResults() based on the title of the video.
+         The conditions match for the specific videos in attribute resultsVideo in Video_manager_clips.cs.
+         To add future videos video manager script needs to be attached to object or NPC. See robert under NPCs and look at the inspector on the right inside unity.
+       */
+
+
+
+        if (vmc.resultsVideo.ToString() == "Interview Prep") //Jane in school
+
+        {
+            TalkToNPC.UpdatePlayerResults("Interview Prep", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Networking with Voice Over") 
+        {
+         
+            TalkToNPC.UpdatePlayerResults("Networking", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Personal Branding") //syed in school
+        {
+           
+            TalkToNPC.UpdatePlayerResults("Personal Branding", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Star") //Dujon in school
+        {
+            
+            TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo2.ToString() == "Survive Adapt and Flourish") //Syed in school
+        {
+            
+            TalkToNPC.UpdatePlayerResults("Survive Adapt and Flourish", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Sweet Spot") //Robert world map
+        {
+           
+            TalkToNPC.UpdatePlayerResults("Sweet Spot", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Sweet Spot with Voice Over 2") //Robert world map TODO: verify
+        {
+           
+            TalkToNPC.UpdatePlayerResults("Sweet Spot", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo2.ToString() == "Value") //Dujon in school
+        {
+            
+            TalkToNPC.UpdatePlayerResults("Value", TalkToNPC.playerFileName);
+        }
+
+
         player.playbackSpeed = 1.0f;
 
         start_event.RemoveAllListeners();

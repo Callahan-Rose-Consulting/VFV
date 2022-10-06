@@ -1,29 +1,29 @@
 -------------Performace Report-------------
-Player name: Chase 
+Player name: GitHubUser
 *Initial Self Assessment:
-	-Initial Leadership_____________________:6
-	-Initial Teamwork_______________________:7
+	-Initial Leadership_____________________:5
+	-Initial Teamwork_______________________:8
 	-Initial Technology_____________________:6
 	-Initial Professionalism________________:6
 	-Initial Communication__________________:7
 	-Initial Critical Thinking______________:6
 
 *Final Self Assesment:
-	-Final Leadership_______________________:7
-	-Final Teamwork_________________________:7
+	-Final Leadership_______________________:5
+	-Final Teamwork_________________________:8
 	-Final Technology_______________________:6
 	-Final Professionalism__________________:6
-	-Final Communication____________________:10
+	-Final Communication____________________:8
 	-Final Critical Thinking________________:6
 
 *Chosen Career Field
-Engineering
+[No Career Fair Choice]
 
 *Videos Watched:
 	-Video:Interview Prep___________________: NO
 	-Video:Networking_______________________: NO
 	-Video:Personal Branding________________: NO
-	-Video:Star_____________________________: NO
+	-Video:Star_____________________________: YES
 	-Video:Survive Adapt and Florish________: NO
 	-Video:Sweet Spot_______________________: NO
 	-Video:Value____________________________: NO

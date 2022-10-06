@@ -1,16 +1,16 @@
 -------------Performace Report-------------
-Player name: Chase 
+Player name: GitHubUser
 *Initial Self Assessment:
-	-Initial Leadership_____________________:6
-	-Initial Teamwork_______________________:7
+	-Initial Leadership_____________________:5
+	-Initial Teamwork_______________________:8
 	-Initial Technology_____________________:6
 	-Initial Professionalism________________:6
 	-Initial Communication__________________:7
 	-Initial Critical Thinking______________:6
 
 *Final Self Assesment:
-	-Final Leadership_______________________:6
-	-Final Teamwork_________________________:7
+	-Final Leadership_______________________:5
+	-Final Teamwork_________________________:8
 	-Final Technology_______________________:6
 	-Final Professionalism__________________:6
 	-Final Communication____________________:7
