@@ -40,17 +40,17 @@ public class video_manager : MonoBehaviour
          
             TalkToNPC.UpdatePlayerResults("Networking", TalkToNPC.playerFileName);
         }
-        else if (vmc.resultsVideo.ToString() == "Personal Branding") //syed in school
+        else if (vmc.resultsVideo.ToString() == "Personal Branding" && vmc.play_first == false) //syed in school
         {
            
             TalkToNPC.UpdatePlayerResults("Personal Branding", TalkToNPC.playerFileName);
         }
-        else if (vmc.resultsVideo.ToString() == "Star") //Dujon in school
+        else if (vmc.resultsVideo.ToString() == "Star" && vmc.play_first == true) //Dujon in school
         {
             
             TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
         }
-        else if (vmc.resultsVideo2.ToString() == "Survive Adapt and Flourish") //Syed in school
+        else if (vmc.resultsVideo2.ToString() == "Survive Adapt and Flourish" && vmc.play_first == true) //Syed in school
         {
             
             TalkToNPC.UpdatePlayerResults("Survive Adapt and Flourish", TalkToNPC.playerFileName);
@@ -65,7 +65,7 @@ public class video_manager : MonoBehaviour
            
             TalkToNPC.UpdatePlayerResults("Sweet Spot", TalkToNPC.playerFileName);
         }
-        else if (vmc.resultsVideo2.ToString() == "Value") //Dujon in school
+        else if (vmc.resultsVideo2.ToString() == "Value" && vmc.play_first == false) //Dujon in school
         {
             
             TalkToNPC.UpdatePlayerResults("Value", TalkToNPC.playerFileName);
