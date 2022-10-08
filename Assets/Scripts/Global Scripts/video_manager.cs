@@ -18,8 +18,60 @@ public class video_manager : MonoBehaviour
     public Fade stored_fade;
     //public bool play_first = true;
 
-    public void play_video_clip(Video_manager_clip vmc) 
+    public void play_video_clip(Video_manager_clip vmc)
     {
+
+        /*
+          Created by Chase Best and Don Murphy
+          These if/ else if statements start when a video is played and call UpdatePlayerResults() based on the title of the video.
+          The conditions match for the specific videos in attribute resultsVideo in Video_manager_clips.cs.
+          To add future videos video manager script needs to be attached to object or NPC. See robert under NPCs and look at the inspector on the right inside unity.
+        */
+
+
+
+        if (vmc.resultsVideo.ToString() == "Interview Prep") //Jane in school
+
+        {
+            TalkToNPC.UpdatePlayerResults("Interview Prep", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Networking with Voice Over")//Not used in game currently, but everything is set up to have an NPC play the video.
+        {
+
+            TalkToNPC.UpdatePlayerResults("Networking", TalkToNPC.playerFileName); 
+        }
+        else if (vmc.resultsVideo.ToString() == "Personal Branding" && vmc.play_first == false) //syed in school
+        {
+
+            TalkToNPC.UpdatePlayerResults("Personal Branding", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Star" && vmc.play_first == true) //Dujon in school
+        {
+
+            TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo2.ToString() == "Survive Adapt and Flourish" && vmc.play_first == true) //Syed in school
+        {
+
+            TalkToNPC.UpdatePlayerResults("Survive Adapt and Flourish", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Sweet Spot") //Robert world map
+        {
+
+            TalkToNPC.UpdatePlayerResults("Sweet Spot", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo.ToString() == "Sweet Spot with Voice Over 2") //for canvas in library, which is disabled because of bug where screen stays black after second time watching
+        {
+
+            TalkToNPC.UpdatePlayerResults("Sweet Spot", TalkToNPC.playerFileName);
+        }
+        else if (vmc.resultsVideo2.ToString() == "Value" && vmc.play_first == false) //Dujon in school
+        {
+
+            TalkToNPC.UpdatePlayerResults("Value", TalkToNPC.playerFileName);
+        }
+
+
         player.playbackSpeed = 1.0f;
 
         start_event.RemoveAllListeners();
@@ -48,7 +100,7 @@ public class video_manager : MonoBehaviour
         load_clip(vmc);
 
         player.Play();
-        
+
     }
 
     public void load_clip(Video_manager_clip vmc)
@@ -56,9 +108,9 @@ public class video_manager : MonoBehaviour
         if (vmc.play_first)
         {
 #if (UNITY_EDITOR || UNITY_STANDALONE)
-                            player.url = vmc.clip_url;
-                            player.source = VideoSource.Url;
-                            
+            player.url = vmc.clip_url;
+            player.source = VideoSource.Url;
+
 #elif (UNITY_WEBGL)
                             player.url = vmc.clip_url;
                             player.source = VideoSource.Url;    
@@ -69,9 +121,9 @@ public class video_manager : MonoBehaviour
         {
 
 #if (UNITY_EDITOR || UNITY_STANDALONE)
-                            player.url = vmc.clip2_url;
-                            player.source = VideoSource.Url;
-                            
+            player.url = vmc.clip2_url;
+            player.source = VideoSource.Url;
+
 #elif (UNITY_WEBGL)
                             player.url = vmc.clip2_url;
                             player.source = VideoSource.Url;    
@@ -79,10 +131,10 @@ public class video_manager : MonoBehaviour
         }
     }
 
-    public void Update() 
+    public void Update()
     {
         //Skiping Video
-        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.E)) && player.playbackSpeed != 0.0f && (player.time > 1.0f) && (player.time < player.length)) 
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.E)) && player.playbackSpeed != 0.0f && (player.time > 1.0f) && (player.time < player.length))
         {
             player.playbackSpeed = 0.0f;
 
@@ -90,11 +142,11 @@ public class video_manager : MonoBehaviour
         }
     }
 
-    public void add_to_video_list() 
+    public void add_to_video_list()
     {
         VideoClip clip = player.clip;
 
-        if (!viewed_videos.Find((x) => x.name == clip.name)) 
+        if (!viewed_videos.Find((x) => x.name == clip.name))
         {
             viewed_videos.Add(clip);
         }
@@ -126,7 +178,7 @@ public class video_manager : MonoBehaviour
 
     public UnityEvent basic_start_event;
 
-    public void invoke_basic_start_event() 
+    public void invoke_basic_start_event()
     {
         basic_start_event.Invoke();
     }
@@ -138,7 +190,7 @@ public class video_manager : MonoBehaviour
         basic_stored_event.Invoke();
     }
 
-    public void toggle_player(VideoPlayer vp) 
+    public void toggle_player(VideoPlayer vp)
     {
         Debug.Log("End???");
 
@@ -146,7 +198,7 @@ public class video_manager : MonoBehaviour
         {
             vp.Play();
         }
-        else 
+        else
         {
             vp.Pause();
         }
