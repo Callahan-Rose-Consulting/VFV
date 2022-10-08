@@ -27,13 +27,20 @@ public class Video_manager_clip : MonoBehaviour
 
     public string clip2_url;
 
-    void Start() 
+    public string resultsVideo;
+
+    public string resultsVideo2;  //Don Murphy- This was created to handle the fact that Syed and Dujon both play 2 videos
+
+    void Start()
     {
+
         if (clip != null)
         {
             clip_url = System.IO.Path.Combine(Application.streamingAssetsPath, clip.name + ".mp4");
+
+
         }
-        else 
+        else
         {
             clip_url = System.IO.Path.Combine(Application.streamingAssetsPath, clip_url + ".mp4");
         }
@@ -48,7 +55,7 @@ public class Video_manager_clip : MonoBehaviour
         }
     }
 
-    public void play_clip() 
+    public void play_clip()
     {
         video_manager.instance.play_video_clip(this);
     }
