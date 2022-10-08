@@ -91,7 +91,6 @@ public class TalkToNPC : MonoBehaviour
             File.AppendAllText(path, "\n");
             File.AppendAllText(path, "*Videos Watched:\n");
             File.AppendAllText(path, "\t-Video:Interview Prep___________________: NO\n");
-            File.AppendAllText(path, "\t-Video:Networking_______________________: NO\n");
             File.AppendAllText(path, "\t-Video:Personal Branding________________: NO\n");
             File.AppendAllText(path, "\t-Video:Star_____________________________: NO\n");
             File.AppendAllText(path, "\t-Video:Survive Adapt and Florish________: NO\n");

@@ -38,7 +38,7 @@ public class video_manager : MonoBehaviour
         else if (vmc.resultsVideo.ToString() == "Networking with Voice Over") 
         {
          
-            TalkToNPC.UpdatePlayerResults("Networking", TalkToNPC.playerFileName);
+            TalkToNPC.UpdatePlayerResults("Networking", TalkToNPC.playerFileName); //Not used in game currently, but everything is set up to have an NPC play the video.
         }
         else if (vmc.resultsVideo.ToString() == "Personal Branding" && vmc.play_first == false) //syed in school
         {
