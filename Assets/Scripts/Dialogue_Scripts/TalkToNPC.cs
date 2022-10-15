@@ -64,10 +64,15 @@ public class TalkToNPC : MonoBehaviour
         string path = @"Player Results" + "/" + fileName;
         //create blank text doc and name it according to fileName in the Player Results Directory
         using (FileStream fs = File.Create(path)) { };
-
+        string VFV = "";
         playerFileName = path;
-
-        File.AppendAllText(path, "-------------Performace Report-------------\n");
+        File.AppendAllText(path, "#-----------------------------------------#\n");
+        File.AppendAllText(path, "|Thank you for playing!                   |\n");
+        File.AppendAllText(path, "|Send this file to mike@callahanrose.com  |\n");
+        File.AppendAllText(path, "|to gain access to biginterview.com.      |\n");
+        File.AppendAllText(path, "#-----------------------------------------#\n");
+        File.AppendAllText(path, "\n");
+        File.AppendAllText(path, "---------------Performace Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
         File.AppendAllText(path, "Branch of Service: " + Resume.TourBranch + '\n');
         File.AppendAllText(path, "*Initial Self Assessment:\n");
