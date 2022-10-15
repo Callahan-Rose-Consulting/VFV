@@ -69,6 +69,7 @@ public class TalkToNPC : MonoBehaviour
 
         File.AppendAllText(path, "-------------Performace Report-------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
+        File.AppendAllText(path, "Branch of Service: " + Resume.TourBranch + '\n');
         File.AppendAllText(path, "*Initial Self Assessment:\n");
         File.AppendAllText(path, "\t-Initial Leadership_____________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
         File.AppendAllText(path, "\t-Initial Teamwork_______________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
