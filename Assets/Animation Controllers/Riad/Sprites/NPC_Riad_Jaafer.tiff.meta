@@ -4,40 +4,40 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6997741227164693895
-    second: NPC_1_0
+    second: NPC_Riad_Jaafer_0
   - first:
       213: 6557076233684051622
-    second: NPC_1_1
+    second: NPC_Riad_Jaafer_1
   - first:
       213: -2021278502396738475
-    second: NPC_1_2
+    second: NPC_Riad_Jaafer_2
   - first:
       213: -2733700443264022750
-    second: NPC_1_3
+    second: NPC_Riad_Jaafer_3
   - first:
       213: 257391927967685840
-    second: NPC_1_4
+    second: NPC_Riad_Jaafer_4
   - first:
       213: -8065345923595002288
-    second: NPC_1_5
+    second: NPC_Riad_Jaafer_5
   - first:
       213: 24975346105631959
-    second: NPC_1_6
+    second: NPC_Riad_Jaafer_6
   - first:
       213: 2433864660678486080
-    second: NPC_1_7
+    second: NPC_Riad_Jaafer_7
   - first:
       213: 2094008302356111732
-    second: NPC_1_8
+    second: NPC_Riad_Jaafer_8
   - first:
       213: -7674077055272595977
-    second: NPC_1_9
+    second: NPC_Riad_Jaafer_9
   - first:
       213: -5167411211954565486
-    second: NPC_1_10
+    second: NPC_Riad_Jaafer_10
   - first:
       213: -4877826804163725828
-    second: NPC_1_11
+    second: NPC_Riad_Jaafer_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_1_0
+      name: NPC_Riad_Jaafer_0
       rect:
         serializedVersion: 2
         x: 20
@@ -142,7 +142,7 @@ TextureImporter:
         width: 116
         height: 342
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,7 +155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_1
+      name: NPC_Riad_Jaafer_1
       rect:
         serializedVersion: 2
         x: 200
@@ -163,7 +163,7 @@ TextureImporter:
         width: 116
         height: 342
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,7 +176,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_2
+      name: NPC_Riad_Jaafer_2
       rect:
         serializedVersion: 2
         x: 386
@@ -184,7 +184,7 @@ TextureImporter:
         width: 114
         height: 342
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,7 +197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_3
+      name: NPC_Riad_Jaafer_3
       rect:
         serializedVersion: 2
         x: 558
@@ -205,7 +205,7 @@ TextureImporter:
         width: 76
         height: 332
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,7 +218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_4
+      name: NPC_Riad_Jaafer_4
       rect:
         serializedVersion: 2
         x: 672
@@ -226,7 +226,7 @@ TextureImporter:
         width: 98
         height: 332
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,7 +239,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_5
+      name: NPC_Riad_Jaafer_5
       rect:
         serializedVersion: 2
         x: 788
@@ -247,7 +247,7 @@ TextureImporter:
         width: 118
         height: 332
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,7 +260,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_6
+      name: NPC_Riad_Jaafer_6
       rect:
         serializedVersion: 2
         x: 20
@@ -268,7 +268,7 @@ TextureImporter:
         width: 114
         height: 344
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,7 +281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_7
+      name: NPC_Riad_Jaafer_7
       rect:
         serializedVersion: 2
         x: 200
@@ -289,7 +289,7 @@ TextureImporter:
         width: 114
         height: 344
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,7 +302,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_8
+      name: NPC_Riad_Jaafer_8
       rect:
         serializedVersion: 2
         x: 384
@@ -310,7 +310,7 @@ TextureImporter:
         width: 116
         height: 344
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,7 +323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_9
+      name: NPC_Riad_Jaafer_9
       rect:
         serializedVersion: 2
         x: 558
@@ -331,7 +331,7 @@ TextureImporter:
         width: 76
         height: 334
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,7 +344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_10
+      name: NPC_Riad_Jaafer_10
       rect:
         serializedVersion: 2
         x: 672
@@ -352,7 +352,7 @@ TextureImporter:
         width: 98
         height: 334
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,7 +365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_11
+      name: NPC_Riad_Jaafer_11
       rect:
         serializedVersion: 2
         x: 788
@@ -373,7 +373,7 @@ TextureImporter:
         width: 118
         height: 334
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
