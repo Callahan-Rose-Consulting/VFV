@@ -13,11 +13,12 @@
 ![](https://secure.touchnet.com/C21591_ustores/web/uploaded_images/mall/UMD_FORMS_LOGO.PNG)
 
 ### Setting Up the Project:
+- Install [Git](https://git-scm.com/downloads)
+- Install [Git Large File Storage](https://git-lfs.github.com/)
 - Install [Unity Hub](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe)
 - Install  [Unity version 2019.2.18](https://unity3d.com/get-unity/download/archive)
 - Install [Visual Studio 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)
-- Install [Git](https://git-scm.com/downloads)
-- Install [Git Large File Storage](https://git-lfs.github.com/)
+
 
 ![](https://ih1.redbubble.net/image.3406570980.1167/st,small,507x507-pad,600x600,f8f8f8.jpg)
 
