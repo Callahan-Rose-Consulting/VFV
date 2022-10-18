@@ -25,9 +25,10 @@
 
 
 ### How-To:
+- [VIDEO: How to use GitHub with Git start to finish](https://youtu.be/SlxHFOqU6zc)
 - [Useful Git commands](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 - (future YouTube videos planned to go here)
-- [VIDEO: How to use GitHub with Git start to finish](https://youtu.be/SlxHFOqU6zc)
+
 
  [![IMAGE ALT TEXT HERE](https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-1200-80.jpg)](https://youtu.be/SlxHFOqU6zc)
   
