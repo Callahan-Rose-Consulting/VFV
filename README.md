@@ -13,6 +13,7 @@
 ![](https://secure.touchnet.com/C21591_ustores/web/uploaded_images/mall/UMD_FORMS_LOGO.PNG)
 
 ### Setting Up the Project:
+- [Video: Setting up work environment](https://www.youtube.com/watch?v=vDsXlQuUDts&ab_channel=Don)
 - Install [Git](https://git-scm.com/downloads)
 - Install [Git Large File Storage](https://git-lfs.github.com/)
 - Install [Unity Hub](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe)
