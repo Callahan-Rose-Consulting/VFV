@@ -7823,8 +7823,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.7651715
+  m_Value: 0.9999993
+  m_Size: 0.76517165
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8818,7 +8818,8 @@ MonoBehaviour:
         skills you have that would make you suitable for the position.
   - question: Where do you see yourself in five years?
     answers:
-    - entry: In your job.
+    - entry: I want to be working here in your position. Your salary has to be great
+        and I would like to have that one day.
       meter_gain: -0.1
       Reaction:
       - 'This answer seems honest and straight to the point, however, it also makes
@@ -8828,15 +8829,17 @@ MonoBehaviour:
         can show lack of experience in the field. Avoid saying phrases like: \u201CRunning
         this place,\u201D \u201CBeing your boss,\u201D or \u201CCEO of this company.\u201D"
     - entry: "Opening a pizza shop has been a dream of mine for many years, so I\u2019m
-        excited to learn from this experience to apply it for myself."
+        excited to learn from this experience to apply it for myself to open my own
+        shop down the road."
       meter_gain: 0.05
       Reaction:
       - This answer is very honest. When an interviewer asks you this type of question,
         they are looking for someone who they can expect to work with for a while.
         By telling them that you plan on becoming a direct competitor to the company,
         it makes you less likely to be hired.
-    - entry: In five years, I want to be a <JOB_TITLE> that an employee can come to
-        without hesitation if they need help.
+    - entry: In five years, I want to be a <JOB_TITLE> using the experience I have
+        and would learn here to make a positive impact on the company, employees,
+        and industry.
       meter_gain: 0.15
       Reaction:
       - This answer is to the point and shows your ambitions for the company. When
@@ -8850,7 +8853,8 @@ MonoBehaviour:
         role, while also emphasizing that you want a career at the company.
   - question: Tell me how you handled a difficult situation at work.
     answers:
-    - entry: I don't think i've ever been in a situation like that before.
+    - entry: I don't think i've ever been in a situation like that before. Usually
+        things go pretty smoothly when I am around.
       meter_gain: 0
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
@@ -8859,9 +8863,10 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: The situation was I had a cleaning job once and I even got my sister
-        to help, but the owner really did not appreciate our work and I will never
-        work for them again.
+    - entry: I had this one job at a house cleaning company and my group had a task
+        of cleaning a bigger hosue one day. There were three of us in my group and
+        one person could not make it, so I was able to come help us out. My manager
+        found out and got mad at me, so I quit.
       meter_gain: 0.05
       Reaction:
       - "This situation can be considered as a difficult situation to some degree.
@@ -8872,11 +8877,11 @@ MonoBehaviour:
       - This is commonly known as the S.T.A.R. method. The interviewer is asking this
         kind of question to learn how you handle difficult tasks and what your approach
         to them is.
-    - entry: The situation was I got hired for a pizza job with no experience. My
-        task was to take orders from customers and I got one customer who was really
-        having trouble with their choices.  The action I took was to be patient but
-        also helped them make a decision and as a result, they always look for me
-        when they come into order pizzas.
+    - entry: The situation was I got hired for a job with no experience. My task was
+        to take orders from customers and I got one customer who was really having
+        trouble with their choices.  The action I took was to be patient but also
+        helped them make a decision and as a result, they always look for me when
+        they come into order things.
       meter_gain: 0.2
       Reaction:
       - This is a great example of a difficult situation. It was a task where you
@@ -8889,7 +8894,7 @@ MonoBehaviour:
         your approach to them is.
     - entry: 'At my previous job, the company did a horrible job informing the customers
         of the status of their orders. I had to constantly fix the issues, so I quit. '
-      meter_gain: 0
+      meter_gain: -0.05
       Reaction:
       - "This experience doesn\u2019t relate to the question. The interviewer is asking
         this kind of question to learn how you handle difficult tasks and what your
@@ -8909,18 +8914,18 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: "The situation was I had a cleaning job at my elderly neighbor\u2019s
-        apartment. My task was to clean out a grape juice stain from her couch. Using
-        new techniques I learned, I was able to remove the stain and she was happy
-        about it."
-      meter_gain: 0.1
+    - entry: "I had a cleaning job at my elderly neighbor\u2019s apartment. My task
+        was to clean out a grape juice stain from her couch. Using new techniques
+        I learned, I was able to remove the stain and she was happy about it. I am
+        always looking for new techniques to do things as there is never one way to
+        complete a task."
+      meter_gain: 0.15
       Reaction:
       - (This is a great example! By helping Gutsy you took the initiative to improve
         yourself as well as helping out in your community. Even the smallest of tasks
         can help you improve yourself, keep it up!)
-    - entry: After a year working at the pizza place I feel like I am a professional
-        and make the best pizzas. I hope to open my own pizza place one day to make
-        my amazing pizzas.
+    - entry: I really wanted to become a better typer on the computer, so I signed
+        up for a typing course online.
       meter_gain: 0.1
       Reaction:
       - (This is a great example! By making pizzas with Stefano you took the initiative
@@ -8928,7 +8933,7 @@ MonoBehaviour:
         the day, even the smallest of skills can help you improve and learning new
         skills is always a positive.)
     - entry: 'I work so hard that I rarely have time to focus on improving my skills. '
-      meter_gain: 0.1
+      meter_gain: 0.05
       Reaction:
       - "(This is a great example! By attending Robert\u2019s Seminar you took the
         initiative to improve yourself and to learn. Learning is always a good thing
@@ -8944,10 +8949,9 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: The situation was my neighborhood got flooded. My task was to check on
-        my neighbor and make sure she was safe. The action I took was helping her
-        move out of danger and she was very grateful that she could count on me in
-        this difficult time.
+    - entry: My neighborhood got flooded and I checked on my neighbor to make sure
+        they were safe. The action I took was helping them move out of danger and
+        they was very grateful that they could count on me in this difficult time.
       meter_gain: 0.1
       Reaction:
       - '(This is a good example of helping out in your community. You went above
@@ -8957,8 +8961,9 @@ MonoBehaviour:
         type of question is used for the interviewer to learn some of your personal
         values and how you use your time outside of work. Interviewers asking this
         question will be at places where community is important.)
-    - entry: 'The situation was I was working with a very clumsy coworker so after
-        he dropped the pizza I talked to the manager and he finally fired him. '
+    - entry: I was working with a very clumsy co-worker so after they broke one of
+        the devices we used,  I talked to the manager and he finally fired him. Now
+        we didn't have to deal with the clumsy co-worker anymore.
       meter_gain: 0
       Reaction:
       - "(This experience doesn\u2019t relate to the question. The interviewer is
@@ -8966,8 +8971,7 @@ MonoBehaviour:
         values outside of the work place. Usually this type of question is asked at
         a place with a strong emphasis on teamwork and togetherness. Remember to answer
         with the S.T.A.R. method.)"
-    - entry: The situation is I work too hard and need to learn how to balance my
-        life better.
+    - entry: I work too hard and need to learn how to balance my life better.
       meter_gain: 0
       Reaction:
       - "(This experience doesn\u2019t relate to the question. The interviewer is
@@ -8978,7 +8982,7 @@ MonoBehaviour:
   - question: How did you learn about this opening?
     answers:
     - entry: I learned about this job opening from a job searching website. I saw
-        the job offering and decided to apply. Nothing ventured, nothing gained, right?
+        the job offering and decided to apply because it aligned with my interests.
       meter_gain: 0.2
       Reaction:
       - "This answer is honest. It gets the point across and lets the interviewer
@@ -9018,7 +9022,8 @@ MonoBehaviour:
         than talking about the money you want to earn."
   - question: Describe a situation where you had to make a good impression.
     answers:
-    - entry: I don't think i've ever been in a situation like that before.
+    - entry: I don't think i've ever been in a situation like that before. I tend
+        to make a good impression with my personality as soon as someone meets me.
       meter_gain: 0
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
@@ -9028,7 +9033,8 @@ MonoBehaviour:
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
     - entry: A situation where I made a good impression was during an internship at
-        a big company. I made them laugh at a joke I said.
+        a big company. All of the other interns and full-timers really enjoyed having
+        me around because they said I made them laugh a lot.
       meter_gain: 0.1
       Reaction:
       - This example is an okay example. You went out of your way to learn a new skill
@@ -9037,11 +9043,11 @@ MonoBehaviour:
       - The interviewer wants to see what tactics you use to make a good impression
         to see if it is in a manner that the company sees as valuable. But make sure
         to approach questions like these using STAR approach.
-    - entry: While working in the customer service department and my task was to help
-        the customers with their product issues. I often communicated with the clients
-        to check in with them and see how they were doing. I think going above and
-        beyond our client's expectations by keeping in touch with them helps to build
-        lasting relationships that keep the clients loyal to our business.
+    - entry: I went to lunch on one of my first weeks at my last job and my boss ended
+        up being in the lunch room. When I them I was extremely nervous, but they
+        began to talk to me and asked about my life and how I was liking the new job.
+        After we were done talking they told me how much of a plessure it was talking
+        and getting to know me better.
       meter_gain: 0.2
       Reaction:
       - This is an excellent example of making a good impression. You went out of
@@ -9051,7 +9057,10 @@ MonoBehaviour:
       - The interviewer wants to see what tactics you use to make a good impression
         to see if it is in a manner that the company sees as valuable. Make sure to
         answer question like these with STAR approach.
-    - entry: "I don\u2019t work to please others. I do my job and nothing more."
+    - entry: While working in the customer service department at an old job, I had
+        a task of helping customers with their product issues. I often communicate
+        with the clients to check in with them and see how they are doing. I think
+        going above and beyond our client's expectations is most important.
       meter_gain: 0.2
       Reaction:
       - This is an good example of making a good impression. You had a task to complete
@@ -9062,7 +9071,7 @@ MonoBehaviour:
         method would have made this answer better.
   - question: Tell me about an accomplishment you are most proud of.
     answers:
-    - entry: I don't think i've ever been in a situation like that before.
+    - entry: I don't think i've had an cool accomplishments.
       meter_gain: 0
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
@@ -9071,10 +9080,10 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: The situation was was that when I was a college student, I also had to
-        work part time to cover my tuition. Through years of hard work and high efforts
-        I was able to succeed. My hard work paid off and the result was landing a
-        great job.
+    - entry: When I was a college student, I also had to work part time to cover my
+        tuition. Through years of hard work and high efforts I was able to succeed.
+        My hard work paid off and the result was landing a great job and being debt
+        free.
       meter_gain: 0.2
       Reaction:
       - 'When this type of question is asked, the interviewer is looking to evaluate
@@ -9084,8 +9093,8 @@ MonoBehaviour:
         you have and lets them learn about your background outside of your resume.
         Remember to apply the STAR method with questions like this.
     - entry: An accomplishment I am most proud of is a management position I had at
-        the pizza place. It feels nice to be the one to boss workers around for once.
-      meter_gain: 0.2
+        my last job. It feels nice to be the one to boss workers around for once.
+      meter_gain: 0.1
       Reaction:
       - 'When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
@@ -9093,10 +9102,9 @@ MonoBehaviour:
       - The task you choose also shows the interviewer what your interests and passions
         you have and lets them learn about your background outside of your resume.
         Remember to apply the STAR method with questions like this.
-    - entry: 'My greatest accomplishment is when I was awarded employee of the month.This
-        month someone else was awarded employee of the month and that is not fair
-        because I do a better job than him.  '
-      meter_gain: 0.2
+    - entry: My greatest accomplishment is when I was awarded employee of the month
+        through my hard work.
+      meter_gain: 0.15
       Reaction:
       - 'When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
