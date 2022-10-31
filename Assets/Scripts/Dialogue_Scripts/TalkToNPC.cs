@@ -103,7 +103,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\t-Video:Value____________________________: NO\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Informational Books Read:\n");
-        File.AppendAllText(path, "\t-Book:What to Say and How to Say It!________: NO\n");
+        File.AppendAllText(path, "\t-Book:What to Say and How to Say It!_________: NO\n");
         File.AppendAllText(path, "\t-Book:Brain Teasers__________________________: NO\n");
         File.AppendAllText(path, "\t-Book:Team Synergy___________________________: NO\n");
         File.AppendAllText(path, "\t-Book:Hiring Manager's Guide to Everything___: NO\n");
