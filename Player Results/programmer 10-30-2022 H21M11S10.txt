@@ -5,23 +5,23 @@
 #-----------------------------------------#
 
 ---------------Performace Report----------------
-Player name: S
+Player name: programmer
 Branch of Service: 
 *Initial Self Assessment:
 	-Initial Leadership_____________________:7
-	-Initial Teamwork_______________________:8
+	-Initial Teamwork_______________________:6
 	-Initial Technology_____________________:5
-	-Initial Professionalism________________:6
-	-Initial Communication__________________:6
-	-Initial Critical Thinking______________:6
+	-Initial Professionalism________________:8
+	-Initial Communication__________________:7
+	-Initial Critical Thinking______________:5
 
 *Final Self Assesment:
 	-Final Leadership_______________________:7
-	-Final Teamwork_________________________:8
+	-Final Teamwork_________________________:6
 	-Final Technology_______________________:5
-	-Final Professionalism__________________:6
-	-Final Communication____________________:6
-	-Final Critical Thinking________________:6
+	-Final Professionalism__________________:8
+	-Final Communication____________________:7
+	-Final Critical Thinking________________:5
 
 *Chosen Career Field
 [No Career Fair Choice]
@@ -35,27 +35,27 @@ Branch of Service:
 	-Video:Value____________________________: NO
 
 *Informational Books Read:
-	-What to Say (and How to Say It!________: NO
-	-Brain Teasers__________________________: NO
-	-Team Synergy___________________________: NO
-	-Hiring Manager's Guide to Everything___: NO
-	-Principles of Management_______________: NO
-	-Employment Laws________________________: NO
-	-CompTia A+ Certification Prep Questions: NO
-	-Intro to Hardware______________________: NO
-	-Troubleshooting 101____________________: NO
-	-Guide to Networking____________________: NO
-	-How to Be a Better Leader______________: NO
-	-Into to Python_________________________: NO
-	-Software Engineering Principles________: NO
-	-Debugging 101__________________________: NO
-	-Game Design____________________________: NO
-	-Working in a Team______________________: NO
-	-Microswift Office for Dummies__________: NO
-	-Principles of Engineering______________: NO
-	-I Inc., Career Planning and Personal___: NO
-	-Entrepreneurship_______________________: NO
-	-Tiger in the Office____________________: NO
+	-Book:What to Say (and How to Say It!________: NO
+	-Book:Brain Teasers__________________________: NO
+	-Book:Team Synergy___________________________: NO
+	-Book:Hiring Manager's Guide to Everything___: NO
+	-Book:Principles of Management_______________: NO
+	-Book:Employment Laws________________________: NO
+	-Book:CompTia A+ Certification Prep Questions: NO
+	-Book:Intro to Hardware______________________: NO
+	-Book:Troubleshooting 101____________________: NO
+	-Book:Guide to Networking____________________: NO
+	-Book:How to Be a Better Leader______________: NO
+	-Book:Into to Python_________________________: NO
+	-Book:Software Engineering Principles________: NO
+	-Book:Debugging 101__________________________: NO
+	-Book:Game Design____________________________: NO
+	-Book:Working in a Team______________________: NO
+	-Book:Microswift Office for Dummies__________: NO
+	-Book:Principles of Engineering______________: NO
+	-Book:I Inc., Career Planning and Personal___: NO
+	-Book:Entrepreneurship_______________________: NO
+	-Book:Tiger in the Office____________________: NO
 
 *Interview Performance:
 	-STAR___________________________________:NO
