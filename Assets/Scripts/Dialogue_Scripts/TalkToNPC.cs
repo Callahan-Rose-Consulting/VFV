@@ -218,7 +218,7 @@ public class TalkToNPC : MonoBehaviour
                 // s*-Book:([A-Za-z0-9 !',+.]+)++.+
                 //s*-Book:Team Synergy+_+:\s*NO
                 //s*-Book:([CompTia A+ Certification Prep Questions])+:\s*NO
-                string BookRegex = @"s*-Book:(" + resultName + ")_+:\\s*NO";
+                string BookRegex = @"\s*-Book:(" + resultName + ")_+:\\s*NO";
                 Match matchBook = Regex.Match(line, BookRegex);
                 Match matchAnswerNO = Regex.Match(line, "NO");
                 if (matchBook.Success && matchAnswerNO.Success)

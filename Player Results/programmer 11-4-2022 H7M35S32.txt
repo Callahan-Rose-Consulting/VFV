@@ -35,29 +35,26 @@ Branch of Service:
 	-Video:Value_____________________________________: NO
 
 *Informational Books Read:
-	-Book:What to Say and How to Say It!_____________: NO
-	-Book:Brain Teasers______________________________: NO
-	-Book:Team Synergy_______________________________: NO
-	-Book:Hiring Manager's Guide to Everything_______: NO
-	-Book:Principles of Management___________________: NO
-	-Book:Employment Laws____________________________: NO
+-Book:What to Say and How to Say It!_____________: YES
+-Book:Brain Teasers______________________________: YES
+-Book:Team Synergy_______________________________: YES
+-Book:Hiring Manager's Guide to Everything_______: YES
+-Book:Principles of Management___________________: YES
+-Book:Employment Laws____________________________: YES
 	-Book:CompTia A plus Certification Prep Questions: NO
-	-Book:Intro to Hardware__________________________: NO
-	-Book:Troubleshooting 101________________________: NO
-	-Book:Guide to Networking________________________: NO
-	-Book:How to Be a Better Leader__________________: NO
-	-Book:Into to Python_____________________________: NO
-	-Book:Software Engineering Principles____________: NO
-	-Book:Debugging 101______________________________: NO
-	-Book:Game Design________________________________: NO
-	-Book:Working in a Team__________________________: NO
-	-Book:Microswift Office for Dummies______________: NO
-	-Book:Principles of Engineering__________________: NO
+-Book:Intro to Hardware__________________________: YES
+-Book:Troubleshooting 101________________________: YES
+-Book:Guide to Networking________________________: YES
+-Book:How to Be a Better Leader__________________: YES
+-Book:Into to Python_____________________________: YES
+-Book:Software Engineering Principles____________: YES
+-Book:Debugging 101______________________________: YES
+-Book:Game Design________________________________: YES
+-Book:Working in a Team__________________________: YES
+-Book:Microswift Office for Dummies______________: YES
+-Book:Principles of Engineering__________________: YES
 	-Book:I Inc., Career Planning and Personal_______: NO
-	-Book:Entrepreneurship___________________________: NO
-	-Book:Tiger in the Office________________________: NO
-	-Book:Intel Book_________________________________: NO
-	-Book:Work on Your Work Ethic!___________________: NO
+-Book:Tiger in the Office________________________: YES
 
 *Interview Performance:
 	-STAR____________________________________________:NO
