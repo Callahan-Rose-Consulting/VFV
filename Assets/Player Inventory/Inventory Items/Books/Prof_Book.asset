@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0316c6ecc9225d543bb34e211ed9bcd6, type: 3}
   m_Name: Prof_Book
   m_EditorClassIdentifier: 
-  name: Work on Your Work Ethic! A Guide
+  name: Work on Your Work Ethic!
   value: 50
   icon: {fileID: 21300000, guid: 91b3d5cb435171e47965f49a9589a1ae, type: 3}
   isDefaultItem: 0
@@ -22,3 +22,5 @@ MonoBehaviour:
   - Item used
   - Item used
   details: Professionalism Book to improve skill
+  Dialogue_Progress: 0
+  isRead: 0
