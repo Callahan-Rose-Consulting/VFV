@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0316c6ecc9225d543bb34e211ed9bcd6, type: 3}
   m_Name: Comm_Book
   m_EditorClassIdentifier: 
-  name: What to Say (and How to Say It!)
+  name: What to Say and How to Say It!
   value: 50
   icon: {fileID: 21300000, guid: 91b3d5cb435171e47965f49a9589a1ae, type: 3}
   isDefaultItem: 0
@@ -23,3 +23,5 @@ MonoBehaviour:
   - '#MULTI_END#I learned how to communicate more effectively!'
   - You've already read this book
   details: Communication Book to improve skill
+  Dialogue_Progress: 0
+  isRead: 0
