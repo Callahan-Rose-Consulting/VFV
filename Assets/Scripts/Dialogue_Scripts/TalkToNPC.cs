@@ -66,11 +66,12 @@ public class TalkToNPC : MonoBehaviour
         using (FileStream fs = File.Create(path)) { };
         string VFV = "";
         playerFileName = path;
-        File.AppendAllText(path, "#--------------------------------------------------------#\n");
-        File.AppendAllText(path, "|Thank you for playing!                                  |\n");
-        File.AppendAllText(path, "|Veterans gain free access to biginterview.com.          |\n");
-        File.AppendAllText(path, "|Send this file to mike@callahanrose.com for access      |\n");
-        File.AppendAllText(path, "#--------------------------------------------------------#\n");
+        File.AppendAllText(path, "#----------------------------------------------------------#\n");
+        File.AppendAllText(path, "|Thank you for playing!                                    |\n");
+        File.AppendAllText(path, "|Veterans gain free access to biginterview.com.            |\n");
+        File.AppendAllText(path, "|Send this file to mike@callahanrose.com for access        |\n");
+        File.AppendAllText(path, "|Linkedin Group: https://www.linkedin.com/groups/14140078/ |\n");
+        File.AppendAllText(path, "#----------------------------------------------------------#\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "---------------Performace Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
