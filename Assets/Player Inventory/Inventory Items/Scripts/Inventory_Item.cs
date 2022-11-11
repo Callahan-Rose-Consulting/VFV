@@ -20,8 +20,12 @@ public class Inventory_Item : ScriptableObject
     public string details = "";
 
     public int Dialogue_Progress;
-    //public string[] bookDialogue;
-    //public int book_progress;
+
+    //added by Don murphy. Inventory_Items are also used in Bookstre.cs.
+    //bookUpdateStats is used to store the string that will be called when the book is used.
+    //This string gets passed into Inventory_Slot.cs when the player uses an item.
+    //Within Inventory_Slot.cs the ReplaceKeyWord function from TalkToNPCs.cs is called
+    public string bookStats; 
 
     //Pre: None
     //Post: Simply just sends out a debug log notifying that the item was used. Should be overridden on children scripts for actual functionality
