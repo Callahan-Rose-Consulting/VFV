@@ -1117,6 +1117,14 @@ public class Bookstore : MonoBehaviour
             new BookStoreItem ("Principles of Engineering",                       50f, "SE",          "Book_3", "", "","No stat increase"),
             new BookStoreItem ("I Inc Career Planning",                           50f, "IT~HR~SE",    "Book_1", "Teaches students how to market themselves effectively in today's competitive professional environment.", "","No stat increase"),
             new BookStoreItem ("Tiger in the Office",                             50f, "IT~HR~SE",    "Book_3",  "Using lessons developed by entrepreneurs, you will learn how to pursue your next career steps, rediscover buried career goals and learn to take action toward those goals.", "","No stat increase")
+            //Don Murphy
+           //#INCREASE#*Lead*
+           //#INCREASE#*Team*
+           //#INCREASE#*Tech*
+           //#INCREASE#*Prof*
+           //#INCREASE#*Com*
+           //#INCREASE#*Crit* my message here.
+    
     };
 }
 
@@ -1132,7 +1140,7 @@ public class BookStoreItem
     [TextArea(5, 10)]
     public string Dialog;
     public string book;
-    public string bookStoreStats;
+    public string bookStoreStats; //added by Don Murphy
 
     public BookStoreItem(string p_oTitle, float p_fCost, string p_oFlags, string p_oBook, string p_oDescription, string p_oDialog, string upBookStats)
     {
@@ -1142,7 +1150,7 @@ public class BookStoreItem
         Description = p_oDescription;
         book = p_oBook;
         Dialog = p_oDialog;
-        bookStoreStats = upBookStats;
+        bookStoreStats = upBookStats; //added by Don Murphy
 
     }
 }
