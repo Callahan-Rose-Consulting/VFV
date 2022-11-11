@@ -1098,7 +1098,7 @@ public class Bookstore : MonoBehaviour
     public static BookStoreItem[] BS_Items =
     {
             new BookStoreItem ("What to Say and How to Say It!",                  50f, "SK",          "Book_1", "Communication Book to improve skill", "Dialog","No stat increase"),
-            new BookStoreItem ("Brain Teasers",                                   50f, "SK",          "Book_3", "Critical Thinking Book to improve Skill", "", "#INCREASE#*Crit*I feel a little bit smarter after reading it."),
+            new BookStoreItem ("Brain Teasers",                                   50f, "SK",          "Book_3", "Critical Thinking Book to improve Skill", "", "#INCREASE#*Crit*TEST:Crit stat should increase."),
             new BookStoreItem ("Team Synergy",                                    20f, "HR",          "Book_1", "How to create Tem Synergy while working with your employees, and  with their unique life experiences, perspectives, talents, and communication styles.", "","No stat increase"),
             new BookStoreItem ("Hiring Manager's Guide to Everything",            80f, "HR",          "Book_3", "This book covers a basic overview of the kinds of things that a Hiring Manager would need to know, such as conducting job analysis, planning a recruiting strategy, prescreening candidates, and asking the right questions.", "","No stat increase"),
             new BookStoreItem ("Principles of Management",                        60f, "IT~HR~SE",    "Book_1", "A guide to Fayol's Principles of Management. It talks about concepts such as the 14 Principles of Management and the 5 Functions of Management: planning, organizing, staffing, leading, and controlling.", "","No stat increase"),
