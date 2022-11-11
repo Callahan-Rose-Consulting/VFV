@@ -968,6 +968,8 @@ public class TalkToNPC : MonoBehaviour
 
                     case "*Crit*":
                         SkillIncreaseGenericDialogue(gameManager.CritThinking);
+                        //change by Don Murphy
+                        UpdatePlayerResults("Final Critical Thinking", playerFileName);
                         break;
 
                     case "*Hr*":
@@ -984,8 +986,6 @@ public class TalkToNPC : MonoBehaviour
 
                     default:
                         SkillIncreaseGenericDialogue(gameManager.CritThinking);
-                        //change by Don Murphy
-                        UpdatePlayerResults("Final Critical Thinking", playerFileName);
                         break;
                 }
             }
