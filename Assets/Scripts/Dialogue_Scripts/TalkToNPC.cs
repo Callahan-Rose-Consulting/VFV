@@ -122,10 +122,9 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\t-Book:Working in a Team____________________________: NO\n");
         File.AppendAllText(path, "\t-Book:Microswift Office for Dummies________________: NO\n");
         File.AppendAllText(path, "\t-Book:Principles of Engineering____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:I Inc., Career Planning and Personal_________: NO\n");
+        File.AppendAllText(path, "\t-Book:I Inc Career Planning________________________: NO\n");
         File.AppendAllText(path, "\t-Book:Tiger in the Office__________________________: NO\n");
-        //These books are currently not sold in the book store
-        //File.AppendAllText(path, "\t-Book:Entrepreneurship___________________________: NO\n");
+        //books not listed in book store (found in Bookstore.cs BS_Items)
         //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
         //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
         File.AppendAllText(path, "\n");
