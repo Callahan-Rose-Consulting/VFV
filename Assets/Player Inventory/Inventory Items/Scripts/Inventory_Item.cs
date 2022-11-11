@@ -20,6 +20,8 @@ public class Inventory_Item : ScriptableObject
     public string details = "";
 
     public int Dialogue_Progress;
+    //public string[] bookDialogue;
+    //public int book_progress;
 
     //Pre: None
     //Post: Simply just sends out a debug log notifying that the item was used. Should be overridden on children scripts for actual functionality
