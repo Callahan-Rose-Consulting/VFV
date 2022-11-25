@@ -987,6 +987,7 @@ public class TalkToNPC : MonoBehaviour
 
                     default:
                         SkillIncreaseGenericDialogue(gameManager.CritThinking);
+                        UpdatePlayerResults("Final Critical Thinking", playerFileName);
                         break;
                 }
             }
