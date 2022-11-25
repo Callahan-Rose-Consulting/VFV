@@ -1119,14 +1119,6 @@ public class Bookstore : MonoBehaviour
             new BookStoreItem ("Principles of Engineering",                       50f, "SE",          "Book_3", "", "",BookStoreItem.Crit),
             new BookStoreItem ("I Inc Career Planning",                           50f, "IT~HR~SE",    "Book_1", "Teaches students how to market themselves effectively in today's competitive professional environment.", "",BookStoreItem.Prof),
             new BookStoreItem ("Tiger in the Office",                             50f, "IT~HR~SE",    "Book_3",  "Using lessons developed by entrepreneurs, you will learn how to pursue your next career steps, rediscover buried career goals and learn to take action toward those goals.", "",BookStoreItem.Prof)
-            //Don Murphy
-           //#INCREASE#*Lead*
-           //#INCREASE#*Team*
-           //#INCREASE#*Tech*
-           //#INCREASE#*Prof*
-           //#INCREASE#*Com*
-           //#INCREASE#*Crit* my message here.
-    
     };
 }
 

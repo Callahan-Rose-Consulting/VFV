@@ -945,7 +945,8 @@ public class TalkToNPC : MonoBehaviour
 
                     case "*Team*":
                         SkillIncreaseGenericDialogue(gameManager.Teamwork);
-
+                        //change by Don Murphy
+                        UpdatePlayerResults("Final Teamwork", playerFileName);
                         break;
 
                     case "*Tech*":
