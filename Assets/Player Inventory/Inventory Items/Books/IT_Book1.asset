@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0316c6ecc9225d543bb34e211ed9bcd6, type: 3}
   m_Name: IT_Book1
   m_EditorClassIdentifier: 
-  name: CompTia A+ Certification Prep Questions
+  name: CompTia A plus Certification Prep Questions
   value: 50
   icon: {fileID: 21300000, guid: 6c69a6c29eaca234dae0259514ed66c4, type: 3}
   isDefaultItem: 0
@@ -22,3 +22,5 @@ MonoBehaviour:
   - Item used
   - Item used
   details: 
+  Dialogue_Progress: 0
+  isRead: 0

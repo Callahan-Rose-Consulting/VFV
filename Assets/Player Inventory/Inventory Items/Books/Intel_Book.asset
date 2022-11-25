@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0316c6ecc9225d543bb34e211ed9bcd6, type: 3}
   m_Name: Intel_Book
   m_EditorClassIdentifier: 
-  name: Intel_Book
+  name: Intel Book
   value: 50
   icon: {fileID: 21300000, guid: 2b66ac095f03f054cb7d50e13f8c8d43, type: 3}
   isDefaultItem: 0
@@ -22,3 +22,5 @@ MonoBehaviour:
   - Item used
   - Item used
   details: 
+  Dialogue_Progress: 0
+  isRead: 0

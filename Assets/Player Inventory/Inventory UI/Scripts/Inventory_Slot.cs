@@ -84,7 +84,7 @@ public class Inventory_Slot : MonoBehaviour
                     item.Use();
 
                     item.Dialogue_Progress = item.Use_Dialogue.Length - 1;
-
+                    TalkToNPC.UpdatePlayerResults(item.name, TalkToNPC.playerFileName);
                     
                     // Add book to education list
                     AddToExperienceList(Resume.ResumeExperiences3, item.name);

@@ -66,65 +66,84 @@ public class TalkToNPC : MonoBehaviour
         using (FileStream fs = File.Create(path)) { };
         string VFV = "";
         playerFileName = path;
-        File.AppendAllText(path, "#-----------------------------------------#\n");
-        File.AppendAllText(path, "|Thank you for playing!                   |\n");
-        File.AppendAllText(path, "|Send this file to mike@callahanrose.com  |\n");
-        File.AppendAllText(path, "|to gain access to biginterview.com.      |\n");
-        File.AppendAllText(path, "#-----------------------------------------#\n");
+        File.AppendAllText(path, "#----------------------------------------------------------#\n");
+        File.AppendAllText(path, "|Thank you for playing!                                    |\n");
+        File.AppendAllText(path, "|Veterans gain free access to biginterview.com.            |\n");
+        File.AppendAllText(path, "|Send this file to mike@callahanrose.com for access        |\n");
+        File.AppendAllText(path, "|Linkedin Group: https://www.linkedin.com/groups/14140078/ |\n");
+        File.AppendAllText(path, "#----------------------------------------------------------#\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "---------------Performace Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
         File.AppendAllText(path, "Branch of Service: " + Resume.TourBranch + '\n');
         File.AppendAllText(path, "*Initial Self Assessment:\n");
-        File.AppendAllText(path, "\t-Initial Leadership_____________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
-        File.AppendAllText(path, "\t-Initial Teamwork_______________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
-        File.AppendAllText(path, "\t-Initial Technology_____________________:" + Questionnaire.PrintStartingStat("technology") + "\n");
-        File.AppendAllText(path, "\t-Initial Professionalism________________:" + Questionnaire.PrintStartingStat("professionalism") + "\n");
-        File.AppendAllText(path, "\t-Initial Communication__________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
-        File.AppendAllText(path, "\t-Initial Critical Thinking______________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
+        File.AppendAllText(path, "\t-Initial Leadership________________________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
+        File.AppendAllText(path, "\t-Initial Teamwork__________________________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
+        File.AppendAllText(path, "\t-Initial Technology________________________________:" + Questionnaire.PrintStartingStat("technology") + "\n");
+        File.AppendAllText(path, "\t-Initial Professionalism___________________________:" + Questionnaire.PrintStartingStat("professionalism") + "\n");
+        File.AppendAllText(path, "\t-Initial Communication_____________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
+        File.AppendAllText(path, "\t-Initial Critical Thinking_________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Final Self Assesment:\n");
-        File.AppendAllText(path, "\t-Final Leadership_______________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
-        File.AppendAllText(path, "\t-Final Teamwork_________________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
-        File.AppendAllText(path, "\t-Final Technology_______________________:" + Questionnaire.PrintStartingStat("technology") + "\n");
-        File.AppendAllText(path, "\t-Final Professionalism__________________:" + Questionnaire.PrintStartingStat("professionalism") + "\n");
-        File.AppendAllText(path, "\t-Final Communication____________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
-        File.AppendAllText(path, "\t-Final Critical Thinking________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
+        File.AppendAllText(path, "\t-Final Leadership__________________________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
+        File.AppendAllText(path, "\t-Final Teamwork____________________________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
+        File.AppendAllText(path, "\t-Final Technology__________________________________:" + Questionnaire.PrintStartingStat("technology") + "\n");
+        File.AppendAllText(path, "\t-Final Professionalism_____________________________:" + Questionnaire.PrintStartingStat("professionalism") + "\n");
+        File.AppendAllText(path, "\t-Final Communication_______________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
+        File.AppendAllText(path, "\t-Final Critical Thinking___________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Chosen Career Field\n");
         File.AppendAllText(path, "[No Career Fair Choice]\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Videos Watched:\n");
-        File.AppendAllText(path, "\t-Video:Interview Prep___________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Personal Branding________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Star_____________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Survive Adapt and Flourish_______: NO\n");
-        File.AppendAllText(path, "\t-Video:Sweet Spot_______________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Value____________________________: NO\n");
+        File.AppendAllText(path, "\t-Video:Interview Prep______________________________: NO\n");
+        File.AppendAllText(path, "\t-Video:Personal Branding___________________________: NO\n");
+        File.AppendAllText(path, "\t-Video:Star________________________________________: NO\n");
+        File.AppendAllText(path, "\t-Video:Survive Adapt and Flourish__________________: NO\n");
+        File.AppendAllText(path, "\t-Video:Sweet Spot__________________________________: NO\n");
+        File.AppendAllText(path, "\t-Video:Value_______________________________________: NO\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Informational Books Read:\n");
-        File.AppendAllText(path, "\t-Book:1_________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:2_________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:3_________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:4_________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:5_________________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:What to Say and How to Say It!_______________: NO\n");
+        File.AppendAllText(path, "\t-Book:Brain Teasers________________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Team Synergy_________________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Hiring Manager's Guide to Everything_________: NO\n");
+        File.AppendAllText(path, "\t-Book:Principles of Management_____________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Employment Laws______________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:CompTia A plus Certification Prep Questions__: NO\n");
+        File.AppendAllText(path, "\t-Book:Intro to Hardware____________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Troubleshooting 101__________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Guide to Networking__________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:How to Be a Better Leader____________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Into to Python_______________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Software Engineering Principles______________: NO\n");
+        File.AppendAllText(path, "\t-Book:Debugging 101________________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Game Design__________________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Working in a Team____________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Microswift Office for Dummies________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Principles of Engineering____________________: NO\n");
+        File.AppendAllText(path, "\t-Book:I Inc Career Planning________________________: NO\n");
+        File.AppendAllText(path, "\t-Book:Tiger in the Office__________________________: NO\n");
+        //books not listed in book store (found in Bookstore.cs BS_Items)
+        //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
+        //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Interview Performance:\n");
-        File.AppendAllText(path, "\t-STAR___________________________________:NO\n");
-        File.AppendAllText(path, "\t-STAR:Question 1________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 2________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 3________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 4________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 5________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Progress Bar_________________[******    ]\n");
+        File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
+        File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
+        File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
+        File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
+        File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
+        File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
+        File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "    -VALUE________________________________:NO\n");
-        File.AppendAllText(path, "\t-VALUE:Question 1_____________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 2_____________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 3_____________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 4_____________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 5_____________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Progress Bar__________________[**********]\n");
+        File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
+        File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
+        File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
+        File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
+        File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
+        File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
+        File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
         File.AppendAllText(path, "\n");
 
         File.AppendAllText(path, "--------------Comments---------------\n");
@@ -154,20 +173,20 @@ public class TalkToNPC : MonoBehaviour
     {
         string playerFileName = FileToUpdate;
 
-        var lines = File.ReadAllLines(playerFileName); //read file into lines var
+        var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int i = -1;
 
-        foreach (string s in lines) //iterate though all strings in file
+        foreach (string line in allLines) //iterate though all strings in file
         {
             i++;
 
             //Final Self Assesment
-            if (s.Contains("Final"))
+            if (line.Contains("Final"))
             {
                 string finalStatRegex = @"^\s+-" + resultName + @"_*:\s*\d*\s?$"; //Match for Final Stats section
 
-                Match matchFinalStat = Regex.Match(s, finalStatRegex); //UPDATE for multiple matches
-                Match matchNum = Regex.Match(lines[i], @"\d+"); //Match num in string
+                Match matchFinalStat = Regex.Match(line, finalStatRegex); //UPDATE for multiple matches
+                Match matchNum = Regex.Match(allLines[i], @"\d+"); //Match num in string
 
                 if (matchFinalStat.Success && matchNum.Success) //string match from file
                 {
@@ -175,38 +194,51 @@ public class TalkToNPC : MonoBehaviour
                     {
                         val++; //increase leadership value by 1
 
-                        lines[i] = Regex.Replace(matchFinalStat.ToString(), matchNum.ToString(), val.ToString()); //(input, pattern, replacement)  (original string, found num, updated num)
+                        allLines[i] = Regex.Replace(matchFinalStat.ToString(), matchNum.ToString(), val.ToString()); //(input, pattern, replacement)  (original string, found num, updated num)
                     }
                 }
             }
 
             //Videos Watched
-            else if (s.Contains("Video"))
+            else if (line.Contains("Video"))
             {
-                string InterviewRegex = @"\s*-[a-zA-Z]+:" + resultName + "_+: NO";
-
-                Match matchVideo = Regex.Match(s, InterviewRegex);
-                Match matchAnswerNO = Regex.Match(s, "NO");
+                //string InterviewRegex = @"\s*-[a-zA-Z]+:" + resultName + "+_+:\\s*NO";
+                string InterviewRegex = @"\s*-Video:" + resultName + "+_+:\\s*NO";
+                Match matchVideo = Regex.Match(line, InterviewRegex);
+                Match matchAnswerNO = Regex.Match(line, "NO");
                 if (matchVideo.Success && matchAnswerNO.Success)
                 {
-                    lines[i] = Regex.Replace(matchVideo.ToString(), matchAnswerNO.ToString(), "YES");
-
+                    allLines[i] = Regex.Replace(matchVideo.ToString(), matchAnswerNO.ToString(), "YES");
                 }
             }
             //Informational Books Read
-            else if (s.Contains("Book"))
+            else if (line.Contains("Book"))
             {
+                //previously tried regex kept for making/editing template
+                // s*-Book:([A-Za-z0-9 !',+.]+)++.+
+                //s*-Book:Team Synergy+_+:\s*NO
+                //s*-Book:([CompTia A+ Certification Prep Questions])+:\s*NO
+                string BookRegex = "\\s*" + @"-Book:" + resultName + "+.+";
+
+                Match matchBook = Regex.Match(line, BookRegex);
+                Match matchAnswerNO = Regex.Match(line, "NO");
+
+                if (matchBook.Success && matchAnswerNO.Success)
+                {
+                    allLines[i] = Regex.Replace(matchBook.ToString(), matchAnswerNO.ToString(), "YES");
+                }
+               
             }
             // Interview Performance STAR
-            else if (s.Contains("STAR"))
+            else if (line.Contains("STAR"))
             {
             }
             // Interview Performance VALUE
-            else if (s.Contains("VALUE"))
+            else if (line.Contains("VALUE"))
             {
             }
         }
-        File.WriteAllLines(playerFileName, lines); //rewerite file with update
+        File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
 
@@ -913,7 +945,8 @@ public class TalkToNPC : MonoBehaviour
 
                     case "*Team*":
                         SkillIncreaseGenericDialogue(gameManager.Teamwork);
-
+                        //change by Don Murphy
+                        UpdatePlayerResults("Final Teamwork", playerFileName);
                         break;
 
                     case "*Tech*":
@@ -936,6 +969,8 @@ public class TalkToNPC : MonoBehaviour
 
                     case "*Crit*":
                         SkillIncreaseGenericDialogue(gameManager.CritThinking);
+                        //change by Don Murphy
+                        UpdatePlayerResults("Final Critical Thinking", playerFileName);
                         break;
 
                     case "*Hr*":
@@ -952,7 +987,6 @@ public class TalkToNPC : MonoBehaviour
 
                     default:
                         SkillIncreaseGenericDialogue(gameManager.CritThinking);
-                        //change by Don Murphy
                         UpdatePlayerResults("Final Critical Thinking", playerFileName);
                         break;
                 }
