@@ -79,6 +79,7 @@ public class Bookstore : MonoBehaviour
     public ScrollRect ToBePurchasedScrollView;
     public ScrollRect ToBeSoldScrollView;
     private bool bHelpVisible = false;
+ 
 
 
     void Start()
@@ -1097,26 +1098,27 @@ public class Bookstore : MonoBehaviour
     //Resources.Load<Sprite>("Assets/Sprites/Items/Book_1")
     public static BookStoreItem[] BS_Items =
     {
-            new BookStoreItem ("What to Say and How to Say It!",                  50f, "SK",          "Book_1", "Communication Book to improve skill", "Dialog","No stat increase"),
-            new BookStoreItem ("Brain Teasers",                                   50f, "SK",          "Book_3", "Critical Thinking Book to improve Skill", "", "#INCREASE#*Crit* +1 to Critical thinking!"),
-            new BookStoreItem ("Team Synergy",                                    20f, "HR",          "Book_1", "How to create Tem Synergy while working with your employees, and  with their unique life experiences, perspectives, talents, and communication styles.", "","No stat increase"),
-            new BookStoreItem ("Hiring Manager's Guide to Everything",            80f, "HR",          "Book_3", "This book covers a basic overview of the kinds of things that a Hiring Manager would need to know, such as conducting job analysis, planning a recruiting strategy, prescreening candidates, and asking the right questions.", "","No stat increase"),
-            new BookStoreItem ("Principles of Management",                        60f, "IT~HR~SE",    "Book_1", "A guide to Fayol's Principles of Management. It talks about concepts such as the 14 Principles of Management and the 5 Functions of Management: planning, organizing, staffing, leading, and controlling.", "","No stat increase"),
-            new BookStoreItem ("Employment Laws",                                 40f, "HR",          "Book_3", "Discusses previous and current employment laws, including in-depth discussions of The Fair Labor Standards Act, Occupational Safety and Health (OSHA) Laws, Worker's Compensation, and other benefits.", "","No stat increase"),
-            new BookStoreItem ("CompTia A plus Certification Prep Questions",     80f, "IT~SE",       "Book_1", "An in-depth guide to the A+ Certification exams, with troubleshooting steps and previous exam examples.", "","No stat increase"),
-            new BookStoreItem ("Intro to Hardware",                               40f, "IT",          "Book_3", "An overview of the hardware components in a typical consumer computer, including troubleshooting and installation guides. ", "","No stat increase"),
-            new BookStoreItem ("Troubleshooting 101",                             20f, "IT",          "Book_1", "How to troubleshoot anything! Mostly applies to computers and other electronics, but also teaches you troubleshooting as a way of problem solving.", "","No stat increase"),
-            new BookStoreItem ("Guide to Networking",                             60f, "IT",          "Book_3", "This book covers the basics of networking, such as types of networks, wiring techniques, and networking devices.", "","No stat increase"),
-            new BookStoreItem ("How to Be a Better Leader",                       50f, "SK",          "Book_1", "Professionalism Book to improve skill", "","No stat increase"),
-            new BookStoreItem ("Into to Python",                                  20f, "SE",          "Book_3", "A basic overview of the Python programming language, with Pi-specific projects as well as programming basics to get you programming fast!", "","No stat increase"),
-            new BookStoreItem ("Software Engineering Principles",                 60f, "SE",          "Book_1", "Covers the most essential basics of Software Engineering, including project management, determining measurables, reducing costs, and much more!", "","No stat increase"),
-            new BookStoreItem ("Debugging 101",                                   40f, "SE",          "Book_3", "A brief guide to stepping through your code. Covers the features of most built-in debuggers for many different programming environments!", "","No stat increase"),
-            new BookStoreItem ("Game Design",                                     80f, "SE",          "Book_1", "A great introductory book on the concepts of game design, including planning, level design, finding a team, and much more!", "","No stat increase"),
-            new BookStoreItem ("Working in a Team",                               50f, "SK",          "Book_3", "Teamwork Book to improve skill", "","No stat increase"),
-            new BookStoreItem ("Microswift Office for Dummies",                   50f, "SK",          "Book_1", "Technology Book to improve skill", "","No stat increase"),
-            new BookStoreItem ("Principles of Engineering",                       50f, "SE",          "Book_3", "", "","No stat increase"),
-            new BookStoreItem ("I Inc Career Planning",                           50f, "IT~HR~SE",    "Book_1", "Teaches students how to market themselves effectively in today's competitive professional environment.", "","No stat increase"),
-            new BookStoreItem ("Tiger in the Office",                             50f, "IT~HR~SE",    "Book_3",  "Using lessons developed by entrepreneurs, you will learn how to pursue your next career steps, rediscover buried career goals and learn to take action toward those goals.", "","No stat increase")
+        
+            new BookStoreItem ("What to Say and How to Say It!",                  50f, "SK",          "Book_1", "Communication Book to improve skill", "Dialog", BookStoreItem.Com),
+            new BookStoreItem ("Brain Teasers",                                   50f, "SK",          "Book_3", "Critical Thinking Book to improve Skill", "", BookStoreItem.Crit),
+            new BookStoreItem ("Team Synergy",                                    20f, "HR",          "Book_1", "How to create Team Synergy while working with your employees, and  with their unique life experiences, perspectives, talents, and communication styles.", "",BookStoreItem.Team),
+            new BookStoreItem ("Hiring Manager's Guide to Everything",            80f, "HR",          "Book_3", "This book covers a basic overview of the kinds of things that a Hiring Manager would need to know, such as conducting job analysis, planning a recruiting strategy, prescreening candidates, and asking the right questions.", "",BookStoreItem.Lead),
+            new BookStoreItem ("Principles of Management",                        60f, "IT~HR~SE",    "Book_1", "A guide to Fayol's Principles of Management. It talks about concepts such as the 14 Principles of Management and the 5 Functions of Management: planning, organizing, staffing, leading, and controlling.", "",BookStoreItem.Lead),
+            new BookStoreItem ("Employment Laws",                                 40f, "HR",          "Book_3", "Discusses previous and current employment laws, including in-depth discussions of The Fair Labor Standards Act, Occupational Safety and Health (OSHA) Laws, Worker's Compensation, and other benefits.", "",BookStoreItem.Prof),
+            new BookStoreItem ("CompTia A plus Certification Prep Questions",     80f, "IT~SE",       "Book_1", "An in-depth guide to the A+ Certification exams, with troubleshooting steps and previous exam examples.", "",BookStoreItem.Tech),
+            new BookStoreItem ("Intro to Hardware",                               40f, "IT",          "Book_3", "An overview of the hardware components in a typical consumer computer, including troubleshooting and installation guides. ", "",BookStoreItem.Tech),
+            new BookStoreItem ("Troubleshooting 101",                             20f, "IT",          "Book_1", "How to troubleshoot anything! Mostly applies to computers and other electronics, but also teaches you troubleshooting as a way of problem solving.", "",BookStoreItem.Tech),
+            new BookStoreItem ("Guide to Networking",                             60f, "IT",          "Book_3", "This book covers the basics of networking, such as types of networks, wiring techniques, and networking devices.", "",BookStoreItem.Tech),
+            new BookStoreItem ("How to Be a Better Leader",                       50f, "SK",          "Book_1", "Professionalism Book to improve skill", "",BookStoreItem.Prof),
+            new BookStoreItem ("Into to Python",                                  20f, "SE",          "Book_3", "A basic overview of the Python programming language, with Pi-specific projects as well as programming basics to get you programming fast!", "",BookStoreItem.Tech),
+            new BookStoreItem ("Software Engineering Principles",                 60f, "SE",          "Book_1", "Covers the most essential basics of Software Engineering, including project management, determining measurables, reducing costs, and much more!", "", BookStoreItem.Lead),
+            new BookStoreItem ("Debugging 101",                                   40f, "SE",          "Book_3", "A brief guide to stepping through your code. Covers the features of most built-in debuggers for many different programming environments!", "", BookStoreItem.Tech),
+            new BookStoreItem ("Game Design",                                     80f, "SE",          "Book_1", "A great introductory book on the concepts of game design, including planning, level design, finding a team, and much more!", "",BookStoreItem.Tech),
+            new BookStoreItem ("Working in a Team",                               50f, "SK",          "Book_3", "Teamwork Book to improve skill", "", BookStoreItem.Team),
+            new BookStoreItem ("Microswift Office for Dummies",                   50f, "SK",          "Book_1", "Technology Book to improve skill", "",BookStoreItem.Tech),
+            new BookStoreItem ("Principles of Engineering",                       50f, "SE",          "Book_3", "", "",BookStoreItem.Crit),
+            new BookStoreItem ("I Inc Career Planning",                           50f, "IT~HR~SE",    "Book_1", "Teaches students how to market themselves effectively in today's competitive professional environment.", "",BookStoreItem.Prof),
+            new BookStoreItem ("Tiger in the Office",                             50f, "IT~HR~SE",    "Book_3",  "Using lessons developed by entrepreneurs, you will learn how to pursue your next career steps, rediscover buried career goals and learn to take action toward those goals.", "",BookStoreItem.Prof)
             //Don Murphy
            //#INCREASE#*Lead*
            //#INCREASE#*Team*
@@ -1141,6 +1143,13 @@ public class BookStoreItem
     public string Dialog;
     public string book;
     public string bookStoreStats; //added by Don Murphy
+    public static readonly string Lead = "#INCREASE#*Lead* +1 to Leadership!";
+    public static readonly string Team = "#INCREASE#*Team* +1 to Teamwork!";
+    public static readonly string Tech = "#INCREASE#*Tech* +1 to Technology!";
+    public static readonly string Prof = "#INCREASE#*Prof* +1 to Professionalism!";
+    public static readonly string Com =  "#INCREASE#*Com* +1 to Communication!";
+    public static readonly string Crit = "#INCREASE#*Crit* +1 to Critical Thinking!";
+    //end
 
     public BookStoreItem(string p_oTitle, float p_fCost, string p_oFlags, string p_oBook, string p_oDescription, string p_oDialog, string upBookStats)
     {
