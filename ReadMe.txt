@@ -2,8 +2,9 @@ Hello,
 On behalf of everyone who has worked on this game, thank-you
 for taking the time to play it.
 
-There is a shortcut to help you navagate playing the game:
-"I Incorporated.exe - Shortcut" is what you click on to play the game
+To start the game:
+Go inside "Game Data". 
+"I Incorporated.exe" is what you click on to play the game
 
 To obtain player results:
 Go inside "Game Data". 
