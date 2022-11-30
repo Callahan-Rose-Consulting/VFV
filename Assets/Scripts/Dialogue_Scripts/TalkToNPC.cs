@@ -227,15 +227,35 @@ public class TalkToNPC : MonoBehaviour
                 {
                     allLines[i] = Regex.Replace(matchBook.ToString(), matchAnswerNO.ToString(), "YES");
                 }
-               
+
             }
             // Interview Performance STAR
             else if (line.Contains("STAR"))
             {
+                // [^\n\r]*-STAR:Question 1_*:s*0%
+                string STARRegex = "[^\n\r]*-" + resultName + "_*:s*0%";
+
+                Match matchSTAR = Regex.Match(line, STARRegex);
+                Match matchAnswerZero = Regex.Match(line, "0");
+                if (matchSTAR.Success && matchAnswerZero.Success)
+                {
+                    allLines[i] = Regex.Replace(matchSTAR.ToString(), matchAnswerZero.ToString(), "30");
+                }
             }
             // Interview Performance VALUE
             else if (line.Contains("VALUE"))
             {
+                // s * -VALUE:Question 1 + _ +:\s * 0
+                string VALUERegex = "[^\n\r]*-" + resultName + "_*:s*0%";
+
+                Match matchVALUE = Regex.Match(line, VALUERegex);
+                Match matchAnswerZero = Regex.Match(line, "0");
+
+                if (matchVALUE.Success && matchAnswerZero.Success)
+                {
+                    allLines[i] = Regex.Replace(matchVALUE.ToString(), matchAnswerZero.ToString(), "20");
+                }
+
             }
         }
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
