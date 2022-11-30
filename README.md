@@ -2,6 +2,7 @@
 
 ## Introduction:
  This is a game developed with Unity, which uses C#. The purpose of this game is to be used as a teaching tool. Players explore different career paths and learn how to better prepare for interviews. Although this game is designed with the assumption that the player is a US armed forces veteran, its not restricted for veteran use only. Anyone can use this tool to improve their interviewing skills. This tool is an ongoing senior design project developed by college students for a non-profit organization.
+ 
 ![](https://shop.akpsi.org/v/vspfiles/photos/P-130-2T.jpg)
 
 ### Design Team Information:
