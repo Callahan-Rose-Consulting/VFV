@@ -229,7 +229,18 @@ public class TalkToNPC : MonoBehaviour
                 }
 
             }
-            // Interview Performance STAR
+            //Interview Performance STAR
+            /* 
+            found in scence "DialogueTest" when Tiffany appears
+            list of questions:
+            element[16] #QUESTION# 0 
+            element[17] #QUESTION# 1 
+            element[18] #QUESTION# 2 
+            element[19] #QUESTION# 3 
+            element[20] #QUESTION# 4 
+            element[21] #QUESTION# 5 
+            element[22] #QUESTION# 6 
+            */
             else if (line.Contains("STAR"))
             {
                 // [^\n\r]*-STAR:Question 1_*:s*0%
@@ -259,6 +270,26 @@ public class TalkToNPC : MonoBehaviour
             }
         }
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
+    }
+
+    //created by Don Murphy
+    /*This function is called when a message contains #QUESTION#
+    During the first interveiw Tiffany asks STAR and VALUE questions
+    This function determines the STAR and VALUE meter gains
+    Those gains determine what to update in the Player Results File for STAR and VALUE
+    */
+    void STARandVALUEmeterGain()
+    {
+        float meterGain = 0;
+        if(Interview_Questions.instance.question_index == 2)
+        {
+            meterGain = Interview_Questions.instance.meterValue;
+
+
+        }
+
+        
+
     }
 
 
@@ -787,6 +818,8 @@ public class TalkToNPC : MonoBehaviour
                     if (i == 0)
                     {
                         Interview_Questions.instance.load_question(Int16.Parse(splitStr[i]));
+                        //updated by Don Murphy
+                        STARandVALUEmeterGain();
                     }
                 }
             }

@@ -73,6 +73,9 @@ public class Interview_Questions : MonoBehaviour
 
     public string job_title = "GENERIC JOB TITLE";
 
+    //Created by Don Murphy
+    public float meterValue;
+
     //Pre: None
     //Post: Initializes instance and and talkToNPC variable, initializes the slots for the UI and such
     void Start()
@@ -416,6 +419,8 @@ public class Interview_Questions : MonoBehaviour
         if (influence_Meter != null && talkToNPC.messageDone)
         {
             bool max_influence = influence_Meter.increment_meter(value);
+
+            meterValue = value;
         }
     }
 
