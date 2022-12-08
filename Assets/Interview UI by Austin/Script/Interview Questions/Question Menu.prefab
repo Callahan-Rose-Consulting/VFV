@@ -872,60 +872,6 @@ MonoBehaviour:
         values outside of the work place. Usually this type of question is asked at
         a place with a strong emphasis on teamwork and togetherness. Remember to answer
         with the S.T.A.R. method.)"
-  - question: Do you want to negotiate your salary?
-    answers:
-    - entry: Yes, I would like to negotiate my offer.
-      meter_gain: 0
-      Reaction:
-      - (This is a good example if you think you deserve more pay than the offer that
-        was given to you.)
-    - entry: No, I am happy with my offer
-      meter_gain: 0
-      Reaction:
-      - (this is a good choice if you feel liek you deserve the pay that was offered
-        to you.)
-  - question: Why do you want to negotiatie for a higher pay rate?
-    answers:
-    - entry: I think i deseve a higher pay rate
-      meter_gain: 0.1
-      Reaction:
-      - 'It is a good thing you didn''t bring up wanting/needing a higher salary.
-        Employers will only improve your current offer if you deserve it. '
-    - entry: I think i need the higher pay because i have a baby on the way so i need
-        the extra pay to be able to provide for my family and for the baby when he
-        arrives.
-      meter_gain: 0
-      Reaction:
-      - 'Unfortunately, needing something isn''t enough either. The employer is not
-        responsible for trying to compensate any personal struggles you may be going
-        through. '
-      - 'Think about why you deserve a higher salary in your next interviews. These
-        can include things like previous experience, a unique project/quality you
-        have, etc. '
-    - entry: I've been working on my car since i bought it and I found these very
-        nice rims that are on sale that I want to buy so I need the extra money so
-        I can get them.
-      meter_gain: -0.1
-      Reaction:
-      - 'Wanting something isn''t enough of a reason for you to deserve a higher salary.
-        For now, you will be given your original offer. Think about why you deserve
-        a higher salary in your next interviews. '
-      - 'These can include things like previous experience, a unique project/quality
-        you have, etc. '
-  - question: Why do you think you deserve a higher salary?
-    answers:
-    - entry: because i have a family member who own a restaurant so i know the daily
-        operations.
-      meter_gain: 0.1
-      Reaction:
-      - That's a very strong reason for wanting a higher pay. Although you don't have
-        direct experience, you have some knowledge of day to day operations.
-    - entry: because i own several pizza places so i know the backend of the job requirment.
-      meter_gain: -0.1
-      Reaction:
-      - It looks like you don't have previous experience. Never lie in a job interview
-        even though the interviewer might not know your background, they will still
-        find out and you will end up getting fired sooner or later.
   question_index: 0
   talkToNPC: {fileID: 0}
   content_object: {fileID: 5237763029910051098}
