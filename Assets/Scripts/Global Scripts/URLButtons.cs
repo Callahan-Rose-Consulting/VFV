@@ -57,6 +57,16 @@ public class URLButtons : MonoBehaviour
 
 
     }
+
+    public void LinkedinPage()
+    {
+        LaunchURL("https://www.linkedin.com/groups/14140078/");
+    }
+
+    public void GitHubPage()
+    {
+        LaunchURL("https://github.com/Callahan-Rose-Consulting/VFV");
+    }
     
     private void LaunchURL(string URL) {
         if (!isNetworkAvailable) {
