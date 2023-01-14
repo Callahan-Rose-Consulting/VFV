@@ -3624,6 +3624,10 @@ MonoBehaviour:
   - Please remember that the interview is about telling your story while showcasing
     your skills and experience that fit the job. In the future, remember to practice
     your responses to questions and to pick accurate examples to talk about.
+  - You'll be starting at $13/ hour.
+  - '#QUESTION# 14 '
+  - '#QUESTION# 15'
+  - '#QUESTION# 16'
   - '#INVOKE_EVENT#*5*#FADE_OUT#That concludes our interview! We''ll communicate later.'
   lose_reaction:
   - 'Thank you for applying for the position @. While your qualifications are very
