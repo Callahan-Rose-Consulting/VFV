@@ -6885,8 +6885,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214821762485510}
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.9999999
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7829,8 +7829,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.7651716
+  m_Value: 1
+  m_Size: 0.7651715
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9350,13 +9350,14 @@ MonoBehaviour:
         experience, a unique project/quality you have, etc.\r\n"
   - question: ' Why do you think you deserve a higher salary? '
     answers:
-    - entry: because I have a family member who own a restaurant, so I know the daily
+    - entry: Because I have a family member who own a restaurant, so I know the daily
         operations.
       meter_gain: 0.2
       Reaction:
       - That's an extraordinarily strong reason for wanting a higher pay. Although
         you don't have direct experience, you have some knowledge of day-to-day operations.
-    - entry: because I own pizza places, so I know the backend of the job requirements.
+        I will raise your salary to $20 an hour!
+    - entry: Because I own pizza places, so I know the backend of the job requirements.
       meter_gain: -0.2
       Reaction:
       - It looks like you don't have previous experience. Never lie in a job interview
