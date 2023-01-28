@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 421070168}
   m_HandleRect: {fileID: 421070167}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6886,7 +6886,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7830,7 +7830,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7651715
+  m_Size: 0.7651716
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9325,7 +9325,8 @@ MonoBehaviour:
         offered to you.)
   - question: Why do you want to negotiate for a higher pay rate?
     answers:
-    - entry: I deserve a higher pay rate
+    - entry: I searched up the salary range for this job and based on that, I believe
+        I DESERVE a pay of $20 an hour.
       meter_gain: 0.1
       Reaction:
       - It is a good thing you didn't bring up wanting/needing a higher salary. Employers
