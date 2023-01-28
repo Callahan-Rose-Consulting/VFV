@@ -26,10 +26,7 @@ public static class Calendar
     public static void IncreaseDay()
     {
 
-       
-        // Increment the day of the week index
-        CurrentDay+= 4; // skip to thursday, MAKE SURE TO CHANGE BACK WHEN SUBMITTING CODE 
-        //CurrentDay++; this is what it should be
+        CurrentDay++; this is what it should be
         
 
 
