@@ -232,6 +232,7 @@ public class TalkToNPC : MonoBehaviour
             // Interview Performance STAR
             else if (line.Contains("STAR"))
             {
+                Debug.Log("TESTING THIS FROM KAREEM");
             }
             // Interview Performance VALUE
             else if (line.Contains("VALUE"))
