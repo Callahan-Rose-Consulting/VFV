@@ -110,10 +110,6 @@ public class Interview_Questions : MonoBehaviour
                 if (i < questions[index].answers.Length)
                 {
 
-                    // Debug.Log("IN INTERVIEW QUESTION POPULATE_ANSWERS, KAREEM"); // remove when pushing to git
-                    // Debug.Log(questions[index].answers[i].entry);
-                    // Debug.Log("FINISHED FROM POPULATE_ANSWERS");
-
                     //Replacing keywords
                     questions[index].answers[i].entry = questions[index].answers[i].entry.Replace("<COMPANY_NAME>", company_name);
 
@@ -245,8 +241,6 @@ public class Interview_Questions : MonoBehaviour
                         if (found)
                         {
                             questions[index].answers[i].entry = questions[index].answers[i].entry.Replace(x.Value, String.Empty);
-                            // Debug.Log("IN FOUND");
-                            // Debug.Log(string.Format("WeaponNum = {0}", questions[index].answers[i].entry));
                             
                             load_answer(items[i], questions[index].answers[i]);
                         }
@@ -266,7 +260,6 @@ public class Interview_Questions : MonoBehaviour
                 }
             }
 
-            Debug.Log("after answer (hopefully)");
         }
     }
 
@@ -365,9 +358,6 @@ public class Interview_Questions : MonoBehaviour
         {
             if (items_index >= 0 && items_index < items.Count) 
             {
-                Debug.Log("IN INTERVIEW QUESTION ADD_ANSWERS, KAREEM"); // remove when pushing to git
-                Debug.Log(answers[i].entry);
-                Debug.Log("FINISHED FROM ADD ANSWERS");
 
                 items[items_index].load_text(talkToNPC.ReplaceKeywords(answers[i].entry));
 
@@ -388,9 +378,7 @@ public class Interview_Questions : MonoBehaviour
     //Post: clears the answers UI
     public void clear_array()
     {
-        Debug.Log("in clear array");
-        Debug.Log(items[0]);
-
+      
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i].gameObject.activeSelf)
@@ -443,8 +431,41 @@ public class Interview_Questions : MonoBehaviour
     {
         if (talkToNPC.messageDone) 
         {
-            // Debug.Log("after answer (hopefully)");
-            // Debug.Log(string.Format("WeaponNum = {0}", Reaction));
+            Debug.Log("after answer (hopefully)");
+
+
+            for (int i = 0; i < Reaction.Length; i++)
+            {
+                Debug.Log(string.Format("Interviewer CPU reaction = {0}", Reaction[i]));
+
+                
+            }
+
+            /*
+             * 
+             * 
+             * KEY WORDS;
+             *  Initial LEADERSHIP
+             *  Initial TEAMWORK
+             *  Initial TECHNOLOGY (WAS NOT USED!!! could not find a good example to use this but i create one where this is used. Or we can add an extra question which uses this like (are you familer
+             *                      with technology incase we need yout to be on call if someone calls off) or something like that)
+             *  Initial PROFESSIONALISM
+             *  Initial COMMUNICATION
+             *  Initial CRITICAL THINKING
+             *  
+             *  T make the workds green <color=green>EXAMPLE</color>
+             
+            star: 
+
+            question 1:
+
+            +5 points: gave an answer showing TEAM PLAYER
+            +5 POINTS: gave answer showing LEADERSHIP 
+            
+
+             */
+
+
             menu_anim.SetTrigger("Close");
 
             increment_meter(meter_gain);
