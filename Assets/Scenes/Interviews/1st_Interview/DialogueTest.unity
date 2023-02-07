@@ -8788,7 +8788,8 @@ MonoBehaviour:
       meter_gain: 0.1
       Reaction:
       - 'This answer is good. It shows your drive to be a team player  and that you
-        have the TEAMWORK skill and shows some research into the company. '
+        have the <color=green>TEAMWORK</color> skill and shows some research into
+        the company. '
       - Remember, for questions like this, the company is expecting you to do some
         research prior to the interview to find out what they value (teamwork, community,
         family, etc.). It would also be good to mention some specific skills you have
@@ -8799,7 +8800,7 @@ MonoBehaviour:
       Reaction:
       - This answer highlights your ambition to work for the company, displays your
         research into the company, and states what you like about the company specifically
-        and are able to work in a TEAMWORK enviroment.
+        and are able to work in a <color=green>TEAMWORK</color> enviroment.
       - Remember, for questions like this, the company is expecting you to do some
         research prior to the interview to find out what they value (teamwork, community,
         family, etc.). This answer also incorporates the skills that you bring to
@@ -8809,10 +8810,10 @@ MonoBehaviour:
         to this position.
       meter_gain: 0.1
       Reaction:
-      - "This answer shows you want to be in a TEAMWORK enviroment and that you have
-        an interest in what the company does. Make sure to phrase your response in
-        a way that sounds genuine. Interviewers will be able to tell if you\u2019re
-        lying or not."
+      - "This answer shows you want to be in a <color=green>TEAMWORK</color> enviroment
+        and that you have an interest in what the company does. Make sure to phrase
+        your response in a way that sounds genuine. Interviewers will be able to tell
+        if you\u2019re lying or not."
       - Also, remember, for questions like this, the company is expecting you to do
         some research prior to the interview to find out what they value (teamwork,
         community, family, etc.).  It would also be good to mention some specific
@@ -8834,17 +8835,18 @@ MonoBehaviour:
         shop down the road."
       meter_gain: 0.05
       Reaction:
-      - This answer is very honest anf PROFESSIONALISM response. When an interviewer
-        asks you this type of question, they are looking for someone who they can
-        expect to work with for a while. By telling them that you plan on becoming
-        a direct competitor to the company, it makes you less likely to be hired.
+      - This answer is very honest and <color=green>PROFESSIONALISM</color> response.
+        When an interviewer asks you this type of question, they are looking for someone
+        who they can expect to work with for a while. By telling them that you plan
+        on becoming a direct competitor to the company, it makes you less likely to
+        be hired.
     - entry: In five years, I want to be a <JOB_TITLE> using the experience I have
         and would learn here to make a positive impact on the company, employees,
         and industry.
       meter_gain: 0.15
       Reaction:
-      - This answer is to the point and shows your ambitions and PROFESSIONALISM for
-        the company. When the hiring manager asks you this type of question, they
+      - This answer is to the point and shows your ambitions and <color=green>PROFESSIONALISM</color>
+        for the company. When the hiring manager asks you this type of question, they
         are looking for someone who will stick around for a long time and show ambitions
         to grow.
     - entry: I want to be able to take on a managerial role of some kind in order
@@ -8853,7 +8855,7 @@ MonoBehaviour:
       Reaction:
       - This answer is short yet effective. It establishes your goal to have a manager
         role, while also emphasizing that you want a career at the company which shows
-        some PROFESSIONALISM skills.
+        some <color=green>PROFESSIONALISM</color> skills.
   - question: Tell me how you handled a difficult situation at work.
     answers:
     - entry: I don't think i've ever been in a situation like that before. Usually
@@ -8864,8 +8866,8 @@ MonoBehaviour:
         share with the interviewer with every question they ask. But in this situation
         it would probably be best to provide the interviewer with an indirectly related
         experience. '
-      - With this, the interviewer may see some qualities like LEADERSHIP in you that
-        could actually be applicable to the position.
+      - With this, the interviewer may see some qualities like <color=green>LEADERSHIP</color>
+        in you that could actually be applicable to the position.
     - entry: I had this one job at a house cleaning company and my group had a task
         of cleaning a bigger hosue one day. There were three of us in my group and
         one person could not make it, so I was able to come help us out. My manager
@@ -8878,8 +8880,8 @@ MonoBehaviour:
         trying to accomplish, the actions you took to accomplish the task, and finally
         what the result was."
       - This is commonly known as the S.T.A.R. method. The interviewer is asking this
-        kind of question to learn how you handle difficult tasks to test your CRITICAL
-        THINKING and what your approach to them is.
+        kind of question to learn how you handle difficult tasks to test your <color=green>CRITICAL
+        THINKING</color> and what your approach to them is.
     - entry: The situation was I got hired for a job with no experience. My task was
         to take orders from customers and I got one customer who was really having
         trouble with their choices.  The action I took was to be patient but also
@@ -8894,7 +8896,8 @@ MonoBehaviour:
         to accomplish the task, and finally what the result was.
       - This is commonly known as the S.T.A.R. method. For this question specifically,
         the interviewer is trying to learn how you handle difficult tasks to test
-        your CRITICAL THINKING and what your approach to them is.
+        your <color=green>CRITICAL THINKING</color> and what your approach to them
+        is.
     - entry: 'At my previous job, the company did a horrible job informing the customers
         of the status of their orders. I had to constantly fix the issues, so I quit. '
       meter_gain: -0.05
@@ -8926,22 +8929,23 @@ MonoBehaviour:
       Reaction:
       - "(This is a great example! By helping Gutsy you took the initiative to improve
         yourself as well as helping out in your community. Even the smallest of tasks
-        can help you improve yourself which shows your have LEADERSHIP\r and TEAMWORK
-        skills, keep it up!)"
+        can help you improve yourself which shows your have <color=green>LEADERSHIP</color>\r
+        and <color=green>TEAMWORK</color> skills, keep it up!)"
     - entry: I really wanted to become a better typer on the computer, so I signed
         up for a typing course online.
       meter_gain: 0.1
       Reaction:
       - (This is a great example! By making pizzas with Stefano you took the initiative
-        to learn a new trait which shows PROFESSIONALISM and will help you out in
-        the long run. At the end of the day, even the smallest of skills can help
-        you improve and learning new skills is always a positive.)
+        to learn a new trait which shows <color=green>PROFESSIONALISM</color> and
+        will help you out in the long run. At the end of the day, even the smallest
+        of skills can help you improve and learning new skills is always a positive.)
     - entry: 'I work so hard that I rarely have time to focus on improving my skills. '
       meter_gain: 0.05
       Reaction:
       - "(This is a great example! By attending Robert\u2019s Seminar you took the
-        initiative to improve yourself and to learn which shows PROFESSIONALISM traits.
-        Learning is always a good thing and can help you keep in the long run.)"
+        initiative to improve yourself and to learn which shows <color=green>PROFESSIONALISM</color>
+        traits. Learning is always a good thing and can help you keep in the long
+        run.)"
   - question: Tell me about a time you went above and beyond to help your community.
     answers:
     - entry: Nothing that I know of at the moment.
@@ -8960,8 +8964,8 @@ MonoBehaviour:
       Reaction:
       - '(This is a good example of helping out in your community. You went above
         and beyond by helping out a neighbor in need and were able to learn from that
-        experience. This shows you have PROFESSIONALISM, COMMUNICATION and TEAMWORK
-        traits. '
+        experience. This shows you have <color=green>PROFESSIONALISM</color>, <color=green>COMMUNICATION</color>
+        and <color=green>TEAMWORK</color> traits. '
       - Remember to answer with the S.T.A.R. method for questions like these. This
         type of question is used for the interviewer to learn some of your personal
         values and how you use your time outside of work. Interviewers asking this
@@ -8993,8 +8997,8 @@ MonoBehaviour:
       - "This answer is honest. It gets the point across and lets the interviewer
         know that you\u2019re willing to take chances to move ahead. It may be good
         to mention any research you did into the company while deciding to apply.
-        This shows commitment to work in a TEAMWORK enviroment using good  COMMUNICATION
-        and also be able to take LEADERSHIP when needed."
+        This shows commitment to work in a TEAMWORK enviroment using good  <color=green>COMMUNICATION</color>
+        and also be able to take <color=green>LEADERSHIP</color> when needed."
       - "Interviewers want to make sure you\u2019re applying because you want to work
         here, not because of the paycheck. This type of question is asked for the
         same reason that questions like: \u201CWhy do you want to work here?\u201D
@@ -9010,8 +9014,8 @@ MonoBehaviour:
         into the company and demonstrates your compatibility with them. Remember,
         questions like this do not need to be overly long. They do need to get the
         point across though without any padding that seems disingenuous. This shows
-        commitment to work in a TEAMWORK enviroment using good  COMMUNICATION and
-        also be able to take LEADERSHIP when needed.
+        commitment to work in a TEAMWORK enviroment using good <color=green>COMMUNICATION</color>
+        and also be able to take <color=green>LEADERSHIP</color> when needed.
       - "This type of question is asked for the same reason that questions like: \u201CWhy
         do you want to work here?\u201D or \u201CWhat do you know about the company?\u201D
         It allows the company to see your purpose and what your aspirations are. This
@@ -9060,10 +9064,11 @@ MonoBehaviour:
       meter_gain: 0.2
       Reaction:
       - This is an excellent example of making a good impression. You went out of
-        your way to learn a new skill which shows good COMMUNICATION, CRITICAL THINKING,
-        and LEADERSHIP skills. It also showed you have the ambition and patience to
-        learn new skills. If an interviewer asks this type of question it is often
-        targeted at customers or important customers.
+        your way to learn a new skill which shows good <color=green>COMMUNICATION</color>,
+        <color=green>CRITICAL THINKING</color>, and <color=green>LEADERSHIP</color>
+        skills. It also showed you have the ambition and patience to learn new skills.
+        If an interviewer asks this type of question it is often targeted at customers
+        or important customers.
       - The interviewer wants to see what tactics you use to make a good impression
         to see if it is in a manner that the company sees as valuable. Make sure to
         answer question like these with STAR approach.
@@ -9074,9 +9079,10 @@ MonoBehaviour:
       meter_gain: 0.2
       Reaction:
       - This is an good example of making a good impression. You had a task to complete
-        to help a neighbor in need and accomplished it. It shows you had good CRITICAL
-        THINKING and COMMUNICATION skills. If an interviewer asks this type of question
-        it is often targeted at customers or important customers.
+        to help a neighbor in need and accomplished it. It shows you had good <color=green>CRITICAL
+        THINKING</color> and <color=green>COMMUNICATION</color> skills. If an interviewer
+        asks this type of question it is often targeted at customers or important
+        customers.
       - The interviewer wants to see what tactics you use to make a good impression
         to see if it is in a manner that the company sees as valuable. But using STAR
         method would have made this answer better.
@@ -9099,9 +9105,9 @@ MonoBehaviour:
       Reaction:
       - When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
-        the company. This shows good LEADERSHIP and PROFESSIONALISM traits. Could
-        also show some CRITICAL THINKING traits since you were in a bad situtation
-        and you were able to overcome it.
+        the company. This shows good <color=green>LEADERSHIP</color> and <color=green>PROFESSIONALISM</color>
+        traits. Could also show some <color=green>CRITICAL THINKING</color> traits
+        since you were in a bad situtation and you were able to overcome it.
       - The task you choose also shows the interviewer what your interests and passions
         you have and lets them learn about your background outside of your resume.
         Remember to apply the STAR method with questions like this.
@@ -9111,7 +9117,8 @@ MonoBehaviour:
       Reaction:
       - When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
-        the company. This shows good LEADERSHIP, TEAMWORK and COMMUNICATION traits.
+        the company. This shows good <color=green>LEADERSHIP</color>, <color=green>TEAMWORK</color>
+        and <color=green>COMMUNICATION</color> traits.
       - The task you choose also shows the interviewer what your interests and passions
         you have and lets them learn about your background outside of your resume.
         Remember to apply the STAR method with questions like this.
@@ -9121,7 +9128,8 @@ MonoBehaviour:
       Reaction:
       - When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
-        the company. This shows good PROFESSIONALISM, TEAMWORK and COMMUNICATION traits.
+        the company. This shows good <color=green>PROFESSIONALISM</color>, <color=green>TEAMWORK</color>
+        and <color=green>COMMUNICATION</color> traits.
       - The task you choose also shows the interviewer what your interests and passions
         you have and lets them learn about your background outside of your resume.
         Remember to apply the STAR method with questions like this.
@@ -9158,8 +9166,8 @@ MonoBehaviour:
 
 
         With this, the interviewer may see some qualities in you that could actually
-        be applicable to the position. This shows you have good COMMUNICATION, PROFESSIONALISM
-        and LEADERSHIP traits.'
+        be applicable to the position. This shows you have good <color=green>COMMUNICATION</color>,
+        <color=green>PROFESSIONALISM</color> and <color=green>LEADERSHIP</color> traits.'
     - entry: 'I would avoid any further conversation and ask him to leave since the
         store is closed. '
       meter_gain: 0
@@ -9211,8 +9219,9 @@ MonoBehaviour:
         an aim of bettering your workstyle.'
       - '
 
-        With this, the interviewer may see some qualities in you like PROFESSIONALISM
-        and COMMUNICATION that could actually be applicable to the position.'
+        With this, the interviewer may see some qualities in you like <color=green>PROFESSIONALISM</color>
+        and <color=green>COMMUNICATION</color> that could actually be applicable to
+        the position.'
   - question: What would you do if you and a co-worker disagreed?
     answers:
     - entry: 'I would go directly to my manager, and ask him to decide who seemed
@@ -9252,8 +9261,9 @@ MonoBehaviour:
         without involving a third party, and look for ways to settle the situation.'
       - '
 
-        With this, the interviewer may see some qualities like LEADERSHIP, COMMUNICATION,
-        and PROFESSIONALISM in you that could actually be applicable to the position.'
+        With this, the interviewer may see some qualities like <color=green>LEADERSHIP</color>,
+        <color=green>COMMUNICATION</color>, and <color=green>PROFESSIONALISM</color>
+        in you that could actually be applicable to the position.'
     - entry: I would end the conversation and leave the room to avoid further discussion.
       meter_gain: 0.05
       Reaction:
@@ -9280,8 +9290,9 @@ MonoBehaviour:
         from your manager, accept the mistake and work on mending it.'
       - '
 
-        With this, the interviewer may see some qualities in like CRITICAL THINKING,
-        COMMUNICATION, and TEAMWORK that could actually be applicable to the position.'
+        With this, the interviewer may see some qualities in like <color=green>CRITICAL
+        THINKING</color>, <color=green>COMMUNICATION</color>, and <color=green>TEAMWORK</color>
+        that could actually be applicable to the position.'
     - entry: "I\u2019d not want anyone to know about it and focus on correcting the
         mistake and putting processes in place to ensure that it does not happen again.\n"
       meter_gain: 0
