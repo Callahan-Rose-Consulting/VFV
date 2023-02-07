@@ -431,15 +431,7 @@ public class Interview_Questions : MonoBehaviour
     {
         if (talkToNPC.messageDone) 
         {
-            Debug.Log("after answer (hopefully)");
-
-
-            for (int i = 0; i < Reaction.Length; i++)
-            {
-                Debug.Log(string.Format("Interviewer CPU reaction = {0}", Reaction[i]));
-
-                
-            }
+            add_answer_to_player_results(Reaction);
 
             /*
              * 
@@ -452,6 +444,9 @@ public class Interview_Questions : MonoBehaviour
              *  Initial PROFESSIONALISM
              *  Initial COMMUNICATION
              *  Initial CRITICAL THINKING
+                STAR -> situation, task, action, result 
+                VALUE -> vision, allignment (unity), understand, enact (put things into action)
+
              *  
              *  T make the workds green <color=green>EXAMPLE</color>
              
@@ -475,6 +470,50 @@ public class Interview_Questions : MonoBehaviour
             talkToNPC.insert_messages(Reaction);
 
             talkToNPC.DecideWhichDialogueToShow();
+        }
+    }
+
+    // pre condition: takes array of strings containing the interviewer reactions
+    // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
+
+    private void add_answer_to_player_results(string[] Reaction) {
+        // for (int i = 0; i < Reaction.Length; i++) {
+        //     Debug.Log(string.Format("Interviewer CPU reaction = {0}", Reaction[i]));
+        // }
+
+        grab_key_word(Reaction);
+
+        // TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
+    }
+
+    private void grab_key_word(string[] Reaction) {
+        HashSet<string> keyWords = new HashSet<string>();
+
+        for (int i = 0; i < Reaction.Length; i++) {
+            if (Reaction[i].Contains("TEAMWORK")) {
+                keyWords.Add("TEAMWORK");
+            }
+
+            if (Reaction[i].Contains("LEADERSHIP")) {
+                keyWords.Add("LEADERSHIP");
+            }
+
+            if (Reaction[i].Contains("PROFESSIONALISM")) {
+                keyWords.Add("PROFESSIONALISM");
+            }
+
+            if (Reaction[i].Contains("COMMUNICATION")) {
+                keyWords.Add("COMMUNICATION");
+            }
+
+            if (Reaction[i].Contains("CRITICAL THINKING")) {
+                keyWords.Add("CRITICAL THINKING");
+            }
+        }
+
+        foreach (string word in keyWords)
+        {
+            Debug.Log(word);
         }
     }
 
