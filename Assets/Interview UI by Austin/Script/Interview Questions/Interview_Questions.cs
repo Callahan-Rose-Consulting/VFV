@@ -487,31 +487,36 @@ public class Interview_Questions : MonoBehaviour
     }
 
     private void grab_key_word(string[] Reaction) {
-        HashSet<string> keyWords = new HashSet<string>();
+        HashSet<string> userWords = new HashSet<string>();
+        var keyWords = new List<string>()
+                    {
+                        "SITUATION",
+                        "ACTION",
+                        "RESULT",
+                        "VISION",
+                        "ALLIGNMENT",
+                        "UNDERSTAND",
+                        "ENACT"                    
+                    };
+
 
         for (int i = 0; i < Reaction.Length; i++) {
-            if (Reaction[i].Contains("TEAMWORK")) {
-                keyWords.Add("TEAMWORK");
-            }
-
-            if (Reaction[i].Contains("LEADERSHIP")) {
-                keyWords.Add("LEADERSHIP");
-            }
-
-            if (Reaction[i].Contains("PROFESSIONALISM")) {
-                keyWords.Add("PROFESSIONALISM");
-            }
-
-            if (Reaction[i].Contains("COMMUNICATION")) {
-                keyWords.Add("COMMUNICATION");
-            }
-
-            if (Reaction[i].Contains("CRITICAL THINKING")) {
-                keyWords.Add("CRITICAL THINKING");
+            for (int j = 0; j < keyWords.Count; j++) {
+                if (Reaction[i].Contains(keyWords[j])) {
+                    userWords.Add(keyWords[j]); // if the reaction contains a key word, add it to userWords
+                }
             }
         }
 
-        foreach (string word in keyWords)
+        /*
+
+        1. add the keywords to the player result file 
+            (figure out how to get specific line of player result file)
+
+        */
+
+        // REMOVE when pushing to dev
+        foreach (string word in userWords)
         {
             Debug.Log(word);
         }

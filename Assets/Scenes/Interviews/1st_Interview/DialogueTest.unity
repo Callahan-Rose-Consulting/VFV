@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153418977}
   m_HandleRect: {fileID: 153418976}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6879,8 +6879,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214821762485510}
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.9999999
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7823,8 +7823,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.76517147
+  m_Value: 0.99999964
+  m_Size: 0.7651716
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8772,7 +8772,7 @@ MonoBehaviour:
   - question: Why do you want to work here?
     answers:
     - entry: "This job aligns with my future plans. It pays well and I need the money,
-        so having this job is perfect for what I\u2019m looking for."
+        so having this job is perfect for what I\u2019m looking for. "
       meter_gain: 0
       Reaction:
       - "This answer is very straight forward. While it may be true, a hiring manager
