@@ -205,8 +205,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -435,8 +435,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bdcdd0a410ddc94b8c0ebf6cb0712e2, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   blackFade: {fileID: 245749622}
   complete_fade_event:
     m_PersistentCalls:
@@ -452,8 +452,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
@@ -533,8 +533,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -612,8 +612,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -629,8 +629,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -730,8 +730,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -804,8 +804,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Content: {fileID: 1976280628}
   m_Horizontal: 0
   m_Vertical: 1
@@ -834,8 +834,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
@@ -907,8 +907,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -982,8 +982,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 0
     m_SelectOnUp: {fileID: 0}
@@ -1030,8 +1030,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1097,8 +1097,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e5ea9e26721f394dbf86c4826092d02, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   Scene_Start_Event:
     m_PersistentCalls:
       m_Calls:
@@ -1110,7 +1110,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &498810407
@@ -1180,8 +1180,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -1197,8 +1197,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -1307,8 +1307,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1467,8 +1467,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -1508,7 +1508,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: -0.5
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &727660999
@@ -1521,8 +1521,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1594,8 +1594,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1702,8 +1702,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -1743,7 +1743,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0.5
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &829320059
@@ -1756,8 +1756,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1835,8 +1835,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 418db5d304f38914a8ac92fc7fa47846, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 5
   normal_transform: {fileID: 1817088072}
   follow_transform: {fileID: 1775588066}
@@ -1860,7 +1860,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -1874,8 +1874,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 945fdea314325824087df64a44446035, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   subfolder1: {fileID: 2993214823301511460}
   subfolder2: {fileID: 2993214822991662246}
   subfolder3: {fileID: 2993214822108191299}
@@ -1915,8 +1915,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1934,8 +1934,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 2993214823330588143}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -2000,8 +2000,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -2079,8 +2079,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -2100,7 +2100,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text:
+  m_Text: 
 --- !u!222 &1257868399
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2119,8 +2119,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bf99d944f1889b44b2cd88cb6526ec3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   dialogue:
     sentenceInput:
     - "*Here is your mock interview! I am going to give you a quick introduction on
@@ -2346,8 +2346,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2465,8 +2465,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2538,8 +2538,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2779,8 +2779,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153418977}
   m_HandleRect: {fileID: 153418976}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2827,8 +2827,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2901,8 +2901,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -3023,8 +3023,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -3082,10 +3082,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73e7d77132e0020448da57ba25ab75ee, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   selected_experience:
-    name:
+    name: 
     personality: 0
     teamwork: 0
     independence: 0
@@ -3220,8 +3220,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   messages:
   - '#MULTI_START#Here is your mock interview! I am going to give you a quick introduction
     on how interviews work in I Inc. Your interviewer will be here shortly, so let''s
@@ -3333,7 +3333,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: -100
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   end_dialogue_event:
@@ -3350,7 +3350,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 269306235810105741}
@@ -3374,7 +3374,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 269306235810105741}
@@ -3398,7 +3398,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 269306235810105741}
@@ -3422,7 +3422,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 269306235810105741}
@@ -3507,7 +3507,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   - m_PersistentCalls:
@@ -3535,20 +3535,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24860d8bb3bec9046ac5d9aa2e424869, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   menu: {fileID: 1000369295}
   talkToNPC: {fileID: 0}
   influence_Meter: {fileID: 978202525}
   current_question:
     question: This is a null question...
     responses:
-    - experience_name:
+    - experience_name: 
       Reaction:
       - How did this happen???
       meter_gain: 0
     default_response:
-      experience_name:
+      experience_name: 
       Reaction:
       - How did this happen???
       meter_gain: 0
@@ -3566,7 +3566,7 @@ MonoBehaviour:
       - not so cool...
       meter_gain: 0.1
     default_response:
-      experience_name:
+      experience_name: 
       Reaction:
       - hmm...
       - default response...
@@ -3584,7 +3584,7 @@ MonoBehaviour:
       - not so cool...
       meter_gain: 0.1
     default_response:
-      experience_name:
+      experience_name: 
       Reaction:
       - hmm...
       - default 2nd response...
@@ -3602,7 +3602,7 @@ MonoBehaviour:
       - not so cool...
       meter_gain: 0.1
     default_response:
-      experience_name:
+      experience_name: 
       Reaction:
       - hmm...
       - default response...
@@ -3670,8 +3670,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4df51e9a6a5b30440b2da42dbf0fbb4f, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   job:
     Company: Pizza Place
     Title: Worker
@@ -3688,8 +3688,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a510ab74ac391d499f848ceebf9fa67, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   category: 0
   name: Pizza Place
   personality: 0
@@ -3705,7 +3705,7 @@ MonoBehaviour:
   science: 0
   technology: 0
   experience:
-    name:
+    name: 
     personality: 0
     teamwork: 0
     independence: 0
@@ -3728,14 +3728,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f6536bad92e30d4d9cc103c64eb1dfa, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   job:
     Company: Pizza Place
     Title: Worker
     Income: 20
-    Supervisor:
-    Schedule:
+    Supervisor: 
+    Schedule: 
   talkToNPC: {fileID: 0}
   succeeded_dialogue: []
   failed_dialogue:
@@ -3793,8 +3793,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -3863,8 +3863,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.38269848, g: 0.8729831, b: 0.9433962, a: 1}
   m_RaycastTarget: 1
@@ -3938,8 +3938,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
 --- !u!114 &1812419137
 MonoBehaviour:
@@ -3951,8 +3951,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -4024,8 +4024,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.28773582, g: 0.35477245, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -4100,8 +4100,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -4117,8 +4117,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -4165,7 +4165,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -4252,8 +4252,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
 --- !u!114 &1976280630
@@ -4266,8 +4266,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 4
     m_Right: 16
@@ -4328,8 +4328,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -4405,8 +4405,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -4508,8 +4508,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -4618,8 +4618,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -4790,8 +4790,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -4823,7 +4823,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -4837,8 +4837,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7019823f2360894da9d99ad99b91259, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   image: {fileID: 0}
   Expression_Index: 0
   Expressions:
@@ -5014,7 +5014,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -5073,8 +5073,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19fbb9d2ad466d94e934037a7249d6df, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   soundtracks:
   - {fileID: 8300000, guid: b6fdf9eb85af68d4f949d22b479ce61b, type: 3}
   - {fileID: 8300000, guid: 79ceff0f852e21a419e52671ee520529, type: 3}
@@ -5335,8 +5335,8 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71d8afc6db54b914e86fb764cb494b43, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   Stats: {fileID: 0}
   runSpeed: 7
   canMove: 0
@@ -5444,8 +5444,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -5573,8 +5573,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -5683,8 +5683,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 3019153300192149877}
@@ -5724,7 +5724,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -5735,7 +5735,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -5746,7 +5746,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -5757,7 +5757,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -5768,7 +5768,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &2859432754522661468
@@ -5949,8 +5949,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -6043,8 +6043,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -6068,8 +6068,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!224 &2993214822068017878
@@ -6122,8 +6122,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -6147,8 +6147,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!114 &2993214822108191296
@@ -6161,8 +6161,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
 --- !u!95 &2993214822108191297
 Animator:
@@ -6179,7 +6179,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -6193,8 +6193,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -6218,8 +6218,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b62f06fa9def90842b90b24d6f61f767, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   experience_item: {fileID: 1273178475026322770, guid: 27dae5a668ed2374ba257dcc6951c1e4,
     type: 3}
   button: {fileID: 2993214823095073348}
@@ -6265,8 +6265,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
@@ -6312,8 +6312,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 1, b: 0.18643212, a: 1}
   m_RaycastTarget: 1
@@ -6376,8 +6376,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -6457,8 +6457,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
@@ -6506,8 +6506,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Content: {fileID: 2993214822068017878}
   m_Horizontal: 0
   m_Vertical: 1
@@ -6558,8 +6558,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
@@ -6598,8 +6598,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -6626,8 +6626,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -6708,8 +6708,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!224 &2993214822682616353
@@ -6743,8 +6743,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -6825,8 +6825,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -6853,8 +6853,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -6886,7 +6886,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6987,8 +6987,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -7015,8 +7015,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
@@ -7040,7 +7040,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -7062,8 +7062,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b62f06fa9def90842b90b24d6f61f767, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   experience_item: {fileID: 1273178475026322770, guid: 27dae5a668ed2374ba257dcc6951c1e4,
     type: 3}
   button: {fileID: 2993214822621686851}
@@ -7086,8 +7086,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
 --- !u!114 &2993214822991662265
 MonoBehaviour:
@@ -7099,8 +7099,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -7124,8 +7124,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -7152,8 +7152,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
 --- !u!222 &2993214823079019347
 CanvasRenderer:
@@ -7252,8 +7252,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -7306,8 +7306,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
@@ -7334,8 +7334,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -7362,8 +7362,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.7837741, b: 0.1462264, a: 1}
   m_RaycastTarget: 1
@@ -7390,8 +7390,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
@@ -7415,7 +7415,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -7437,8 +7437,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b62f06fa9def90842b90b24d6f61f767, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   experience_item: {fileID: 1273178475026322770, guid: 27dae5a668ed2374ba257dcc6951c1e4,
     type: 3}
   button: {fileID: 2993214823330588128}
@@ -7461,8 +7461,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
 --- !u!114 &2993214823301511463
 MonoBehaviour:
@@ -7474,8 +7474,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -7541,8 +7541,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 2
     m_SelectOnUp: {fileID: 0}
@@ -7595,8 +7595,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
@@ -7623,8 +7623,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -7709,8 +7709,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!224 &2993214823501687347
@@ -7744,8 +7744,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -7769,8 +7769,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -7797,8 +7797,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 0
     m_SelectOnUp: {fileID: 0}
@@ -7830,7 +7830,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7651716
+  m_Size: 0.76517147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7892,8 +7892,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 0}
@@ -7933,7 +7933,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -7944,7 +7944,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -7955,7 +7955,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -7966,7 +7966,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
@@ -7977,7 +7977,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &3179731799469326535
@@ -7998,8 +7998,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -8108,8 +8108,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -8416,7 +8416,7 @@ PrefabInstance:
     - target: {fileID: 3876255178623653853, guid: 9b399e514c388304a902536ba36cd657,
         type: 3}
       propertyPath: CalendarText
-      value:
+      value: 
       objectReference: {fileID: 658647688}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b399e514c388304a902536ba36cd657, type: 3}
@@ -8436,8 +8436,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -8531,8 +8531,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -8701,7 +8701,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -8715,8 +8715,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 495c205f00932b74d89beeee7ddd75e7, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   menu_anim: {fileID: 5237763030532372452}
   questions:
   - question: Shake hands with your interviewer?
@@ -8791,11 +8791,10 @@ MonoBehaviour:
         family, etc.) and incorporate that into your response.
     - entry: 'I enjoy the prospect of being in a team environment and working towards
         a common goal. '
-      meter_gain: 0.1
+      meter_gain: 0.05
       Reaction:
-      - 'This answer is good. It shows your drive to be a team player  and that you
-        have the <color=green>TEAMWORK</color> skill and shows some research into
-        the company. '
+      - This answer shows your drive to be a team player and that you understand the
+        value of <color=green>ALLIGNMENT</color>.
       - Remember, for questions like this, the company is expecting you to do some
         research prior to the interview to find out what they value (teamwork, community,
         family, etc.). It would also be good to mention some specific skills you have
@@ -8804,19 +8803,16 @@ MonoBehaviour:
         because it aligns with my personal values. '
       meter_gain: 0.15
       Reaction:
-      - This answer highlights your ambition to work for the company, displays your
-        research into the company, and states what you like about the company specifically
-        and are able to work in a <color=green>TEAMWORK</color> enviroment.
-      - Remember, for questions like this, the company is expecting you to do some
-        research prior to the interview to find out what they value (teamwork, community,
-        family, etc.). This answer also incorporates the skills that you bring to
-        the table while mentioning the values of the company.
+      - This answer highlights your ambition to work for the company, <color=green>ALLIGN</color>
+        with others, displays your research and <color=green>UNDERSTANDING</color>,
+        and states what you like about the company.
+      - Great job in doing prior research about the company!
     - entry: I have been a big fan of the pizzas you make and would love to be a part
         of making them for others to enjoy. I believe my skills would be valuable
         to this position.
       meter_gain: 0.1
       Reaction:
-      - "This answer shows you want to be in a <color=green>TEAMWORK</color> enviroment
+      - "This answer shows you understand the value of <color=green>ALLIGNMENT</color>
         and that you have an interest in what the company does. Make sure to phrase
         your response in a way that sounds genuine. Interviewers will be able to tell
         if you\u2019re lying or not."
@@ -8872,13 +8868,13 @@ MonoBehaviour:
         share with the interviewer with every question they ask. But in this situation
         it would probably be best to provide the interviewer with an indirectly related
         experience. '
-      - With this, the interviewer may see some qualities like <color=green>LEADERSHIP</color>
-        in you that could actually be applicable to the position.
+      - With this, the interviewer may see some qualities like leadership in you that
+        could actually be applicable to the position.
     - entry: I had this one job at a house cleaning company and my group had a task
         of cleaning a bigger hosue one day. There were three of us in my group and
         one person could not make it, so I was able to come help us out. My manager
         found out and got mad at me, so I quit.
-      meter_gain: 0.05
+      meter_gain: -0.05
       Reaction:
       - "This situation can be considered as a difficult situation to some degree.
         It\u2019s not the best option though. Usually when this question is asked,
@@ -8886,24 +8882,20 @@ MonoBehaviour:
         trying to accomplish, the actions you took to accomplish the task, and finally
         what the result was."
       - This is commonly known as the S.T.A.R. method. The interviewer is asking this
-        kind of question to learn how you handle difficult tasks to test your <color=green>CRITICAL
-        THINKING</color> and what your approach to them is.
-    - entry: The situation was I got hired for a job with no experience. My task was
-        to take orders from customers and I got one customer who was really having
-        trouble with their choices.  The action I took was to be patient but also
-        helped them make a decision and as a result, they always look for me when
-        they come into order things.
-      meter_gain: 0.2
+        kind of question to learn how you handle difficult tasks to test your crtical
+        thinking.
+    - entry: Although I haven't had a job in a while, I do have some school experience.
+        One of my group mates didn't spend any time on the project. I decided to speak
+        to the group mate privately and found out the issue. By speaking to them privately,
+        I figured out a new role for them on the team and we got a perfect score!
+      meter_gain: 0.3
       Reaction:
-      - This is a great example of a difficult situation. It was a task where you
-        had to learn how to make pizzas for the first time, which is tricky for newcomers.
-        Usually when this question is asked, the interviewer is looking for what the
-        situation was, what tasks you were trying to accomplish, the actions you took
-        to accomplish the task, and finally what the result was.
-      - This is commonly known as the S.T.A.R. method. For this question specifically,
-        the interviewer is trying to learn how you handle difficult tasks to test
-        your <color=green>CRITICAL THINKING</color> and what your approach to them
-        is.
+      - Yes, I noticed you haven't worked in a while (great job telling the truth!)
+        and wanted to see how you would handle this question.
+      - For this question specifically, the interviewer is trying to learn how you
+        handle difficult tasks. You gave a <color=green>SITUATION</color> (group project),
+        spoke of your <color=green>ACTION</color> (speaking a teammate privately),
+        and the <color=green>RESULT</color> of getting a perfect mark on the project.
     - entry: 'At my previous job, the company did a horrible job informing the customers
         of the status of their orders. I had to constantly fix the issues, so I quit. '
       meter_gain: -0.05
@@ -8918,7 +8910,7 @@ MonoBehaviour:
   - question: What have you done to improve your work skills in the past year?
     answers:
     - entry: I have never had to improve my work skills. I am the best in what I do.
-      meter_gain: 0
+      meter_gain: -0.05
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -8933,29 +8925,29 @@ MonoBehaviour:
         complete a task."
       meter_gain: 0.15
       Reaction:
-      - "(This is a great example! By helping Gutsy you took the initiative to improve
+      - This is a great example! By helping Gutsy you took the initiative to improve
         yourself as well as helping out in your community. Even the smallest of tasks
-        can help you improve yourself which shows your have <color=green>LEADERSHIP</color>\r
-        and <color=green>TEAMWORK</color> skills, keep it up!)"
+        can help you improve yourself .
+      - You did a great job answering in the S.T.A.R. format. You gave a <color=green>SITUATION</color>
+        (helping out Gutsy), demonstrated <color=green>ACTION</color> (cleaning),
+        with the <color=green>RESULT</color> of helping out someone in the town!
     - entry: I really wanted to become a better typer on the computer, so I signed
         up for a typing course online.
-      meter_gain: 0.1
-      Reaction:
-      - (This is a great example! By making pizzas with Stefano you took the initiative
-        to learn a new trait which shows <color=green>PROFESSIONALISM</color> and
-        will help you out in the long run. At the end of the day, even the smallest
-        of skills can help you improve and learning new skills is always a positive.)
-    - entry: 'I work so hard that I rarely have time to focus on improving my skills. '
       meter_gain: 0.05
       Reaction:
-      - "(This is a great example! By attending Robert\u2019s Seminar you took the
-        initiative to improve yourself and to learn which shows <color=green>PROFESSIONALISM</color>
-        traits. Learning is always a good thing and can help you keep in the long
-        run.)"
+      - That's a honest answer, but not really related to this job position (Try to
+        tailor your answers to the type of work you are doing. Speaking about developing
+        hand skills, working with others in a group project, etc. would be more fitting)
+    - entry: 'I work so hard that I rarely have time to focus on improving my skills. '
+      meter_gain: -0.05
+      Reaction:
+      - This is a very conceited answer. Not only did you not answer the question,
+        you've given me the indication that you are not a team player who reflects
+        on how to improve.
   - question: Tell me about a time you went above and beyond to help your community.
     answers:
     - entry: Nothing that I know of at the moment.
-      meter_gain: 0
+      meter_gain: -0.05
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -8963,19 +8955,19 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: My neighborhood got flooded and I checked on my neighbor to make sure
-        they were safe. The action I took was helping them move out of danger and
-        they was very grateful that they could count on me in this difficult time.
-      meter_gain: 0.1
+    - entry: 'My neighbors house got flooded. I spent the rest of the day helping.
+        I checked on my neighbor to make sure they were safe. I called for help and
+        we evacuated the house. We moved everybody out of danger and prevented. In
+        the end, I was recognized by the neighborhood for my good actions and left
+        a strong impression. '
+      meter_gain: 0.3
       Reaction:
-      - '(This is a good example of helping out in your community. You went above
-        and beyond by helping out a neighbor in need and were able to learn from that
-        experience. This shows you have <color=green>PROFESSIONALISM</color>, <color=green>COMMUNICATION</color>
-        and <color=green>TEAMWORK</color> traits. '
-      - Remember to answer with the S.T.A.R. method for questions like these. This
-        type of question is used for the interviewer to learn some of your personal
-        values and how you use your time outside of work. Interviewers asking this
-        question will be at places where community is important.)
+      - This is a good example of helping out in your community. You had a <color=green>VISION</color>
+        to help people, showed <color=green>UNDERSTANDING</color>,  <color=green>ALLIGNMENT</color>,  and
+        <color=green>ENACTED</color> to help out others.
+      - In terms of answering the question with S.T.A.R., you did exceptional! You
+        gave a <color=green>SITUATION</color> (flood), spoke of your <color=green>ACTION</color>
+        (calling for help and evacuating the house), and a great <color=green>RESULT</color>.
     - entry: I was working with a very clumsy co-worker so after they broke one of
         the devices we used,  I talked to the manager and he finally fired him. Now
         we didn't have to deal with the clumsy co-worker anymore.
@@ -8987,13 +8979,11 @@ MonoBehaviour:
         a place with a strong emphasis on teamwork and togetherness. Remember to answer
         with the S.T.A.R. method.)"
     - entry: I work too hard and need to learn how to balance my life better.
-      meter_gain: 0
+      meter_gain: -0.1
       Reaction:
-      - "(This experience doesn\u2019t relate to the question. The interviewer is
-        looking for an example of you helping out in your community to show your personal
-        values outside of the work place. Usually this type of question is asked at
-        a place with a strong emphasis on teamwork and togetherness. Remember to answer
-        with the S.T.A.R. method.)"
+      - That's a very poor answer. We are trying to understand a time where you helped
+        your community. Before an interview, draft a few scenarios. In the interview,
+        mention them in the Situation, Action, and Result (STAR) format.
   - question: How did you learn about this opening?
     answers:
     - entry: I learned about this job opening from a job searching website. I saw
@@ -9016,19 +9006,17 @@ MonoBehaviour:
         values that align with mine.
       meter_gain: 0.3
       Reaction:
-      - This answer is clear and concise. It tells the interviewer that you did research
+      - 'This answer is clear and concise. It tells the interviewer that you did research
         into the company and demonstrates your compatibility with them. Remember,
         questions like this do not need to be overly long. They do need to get the
-        point across though without any padding that seems disingenuous. This shows
-        commitment to work in a TEAMWORK enviroment using good <color=green>COMMUNICATION</color>
-        and also be able to take <color=green>LEADERSHIP</color> when needed.
+        point across though without any padding that seems disingenuous. '
       - "This type of question is asked for the same reason that questions like: \u201CWhy
         do you want to work here?\u201D or \u201CWhat do you know about the company?\u201D
         It allows the company to see your purpose and what your aspirations are. This
         question is also used to genuinely see how you found the job."
     - entry: I heard about this job from a friend. I needed the money, so this job
         was a blessing in disguise really. Thank you for the opportunity!
-      meter_gain: 0.05
+      meter_gain: -0.05
       Reaction:
       - "This answer is very honest. However, This type of question is asked for the
         same reason that questions like: \u201CWhy do you want to work here?\u201D
@@ -9051,51 +9039,18 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: A situation where I made a good impression was during an internship at
-        a big company. All of the other interns and full-timers really enjoyed having
-        me around because they said I made them laugh a lot.
-      meter_gain: 0.1
-      Reaction:
-      - This example is an okay example. You went out of your way to learn a new skill
-        and showed your ambition to want to improve. If an interviewer asks this type
-        of question it is often targeted at customers or important customers.
-      - The interviewer wants to see what tactics you use to make a good impression
-        to see if it is in a manner that the company sees as valuable. But make sure
-        to approach questions like these using STAR approach.
-    - entry: I went to lunch on one of my first weeks at my last job and my boss ended
-        up being in the lunch room. When I them I was extremely nervous, but they
-        began to talk to me and asked about my life and how I was liking the new job.
-        After we were done talking they told me how much of a plessure it was talking
-        and getting to know me better.
+    - entry: My dad owns a pizza shop and the kitchen was backed up. I had some experiene
+        making pizza, so I decided to help. We were able to get through the lunch
+        rush and made many new customers. All my dads employees were impressed!
       meter_gain: 0.2
       Reaction:
-      - This is an excellent example of making a good impression. You went out of
-        your way to learn a new skill which shows good <color=green>COMMUNICATION</color>,
-        <color=green>CRITICAL THINKING</color>, and <color=green>LEADERSHIP</color>
-        skills. It also showed you have the ambition and patience to learn new skills.
-        If an interviewer asks this type of question it is often targeted at customers
-        or important customers.
-      - The interviewer wants to see what tactics you use to make a good impression
-        to see if it is in a manner that the company sees as valuable. Make sure to
-        answer question like these with STAR approach.
-    - entry: While working in the customer service department at an old job, I had
-        a task of helping customers with their product issues. I often communicate
-        with the clients to check in with them and see how they are doing. I think
-        going above and beyond our client's expectations is most important.
-      meter_gain: 0.2
-      Reaction:
-      - This is an good example of making a good impression. You had a task to complete
-        to help a neighbor in need and accomplished it. It shows you had good <color=green>CRITICAL
-        THINKING</color> and <color=green>COMMUNICATION</color> skills. If an interviewer
-        asks this type of question it is often targeted at customers or important
-        customers.
-      - The interviewer wants to see what tactics you use to make a good impression
-        to see if it is in a manner that the company sees as valuable. But using STAR
-        method would have made this answer better.
+      - This is another example of answering using the STAR format. You gave a situation
+        (lunch rush), spoke of your action (helping in the kitchen), and the result
+        (new customers and impressing the employees).
   - question: Tell me about an accomplishment you are most proud of.
     answers:
     - entry: I don't think i've had an cool accomplishments.
-      meter_gain: 0
+      meter_gain: -0.05
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -9103,42 +9058,20 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: When I was a college student, I also had to work part time to cover my
-        tuition. Through years of hard work and high efforts I was able to succeed.
-        My hard work paid off and the result was landing a great job and being debt
-        free.
+    - entry: Graduating college with no debt! Being the first one in my family to
+        attend university, I was scared about my performance. I made a great group
+        of friends to give me advice, studied as hard as I could, and was able to
+        graduate with a 4.0 GPA and recieved a scholarship!
       meter_gain: 0.2
       Reaction:
-      - When this type of question is asked, the interviewer is looking to evaluate
-        your skills and character traits to see if they fit with the position and
-        the company. This shows good <color=green>LEADERSHIP</color> and <color=green>PROFESSIONALISM</color>
-        traits. Could also show some <color=green>CRITICAL THINKING</color> traits
-        since you were in a bad situtation and you were able to overcome it.
+      - 'In terms of answering the question with S.T.A.R., you did exceptional! You
+        gave a <color=green>SITUATION</color> (college), spoke of your <color=green>ACTION</color>
+        (building a community of people to help you), and a great <color=green>RESULT</color>
+        (great grades and scholarship).
+
+'
       - The task you choose also shows the interviewer what your interests and passions
         you have and lets them learn about your background outside of your resume.
-        Remember to apply the STAR method with questions like this.
-    - entry: An accomplishment I am most proud of is a management position I had at
-        my last job. It feels nice to be the one to boss workers around for once.
-      meter_gain: 0.1
-      Reaction:
-      - When this type of question is asked, the interviewer is looking to evaluate
-        your skills and character traits to see if they fit with the position and
-        the company. This shows good <color=green>LEADERSHIP</color>, <color=green>TEAMWORK</color>
-        and <color=green>COMMUNICATION</color> traits.
-      - The task you choose also shows the interviewer what your interests and passions
-        you have and lets them learn about your background outside of your resume.
-        Remember to apply the STAR method with questions like this.
-    - entry: My greatest accomplishment is when I was awarded employee of the month
-        through my hard work.
-      meter_gain: 0.15
-      Reaction:
-      - When this type of question is asked, the interviewer is looking to evaluate
-        your skills and character traits to see if they fit with the position and
-        the company. This shows good <color=green>PROFESSIONALISM</color>, <color=green>TEAMWORK</color>
-        and <color=green>COMMUNICATION</color> traits.
-      - The task you choose also shows the interviewer what your interests and passions
-        you have and lets them learn about your background outside of your resume.
-        Remember to apply the STAR method with questions like this.
   - question: How would you reply to a customer who enters the store or calls just
       as you are trying to close the shift?
     answers:
@@ -9148,9 +9081,7 @@ MonoBehaviour:
 '
       meter_gain: 0
       Reaction:
-      - '
-
-        When this type of question is asked, the interviewer is looking to evaluate
+      - 'When this type of question is asked, the interviewer is looking to evaluate
         how your understanding align with your values. '
       - 'You also took into account the customer''s point of view here and ignored
         the need to understand the kitchen staff getting ready to close.
@@ -9168,12 +9099,9 @@ MonoBehaviour:
       - "This is a good answer. \n\nWhen this type of question is asked, the interviewer
         is looking to evaluate your skills and character traits to see if they fit
         with the position and the company. "
-      - '
-
-
-        With this, the interviewer may see some qualities in you that could actually
-        be applicable to the position. This shows you have good <color=green>COMMUNICATION</color>,
-        <color=green>PROFESSIONALISM</color> and <color=green>LEADERSHIP</color> traits.'
+      - With this, the interviewer may see some qualities in you that could actually
+        be applicable to the position. This shows you have good professionalism and
+        care about your fellow workers.
     - entry: 'I would avoid any further conversation and ask him to leave since the
         store is closed. '
       meter_gain: 0
@@ -9259,24 +9187,15 @@ MonoBehaviour:
         involve our manager.
       meter_gain: 0.2
       Reaction:
-      - 'This is a good answer.
-
-
-        It shows that you value the opinion of the other party involved in this difficult
-        situation, and you understand that it would be better to solve it peacefully
-        without involving a third party, and look for ways to settle the situation.'
-      - '
-
-        With this, the interviewer may see some qualities like <color=green>LEADERSHIP</color>,
-        <color=green>COMMUNICATION</color>, and <color=green>PROFESSIONALISM</color>
-        in you that could actually be applicable to the position.'
+      - This answer shows value the opinion of the other party involved in this difficult
+        situation. You displayed a clear <color=green>VISION</color> of what you wanted
+        to do with a great <color=green>UNDERSTANDING</color> of solving problems
+        peacefully without involving a third party.
     - entry: I would end the conversation and leave the room to avoid further discussion.
       meter_gain: 0.05
       Reaction:
-      - '
-
-        Your answer reflects that you lack the courage to face a tough situation and
-        choose to ignore it no matter how bad the consequences could be.'
+      - Your answer reflects that you lack the courage to face a tough situation and
+        choose to ignore it no matter how bad the consequences could be.
       - When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
         the company. Finding out that you choose to avoid a difficult situation rather
@@ -9292,13 +9211,11 @@ MonoBehaviour:
       - 'This is a good answer.
 
 
-        It shows that your vision is transparent and so you would not hide anything
-        from your manager, accept the mistake and work on mending it.'
-      - '
-
-        With this, the interviewer may see some qualities in like <color=green>CRITICAL
-        THINKING</color>, <color=green>COMMUNICATION</color>, and <color=green>TEAMWORK</color>
-        that could actually be applicable to the position.'
+        It shows that your <color=green>VISION</color> is transparent and so you would
+        not hide anything from your manager, accept the mistake and work on mending
+        it.'
+      - (If the interviewer were to follow up on this question, it would be a great
+        chance to answer using the STAR format).
     - entry: "I\u2019d not want anyone to know about it and focus on correcting the
         mistake and putting processes in place to ensure that it does not happen again.\n"
       meter_gain: 0
@@ -9322,20 +9239,16 @@ MonoBehaviour:
     - entry: "I\u2019d let my manager know about my mistake and focus on correcting
         the mistake, ensuring others know about it but keeping it quiet so that my
         reputation was not harmed."
-      meter_gain: 0
+      meter_gain: 0.05
       Reaction:
-      - '
-
-        The answer is straight to the point and shows that you have good vision and
+      - 'The answer is straight to the point and shows that you have good vision and
         understanding of the situation.
 
 
         However, it leaves out enactment.'
-      - '
-
-        When this type of question is asked, the interviewer is looking at your ability
+      - When this type of question is asked, the interviewer is looking at your ability
         to ensure that you put proper processes and support structures in place, and
-        not just focus on fixing the problem.'
+        not just focus on fixing the problem.
   - question: Do you want to negotiate your salary?
     answers:
     - entry: Yes, I would like to negotiate my offer.
@@ -9429,8 +9342,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -9504,8 +9417,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -9574,8 +9487,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
@@ -9621,8 +9534,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -9643,8 +9556,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -9765,8 +9678,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -9860,8 +9773,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1

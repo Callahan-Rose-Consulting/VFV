@@ -494,7 +494,7 @@ public class Interview_Questions : MonoBehaviour
                         "ACTION",
                         "RESULT",
                         "VISION",
-                        "ALLIGNMENT",
+                        "ALLIGN",
                         "UNDERSTAND",
                         "ENACT"                    
                     };
