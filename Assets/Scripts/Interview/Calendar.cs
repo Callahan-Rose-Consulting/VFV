@@ -26,7 +26,7 @@ public static class Calendar
     public static void IncreaseDay()
     {
 
-        CurrentDay++; this is what it should be
+        CurrentDay++;
         
 
 
