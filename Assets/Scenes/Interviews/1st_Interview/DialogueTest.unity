@@ -3223,9 +3223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - '
-
-    #MULTI_START#Here is your mock interview! I am going to give you a quick introduction
+  - '#MULTI_START#Here is your mock interview! I am going to give you a quick introduction
     on how interviews work in I Inc. Your interviewer will be here shortly, so let''s
     make this quick.'
   - "\nThe idea behind an interview is for you to impress your interviewer and to
@@ -3615,6 +3613,10 @@ MonoBehaviour:
   - Remember, when interviewing, the employer is looking to learn about you and your
     experiences. Your job during an interview is to tell your story while also showing
     your drive to work at the company. Good job!
+  - You'll be starting at $15/ hour.
+  - '#QUESTION# 14 '
+  - '#QUESTION# 15'
+  - '#QUESTION# 16'
   - '#INVOKE_EVENT#*5*#FADE_OUT#That concludes our interview! We''ll communicate later.'
   mid_reaction:
   - 'Congratulations @, based on your experience and this interview, I am pleased
@@ -3622,6 +3624,10 @@ MonoBehaviour:
   - Please remember that the interview is about telling your story while showcasing
     your skills and experience that fit the job. In the future, remember to practice
     your responses to questions and to pick accurate examples to talk about.
+  - You'll be starting at $13/ hour.
+  - '#QUESTION# 14 '
+  - '#QUESTION# 15'
+  - '#QUESTION# 16'
   - '#INVOKE_EVENT#*5*#FADE_OUT#That concludes our interview! We''ll communicate later.'
   lose_reaction:
   - 'Thank you for applying for the position @. While your qualifications are very
@@ -6880,7 +6886,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7823,8 +7829,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 0.9999993
-  m_Size: 0.76517165
+  m_Value: 1
+  m_Size: 0.7651716
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9305,6 +9311,59 @@ MonoBehaviour:
         When this type of question is asked, the interviewer is looking at your ability
         to ensure that you put proper processes and support structures in place, and
         not just focus on fixing the problem.'
+  - question: Do you want to negotiate your salary?
+    answers:
+    - entry: Yes, I would like to negotiate my offer.
+      meter_gain: 0
+      Reaction:
+      - (This is a good example if you think you deserve more pay than the offer that
+        was given to you.)
+    - entry: "\rNo, I am happy with my offer\r\n"
+      meter_gain: 0
+      Reaction:
+      - (This is an excellent choice if you feel like you deserve the pay that was
+        offered to you.)
+  - question: Why do you want to negotiate for a higher pay rate?
+    answers:
+    - entry: I searched up the salary range for this job and based on that, I believe
+        I DESERVE a pay of $20 an hour.
+      meter_gain: 0.1
+      Reaction:
+      - It is a good thing you didn't bring up wanting/needing a higher salary. Employers
+        will only improve your current offer if you deserve it.
+    - entry: I need the higher pay because I have a baby on the way, so I need the
+        extra pay to be able to provide for my family and for the baby when he arrives
+      meter_gain: 0
+      Reaction:
+      - Unfortunately, needing something isn't enough either. The employer is not
+        responsible for trying to compensate any personal struggles you may be going
+        through. Think about why you deserve a higher salary in your next interviews.
+        These can include things like previous experience, a unique project/quality
+        you have, etc.
+    - entry: I've been working on my car since I bought it and I found these genuinely
+        nice rims that are on sale that I want to buy so I need the extra money so
+        I can get them.
+      meter_gain: -0.1
+      Reaction:
+      - "Wanting something isn't enough of a reason for you to deserve a higher salary.
+        For now, you will be given your original offer. Think about why you deserve
+        a higher salary in your next interviews.\r These can include things like previous
+        experience, a unique project/quality you have, etc.\r\n"
+  - question: ' Why do you think you deserve a higher salary? '
+    answers:
+    - entry: Because I have a family member who own a restaurant, so I know the daily
+        operations.
+      meter_gain: 0.2
+      Reaction:
+      - That's an extraordinarily strong reason for wanting a higher pay. Although
+        you don't have direct experience, you have some knowledge of day-to-day operations.
+        I will raise your salary to $20 an hour!
+    - entry: Because I own pizza places, so I know the backend of the job requirements.
+      meter_gain: -0.2
+      Reaction:
+      - It looks like you don't have previous experience. Never lie in a job interview
+        even though the interviewer might not know your background, they will still
+        find out and you will end up eventually getting fired.
   question_index: 0
   talkToNPC: {fileID: 1753269760}
   content_object: {fileID: 1976280627}
