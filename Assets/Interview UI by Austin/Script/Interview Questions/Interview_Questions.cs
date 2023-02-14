@@ -91,6 +91,17 @@ public class Interview_Questions : MonoBehaviour
 
             g_object.SetActive(false);
         }
+
+        string[] data = {company_name, job_title};
+
+        TalkToNPC.UpdateInterviewResults("NEWINTERVIEW", TalkToNPC.playerFileName, data);
+
+        // Debug.Log("The NAME OF THE FILE IS");
+
+        // File.AppendAllText(TalkToNPC.playerFileName, "TRYING THIS OUT BY KAREEM");
+
+        // Debug.Log(company_name);
+        // Debug.Log(job_title);
     }
 
     public int current_question_index = 0;
@@ -433,34 +444,6 @@ public class Interview_Questions : MonoBehaviour
         {
             add_answer_to_player_results(Reaction);
 
-            /*
-             * 
-             * 
-             * KEY WORDS;
-             *  Initial LEADERSHIP
-             *  Initial TEAMWORK
-             *  Initial TECHNOLOGY (WAS NOT USED!!! could not find a good example to use this but i create one where this is used. Or we can add an extra question which uses this like (are you familer
-             *                      with technology incase we need yout to be on call if someone calls off) or something like that)
-             *  Initial PROFESSIONALISM
-             *  Initial COMMUNICATION
-             *  Initial CRITICAL THINKING
-                STAR -> situation, task, action, result 
-                VALUE -> vision, allignment (unity), understand, enact (put things into action)
-
-             *  
-             *  T make the workds green <color=green>EXAMPLE</color>
-             
-            star: 
-
-            question 1:
-
-            +5 points: gave an answer showing TEAM PLAYER
-            +5 POINTS: gave answer showing LEADERSHIP 
-            
-
-             */
-
-
             menu_anim.SetTrigger("Close");
 
             increment_meter(meter_gain);
@@ -477,27 +460,8 @@ public class Interview_Questions : MonoBehaviour
     // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
 
     private void add_answer_to_player_results(string[] Reaction) {
-        // for (int i = 0; i < Reaction.Length; i++) {
-        //     Debug.Log(string.Format("Interviewer CPU reaction = {0}", Reaction[i]));
-        // }
-
-        grab_key_word(Reaction);
-
-        // TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
-    }
-
-    private void grab_key_word(string[] Reaction) {
         HashSet<string> userWords = new HashSet<string>();
-        var keyWords = new List<string>()
-                    {
-                        "SITUATION",
-                        "ACTION",
-                        "RESULT",
-                        "VISION",
-                        "ALLIGN",
-                        "UNDERSTAND",
-                        "ENACT"                    
-                    };
+        var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGN", "UNDERSTAND", "ENACT"};
 
 
         for (int i = 0; i < Reaction.Length; i++) {
@@ -508,19 +472,11 @@ public class Interview_Questions : MonoBehaviour
             }
         }
 
-        /*
+        // TalkToNPC.UpdatePlayerResults("STAR", TalkToNPC.playerFileName);
 
-        1. add the keywords to the player result file 
-            (figure out how to get specific line of player result file)
-
-        */
-
-        // REMOVE when pushing to dev
-        foreach (string word in userWords)
-        {
-            Debug.Log(word);
-        }
+        // TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
     }
+
 
     public void load_answer_by_index(int index)
     {

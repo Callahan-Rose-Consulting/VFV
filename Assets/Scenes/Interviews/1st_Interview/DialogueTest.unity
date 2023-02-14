@@ -6885,7 +6885,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214821762485510}
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7830,7 +7830,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.76517147
+  m_Size: 0.7651716
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8870,20 +8870,6 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities like leadership in you that
         could actually be applicable to the position.
-    - entry: I had this one job at a house cleaning company and my group had a task
-        of cleaning a bigger hosue one day. There were three of us in my group and
-        one person could not make it, so I was able to come help us out. My manager
-        found out and got mad at me, so I quit.
-      meter_gain: -0.05
-      Reaction:
-      - "This situation can be considered as a difficult situation to some degree.
-        It\u2019s not the best option though. Usually when this question is asked,
-        the interviewer is looking for what the situation was, what tasks you were
-        trying to accomplish, the actions you took to accomplish the task, and finally
-        what the result was."
-      - This is commonly known as the S.T.A.R. method. The interviewer is asking this
-        kind of question to learn how you handle difficult tasks to test your crtical
-        thinking.
     - entry: Although I haven't had a job in a while, I do have some school experience.
         One of my group mates didn't spend any time on the project. I decided to speak
         to the group mate privately and found out the issue. By speaking to them privately,
@@ -8896,17 +8882,6 @@ MonoBehaviour:
         handle difficult tasks. You gave a <color=green>SITUATION</color> (group project),
         spoke of your <color=green>ACTION</color> (speaking a teammate privately),
         and the <color=green>RESULT</color> of getting a perfect mark on the project.
-    - entry: 'At my previous job, the company did a horrible job informing the customers
-        of the status of their orders. I had to constantly fix the issues, so I quit. '
-      meter_gain: -0.05
-      Reaction:
-      - "This experience doesn\u2019t relate to the question. The interviewer is asking
-        this kind of question to learn how you handle difficult tasks and what your
-        approach to them is."
-      - Usually when this question is asked, the interviewer is looking for a situation
-        and the context of that situation, what tasks you were trying to accomplish,
-        the actions you took to accomplish the task, and finally what the result was.
-        This is commonly known as the S.T.A.R. method.
   - question: What have you done to improve your work skills in the past year?
     answers:
     - entry: I have never had to improve my work skills. I am the best in what I do.

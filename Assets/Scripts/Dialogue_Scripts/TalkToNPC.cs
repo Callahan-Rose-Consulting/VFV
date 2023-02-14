@@ -128,23 +128,24 @@ public class TalkToNPC : MonoBehaviour
         //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
         //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Interview Performance:\n");
+        File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
+        File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
         File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
-        File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
-        File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
-        File.AppendAllText(path, "\n");
+        // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
+        // File.AppendAllText(path, "\n");
+        // File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
+        // File.AppendAllText(path, "\n");
 
         File.AppendAllText(path, "--------------Comments---------------\n");
         File.AppendAllText(path, "\n");
@@ -169,6 +170,7 @@ public class TalkToNPC : MonoBehaviour
     //      or UpdatePlayerResults ("Final Technology", "mytext.txt")
     //NOTE: playerFileName should be used as the second parameter because that is the variable that stores the file name of the current session.
     //created by Don Murphy
+    //edited by Kareem Ibrahim
     public static void UpdatePlayerResults(string resultName, string FileToUpdate)
     {
         string playerFileName = FileToUpdate;
@@ -232,6 +234,7 @@ public class TalkToNPC : MonoBehaviour
             // Interview Performance STAR
             else if (line.Contains("STAR"))
             {
+                allLines[i] += '\n' + "sandwich" + '\n';
                 Debug.Log("TESTING THIS FROM KAREEM");
             }
             // Interview Performance VALUE
@@ -243,7 +246,47 @@ public class TalkToNPC : MonoBehaviour
     }
 
 
+    public static void UpdateInterviewResults(string updateType, string FileToUpdate, string[] interviewData) {
+        string playerFileName = FileToUpdate;
 
+        var allLines = File.ReadAllLines(playerFileName); //read file into lines var
+        int i = 0;
+
+        foreach (string line in allLines) {
+            if (line.Contains("END OF INTERVIEW PERFORMANCE:") && updateType == "NEWINTERVIEW" && interviewData.Length == 2) {
+                // expect these two to be passed in 
+                string companyName = interviewData[0]; 
+                string jobName = interviewData[1]; 
+
+                allLines[i] = "\nInterview Results for the " + jobName + " role at " + companyName + ":\n" + allLines[i];
+            }
+
+
+            // // Interview Performance STAR
+            // else if (line.Contains("STAR"))
+            // {
+            //     allLines[i] += '\n' + "sandwich" + '\n';
+            //     Debug.Log("TESTING THIS FROM KAREEM");
+            // }
+            // // Interview Performance VALUE
+            // else if (line.Contains("VALUE"))
+            // {
+            // }
+
+            i++;
+        }
+
+        File.WriteAllLines(playerFileName, allLines); //rewerite file with update
+
+        // Debug.Log("START OF INTERVIEW KAREEM");
+
+        // using(StreamWriter sw = File.AppendText(FileToUpdate))
+        // {
+        //     sw.WriteLine("Gfg");
+        //     sw.WriteLine("GFG");
+        //     sw.WriteLine("GeeksforGeeks");
+        // }
+    }
 
 
 
