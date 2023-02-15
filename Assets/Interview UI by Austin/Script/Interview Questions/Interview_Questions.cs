@@ -96,10 +96,6 @@ public class Interview_Questions : MonoBehaviour
 
         TalkToNPC.UpdateInterviewResults("NEWINTERVIEW", TalkToNPC.playerFileName, data);
 
-        // Debug.Log("The NAME OF THE FILE IS");
-
-        // File.AppendAllText(TalkToNPC.playerFileName, "TRYING THIS OUT BY KAREEM");
-
         /*  ON friday i will rewrite the questions to add more STAR/VALUE responses. This is just so you have an idea of what to expect per question.
          *                   *Good response*                                                 *Mid Response*
          * Question 2: Good: "ALLIGN" "UNDERSTANDING"                                     Mid: "ALLIGNMENT"
@@ -474,9 +470,8 @@ public class Interview_Questions : MonoBehaviour
     // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
 
     private void add_answer_to_player_results(string[] Reaction) {
-        HashSet<string> userWords = new HashSet<string>();
+        string[] userWords = {};
         var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGN", "UNDERSTAND", "ENACT"};
-
 
         for (int i = 0; i < Reaction.Length; i++) {
             for (int j = 0; j < keyWords.Count; j++) {
@@ -486,7 +481,9 @@ public class Interview_Questions : MonoBehaviour
             }
         }
 
-        // TalkToNPC.UpdatePlayerResults("STAR", TalkToNPC.playerFileName);
+        // KAREEM
+
+        TalkToNPC.UpdateInterviewResults("STAR", TalkToNPC.playerFileName, userWords);
 
         // TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
     }

@@ -26,8 +26,6 @@ public class TalkToNPC : MonoBehaviour
     public static string playerFileName;
 
 
-
-
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
     //Inside the /Player Results dir a file is created when when the first frame of the world map is called
     //Example: starting the game with player named "Don" will make the file Don 1-01-2022 H13M30S32.txt"
@@ -130,7 +128,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
         File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
-        File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
+        // File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
         // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
         // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
         // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
@@ -231,20 +229,10 @@ public class TalkToNPC : MonoBehaviour
                 }
                
             }
-            // Interview Performance STAR
-            else if (line.Contains("STAR"))
-            {
-                allLines[i] += '\n' + "sandwich" + '\n';
-                Debug.Log("TESTING THIS FROM KAREEM");
-            }
-            // Interview Performance VALUE
-            else if (line.Contains("VALUE"))
-            {
-            }
+
         }
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
-
 
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string[] interviewData) {
         string playerFileName = FileToUpdate;
@@ -253,41 +241,33 @@ public class TalkToNPC : MonoBehaviour
         int i = 0;
 
         foreach (string line in allLines) {
-            if (line.Contains("END OF INTERVIEW PERFORMANCE:") && updateType == "NEWINTERVIEW" && interviewData.Length == 2) {
-                // expect these two to be passed in 
-                string companyName = interviewData[0]; 
-                string jobName = interviewData[1]; 
+            if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
+                if (updateType == "NEWINTERVIEW") {
+                    string companyName = interviewData[0]; 
+                    string jobName = interviewData[1]; 
 
-                allLines[i] = "\nInterview Results for the " + jobName + " role at " + companyName + ":\n" + allLines[i];
+                    allLines[i] = "\nInterview Results for the " + jobName + " role at " + companyName + ":\n" + allLines[i];
+                }
+
+                else if (updateType == "STAR") {
+                    allLines[i] = "\n will tihs work \n" + allLines[i];
+                }
+
+
+                // must be VALUE 
+                // else {
+
+                // }
+
+                break;
             }
 
+            i++;    
 
-            // // Interview Performance STAR
-            // else if (line.Contains("STAR"))
-            // {
-            //     allLines[i] += '\n' + "sandwich" + '\n';
-            //     Debug.Log("TESTING THIS FROM KAREEM");
-            // }
-            // // Interview Performance VALUE
-            // else if (line.Contains("VALUE"))
-            // {
-            // }
-
-            i++;
         }
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
-
-        // Debug.Log("START OF INTERVIEW KAREEM");
-
-        // using(StreamWriter sw = File.AppendText(FileToUpdate))
-        // {
-        //     sw.WriteLine("Gfg");
-        //     sw.WriteLine("GFG");
-        //     sw.WriteLine("GeeksforGeeks");
-        // }
     }
-
 
 
     private float delay;
