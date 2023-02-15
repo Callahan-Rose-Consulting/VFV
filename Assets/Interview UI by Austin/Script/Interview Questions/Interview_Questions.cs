@@ -100,6 +100,20 @@ public class Interview_Questions : MonoBehaviour
 
         // File.AppendAllText(TalkToNPC.playerFileName, "TRYING THIS OUT BY KAREEM");
 
+        /*  ON friday i will rewrite the questions to add more STAR/VALUE responses. This is just so you have an idea of what to expect per question.
+         *                   *Good response*                                                 *Mid Response*
+         * Question 2: Good: "ALLIGN" "UNDERSTANDING"                                     Mid: "ALLIGNMENT"
+         * Question 6: Good: "VISION" "UNDERSTANDING" "ALLIGNMENT" "ENACTED"              Mid: (There is no mid)
+         * Question 12:Good: "VISION" "UNDERSTANDING"                                     Mid: (There is no mid)
+         * Question 4: Good: "SITUATION" "ACTION" "RESULT"                                Mid: (There is no mid)
+         * Question 13:Good: "VISION"                                                     Mid: (There is no mid)
+         * Question 9: Good: "SITUATION" "ACTION" "RESULT"                                Mid: (There is no mid)
+         * Question 5: Good: "SITUATION" "ACTION" "RESULT"                                Mid: (There is no mid)
+         * 
+         * On friday i wil add more to the "Good" to make it a VERY good response which wil include all STAR/VALUE and in the "Mid" i will add about 1-2 to make it a somewhat decent response.
+         * 
+       */
+
         // Debug.Log(company_name);
         // Debug.Log(job_title);
     }
