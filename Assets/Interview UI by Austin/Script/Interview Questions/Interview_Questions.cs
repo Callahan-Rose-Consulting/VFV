@@ -470,10 +470,20 @@ public class Interview_Questions : MonoBehaviour
     // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
 
     private void add_answer_to_player_results(string[] Reaction) {
-        string[] userWords = {};
+        string[] userWords = {"", "", "", ""};
         var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGN", "UNDERSTAND", "ENACT"};
 
+        var interviewType = "";
+
         for (int i = 0; i < Reaction.Length; i++) {
+            if (Reaction[i].contains("STAR")) {
+                interviewType = "STAR";
+            }
+
+            else if (Reaction[i].contains("VALUE")) {
+                interviewType = "VALUE";
+            }
+
             for (int j = 0; j < keyWords.Count; j++) {
                 if (Reaction[i].Contains(keyWords[j])) {
                     userWords.Add(keyWords[j]); // if the reaction contains a key word, add it to userWords
@@ -483,7 +493,7 @@ public class Interview_Questions : MonoBehaviour
 
         // KAREEM
 
-        TalkToNPC.UpdateInterviewResults("STAR", TalkToNPC.playerFileName, userWords);
+        TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, userWords);
 
         // TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
     }
