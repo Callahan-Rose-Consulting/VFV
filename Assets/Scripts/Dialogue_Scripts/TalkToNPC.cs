@@ -169,7 +169,7 @@ public class TalkToNPC : MonoBehaviour
     //NOTE: playerFileName should be used as the second parameter because that is the variable that stores the file name of the current session.
     //created by Don Murphy
     //edited by Kareem Ibrahim
-    public static void UpdatePlayerResults(string resultName, string FileToUpdate)
+    public static void UpdatePlayerResults(string resultName, string FileToUpdate, string companyName = "", string jobTitle = "")
     {
         string playerFileName = FileToUpdate;
 
@@ -230,11 +230,15 @@ public class TalkToNPC : MonoBehaviour
                
             }
 
+            else if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
+                allLines[i] = "\nInterview Results for the " + jobTitle + " role at " + companyName + ":\n" + allLines[i];
+            }
+
         }
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
-    public static void UpdateInterviewResults(string updateType, string FileToUpdate, string[] interviewData) {
+    public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, HashSet<string> userWords) {
         string playerFileName = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
@@ -242,22 +246,43 @@ public class TalkToNPC : MonoBehaviour
 
         foreach (string line in allLines) {
             if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
-                if (updateType == "NEWINTERVIEW") {
-                    string companyName = interviewData[0]; 
-                    string jobName = interviewData[1]; 
+                string original = allLines[i];
 
-                    allLines[i] = "\nInterview Results for the " + jobName + " role at " + companyName + ":\n" + allLines[i];
+                allLines[i] = "\nQuestion: " + question + "\n";
+                allLines[i] += "Feedback:\n\nYou got the " + updateType + " properties of:";
+
+                foreach (var word in userWords) {
+                    allLines[i] += " " + word;
                 }
 
-                else if (updateType == "STAR") {
-                    allLines[i] = "\n will tihs work \n" + allLines[i];
+                if (userWords.Count != 0) {
+                    allLines[i] += ". \n";
                 }
 
+                if (updateType == "VALUE") {
+                    if (!userWords.Contains("VISION")) {
+                        allLines[i] += "You missed out on the VALUE property of vision. Try showing off to the interviewer that you have a clear idea of what you would want to do in that situation.\n";
+                    }
 
-                // must be VALUE 
+                    if (!userWords.Contains("ALLIGN")) {
+                        allLines[i] += "You missed out on the VALUE property of allignment. Try thinking about how you could demonstrate your care for the unity of the team in a question like this.\n";
+                    }
+
+                    if (!userWords.Contains("UNDERSTAND")) {
+                        allLines[i] += "You missed out on the VALUE property of understanding. It wasn't clear that you fully understood the situation and what you wanted to do.\n";
+                    }
+
+                    if (!userWords.Contains("ENACT")) {
+                        allLines[i] += "You missed out on the VALUE property of ENACT. Here, you can't just speak about your plans without action. Clearly show the interviewer the action you would take in such a situation.\n";
+                    }
+                }
+
+                // // must be STAR
                 // else {
 
                 // }
+
+                allLines[i] += original;
 
                 break;
             }

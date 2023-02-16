@@ -92,9 +92,8 @@ public class Interview_Questions : MonoBehaviour
             g_object.SetActive(false);
         }
 
-        string[] data = {company_name, job_title};
 
-        TalkToNPC.UpdateInterviewResults("NEWINTERVIEW", TalkToNPC.playerFileName, data);
+        TalkToNPC.UpdatePlayerResults("", TalkToNPC.playerFileName, company_name, job_title);
 
         /*  ON friday i will rewrite the questions to add more STAR/VALUE responses. This is just so you have an idea of what to expect per question.
          *                   *Good response*                                                 *Mid Response*
@@ -470,18 +469,21 @@ public class Interview_Questions : MonoBehaviour
     // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
 
     private void add_answer_to_player_results(string[] Reaction) {
-        string[] userWords = {"", "", "", ""};
+        HashSet<string> userWords = new HashSet<string>();
         var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGN", "UNDERSTAND", "ENACT"};
 
         var interviewType = "";
 
         for (int i = 0; i < Reaction.Length; i++) {
-            if (Reaction[i].contains("STAR")) {
-                interviewType = "STAR";
-            }
+            // assign interview type
+            if (interviewType == "") {
+                if (Reaction[i].Contains("STAR")) {
+                    interviewType = "STAR";
+                }
 
-            else if (Reaction[i].contains("VALUE")) {
-                interviewType = "VALUE";
+                else if (Reaction[i].Contains("VALUE")) {
+                    interviewType = "VALUE";
+                }
             }
 
             for (int j = 0; j < keyWords.Count; j++) {
@@ -493,9 +495,9 @@ public class Interview_Questions : MonoBehaviour
 
         // KAREEM
 
-        TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, userWords);
-
-        // TalkToNPC.UpdatePlayerResults("Star", TalkToNPC.playerFileName);
+        if (interviewType != "") {
+            TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, userWords);
+        }
     }
 
 
