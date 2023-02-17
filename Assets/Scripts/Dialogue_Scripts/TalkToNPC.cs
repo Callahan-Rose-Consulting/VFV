@@ -277,10 +277,20 @@ public class TalkToNPC : MonoBehaviour
                     }
                 }
 
-                // // must be STAR
-                // else {
+                // must be STAR
+                else {
+                    if (!userWords.Contains("SITUATION")) {
+                        allLines[i] += "You missed out on the STAR property of situation. Before diving into an answer, try setting the story by giving an general overview of what was going on.\n";
+                    }
 
-                // }
+                    if (!userWords.Contains("ACTION")) {
+                        allLines[i] += "You missed out on the STAR property of action. If your answer doesn't accurately depict the specific actions you took to correct a situation, it won't have a great impact.\n";
+                    }
+
+                    if (!userWords.Contains("RESULT")) {
+                        allLines[i] += "You missed out on the STAR property of result. This ties the answer together and gives the interviewer a sense of the impact your actions had on others.\n";
+                    }
+                }
 
                 allLines[i] += original;
 
