@@ -30,6 +30,48 @@ public class TalkToNPC : MonoBehaviour
 
     public static int progressBarLine = 0;
 
+    private float delay;
+    private string currentMessage = "";
+    [TextArea(5, 10)]
+    public string[] messages;
+    public string NPCName;
+    private string UnknownName = "Unknown";
+    private string playerName = "You";
+    public bool Known = true;
+    public RawImage NameBox;
+    public int messageCount = 0;
+    public Image ImageToShow;
+    Canvas UICanvas;
+    AudioSource TalkSFX;
+    RawImage TextBox;
+    private TextMeshProUGUI NameBoxText;
+    private TextMeshProUGUI text;
+
+    private RawImage YesNoBox;
+
+    public Button YesButton;
+
+    public Button NoButton;
+
+    public bool messageDone = false;
+    private bool messageIsTyping = false;
+    private bool firstMessage = false;
+    private bool multipleMessages = false;
+    private bool isTalking = false;
+    private bool InnerDialogue = false;
+    public bool isItem = false;
+    private bool textboxIsClosing = false;
+    private Player_Movement player;
+    private GameManager gameManager;
+    public int EnemyCommunications;
+    public static bool interviewTaken = false;
+    public static bool dialogueActive = false;
+    public static bool endGame = false;
+    public static bool yesNoInstructions = true;
+
+    public int numPerfectAnswers = 0;
+    public int numQuestionsAsked = 0;
+
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
     //Inside the /Player Results dir a file is created when when the first frame of the world map is called
@@ -250,6 +292,8 @@ public class TalkToNPC : MonoBehaviour
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int i = 0;
 
+        numQuestionsAsked++; 
+
         foreach (string line in allLines) {
             if (!line.Contains("END OF INTERVIEW PERFORMANCE:")) {
                 i++;
@@ -297,6 +341,7 @@ public class TalkToNPC : MonoBehaviour
             }
 
             else {
+                numPerfectAnswers++;
                 allLines[progressBarLine] += "⬛";
             }
 
@@ -305,48 +350,11 @@ public class TalkToNPC : MonoBehaviour
             break;
         }
 
+        
+
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
-
-    private float delay;
-    private string currentMessage = "";
-    [TextArea(5, 10)]
-    public string[] messages;
-    public string NPCName;
-    private string UnknownName = "Unknown";
-    private string playerName = "You";
-    public bool Known = true;
-    public RawImage NameBox;
-    public int messageCount = 0;
-    public Image ImageToShow;
-    Canvas UICanvas;
-    AudioSource TalkSFX;
-    RawImage TextBox;
-    private TextMeshProUGUI NameBoxText;
-    private TextMeshProUGUI text;
-
-    private RawImage YesNoBox;
-
-    public Button YesButton;
-
-    public Button NoButton;
-
-    public bool messageDone = false;
-    private bool messageIsTyping = false;
-    private bool firstMessage = false;
-    private bool multipleMessages = false;
-    private bool isTalking = false;
-    private bool InnerDialogue = false;
-    public bool isItem = false;
-    private bool textboxIsClosing = false;
-    private Player_Movement player;
-    private GameManager gameManager;
-    public int EnemyCommunications;
-    public static bool interviewTaken = false;
-    public static bool dialogueActive = false;
-    public static bool endGame = false;
-    public static bool yesNoInstructions = true;
 
     public bool getIsTalking()
     {
@@ -756,7 +764,6 @@ public class TalkToNPC : MonoBehaviour
 
                 if (index >= 0 && index < Events.Count)
                 {
-                    Debug.Log("END OF INTERVIEW?!?!? KAREEM");
                     Events[index].Invoke();
                 }
             }
@@ -850,6 +857,8 @@ public class TalkToNPC : MonoBehaviour
         //Change by Austin Greear 5/7/2020
         if (messages[messageCount].Contains("#FEEDBACK#"))
         {
+            // END OF INTERVIEW AND FEEDBACK GIVEN
+
             messages[messageCount] = messages[messageCount].Replace("#FEEDBACK#", "");
             if (Experience_Reactions.instance != null)
             {
@@ -1214,6 +1223,14 @@ public class TalkToNPC : MonoBehaviour
         {
             BasicDialogue();
             if (!InnerDialogue) NameBox.gameObject.SetActive(true);
+        }
+    }
+
+
+    // update progress bar with results from interview 
+    public static void UpdateProgressBar() {
+        for (int i = 0; i < numPerfectAnswers; i++) {
+            allLines[progressBarLine] += 
         }
     }
 
