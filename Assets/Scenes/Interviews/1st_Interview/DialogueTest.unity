@@ -8967,7 +8967,7 @@ MonoBehaviour:
         your community. Before an interview, draft a few scenarios. In the interview,
         mention them in the Situation, Action, and Result (STAR) format.
   - question: How did you learn about this opening?
-    questionType: 
+    questionType: VALUE
     answers:
     - entry: I learned about this job opening from a job searching website. I saw
         the job offering and decided to apply because it aligned with my interests.

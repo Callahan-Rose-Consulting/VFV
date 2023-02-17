@@ -25,6 +25,11 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
+    public static string[] valueProperties = {"VISION", "ALLIGNMENT", "UNDERSTAND", "ENACT"};
+    public static string[] starProperties = {"SITUATION", "ACTION", "RESULT"};
+
+    public static int progressBarLine = 0;
+
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
     //Inside the /Player Results dir a file is created when when the first frame of the world map is called
@@ -232,6 +237,7 @@ public class TalkToNPC : MonoBehaviour
 
             else if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
                 allLines[i] = "\nInterview Results for the " + jobTitle + " role at " + companyName + ":\n\n" + allLines[i];
+                progressBarLine = i + 2;
             }
 
         }
@@ -245,75 +251,58 @@ public class TalkToNPC : MonoBehaviour
         int i = 0;
 
         foreach (string line in allLines) {
-            if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
-                string original = allLines[i];
-
-                allLines[i] = "\nQuestion: " + question + "\n";
-                allLines[i] += "Feedback:\n\nYou got the " + updateType + " properties of:";
-
-                foreach (var word in userWords) {
-                    allLines[i] += " " + word;
-                }
-
-                if (userWords.Count != 0) {
-                    allLines[i] += ". \n";
-                }
-
-                if (updateType == "VALUE" && userWords.Count != 4) {
-                    allLines[i] += "You missed out on the VALUE PROPERTY OF:";
-
-                    if (!userWords.Contains("VISION")) {
-                        allLines[i] += " VISION";
-                        // allLines[i] += "You missed out on the VALUE property of vision. Try showing off to the interviewer that you have a clear idea of what you would want to do in that situation.\n";
-                    }
-
-                    if (!userWords.Contains("ALLIGN")) {
-                        allLines[i] += " ALLIGNMENT";
-                        // allLines[i] += "You missed out on the VALUE property of allignment. Try thinking about how you could demonstrate your care for the unity of the team in a question like this.\n";
-                    }
-
-                    if (!userWords.Contains("UNDERSTAND")) {
-                        allLines[i] += " UNDERSTAND";
-                        // allLines[i] += "You missed out on the VALUE property of understanding. It wasn't clear that you fully understood the situation and what you wanted to do.\n";
-                    }
-
-                    if (!userWords.Contains("ENACT")) {
-                        allLines[i] += " ENACT";
-                        // allLines[i] += "You missed out on the VALUE property of ENACT. Here, you can't just speak about your plans without action. Clearly show the interviewer the action you would take in such a situation.\n";
-                    }
-
-                    allLines[i] += ".\n";
-                }
-
-                // must be STAR
-                else if (updateType == "STAR" && userWords.Count != 4) {
-                    allLines[i] += "You missed out on the START PROPERTY OF:";
-
-                    if (!userWords.Contains("SITUATION")) {
-                        allLines[i] += " SITUATION";
-                        // allLines[i] += "You missed out on the STAR property of situation. Before diving into an answer, try setting the story by giving an general overview of what was going on.\n";
-                    }
-
-                    if (!userWords.Contains("ACTION")) {
-                         allLines[i] += " ACTION";
-                        // allLines[i] += "You missed out on the STAR property of action. If your answer doesn't accurately depict the specific actions you took to correct a situation, it won't have a great impact.\n";
-                    }
-
-                    if (!userWords.Contains("RESULT")) {
-                         allLines[i] += " RESULT";
-                        // allLines[i] += "You missed out on the STAR property of result. This ties the answer together and gives the interviewer a sense of the impact your actions had on others.\n";
-                    }
-
-                    allLines[i] += ".\n";
-                }
-
-                allLines[i] += original;
-
-                break;
+            if (!line.Contains("END OF INTERVIEW PERFORMANCE:")) {
+                i++;
+                continue;
             }
 
-            i++;    
+            string original = allLines[i];
 
+            allLines[i] = "\nQuestion: " + question + "\n";
+            allLines[i] += "Feedback:\n\nYou got the " + updateType + " properties of:";
+
+            foreach (var word in userWords) {
+                allLines[i] += " " + word;
+            }
+
+            if (userWords.Count != 0) {
+                allLines[i] += ". \n";
+            }
+
+            if (updateType == "VALUE" && userWords.Count != valueProperties.Length) {
+                allLines[progressBarLine] += "⬜";
+                allLines[i] += "You missed out on the VALUE PROPERTY OF:";
+
+                for (int j = 0; j < valueProperties.Length; j++) {
+                        if (!userWords.Contains(valueProperties[j])) {
+                            allLines[j] += " " + valueProperties[j];
+                        }
+                }
+
+                allLines[i] += ".\n";
+            }
+
+            // must be STAR
+            else if (updateType == "STAR" && userWords.Count != starProperties.Length) {
+                allLines[progressBarLine] += "⬜";
+                allLines[i] += "You missed out on the START PROPERTY OF:";
+
+                for (int j = 0; j < starProperties.Length; j++) {
+                        if (!userWords.Contains(starProperties[j])) {
+                            allLines[j] += " " + starProperties[j];
+                        }
+                }
+
+                allLines[i] += ".\n";
+            }
+
+            else {
+                allLines[progressBarLine] += "⬛";
+            }
+
+            allLines[i] += original;
+
+            break;
         }
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
@@ -767,6 +756,7 @@ public class TalkToNPC : MonoBehaviour
 
                 if (index >= 0 && index < Events.Count)
                 {
+                    Debug.Log("END OF INTERVIEW?!?!? KAREEM");
                     Events[index].Invoke();
                 }
             }

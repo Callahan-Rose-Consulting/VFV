@@ -492,8 +492,6 @@ public class Interview_Questions : MonoBehaviour
             }
         }
 
-        Debug.Log("REACHED end of interview_qeustions");
-
         // KAREEM
         TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, userWords);
     }
