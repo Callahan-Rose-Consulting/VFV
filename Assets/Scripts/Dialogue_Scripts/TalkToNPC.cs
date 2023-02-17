@@ -69,8 +69,9 @@ public class TalkToNPC : MonoBehaviour
     public static bool endGame = false;
     public static bool yesNoInstructions = true;
 
-    public int numPerfectAnswers = 0;
-    public int numQuestionsAsked = 0;
+    public static int numPerfectAnswers = 0;
+    public static int numQuestionsAsked = 0;
+    public static string playerResultsFile = ""; 
 
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
@@ -283,69 +284,65 @@ public class TalkToNPC : MonoBehaviour
             }
 
         }
+        
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, HashSet<string> userWords) {
         string playerFileName = FileToUpdate;
+        playerResultsFile = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
-        int i = 0;
+        int lineNumber = 0;
 
         numQuestionsAsked++; 
 
         foreach (string line in allLines) {
             if (!line.Contains("END OF INTERVIEW PERFORMANCE:")) {
-                i++;
+                lineNumber++;
                 continue;
             }
 
-            string original = allLines[i];
+            string original = allLines[lineNumber];
 
-            allLines[i] = "\nQuestion: " + question + "\n";
-            allLines[i] += "Feedback:\n\nYou got the " + updateType + " properties of:";
+            allLines[lineNumber] = "\nQuestion: " + question + "\n";
+            allLines[lineNumber] += "Feedback:\n\nYou got the " + updateType + " properties of:";
 
             foreach (var word in userWords) {
-                allLines[i] += " " + word;
+                allLines[lineNumber] += " " + word;
             }
 
-            if (userWords.Count != 0) {
-                allLines[i] += ". \n";
-            }
 
             if (updateType == "VALUE" && userWords.Count != valueProperties.Length) {
-                allLines[progressBarLine] += "⬜";
-                allLines[i] += "You missed out on the VALUE PROPERTY OF:";
+                allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
 
                 for (int j = 0; j < valueProperties.Length; j++) {
                         if (!userWords.Contains(valueProperties[j])) {
-                            allLines[j] += " " + valueProperties[j];
+                            allLines[lineNumber] += " " + valueProperties[j];
                         }
                 }
 
-                allLines[i] += ".\n";
+                allLines[lineNumber] += "\n";
             }
 
             // must be STAR
             else if (updateType == "STAR" && userWords.Count != starProperties.Length) {
-                allLines[progressBarLine] += "⬜";
-                allLines[i] += "You missed out on the START PROPERTY OF:";
+                allLines[lineNumber] += "\nYou missed out on the START PROPERTY OF:";
 
                 for (int j = 0; j < starProperties.Length; j++) {
                         if (!userWords.Contains(starProperties[j])) {
-                            allLines[j] += " " + starProperties[j];
+                            allLines[lineNumber] += " " + starProperties[j];
                         }
                 }
 
-                allLines[i] += ".\n";
+                allLines[lineNumber] += "\n";
             }
 
             else {
                 numPerfectAnswers++;
-                allLines[progressBarLine] += "⬛";
             }
 
-            allLines[i] += original;
+            allLines[lineNumber] += original;
 
             break;
         }
@@ -353,6 +350,8 @@ public class TalkToNPC : MonoBehaviour
         
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
+
+        UpdateProgressBar();
     }
 
 
@@ -859,6 +858,8 @@ public class TalkToNPC : MonoBehaviour
         {
             // END OF INTERVIEW AND FEEDBACK GIVEN
 
+            UpdateProgressBar();
+
             messages[messageCount] = messages[messageCount].Replace("#FEEDBACK#", "");
             if (Experience_Reactions.instance != null)
             {
@@ -1229,9 +1230,24 @@ public class TalkToNPC : MonoBehaviour
 
     // update progress bar with results from interview 
     public static void UpdateProgressBar() {
-        for (int i = 0; i < numPerfectAnswers; i++) {
-            allLines[progressBarLine] += 
+        if (numQuestionsAsked < 4) {
+            return;
         }
+
+        var allLines = File.ReadAllLines(playerResultsFile); //read file into lines var
+
+        for (int i = 0; i < numPerfectAnswers; i++) {
+            allLines[progressBarLine] += "⬛";
+        }
+
+        for (int j = numPerfectAnswers; j < numQuestionsAsked; j++) {
+            allLines[progressBarLine] += "⬜";
+        }
+
+        allLines[progressBarLine] += " - " + ((numPerfectAnswers / numQuestionsAsked) * 100) + "%";
+
+        File.WriteAllLines(playerFileName, allLines); //rewerite file with update
+
     }
 
     public UnityEvent Dialogue_Event;
