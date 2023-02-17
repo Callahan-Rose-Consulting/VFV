@@ -8720,6 +8720,7 @@ MonoBehaviour:
   menu_anim: {fileID: 5237763030532372452}
   questions:
   - question: Shake hands with your interviewer?
+    questionType: 
     answers:
     - entry: Yes
       meter_gain: 0.1
@@ -8732,6 +8733,7 @@ MonoBehaviour:
       - (Unless you or the interviewer are unable to, you should always start off
         an interview with shaking the interviewer's hand.)
   - question: So, @, tell me about yourself.
+    questionType: 
     answers:
     - entry: "I\u2019m @"
       meter_gain: 0
@@ -8776,6 +8778,7 @@ MonoBehaviour:
         that relate to the job. This can help break the ice while showing off some
         of your personality. However, make sure not to share personal details.)\r"
   - question: Why do you want to work here?
+    questionType: VALUE
     answers:
     - entry: "This job aligns with my future plans. It pays well and I need the money,
         so having this job is perfect for what I\u2019m looking for. "
@@ -8821,6 +8824,7 @@ MonoBehaviour:
         community, family, etc.).  It would also be good to mention some specific
         skills you have that would make you suitable for the position.
   - question: Where do you see yourself in five years?
+    questionType: 
     answers:
     - entry: I want to be working here in your position. Your salary has to be great
         and I would like to have that one day.
@@ -8859,6 +8863,7 @@ MonoBehaviour:
         role, while also emphasizing that you want a career at the company which shows
         some <color=green>PROFESSIONALISM</color> skills.
   - question: Tell me how you handled a difficult situation at work.
+    questionType: STAR
     answers:
     - entry: I don't think i've ever been in a situation like that before. Usually
         things go pretty smoothly when I am around.
@@ -8883,6 +8888,7 @@ MonoBehaviour:
         spoke of your <color=green>ACTION</color> (speaking a teammate privately),
         and the <color=green>RESULT</color> of getting a perfect mark on the project.
   - question: What have you done to improve your work skills in the past year?
+    questionType: STAR
     answers:
     - entry: I have never had to improve my work skills. I am the best in what I do.
       meter_gain: -0.05
@@ -8920,6 +8926,7 @@ MonoBehaviour:
         you've given me the indication that you are not a team player who reflects
         on how to improve.
   - question: Tell me about a time you went above and beyond to help your community.
+    questionType: STAR
     answers:
     - entry: Nothing that I know of at the moment.
       meter_gain: -0.05
@@ -8960,6 +8967,7 @@ MonoBehaviour:
         your community. Before an interview, draft a few scenarios. In the interview,
         mention them in the Situation, Action, and Result (STAR) format.
   - question: How did you learn about this opening?
+    questionType: 
     answers:
     - entry: I learned about this job opening from a job searching website. I saw
         the job offering and decided to apply because it aligned with my interests.
@@ -9002,6 +9010,7 @@ MonoBehaviour:
         found this job opening from a friend,\u201D is good enough, if not, better
         than talking about the money you want to earn."
   - question: Describe a situation where you had to make a good impression.
+    questionType: 
     answers:
     - entry: I don't think i've ever been in a situation like that before. I tend
         to make a good impression with my personality as soon as someone meets me.
@@ -9022,6 +9031,7 @@ MonoBehaviour:
         (lunch rush), spoke of your action (helping in the kitchen), and the result
         (new customers and impressing the employees).
   - question: Tell me about an accomplishment you are most proud of.
+    questionType: STAR
     answers:
     - entry: I don't think i've had an cool accomplishments.
       meter_gain: -0.05
@@ -9048,6 +9058,7 @@ MonoBehaviour:
         you have and lets them learn about your background outside of your resume.
   - question: How would you reply to a customer who enters the store or calls just
       as you are trying to close the shift?
+    questionType: 
     answers:
     - entry: 'I understand that no service can be provided after store hours, however
         I would provide the service requested to the customer since they are our priority.
@@ -9088,6 +9099,7 @@ MonoBehaviour:
         for them to come back to your business again.
   - question: How would you handle a manager or superior offering you constructive
       criticism?
+    questionType: 
     answers:
     - entry: Having a clear understanding of my performance at work, I would take
         the criticism, however, work my own way at the end of the day.
@@ -9131,6 +9143,7 @@ MonoBehaviour:
         and <color=green>COMMUNICATION</color> that could actually be applicable to
         the position.'
   - question: What would you do if you and a co-worker disagreed?
+    questionType: VALUE
     answers:
     - entry: 'I would go directly to my manager, and ask him to decide who seemed
         right in the discussion.
@@ -9176,6 +9189,7 @@ MonoBehaviour:
         than dealing with it makes the interviewer question your traits.
   - question: How would you handle a situation where you made a big mistake, but you
       were the only one who knew about it?
+    questionType: VALUE
     answers:
     - entry: "I\u2019d let my manager know about my mistake and focus on correcting
         the mistake, ensuring others know about it and put processes in place to ensure
@@ -9224,6 +9238,7 @@ MonoBehaviour:
         to ensure that you put proper processes and support structures in place, and
         not just focus on fixing the problem.
   - question: Do you want to negotiate your salary?
+    questionType: 
     answers:
     - entry: Yes, I would like to negotiate my offer.
       meter_gain: 0
@@ -9236,6 +9251,7 @@ MonoBehaviour:
       - (This is an excellent choice if you feel like you deserve the pay that was
         offered to you.)
   - question: Why do you want to negotiate for a higher pay rate?
+    questionType: 
     answers:
     - entry: I searched up the salary range for this job and based on that, I believe
         I DESERVE a pay of $20 an hour.
@@ -9262,6 +9278,7 @@ MonoBehaviour:
         a higher salary in your next interviews.\r These can include things like previous
         experience, a unique project/quality you have, etc.\r\n"
   - question: ' Why do you think you deserve a higher salary? '
+    questionType: 
     answers:
     - entry: Because I have a family member who own a restaurant, so I know the daily
         operations.

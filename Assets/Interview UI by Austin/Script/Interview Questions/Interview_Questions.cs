@@ -37,13 +37,17 @@ public class Interview_Questions : MonoBehaviour
     {
         public string question;
 
+        public string questionType;
+
         public Answer[] answers;
 
         //public float points_earned;
 
-        public Question(string q, Answer[] a)
+        public Question(string q, string question_type, Answer[] a)
         {
             question = q;
+
+            questionType = question_type;
 
             answers = a;
         }
@@ -469,23 +473,18 @@ public class Interview_Questions : MonoBehaviour
     // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
 
     private void add_answer_to_player_results(string[] Reaction) {
+        string interviewType = questions[question_index].questionType;
+
+        Debug.Log(interviewType);
+
+        if (interviewType != "STAR" && interviewType != "VALUE") {
+            return;
+        }
+        
         HashSet<string> userWords = new HashSet<string>();
         var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGN", "UNDERSTAND", "ENACT"};
 
-        var interviewType = "";
-
         for (int i = 0; i < Reaction.Length; i++) {
-            // assign interview type
-            if (interviewType == "") {
-                if (Reaction[i].Contains("STAR")) {
-                    interviewType = "STAR";
-                }
-
-                else if (Reaction[i].Contains("VALUE")) {
-                    interviewType = "VALUE";
-                }
-            }
-
             for (int j = 0; j < keyWords.Count; j++) {
                 if (Reaction[i].Contains(keyWords[j])) {
                     userWords.Add(keyWords[j]); // if the reaction contains a key word, add it to userWords
@@ -493,11 +492,10 @@ public class Interview_Questions : MonoBehaviour
             }
         }
 
-        // KAREEM
+        Debug.Log("REACHED end of interview_qeustions");
 
-        if (interviewType != "") {
-            TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, userWords);
-        }
+        // KAREEM
+        TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, userWords);
     }
 
 
