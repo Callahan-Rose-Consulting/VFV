@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 421070168}
   m_HandleRect: {fileID: 421070167}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153418977}
   m_HandleRect: {fileID: 153418976}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3239,11 +3239,12 @@ MonoBehaviour:
     So, as an example...'
   - '#QUESTION# 7'
   - 'In this type of question, the response needs to have all four of the elements
-    of <color=green>Value</color>.  They are <color=green>Vision</color> (You''re
-    propective on it) <color=green>Allighment</color> (Resources),  <color=green>Understanding</color>
-    (ensuring that procedures are in place to reinforce), and finally <color=green>ENACT</color>
-    ( of the vision) '
-  - "\nFor some other questions you\u2019ll also have the option to select an applicable
+    of VALUE. They are <color=green>VISION</color> (a clear description of how you
+    would accomplish some task) <color=green>ALIGNMENT</color> (demonstration for
+    care of the people around you), <color=green>UNDERSTANDING</color> (knowledge
+    of company values or the situation), and finally <color=green>ENACTMENT</color>
+    (the actions you would take to for the vision to become a reality) '
+  - "For some other questions you\u2019ll also have the option to select an applicable
     experience. \n\nFor these questions, you should choose an experience you\u2019ve
     gathered from around the town and apply them to the situation asked.\n"
   - '
@@ -3255,14 +3256,11 @@ MonoBehaviour:
     So, as an example...'
   - '#QUESTION# 8'
   - 'In this type of question, the response needs to have all four of the elements
-    of <color=green>STAR</color>.  They are <color=green>Siituation</color> (. Explain
-    the "situation" you handled) <color=green>Task</color> (explaining the "task",
-    which is the role you had in the situation. ),  <color=green>Action</color> (the
-    "action" you took to overcome the situation. ), and finally <color=green>Result</color>
-    (explain the "results" you produced to conclude your answer) '
-  - '
-
-    So, as our final question...'
+    of STAR.  They are: <color=green>SITUATION</color> (a general description of the
+    events going on), <color=green>TASK</color> (what work you had to do in that situation),
+    <color=green>ACTION</color> (the specific steps you took to handle the situation),
+    and finally the <color=green>RESULT</color> (what was the aftermath of your actions).'
+  - So, as our final question...
   - '#QUESTION# 10'
   - '
 
@@ -6896,8 +6894,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214821762485510}
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7840,8 +7838,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 1.0000007
-  m_Size: 0.7651716
+  m_Value: 1
+  m_Size: 0.76517147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
