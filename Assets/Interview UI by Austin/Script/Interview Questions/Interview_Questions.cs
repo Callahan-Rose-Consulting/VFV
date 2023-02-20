@@ -19,12 +19,16 @@ public class Interview_Questions : MonoBehaviour
 
         public float meter_gain;
 
+        public string[] properties;
+
         [TextArea(5, 10)]
         public string[] Reaction;
 
-        public Answer(string e, string[] r, float mg)
+        public Answer(string e, string[] r, float mg, string[] p)
         {
             entry = e;
+
+            properties = p;
 
             Reaction = r;
 
@@ -98,23 +102,6 @@ public class Interview_Questions : MonoBehaviour
 
 
         TalkToNPC.UpdatePlayerResults("", TalkToNPC.playerFileName, company_name, job_title);
-
-        /*  ON friday i will rewrite the questions to add more STAR/VALUE responses. This is just so you have an idea of what to expect per question.
-         *                   *Good response*                                                 *Mid Response*
-         * Question 2: Good: "ALLIGN" "UNDERSTANDING"                                     Mid: "ALLIGNMENT"
-         * Question 6: Good: "VISION" "UNDERSTANDING" "ALLIGNMENT" "ENACTED"              Mid: (There is no mid)
-         * Question 12:Good: "VISION" "UNDERSTANDING"                                     Mid: (There is no mid)
-         * Question 4: Good: "SITUATION" "ACTION" "RESULT"                                Mid: (There is no mid)
-         * Question 13:Good: "VISION"                                                     Mid: (There is no mid)
-         * Question 9: Good: "SITUATION" "ACTION" "RESULT"                                Mid: (There is no mid)
-         * Question 5: Good: "SITUATION" "ACTION" "RESULT"                                Mid: (There is no mid)
-         * 
-         * On friday i wil add more to the "Good" to make it a VERY good response which wil include all STAR/VALUE and in the "Mid" i will add about 1-2 to make it a somewhat decent response.
-         * 
-       */
-
-        // Debug.Log(company_name);
-        // Debug.Log(job_title);
     }
 
     public int current_question_index = 0;
@@ -367,6 +354,8 @@ public class Interview_Questions : MonoBehaviour
 
         item.meter_amount = answer.meter_gain;
 
+        item.properties = answer.properties;
+
         item.gameObject.SetActive(true);
 
         item.anim.SetTrigger("Open");
@@ -451,11 +440,11 @@ public class Interview_Questions : MonoBehaviour
 
     //Pre: an array of strings used for loading the reaction, and a float for the influence meter gain
     //Post: loads answers into the answer UI and increments the meter by the given amount.
-    public void load_answer(string[] Reaction, float meter_gain) 
+    public void load_answer(string[] Reaction, string[] properties, float meter_gain) 
     {
         if (talkToNPC.messageDone) 
         {
-            add_answer_to_player_results(Reaction);
+            add_answer_to_player_results(properties);
 
             menu_anim.SetTrigger("Close");
 
@@ -472,28 +461,15 @@ public class Interview_Questions : MonoBehaviour
     // pre condition: takes array of strings containing the interviewer reactions
     // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
 
-    private void add_answer_to_player_results(string[] Reaction) {
+    private void add_answer_to_player_results(string[] properties) {
         string interviewType = questions[question_index].questionType;
-
-        Debug.Log(interviewType);
 
         if (interviewType != "STAR" && interviewType != "VALUE") {
             return;
         }
         
-        HashSet<string> userWords = new HashSet<string>();
-        var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGNMENT", "UNDERSTAND", "ENACT"};
-
-        for (int i = 0; i < Reaction.Length; i++) {
-            for (int j = 0; j < keyWords.Count; j++) {
-                if (Reaction[i].Contains(keyWords[j])) {
-                    userWords.Add(keyWords[j]); // if the reaction contains a key word, add it to userWords
-                }
-            }
-        }
-
         // KAREEM
-        TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, userWords);
+        TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, properties);
     }
 
 

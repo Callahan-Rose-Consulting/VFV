@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 153418977}
   m_HandleRect: {fileID: 153418976}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7829,8 +7829,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 0.99999964
-  m_Size: 0.7651715
+  m_Value: 1.0000007
+  m_Size: 0.7651716
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8724,11 +8724,13 @@ MonoBehaviour:
     answers:
     - entry: Yes
       meter_gain: 0.1
+      properties: []
       Reaction:
       - (A nice firm handshake, while maintaining eye contact is a perfect way to
         give off a good impression.)
     - entry: No
       meter_gain: 0
+      properties: []
       Reaction:
       - (Unless you or the interviewer are unable to, you should always start off
         an interview with shaking the interviewer's hand.)
@@ -8737,6 +8739,7 @@ MonoBehaviour:
     answers:
     - entry: "I\u2019m @"
       meter_gain: 0
+      properties: []
       Reaction:
       - '(This answer is very bland. When an interviewer asks you this type of questions
         they are looking for:'
@@ -8746,6 +8749,7 @@ MonoBehaviour:
         not to share personal details.)"
     - entry: My name is @ and I am currently looking for a job as an <JOB_TITLE>
       meter_gain: 0.05
+      properties: []
       Reaction:
       - '(This answer is very bland. When an interviewer asks you this type of questions
         they are looking for: '
@@ -8755,6 +8759,7 @@ MonoBehaviour:
         not to share personal details.)"
     - entry: I am currently looking to expand my skill set as an <JOB_TITLE>.
       meter_gain: 0.05
+      properties: []
       Reaction:
       - "This answer shows your aspirations, however, it doesn\u2019t tell the interviewer
         about your experience or what you have to offer. Make sure to highlight relevant
@@ -8766,6 +8771,7 @@ MonoBehaviour:
         make sure not to share personal details."
     - entry: '*resumeExp* Select experience'
       meter_gain: 0.2
+      properties: []
       Reaction:
       - This is one of the best solutions. Talking about your relevant past experiences
         and skills on your resume is a great way to introduce yourself. Make sure
@@ -8783,6 +8789,7 @@ MonoBehaviour:
     - entry: "This job aligns with my future plans. It pays well and I need the money,
         so having this job is perfect for what I\u2019m looking for. "
       meter_gain: 0
+      properties: []
       Reaction:
       - "This answer is very straight forward. While it may be true, a hiring manager
         is looking for how well researched you are in the company. \u201CThis job
@@ -8795,21 +8802,28 @@ MonoBehaviour:
     - entry: 'I enjoy the prospect of being in a team environment and working towards
         a common goal. '
       meter_gain: 0.05
+      properties:
+      - ALIGNMENT
       Reaction:
       - This answer shows your drive to be a team player and that you understand the
-        value of <color=green>ALLIGNMENT</color>.
-      - Remember, for questions like this, the company is expecting you to do some
+        value of <color=green>ALIGNMENT</color>.
+      - (Remember, for questions like this, the company is expecting you to do some
         research prior to the interview to find out what they value (teamwork, community,
-        family, etc.). It would also be good to mention some specific skills you have
-        that would make you suitable for the position.
+        family, etc.). A question like this should be answered using the V.A.L.U.E
+        properties)
     - entry: "I see this opportunity to contribute to a fast-moving workplace and
         want to help this restaurant grow. I believe my previous experiences working
         with pizza at my family\u2019s store supports this. Specifically, I believe
         I can contribute to the team by using my great customer service skills. "
-      meter_gain: 0.15
+      meter_gain: 0.2
+      properties:
+      - VISION
+      - ALIGNMENT
+      - UNDERSTAND
+      - ENACT
       Reaction:
       - This is a very good response since it highlights your ambition to work for
-        the company <color=green>VISION</color> and  <color=green>ALLIGNMENT</color>
+        the company <color=green>VISION</color> and  <color=green>ALIGNMENT</color>
         with others,  <color=green>UNDERSTANDING</color>, and finally <color=green>ENACT</color>
         in the position you are applying for.
       - Great job in doing prior research about the company!
@@ -8817,21 +8831,23 @@ MonoBehaviour:
         own multiple stores and give the people of this town the best pizza eating
         experience!
       meter_gain: 0.1
+      properties:
+      - VISION
+      - UNDERSTANDING
       Reaction:
-      - "This answer shows your <color=green>UNDERSTANDING</color> the value of <color=green>VISION</color>
-        and that you have an interest in what the company does. Make sure to phrase
-        your response in a way that sounds genuine. Interviewers will be able to tell
-        if you\u2019re lying or not."
-      - 'Also, remember, for questions like this, the company is expecting you to
-        do some research prior to the interview to find out what they value (teamwork,
-        community, family, etc.).  It would also be good to mention some specific
-        skills you have that would make you suitable for the position. '
+      - This answer shows your <color=green>UNDERSTANDING</color> the value of <color=green>VISION</color>
+        and that you have an interest in what the company does.
+      - "(Make sure to phrase your response in a way that sounds genuine. Interviewers
+        will be able to tell if you\u2019re lying or not. Also, remember, for questions
+        like this, the company is expecting you to do some research prior to the interview
+        to find out what they value (teamwork, community, family, etc.)."
   - question: Where do you see yourself in five years?
     questionType: 
     answers:
     - entry: I want to be working here in your position. Your salary has to be great
         and I would like to have that one day.
       meter_gain: -0.1
+      properties: []
       Reaction:
       - 'This answer seems honest and straight to the point, however, it also makes
         the interviewer not want to hire you. #INVOKE_EVENT#*1*'
@@ -8843,6 +8859,7 @@ MonoBehaviour:
         excited to learn from this experience to apply it for myself to open my own
         shop down the road."
       meter_gain: 0.05
+      properties: []
       Reaction:
       - This answer is very honest and <color=green>PROFESSIONALISM</color> response.
         When an interviewer asks you this type of question, they are looking for someone
@@ -8853,6 +8870,7 @@ MonoBehaviour:
         and would learn here to make a positive impact on the company, employees,
         and industry.
       meter_gain: 0.15
+      properties: []
       Reaction:
       - This answer is to the point and shows your ambitions and <color=green>PROFESSIONALISM</color>
         for the company. When the hiring manager asks you this type of question, they
@@ -8861,6 +8879,7 @@ MonoBehaviour:
     - entry: I want to be able to take on a managerial role of some kind in order
         to help the company grow.
       meter_gain: 0.1
+      properties: []
       Reaction:
       - This answer is short yet effective. It establishes your goal to have a manager
         role, while also emphasizing that you want a career at the company which shows
@@ -8871,6 +8890,7 @@ MonoBehaviour:
     - entry: I don't think i've ever been in a situation like that before. Usually
         things go pretty smoothly when I am around.
       meter_gain: 0
+      properties: []
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -8884,32 +8904,25 @@ MonoBehaviour:
         them privately, I figured out a new role for them on the team and we got a
         perfect score! '
       meter_gain: 0.3
+      properties:
+      - SITUATION
+      - TASK
+      - ACTION
+      - RESULT
       Reaction:
       - Yes, I noticed you haven't worked in a while (great job telling the truth!)
         and wanted to see how you would handle this question.
       - For this question specifically, the interviewer is trying to learn how you
         handle difficult tasks. You gave a <color=green>SITUATION</color> (group project)
-        and a <color=green>TASK</color> that spoke of your <color=green>ACTION</color>
+        and a <color=green>TASK</color> (helping a team meber), your <color=green>ACTION</color>
         (speaking a teammate privately), and the <color=green>RESULT</color> of getting
         a perfect mark on the project.
-    - entry: 'Although I haven''t had a job in a while, I do have some school experience.
-        One of my group mates didn''t spend any time on the project. I decided to
-        speak to the group mate privately and found out the issue. '
-      meter_gain: 0.15
-      Reaction:
-      - Yes, I noticed you haven't worked in a while (great job telling the truth!)
-        and wanted to see how you would handle this question.
-      - For this question specifically, the interviewer is trying to learn how you
-        handle difficult tasks. You gave a <color=green>SITUATION</color> (group project)
-        and a <color=green>TASK</color> that spoke of your <color=green>ACTION</color>
-        (speaking a teammate privately), but the only issue was there was no clear
-        <color=green>Result</color>. Remember to try to end it in a way that shows
-        how your actions fixed the issue.
   - question: What have you done to improve your work skills in the past year?
     questionType: STAR
     answers:
     - entry: I have never had to improve my work skills. I am the best in what I do.
       meter_gain: -0.05
+      properties: []
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -8924,6 +8937,11 @@ MonoBehaviour:
         I greatly improved my people skills. Because of my great customer service,
         I drew in many new and returning customers!
       meter_gain: 0.2
+      properties:
+      - SITUATION
+      - TASK
+      - ACTION
+      - RESULT
       Reaction:
       - You did a great job answering in the S.T.A.R. format. You gave a <color=green>SITUATION</color>
         (working at a pizza shop), your <color=green>TASK</color> (needing to improve
@@ -8934,11 +8952,15 @@ MonoBehaviour:
         was to clean out a grape juice stain from her couch. Using new techniques
         I learned, I was able to remove the stain. So, I\u2019m pretty good at cleaning. "
       meter_gain: 0.05
+      properties:
+      - SITUATION
+      - TASK
+      - ACTION
       Reaction:
       - You should have answered this question using the S.T.A.R. format. You gave
         a <color=green>SITUATION</color> (working with the elderly), your <color=green>TASK</color>
         (cleaning), demonstrated <color=green>ACTION</color> (cleaning a stain), but
-        didn't include mention the impact your work had (result).
+        didn't include mention the impact your work had (<color=red>RESULT</color>).
       - Also, the answer didn't really related to this job position (Try to tailor
         your answers to the type of work you are doing. Speaking about developing
         hand skills, working with others in a group project, etc. would be more fitting).
@@ -8947,6 +8969,7 @@ MonoBehaviour:
     answers:
     - entry: Nothing that I know of at the moment.
       meter_gain: -0.05
+      properties: []
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -8959,32 +8982,44 @@ MonoBehaviour:
         we evacuated the house. We moved everybody out of danger and prevented. In
         the end, I was recognized by the neighborhood for my good actions and left
         a strong impression. "
-      meter_gain: 0.3
+      meter_gain: 0.25
+      properties:
+      - SITUATION
+      - TASK
+      - ACTION
+      - RESULT
       Reaction:
+      - In terms of answering the question with S.T.A.R., you did exceptional!
       - This is a good example of helping out in your community. You had a <color=green>SITUATION
         </color> to help people, showed <color=green>TASK</color>, the  <color=green>ACTION
         </color> you took,  and  <color=green>RESULT</color> or outcome from it.
-      - In terms of answering the question with S.T.A.R., you did exceptional!
     - entry: One day I volunteered to help with community service. I spent the day
         helping the elderly
       meter_gain: 0.05
+      properties:
+      - SITUATION
       Reaction:
-      - This is a somewhat good example of helping in your community. You had a <color=green>SITUATION
-        </color> to help people, but you did not show the  <color=green>Task</color>
-        that needed to take, the  <color=green>ACTION </color> you took was clear,
-        but the   <color=green>Result</color> or outcome from it was unclear
+      - 'This is a somewhat good example of helping in your community. You had a <color=green>SITUATION
+        </color> to help people, but you did not show the  <color=red>TASK</color>
+        that you needed to take. '
+      - You gave a general description, but no specific <color=red>ACTION </color>.
+        The <color=red>RESULT</color>/outcome from this situation was also unclear.
     - entry: I work too hard and need to learn how to balance my life better.
       meter_gain: -0.1
+      properties: []
       Reaction:
       - That's a very poor answer. We are trying to understand a time where you helped
         your community. Before an interview, draft a few scenarios. In the interview,
         mention them in the Situation, Action, and Result (STAR) format.
   - question: How did you learn about this opening?
-    questionType: VALUE
+    questionType: 
     answers:
     - entry: I learned about this job opening from a job searching website. I saw
         the job offering and decided to apply because it aligned with my interests.
       meter_gain: 0.2
+      properties:
+      - meow
+      - meow2
       Reaction:
       - "This answer is honest. It gets the point across and lets the interviewer
         know that you\u2019re willing to take chances to move ahead. It may be good
@@ -9000,6 +9035,7 @@ MonoBehaviour:
         company and decided this job fits my needs, suits my skills, and has company
         values that align with mine.
       meter_gain: 0.3
+      properties: []
       Reaction:
       - 'This answer is clear and concise. It tells the interviewer that you did research
         into the company and demonstrates your compatibility with them. Remember,
@@ -9012,6 +9048,7 @@ MonoBehaviour:
     - entry: I heard about this job from a friend. I needed the money, so this job
         was a blessing in disguise really. Thank you for the opportunity!
       meter_gain: -0.05
+      properties: []
       Reaction:
       - "This answer is very honest. However, This type of question is asked for the
         same reason that questions like: \u201CWhy do you want to work here?\u201D
@@ -9028,6 +9065,7 @@ MonoBehaviour:
     - entry: I don't think i've ever been in a situation like that before. I tend
         to make a good impression with my personality as soon as someone meets me.
       meter_gain: 0
+      properties: []
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -9039,6 +9077,7 @@ MonoBehaviour:
         making pizza, so I decided to help. We were able to get through the lunch
         rush and made many new customers. All my dads employees were impressed!
       meter_gain: 0.2
+      properties: []
       Reaction:
       - This is another example of answering using the STAR format. You gave a situation
         (lunch rush), spoke of your action (helping in the kitchen), and the result
@@ -9048,6 +9087,7 @@ MonoBehaviour:
     answers:
     - entry: I don't think i've had an cool accomplishments.
       meter_gain: -0.05
+      properties: []
       Reaction:
       - 'It is possible that sometimes you just won''t really have an experience to
         share with the interviewer with every question they ask. But in this situation
@@ -9061,7 +9101,12 @@ MonoBehaviour:
         to break out of my shell and made a study group. Studying with my fellow classmates
         gave me the confidence to perform well. I was able to graduate with a 3.5
         GPA, received a scholarship, and graduated with no debt. '
-      meter_gain: 0.2
+      meter_gain: 0.25
+      properties:
+      - SITUATION
+      - TASK
+      - ACTION
+      - RESULT
       Reaction:
       - 'In terms of answering the question with S.T.A.R., you did exceptional! You
         gave a <color=green>SITUATION</color> (college), <color=green>TASK</color>
@@ -9074,12 +9119,16 @@ MonoBehaviour:
         you have and lets them learn about your background outside of your resume.
     - entry: I was working on a project for the science fair. I did well and won first
         place.
-      meter_gain: 0.05
+      meter_gain: 0.1
+      properties:
+      - SITUATION
+      - RESULT
       Reaction:
       - 'In terms of answering the question with S.T.A.R., you could have done better.
         You gave a <color=green>SITUATION</color> (science fair) and a great <color=green>RESULT</color>
-        (winning). However, you needed to mention the task that you did at the science
-        fair and the action you took to perform well.
+        (winning). However, you needed to mention the <color=red>TASK</color> that
+        you did at the science fair and the <color=red>ACTION</color> you took to
+        perform well.
 
 '
   - question: How would you reply to a customer who enters the store or calls just
@@ -9091,6 +9140,7 @@ MonoBehaviour:
 
 '
       meter_gain: 0
+      properties: []
       Reaction:
       - 'When this type of question is asked, the interviewer is looking to evaluate
         how your understanding align with your values. '
@@ -9106,6 +9156,7 @@ MonoBehaviour:
         and ensure to provide him the requested service once the store opens the other
         day. '
       meter_gain: 0.15
+      properties: []
       Reaction:
       - "This is a good answer. \n\nWhen this type of question is asked, the interviewer
         is looking to evaluate your skills and character traits to see if they fit
@@ -9116,6 +9167,7 @@ MonoBehaviour:
     - entry: 'I would avoid any further conversation and ask him to leave since the
         store is closed. '
       meter_gain: 0
+      properties: []
       Reaction:
       - 'This answer is honest and straight to the point. However, when this type
         of question is asked, the interviewer is looking to evaluate your skills and
@@ -9130,6 +9182,7 @@ MonoBehaviour:
     - entry: Having a clear understanding of my performance at work, I would take
         the criticism, however, work my own way at the end of the day.
       meter_gain: 0
+      properties: []
       Reaction:
       - '
 
@@ -9145,6 +9198,7 @@ MonoBehaviour:
     - entry: "I\u2019d take the criticism on board, but also provide him with some
         constructive criticisms to ensure we were on the same page."
       meter_gain: 0
+      properties: []
       Reaction:
       - This answer is straight to the point, and not up to the point of the interviewer's
         expectations. With this questions, the interviewer is looking forward to see
@@ -9156,6 +9210,7 @@ MonoBehaviour:
     - entry: "I\u2019d take the criticism on board and make it my goal to be one step
         ahead of my manager\u2019s expectations."
       meter_gain: 0.2
+      properties: []
       Reaction:
       - 'This answer is good.
 
@@ -9175,18 +9230,23 @@ MonoBehaviour:
         right in the discussion.
 
 '
-      meter_gain: 0
+      meter_gain: 0.05
+      properties:
+      - VISION
       Reaction:
-      - This answer shows that your vision is transparent and hence you would not
-        hide anything from your manager, but highlights your weakness on understanding
-        the matter from the perspective of parties involved and work to solve it within
-        yourselves.
-      - The interviewer is looking to see if you have good judgement abilities on
-        a tough situation, and how to enact a way to get out of the situation valuing
-        the opinion of both parties involved.
+      - This answer shows that your <color=green>VISION</color> is transparent and
+        hence you would not hide anything from your manager, but highlights your weakness
+        on <color=red>UNDERSTANDING</color> the matter from the perspective of parties
+        involved and work to solve it within yourselves.
+      - '(The interviewer is looking to see if you have good judgement abilities on
+        a tough situation, and how to <color=red>ENACT</color> a way to get out of
+        the situation valuing the opinion of both parties involved. You also missed
+        out on the importance of <color=red>ALIGNMENT</color> and could compromise
+        chemistry between the team). '
     - entry: I would focus on resolving our matter without having the need to involve
         our manager, and make sure to warn my coworker to not get into a future conflict.
       meter_gain: 0
+      properties: []
       Reaction:
       - This answer is honest and shows that you understand that the matter could
         be solved within the two parties involved, however it shows that you lack
@@ -9202,24 +9262,16 @@ MonoBehaviour:
         that everyone is able to have different opinions but are always respectful
         of each other''s opinions.    '
       meter_gain: 0.2
+      properties:
+      - VISION
+      - ALIGNMENT
+      - UNDERSTANDING
+      - ENACT
       Reaction:
-      - This is a very good response since it highlights your ambition or <color=green>VISION</color
-        of the situation and  <color=green>ALLIGNMENT</color> with others,  <color=green>UNDERSTANDING</color>
+      - This is a very good response since it highlights your ambition or <color=green>VISION</color>
+        of the situation and  <color=green>ALIGNMENT</color> with others, <color=green>UNDERSTANDING</color>
         the problem, and finally <color=green>ENACT</color> in the problem to get
         it resolved
-    - entry: 'Since I understand that we both have our own ways to pursue things,
-        I would focus on resolving our matter peacefully without having the need to
-        involve our manager. '
-      meter_gain: 0.05
-      Reaction:
-      - "This answer shows your <color=green>UNDERSTANDING</color> the value of <color=green>VISION</color>
-        and that you have an interest in making things right. Make sure to phrase
-        your response in a way that sounds genuine. Interviewers will be able to tell
-        if you\u2019re lying or not."
-      - When this type of question is asked, the interviewer is looking to evaluate
-        your skills and character traits to see if they fit with the position and
-        the company. Finding out that you choose to avoid a difficult situation rather
-        than dealing with it makes the interviewer question your traits.
   - question: How would you handle a situation where you made a big mistake, but you
       were the only one who knew about it?
     questionType: VALUE
@@ -9230,56 +9282,62 @@ MonoBehaviour:
         and the need to be in constant communication with one another, and I think
         my ability to ask (and answer) questions of my peers would help me fit in
         very well with your company culture.  '
-      meter_gain: 0.3
+      meter_gain: 0.25
+      properties:
+      - VISION
+      - ALIGNMENT
+      - UNDERSTAND
+      - ENACT
       Reaction:
       - 'This is a good answer.
 
 
         It shows your clear <color=green>VISION</color> in answering difficult questions.
         You also displayed a great comperehension of <color=green>ALLIGNMENT</color>,
-        <color=green>UNDERSTANDING</color> your place on the team, and how you would<color=green>ENACT</color>
-        in a way to reconcile your previous mistake.'
+        <color=green>UNDERSTANDING</color> your place on the team, and how you would
+        <color=green>ENACT</color> in a way to reconcile your previous mistake.'
       - (If the interviewer were to follow up on this question for a specific mistake
         you made, it would be a great chance to answer using the STAR format).
     - entry: "I\u2019d not want anyone to know about it and focus on correcting the
         mistake and putting processes in place to ensure that it does not happen again.\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - 'When this type of question is asked, the interviewer is looking to evaluate
-        your <color=green>vision</color> towards a difficult situation.
+        your <color=red>VISION</color> towards a difficult situation.
 
 
         It shows that your values align well with your understanding as you begin
         to correct the mistake and put processes on place but at the same time hiding
         your mistake lacks transparency that the interviewer is looking for in your
-        vision.
-
-'
+        vision.'
       - Make sure to answer these questions using all the properties from V.A.L.U.E.
     - entry: "I\u2019d let my manager know about my mistake and focus on correcting
         the mistake, ensuring others know about it but keeping it quiet so that my
         reputation was not harmed."
-      meter_gain: 0.05
+      meter_gain: 0.1
+      properties:
+      - VISION
+      - UNDERSTANDING
       Reaction:
-      - 'The answer is straight to the point and shows that you have good <color=green>VISION</color>
+      - The answer is straight to the point and shows that you have good <color=green>VISION</color>
         and <color=green>UNDERSTANDING</color> of the situation.
-
-
-        However, it leaves out <color=green>allignment</color> and <color=green>enactment</color>.'
-      - When this type of question is asked, the interviewer is looking at your ability
+      - (When this type of question is asked, the interviewer is looking at your ability
         to ensure that you put proper processes and support structures in place, and
         not just focus on fixing the problem. Make sure to include all properties
-        of V.A.L.U.E.
+        of V.A.L.U.E. as you missed a some)
   - question: Do you want to negotiate your salary?
     questionType: 
     answers:
     - entry: Yes, I would like to negotiate my offer.
       meter_gain: 0
+      properties: []
       Reaction:
       - (This is a good example if you think you deserve more pay than the offer that
         was given to you.)
     - entry: "\rNo, I am happy with my offer\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - (You should always try to negotiate salary, you have nothing to lose as long
         as long as you request a salary WITHIN the salary range for this position.)
@@ -9289,12 +9347,14 @@ MonoBehaviour:
     - entry: I searched up the salary range for this job and based on that, I believe
         I DESERVE a pay of $20 an hour.
       meter_gain: 0.1
+      properties: []
       Reaction:
       - It is a good thing you didn't bring up wanting/needing a higher salary. Employers
         will only improve your current offer if you deserve it.
     - entry: I need the higher pay because I have a baby on the way, so I need the
         extra pay to be able to provide for my family and for the baby when he arrives
       meter_gain: 0
+      properties: []
       Reaction:
       - Unfortunately, needing something isn't enough either. The employer is not
         responsible for trying to compensate any personal struggles you may be going
@@ -9305,6 +9365,7 @@ MonoBehaviour:
         nice rims that are on sale that I want to buy so I need the extra money so
         I can get them.
       meter_gain: -0.1
+      properties: []
       Reaction:
       - "Wanting something isn't enough of a reason for you to deserve a higher salary.
         For now, you will be given your original offer. Think about why you deserve
@@ -9316,12 +9377,14 @@ MonoBehaviour:
     - entry: Because I have a family member who own a restaurant, so I know the daily
         operations.
       meter_gain: 0.2
+      properties: []
       Reaction:
       - That's an extraordinarily strong reason for wanting a higher pay. Although
         you don't have direct experience, you have some knowledge of day-to-day operations.
         I will raise your salary to $20 an hour!
     - entry: Because I own pizza places, so I know the backend of the job requirements.
       meter_gain: -0.2
+      properties: []
       Reaction:
       - It looks like you don't have previous experience. Never lie in a job interview
         even though the interviewer might not know your background, they will still

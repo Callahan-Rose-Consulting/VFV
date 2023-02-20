@@ -25,7 +25,7 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
-    public static string[] valueProperties = {"VISION", "ALLIGNMENT", "UNDERSTAND", "ENACT"};
+    public static string[] valueProperties = {"VISION", "ALIGNMENT", "UNDERSTAND", "ENACT"};
     public static string[] starProperties = {"SITUATION", "TASK", "ACTION", "RESULT"};
 
     public static int progressBarLine = 0;
@@ -288,7 +288,7 @@ public class TalkToNPC : MonoBehaviour
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
-    public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, HashSet<string> userWords) {
+    public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
         string playerFileName = FileToUpdate;
         playerResultsFile = FileToUpdate;
 
@@ -298,8 +298,9 @@ public class TalkToNPC : MonoBehaviour
         numQuestionsAsked++; 
 
         foreach (string line in allLines) {
+            lineNumber++;
+
             if (!line.Contains("END OF INTERVIEW PERFORMANCE:")) {
-                lineNumber++;
                 continue;
             }
 
@@ -308,12 +309,12 @@ public class TalkToNPC : MonoBehaviour
             allLines[lineNumber] = "\nQuestion: " + question + "\n";
             allLines[lineNumber] += "Feedback:\n\nYou got the " + updateType + " properties of:";
 
-            foreach (var word in userWords) {
-                allLines[lineNumber] += " " + word;
+            for (int k = 0; k < userWords.Length; k++) {
+                allLines[lineNumber] += " " + userWords[k];
             }
 
 
-            if (updateType == "VALUE" && userWords.Count != valueProperties.Length) {
+            if (updateType == "VALUE" && userWords.Length != valueProperties.Length) {
                 allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
 
                 for (int j = 0; j < valueProperties.Length; j++) {
@@ -326,7 +327,7 @@ public class TalkToNPC : MonoBehaviour
             }
 
             // must be STAR
-            else if (updateType == "STAR" && userWords.Count != starProperties.Length) {
+            else if (updateType == "STAR" && userWords.Length != starProperties.Length) {
                 allLines[lineNumber] += "\nYou missed out on the START PROPERTY OF:";
 
                 for (int j = 0; j < starProperties.Length; j++) {
@@ -350,8 +351,6 @@ public class TalkToNPC : MonoBehaviour
         
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
-
-        UpdateProgressBar();
     }
 
 
@@ -1244,7 +1243,7 @@ public class TalkToNPC : MonoBehaviour
             allLines[progressBarLine] += "⬜";
         }
 
-        allLines[progressBarLine] += " - " + ((numPerfectAnswers / numQuestionsAsked) * 100) + "%";
+        allLines[progressBarLine] += " - " + Convert.ToInt32((numPerfectAnswers * 100) / numQuestionsAsked) + "%";
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
 
