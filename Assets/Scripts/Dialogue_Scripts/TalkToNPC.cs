@@ -26,7 +26,7 @@ public class TalkToNPC : MonoBehaviour
     public static string playerFileName;
 
     public static string[] valueProperties = {"VISION", "ALLIGNMENT", "UNDERSTAND", "ENACT"};
-    public static string[] starProperties = {"SITUATION", "ACTION", "RESULT"};
+    public static string[] starProperties = {"SITUATION", "TASK", "ACTION", "RESULT"};
 
     public static int progressBarLine = 0;
 

@@ -9248,8 +9248,8 @@ MonoBehaviour:
     - entry: "\rNo, I am happy with my offer\r\n"
       meter_gain: 0
       Reaction:
-      - (This is an excellent choice if you feel like you deserve the pay that was
-        offered to you.)
+      - (You should always try to negotiate salary, you have nothing to lose as long
+        as long as you request a salary WITHIN the salary range for this position.)
   - question: Why do you want to negotiate for a higher pay rate?
     questionType: 
     answers:
