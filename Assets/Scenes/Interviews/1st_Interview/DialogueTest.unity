@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 421070168}
   m_HandleRect: {fileID: 421070167}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6885,7 +6885,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214821762485510}
   m_HandleRect: {fileID: 2993214821762485511}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7829,8 +7829,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.7651716
+  m_Value: 0.99999964
+  m_Size: 0.7651715
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8802,27 +8802,30 @@ MonoBehaviour:
         research prior to the interview to find out what they value (teamwork, community,
         family, etc.). It would also be good to mention some specific skills you have
         that would make you suitable for the position.
-    - entry: 'I know <COMPANY_NAME> has an emphasis on teamwork and I admire that
-        because it aligns with my personal values. '
+    - entry: "I see this opportunity to contribute to a fast-moving workplace and
+        want to help this restaurant grow. I believe my previous experiences working
+        with pizza at my family\u2019s store supports this. Specifically, I believe
+        I can contribute to the team by using my great customer service skills. "
       meter_gain: 0.15
       Reaction:
-      - This answer highlights your ambition to work for the company, <color=green>ALLIGN</color>
-        with others, displays your research and <color=green>UNDERSTANDING</color>,
-        and states what you like about the company.
+      - This is a very good response since it highlights your ambition to work for
+        the company <color=green>VISION</color> and  <color=green>ALLIGNMENT</color>
+        with others,  <color=green>UNDERSTANDING</color>, and finally <color=green>ENACT</color>
+        in the position you are applying for.
       - Great job in doing prior research about the company!
-    - entry: I have been a big fan of the pizzas you make and would love to be a part
-        of making them for others to enjoy. I believe my skills would be valuable
-        to this position.
+    - entry: I see this as a step to bigger and better things. One day, I hope to
+        own multiple stores and give the people of this town the best pizza eating
+        experience!
       meter_gain: 0.1
       Reaction:
-      - "This answer shows you understand the value of <color=green>ALLIGNMENT</color>
+      - "This answer shows your <color=green>UNDERSTANDING</color> the value of <color=green>VISION</color>
         and that you have an interest in what the company does. Make sure to phrase
         your response in a way that sounds genuine. Interviewers will be able to tell
         if you\u2019re lying or not."
-      - Also, remember, for questions like this, the company is expecting you to do
-        some research prior to the interview to find out what they value (teamwork,
+      - 'Also, remember, for questions like this, the company is expecting you to
+        do some research prior to the interview to find out what they value (teamwork,
         community, family, etc.).  It would also be good to mention some specific
-        skills you have that would make you suitable for the position.
+        skills you have that would make you suitable for the position. '
   - question: Where do you see yourself in five years?
     questionType: 
     answers:
@@ -8875,18 +8878,33 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities like leadership in you that
         could actually be applicable to the position.
-    - entry: Although I haven't had a job in a while, I do have some school experience.
-        One of my group mates didn't spend any time on the project. I decided to speak
-        to the group mate privately and found out the issue. By speaking to them privately,
-        I figured out a new role for them on the team and we got a perfect score!
+    - entry: 'Although I haven''t had a job in a while, I do have some school experience.
+        One of my group mates didn''t spend any time on the project. I decided to
+        speak to the group mate privately and found out the issue. By speaking to
+        them privately, I figured out a new role for them on the team and we got a
+        perfect score! '
       meter_gain: 0.3
       Reaction:
       - Yes, I noticed you haven't worked in a while (great job telling the truth!)
         and wanted to see how you would handle this question.
       - For this question specifically, the interviewer is trying to learn how you
-        handle difficult tasks. You gave a <color=green>SITUATION</color> (group project),
-        spoke of your <color=green>ACTION</color> (speaking a teammate privately),
-        and the <color=green>RESULT</color> of getting a perfect mark on the project.
+        handle difficult tasks. You gave a <color=green>SITUATION</color> (group project)
+        and a <color=green>TASK</color> that spoke of your <color=green>ACTION</color>
+        (speaking a teammate privately), and the <color=green>RESULT</color> of getting
+        a perfect mark on the project.
+    - entry: 'Although I haven''t had a job in a while, I do have some school experience.
+        One of my group mates didn''t spend any time on the project. I decided to
+        speak to the group mate privately and found out the issue. '
+      meter_gain: 0.15
+      Reaction:
+      - Yes, I noticed you haven't worked in a while (great job telling the truth!)
+        and wanted to see how you would handle this question.
+      - For this question specifically, the interviewer is trying to learn how you
+        handle difficult tasks. You gave a <color=green>SITUATION</color> (group project)
+        and a <color=green>TASK</color> that spoke of your <color=green>ACTION</color>
+        (speaking a teammate privately), but the only issue was there was no clear
+        <color=green>Result</color>. Remember to try to end it in a way that shows
+        how your actions fixed the issue.
   - question: What have you done to improve your work skills in the past year?
     questionType: STAR
     answers:
@@ -8937,29 +8955,25 @@ MonoBehaviour:
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
         be applicable to the position.
-    - entry: 'My neighbors house got flooded. I spent the rest of the day helping.
-        I checked on my neighbor to make sure they were safe. I called for help and
+    - entry: "My neighbor\u2019s house got flooded. I spent the rest of the day helping.
+        I checked on my neighbor to make sure they were safe. I called for help, and
         we evacuated the house. We moved everybody out of danger and prevented. In
         the end, I was recognized by the neighborhood for my good actions and left
-        a strong impression. '
+        a strong impression. "
       meter_gain: 0.3
       Reaction:
-      - This is a good example of helping out in your community. You had a <color=green>VISION</color>
-        to help people, showed <color=green>UNDERSTANDING</color>,  <color=green>ALLIGNMENT</color>,  and
-        <color=green>ENACTED</color> to help out others.
-      - In terms of answering the question with S.T.A.R., you did exceptional! You
-        gave a <color=green>SITUATION</color> (flood), spoke of your <color=green>ACTION</color>
-        (calling for help and evacuating the house), and a great <color=green>RESULT</color>.
-    - entry: I was working with a very clumsy co-worker so after they broke one of
-        the devices we used,  I talked to the manager and he finally fired him. Now
-        we didn't have to deal with the clumsy co-worker anymore.
-      meter_gain: 0
+      - This is a good example of helping out in your community. You had a <color=green>SITUATION
+        </color> to help people, showed <color=green>TASK</color>, the  <color=green>ACTION
+        </color> you took,  and  <color=green>RESULT</color> or outcome from it.
+      - In terms of answering the question with S.T.A.R., you did exceptional!
+    - entry: One day I volunteered to help with community service. I spent the day
+        helping the elderly
+      meter_gain: 0.05
       Reaction:
-      - "(This experience doesn\u2019t relate to the question. The interviewer is
-        looking for an example of you helping out in your community to show your personal
-        values outside of the work place. Usually this type of question is asked at
-        a place with a strong emphasis on teamwork and togetherness. Remember to answer
-        with the S.T.A.R. method.)"
+      - This is a somewhat good example of helping in your community. You had a <color=green>SITUATION
+        </color> to help people, but you did not show the  <color=green>Task</color>
+        that needed to take, the  <color=green>ACTION </color> you took was clear,
+        but the   <color=green>Result</color> or outcome from it was unclear
     - entry: I work too hard and need to learn how to balance my life better.
       meter_gain: -0.1
       Reaction:
@@ -9169,20 +9183,27 @@ MonoBehaviour:
       - The task you choose also shows the interviewer what values and understandings
         you have and lets them learn about your background outside of your resume.
         Remember to apply the VALUE method with questions like this.
-    - entry: Since I understand that we both have our own ways to pursue things, I
-        would focus on resolving our matter peacefully without having the need to
-        involve our manager.
+    - entry: 'My vision is to ensure that we have an environment where we can have
+        dialog about our different opinions.  I would make sure that the whole team
+        is always aligned with that philosophy, and I would ensure that everyone understood
+        my expectations.  And finally, I would put the procedures in place to ensure
+        that everyone is able to have different opinions but are always respectful
+        of each other''s opinions.    '
       meter_gain: 0.2
       Reaction:
-      - This answer shows value the opinion of the other party involved in this difficult
-        situation. You displayed a clear <color=green>VISION</color> of what you wanted
-        to do with a great <color=green>UNDERSTANDING</color> of solving problems
-        peacefully without involving a third party.
-    - entry: I would end the conversation and leave the room to avoid further discussion.
+      - This is a very good response since it highlights your ambition or <color=green>VISION</color
+        of the situation and  <color=green>ALLIGNMENT</color> with others,  <color=green>UNDERSTANDING</color>
+        the problem, and finally <color=green>ENACT</color> in the problem to get
+        it resolved
+    - entry: 'Since I understand that we both have our own ways to pursue things,
+        I would focus on resolving our matter peacefully without having the need to
+        involve our manager. '
       meter_gain: 0.05
       Reaction:
-      - Your answer reflects that you lack the courage to face a tough situation and
-        choose to ignore it no matter how bad the consequences could be.
+      - "This answer shows your <color=green>UNDERSTANDING</color> the value of <color=green>VISION</color>
+        and that you have an interest in making things right. Make sure to phrase
+        your response in a way that sounds genuine. Interviewers will be able to tell
+        if you\u2019re lying or not."
       - When this type of question is asked, the interviewer is looking to evaluate
         your skills and character traits to see if they fit with the position and
         the company. Finding out that you choose to avoid a difficult situation rather
