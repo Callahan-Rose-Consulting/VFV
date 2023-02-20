@@ -8916,33 +8916,32 @@ MonoBehaviour:
         it would probably be best to provide the interviewer with an indirectly related
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
-        be applicable to the position.
+        be applicable to the position. Try answering questions like these using the
+        S.T.A.R format.
+    - entry: During my free time between classes, I would help my family at their
+        pizza shop. I knew my communication skills needed improvement. As such, I
+        tried to work as a cashier or waiter as much as possible. Although I was uncomfortable,
+        I greatly improved my people skills. Because of my great customer service,
+        I drew in many new and returning customers!
+      meter_gain: 0.2
+      Reaction:
+      - You did a great job answering in the S.T.A.R. format. You gave a <color=green>SITUATION</color>
+        (working at a pizza shop), your <color=green>TASK</color> (needing to improve
+        customer service skills), demonstrated <color=green>ACTION</color> (forcing
+        yourself into difficult roles), with the <color=green>RESULT</color> of gaining
+        new customers!
     - entry: "I had a cleaning job at my elderly neighbor\u2019s apartment. My task
         was to clean out a grape juice stain from her couch. Using new techniques
-        I learned, I was able to remove the stain and she was happy about it. I am
-        always looking for new techniques to do things as there is never one way to
-        complete a task."
-      meter_gain: 0.15
-      Reaction:
-      - This is a great example! By helping Gutsy you took the initiative to improve
-        yourself as well as helping out in your community. Even the smallest of tasks
-        can help you improve yourself .
-      - You did a great job answering in the S.T.A.R. format. You gave a <color=green>SITUATION</color>
-        (helping out Gutsy), demonstrated <color=green>ACTION</color> (cleaning),
-        with the <color=green>RESULT</color> of helping out someone in the town!
-    - entry: I really wanted to become a better typer on the computer, so I signed
-        up for a typing course online.
+        I learned, I was able to remove the stain. So, I\u2019m pretty good at cleaning. "
       meter_gain: 0.05
       Reaction:
-      - That's a honest answer, but not really related to this job position (Try to
-        tailor your answers to the type of work you are doing. Speaking about developing
-        hand skills, working with others in a group project, etc. would be more fitting)
-    - entry: 'I work so hard that I rarely have time to focus on improving my skills. '
-      meter_gain: -0.05
-      Reaction:
-      - This is a very conceited answer. Not only did you not answer the question,
-        you've given me the indication that you are not a team player who reflects
-        on how to improve.
+      - You should have answered this question using the S.T.A.R. format. You gave
+        a <color=green>SITUATION</color> (working with the elderly), your <color=green>TASK</color>
+        (cleaning), demonstrated <color=green>ACTION</color> (cleaning a stain), but
+        didn't include mention the impact your work had (result).
+      - Also, the answer didn't really related to this job position (Try to tailor
+        your answers to the type of work you are doing. Speaking about developing
+        hand skills, working with others in a group project, etc. would be more fitting).
   - question: Tell me about a time you went above and beyond to help your community.
     questionType: STAR
     answers:
@@ -9055,21 +9054,34 @@ MonoBehaviour:
         it would probably be best to provide the interviewer with an indirectly related
         experience. '
       - With this, the interviewer may see some qualities in you that could actually
-        be applicable to the position.
-    - entry: Graduating college with no debt! Being the first one in my family to
-        attend university, I was scared about my performance. I made a great group
-        of friends to give me advice, studied as hard as I could, and was able to
-        graduate with a 4.0 GPA and recieved a scholarship!
+        be applicable to the position. Be sure to answer questions like this in the
+        S.T.A.R format.
+    - entry: 'Being the first one in my family to attend university, I was scared
+        about my performance. I needed at least a 3.3 GPA to afford school. I decided
+        to break out of my shell and made a study group. Studying with my fellow classmates
+        gave me the confidence to perform well. I was able to graduate with a 3.5
+        GPA, received a scholarship, and graduated with no debt. '
       meter_gain: 0.2
       Reaction:
       - 'In terms of answering the question with S.T.A.R., you did exceptional! You
-        gave a <color=green>SITUATION</color> (college), spoke of your <color=green>ACTION</color>
-        (building a community of people to help you), and a great <color=green>RESULT</color>
+        gave a <color=green>SITUATION</color> (college), <color=green>TASK</color>
+        (getting good grades), spoke of your <color=green>ACTION</color> (building
+        a community of people to help you), and a great <color=green>RESULT</color>
         (great grades and scholarship).
 
 '
       - The task you choose also shows the interviewer what your interests and passions
         you have and lets them learn about your background outside of your resume.
+    - entry: I was working on a project for the science fair. I did well and won first
+        place.
+      meter_gain: 0.05
+      Reaction:
+      - 'In terms of answering the question with S.T.A.R., you could have done better.
+        You gave a <color=green>SITUATION</color> (science fair) and a great <color=green>RESULT</color>
+        (winning). However, you needed to mention the task that you did at the science
+        fair and the action you took to perform well.
+
+'
   - question: How would you reply to a customer who enters the store or calls just
       as you are trying to close the shift?
     questionType: 
@@ -9212,27 +9224,29 @@ MonoBehaviour:
       were the only one who knew about it?
     questionType: VALUE
     answers:
-    - entry: "I\u2019d let my manager know about my mistake and focus on correcting
-        the mistake, ensuring others know about it and put processes in place to ensure
-        that it does not happen again."
-      meter_gain: 0.2
+    - entry: 'One thing I have learned from past mistakes is when to ask for help.
+        I have learned that it is far better to ask for clarification and solve an
+        issue right away than to be unsure. I know that your company emphasizes teamwork
+        and the need to be in constant communication with one another, and I think
+        my ability to ask (and answer) questions of my peers would help me fit in
+        very well with your company culture.  '
+      meter_gain: 0.3
       Reaction:
       - 'This is a good answer.
 
 
-        It shows that your <color=green>VISION</color> is transparent and so you would
-        not hide anything from your manager, accept the mistake and work on mending
-        it.'
-      - (If the interviewer were to follow up on this question, it would be a great
-        chance to answer using the STAR format).
+        It shows your clear <color=green>VISION</color> in answering difficult questions.
+        You also displayed a great comperehension of <color=green>ALLIGNMENT</color>,
+        <color=green>UNDERSTANDING</color> your place on the team, and how you would<color=green>ENACT</color>
+        in a way to reconcile your previous mistake.'
+      - (If the interviewer were to follow up on this question for a specific mistake
+        you made, it would be a great chance to answer using the STAR format).
     - entry: "I\u2019d not want anyone to know about it and focus on correcting the
         mistake and putting processes in place to ensure that it does not happen again.\n"
       meter_gain: 0
       Reaction:
-      - '
-
-        When this type of question is asked, the interviewer is looking to evaluate
-        your vision towards a difficult situation.
+      - 'When this type of question is asked, the interviewer is looking to evaluate
+        your <color=green>vision</color> towards a difficult situation.
 
 
         It shows that your values align well with your understanding as you begin
@@ -9241,23 +9255,21 @@ MonoBehaviour:
         vision.
 
 '
-      - '
-
-        The task you choose also shows the interviewer what values and perception
-        you have and lets them learn about your background outside of your resume. '
+      - Make sure to answer these questions using all the properties from V.A.L.U.E.
     - entry: "I\u2019d let my manager know about my mistake and focus on correcting
         the mistake, ensuring others know about it but keeping it quiet so that my
         reputation was not harmed."
       meter_gain: 0.05
       Reaction:
-      - 'The answer is straight to the point and shows that you have good vision and
-        understanding of the situation.
+      - 'The answer is straight to the point and shows that you have good <color=green>VISION</color>
+        and <color=green>UNDERSTANDING</color> of the situation.
 
 
-        However, it leaves out enactment.'
+        However, it leaves out <color=green>allignment</color> and <color=green>enactment</color>.'
       - When this type of question is asked, the interviewer is looking at your ability
         to ensure that you put proper processes and support structures in place, and
-        not just focus on fixing the problem.
+        not just focus on fixing the problem. Make sure to include all properties
+        of V.A.L.U.E.
   - question: Do you want to negotiate your salary?
     questionType: 
     answers:
@@ -9269,8 +9281,8 @@ MonoBehaviour:
     - entry: "\rNo, I am happy with my offer\r\n"
       meter_gain: 0
       Reaction:
-      - (This is an excellent choice if you feel like you deserve the pay that was
-        offered to you.)
+      - (You should always try to negotiate salary, you have nothing to lose as long
+        as long as you request a salary WITHIN the salary range for this position.)
   - question: Why do you want to negotiate for a higher pay rate?
     questionType: 
     answers:

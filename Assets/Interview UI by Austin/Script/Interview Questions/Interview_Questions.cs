@@ -482,7 +482,7 @@ public class Interview_Questions : MonoBehaviour
         }
         
         HashSet<string> userWords = new HashSet<string>();
-        var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGN", "UNDERSTAND", "ENACT"};
+        var keyWords = new List<string>() {"SITUATION", "ACTION", "RESULT", "VISION", "ALLIGNMENT", "UNDERSTAND", "ENACT"};
 
         for (int i = 0; i < Reaction.Length; i++) {
             for (int j = 0; j < keyWords.Count; j++) {
