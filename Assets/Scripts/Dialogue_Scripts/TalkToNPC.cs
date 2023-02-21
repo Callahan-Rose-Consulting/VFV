@@ -293,7 +293,7 @@ public class TalkToNPC : MonoBehaviour
         playerResultsFile = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
-        int lineNumber = 0;
+        int lineNumber = -1;
 
         numQuestionsAsked++; 
 

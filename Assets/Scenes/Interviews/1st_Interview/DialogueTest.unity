@@ -9026,14 +9026,11 @@ MonoBehaviour:
     - entry: I learned about this job opening from a job searching website. I saw
         the job offering and decided to apply because it aligned with my interests.
       meter_gain: 0.2
-      properties:
-      - meow
-      - meow2
+      properties: []
       Reaction:
       - "This answer is honest. It gets the point across and lets the interviewer
         know that you\u2019re willing to take chances to move ahead. It may be good
-        to mention any research you did into the company while deciding to apply.
-        This shows your VALUEs of ALLIGNMENT."
+        to mention any research you did into the company while deciding to apply."
       - "Interviewers want to make sure you\u2019re applying because you want to work
         here, not because of the paycheck. This type of question is asked for the
         same reason that questions like: \u201CWhy do you want to work here?\u201D
