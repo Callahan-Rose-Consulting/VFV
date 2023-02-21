@@ -9335,36 +9335,39 @@ MonoBehaviour:
     questionType: 
     answers:
     - entry: "\rYes, because I searched up the salary range for this job and based
-        on that, I believe I <color=green>DESERVE</color> a pay of $20 an hour because
-        of my performance in the interview and having experince with working in my
-        dad's pizza shop.\n"
+        on that, I believe I DESERVE a pay of $20 an hour because of my performance
+        in the interview and having experince with working in my dad's pizza shop.\n"
       meter_gain: 0
       properties: []
       Reaction:
       - It is a good thing you didn't bring up wanting/needing a higher salary. Employers
-        will only improve your current offer if you deserve it.
-      - That is a good reasone and i will higher the salary to $20/hour.
-    - entry: Yes, I need the higher pay because I have a baby on the way, so I <color=red>NEED</color>
+        will only improve your current offer if you <color=green>DESERVE</color> it.
+      - That is a good reason and i will higher the salary to $20/hour.
+    - entry: Yes, I need the higher pay because I have a baby on the way, so I NEED
         the extra money to be able to provide for my family and for the baby when
         he arrives
       meter_gain: 0
       properties: []
       Reaction:
-      - Unfortunately, needing something isn't enough. The employer is not responsible
-        for trying to compensate any personal struggles you may be going through.
-        Think about why you deserve a higher salary in your next interviews. These
+      - 'Unfortunately, <color=red>NEEDING</color> something isn''t enough. The employer
+        is not responsible for trying to compensate any personal struggles you may
+        be going through. '
+      - Think about why you deserve a higher salary in your next interviews. These
         can include things like previous experience, a unique project/quality you
         have, etc.
     - entry: "\rYes, I've been working on my car since I bought it and I found these
-        genuinely nice rims that are on sale that I <color=red>WANT</color> to buy
-        so I need the extra money so I can get them.\n"
+        genuinely nice rims that are on sale that I WANT to buy so I need the extra
+        money so I can get them.\n"
       meter_gain: 0
       properties: []
       Reaction:
-      - "Wanting something isn't enough of a reason for you to deserve a higher salary.
-        For now, you will be given your original offer. Think about why you deserve
-        a higher salary in your next interviews.\r These can include things like previous
-        experience, a unique project/quality you have, etc.\r\n"
+      - '<color=red>Wanting</color> something isn''t enough of a reason for you to
+        deserve a higher salary. For now, you will be given your original offer.
+
+'
+      - "Think about why you deserve a higher salary in your next interviews.\r"
+      - "These can include things like previous experience, a unique project/quality
+        you have, etc.\r"
     - entry: "\rNo, I am happy with my offer\r\n"
       meter_gain: 0
       properties: []
