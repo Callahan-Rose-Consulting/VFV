@@ -19,6 +19,8 @@ public class Interview_Question_Item : MonoBehaviour
 
     public string[] Reaction;
 
+    public string[] properties;
+
     public float meter_amount = 0.0f;
 
     public Button button;
@@ -41,7 +43,7 @@ public class Interview_Question_Item : MonoBehaviour
     {
         if (Reaction.Length != 0) 
         {
-            Interview_Questions.instance.load_answer(Reaction, meter_amount);
+            Interview_Questions.instance.load_answer(Reaction, properties, meter_amount);
             
             if (Selection_Menu.instance.open) 
             {
