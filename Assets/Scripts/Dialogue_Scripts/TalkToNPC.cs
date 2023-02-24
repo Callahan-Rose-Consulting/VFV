@@ -176,22 +176,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
         File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
-        // File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
-        // File.AppendAllText(path, "\n");
-        // File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
-        // File.AppendAllText(path, "\n");
+  
 
         File.AppendAllText(path, "--------------Comments---------------\n");
         File.AppendAllText(path, "\n");
@@ -209,6 +194,8 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\n");
 
     }
+
+
     //This function takes in the name of the result to be updated and the name of the file to update.
     //This function is designed to be called when an event happens in game that would inicate some form of progression.
     //Examples:
@@ -435,22 +422,40 @@ public class TalkToNPC : MonoBehaviour
             {
                 newMessage = newMessage.Replace("@DC", "Dream Company here...");
             }
+
             newMessage = newMessage.Replace("COMMUNICATION_SKILL", PlayerPrefs.GetInt("CommunicationLevel").ToString());
             newMessage = newMessage.Replace("COMMUNICATION_PLUS_ONE", (PlayerPrefs.GetInt("CommunicationLevel") + 1).ToString());
+            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
 
-            string[] dialouges = {
-                "#SKILL_INCREASE_COMMUNICATION#", "#SHOW_IMAGE#", "#HIDE_IMAGE#", "#REVEAL_NAME#", "#INNER_DIALOGUE_BEGIN#",
-                "#INNER_DIALOGUE_END#", "#PLAYER_TALKING_BEGIN#", "#PLAYER_TALKING_END#", "#SKILL_INCREASE_INTELLIGENCE#", "#SKILL_CHECK#",
-                "#LOAD_INTERVIEW#", "#YES#", "#NO#", "#YES_NO#", "#YES_NO_COMPLETE#", "#MULTI_START#",
-                "#MULTI_END#", "#SA1#", "#SA2#", "#FADE_OUT#", "#FADE_IN#",
-                "#loc#", "#ADD_EXPERIENCE#", "#Post#", "#ADD_SUMMARY#", "*Lead*",
-                "*Team*", "*Tech*", "*Prof*", "*Com*", "*Crit*",
-                "#showcanvas#", "#hidecanvas#", "#topic#", "#SKIP_START#", "#SKIP_END#",
-                "#BRANDING#", "#CF_Engineering#", "#CF_Business#", "#CF_Arts#", "#CF_BlueCollar#",
-                "#CF_Education#", "#OPEN_BROWSER#", "#INVOKE_EVENT#"};
+            if (Resume.current_job != null)
+            {
+                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
+            }
 
-            for (int d = 0; d < dialouges.Length; d++) {
-                newMessage = newMessage.Replace(dialouges[d], "");
+            int idx = 0;
+            bool foundIndicator = false; // if '#' or '*' is found
+
+            string toReplace = "";
+
+            // get rid of keywords marked by '#' or '*' in string before user sees them
+            while (idx < newMessage.Length) {
+                if (newMessage[idx] == '#'|| newMessage[idx] == '*') {
+                    toReplace += newMessage[idx];
+
+                    if (foundIndicator) {
+                        newMessage = newMessage.Replace(toReplace, "");
+                        idx -= toReplace.Length; // send idx back as characters have been replaced
+                        toReplace = "";
+                    }
+
+                    foundIndicator = !foundIndicator;
+                }
+
+                else if (foundIndicator) {
+                    toReplace += newMessage[idx];
+                }
+
+                idx++;
             }
             
             newMessage = newMessage.Replace("#triggerEndGame", "");
@@ -464,19 +469,6 @@ public class TalkToNPC : MonoBehaviour
                 int index = 0;
 
                 newMessage = newMessage.Replace(x.Value, "");
-            }
-
-            newMessage = newMessage.Replace("#FADE_EVENT#", "");
-            newMessage = newMessage.Replace("#Disable#", "");
-            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
-            newMessage = newMessage.Replace("#FEEDBACK#", "");
-            newMessage = newMessage.Replace("#INCREASE#", "");
-            newMessage = newMessage.Replace("#CHECK#", "");
-            newMessage = newMessage.Replace("#END_WORK#", "");
-
-            if (Resume.current_job != null)
-            {
-                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
             }
         }
         return newMessage;

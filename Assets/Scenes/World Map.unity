@@ -4066,7 +4066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1091925.2}
+  m_AnchoredPosition: {x: 0, y: -1092426.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -40587,7 +40587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765588779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.5, y: -0.7, z: 50}
+  m_LocalPosition: {x: -16.28, y: -0.7, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 523978514}
@@ -40804,12 +40804,13 @@ MonoBehaviour:
   - 'INTROVERTED? EXTROVERTED? EMOTIONS OVER THOUGHT? TO JUDGE OR PERCEIVE? '
   - ISTJ? ESTP? WHAT ARE YOU?
   - Sorry, I've calmed down.
-  - 'My name is Mr. PERSONALITY. It''s very nice to meet you @. '
+  - 'My name is Mr. PERSONALITY! It''s very nice to meet you @. '
   - As you can tell by my demeanor, I'm quite extroverted. I'm a people's person!
   - "But not everybody finds it easy to speak to others\u2013so it's always good to
     know about your strenghts and weaknesses."
   - '#MULTI_END##YES_NO#Do you want to take a personality test?'
-  - That's great! It seems you are one step ahead of the game!
+  - THAT'S FINE! You can always come back to me in this location if you change your
+    mind.
   - '#MULTI_START# ....I see.'
   - Well, yes, there are actually 16 personality types. You can take an assessment
     on this third party website. Don't worry, I'll open it in your browser for you.
