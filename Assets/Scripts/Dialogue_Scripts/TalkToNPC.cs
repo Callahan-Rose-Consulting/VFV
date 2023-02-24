@@ -485,6 +485,8 @@ public class TalkToNPC : MonoBehaviour
             newMessage = newMessage.Replace("#CF_BlueCollar#", "");
             newMessage = newMessage.Replace("#CF_Education#", "");
 
+            newMessage = newMessage.Replace("#OPEN_BROWSER#", "");
+
 
             //Changes by Austin Greear 4/26/2020
             newMessage = newMessage.Replace("#INVOKE_EVENT#", "");
@@ -744,6 +746,10 @@ public class TalkToNPC : MonoBehaviour
             string myFile = File.ReadAllText(playerFileName);
             string updateCareer = myFile.Replace("[No Career Fair Choice]", "Education");
             File.WriteAllText(playerFileName, updateCareer);
+        }
+
+        if (messages[messageCount].Contains("#OPEN_BROWSER#")) {
+            Application.OpenURL("https://www.16personalities.com/free-personality-test");
         }
 
 

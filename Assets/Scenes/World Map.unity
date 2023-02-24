@@ -4066,7 +4066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1091004.6}
+  m_AnchoredPosition: {x: 0, y: -1091773}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -40808,23 +40808,14 @@ MonoBehaviour:
   - As you can tell by my demeanor, I'm quite extroverted. I'm a people's person!
   - "But not everybody finds it easy to speak to others\u2013so it's always good to
     know about your strenghts and weaknesses."
-  - '#MULTI_END##YES_NO#Do you know what personality type you are out of the 16 personality
-    types?'
-  - That's great! You're one step ahead of the game.
+  - '#MULTI_END##YES_NO#Do you want to take a personality test?'
+  - That's great! It seems you are one step ahead of the game!
   - '#MULTI_START# ....I see.'
-  - '#MULTI_START#Well, yes, there are actually 16 personality types. You can take
-    an assessment on this third party website. Don''t worry, I''ll open it in your
-    browser for you.'
+  - Well, yes, there are actually 16 personality types. You can take an assessment
+    on this third party website. Don't worry, I'll open it in your browser for you.
   - Once you finished, make sure to come back and let me know what you got! I'll give
     you some tips and more information once you've finished.
-  - "Great! Here is the join link: www.linkedin.com/groups/14140078/\nDon't forget
-    this link will also be in your Results File. \n\n"
-  - "Great! Here is the join link: www.linkedin.com/groups/14140078/\nDon't forget
-    this link will also be in your Results File. \n\n"
-  - "Great! Here is the join link: www.linkedin.com/groups/14140078/\nDon't forget
-    this link will also be in your Results File. \n\n"
-  - "Great! Here is the join link: www.linkedin.com/groups/14140078/\nDon't forget
-    this link will also be in your Results File. \n\n"
+  - '#OPEN_BROWSER# #MULTI_END#'
   NPCName: Mr. Personality
   Known: 0
   NameBox: {fileID: 0}
