@@ -438,58 +438,22 @@ public class TalkToNPC : MonoBehaviour
             newMessage = newMessage.Replace("COMMUNICATION_SKILL", PlayerPrefs.GetInt("CommunicationLevel").ToString());
             newMessage = newMessage.Replace("COMMUNICATION_PLUS_ONE", (PlayerPrefs.GetInt("CommunicationLevel") + 1).ToString());
 
-            newMessage = newMessage.Replace("#SKILL_INCREASE_COMMUNICATION#", "");
-            newMessage = newMessage.Replace("#SHOW_IMAGE#", "");
-            newMessage = newMessage.Replace("#HIDE_IMAGE#", "");
-            newMessage = newMessage.Replace("#REVEAL_NAME#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_BEGIN#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_END#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_BEGIN#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_END#", "");
-            newMessage = newMessage.Replace("#SKILL_INCREASE_INTELLIGENCE#", "");
-            newMessage = newMessage.Replace("#SKILL_CHECK#", "");
-            newMessage = newMessage.Replace("#LOAD_INTERVIEW#", "");
-            newMessage = newMessage.Replace("#YES#", "");
-            newMessage = newMessage.Replace("#NO#", "");
-            newMessage = newMessage.Replace("#YES_NO#", "");
-            newMessage = newMessage.Replace("#YES_NO_COMPLETE#", "");
-            newMessage = newMessage.Replace("#MULTI_START#", "");
-            newMessage = newMessage.Replace("#MULTI_END#", "");
-            newMessage = newMessage.Replace("#SA1#", "");
-            newMessage = newMessage.Replace("#SA2#", "");
-            newMessage = newMessage.Replace("#FADE_OUT#", "");
-            newMessage = newMessage.Replace("#FADE_IN#", "");
-            newMessage = newMessage.Replace("#loc#", "");
-            newMessage = newMessage.Replace("#ADD_EXPERIENCE#", "");
-            newMessage = newMessage.Replace("#Post#", "");
-            newMessage = newMessage.Replace("#ADD_SUMMARY#", "");
-            newMessage = newMessage.Replace("*Lead*", "");
-            newMessage = newMessage.Replace("*Team*", "");
-            newMessage = newMessage.Replace("*Tech*", "");
-            newMessage = newMessage.Replace("*Prof*", "");
-            newMessage = newMessage.Replace("*Com*", "");
-            newMessage = newMessage.Replace("*Crit*", "");
-            newMessage = newMessage.Replace("#showcanvas#", "");
-            newMessage = newMessage.Replace("#hidecanvas#", "");
-            newMessage = newMessage.Replace("#topic#", "");
-            newMessage = newMessage.Replace("#SKIP_START#", "");
-            newMessage = newMessage.Replace("#SKIP_END#", "");
-            newMessage = newMessage.Replace("#BRANDING#", "");
+            string[] dialouges = {
+                "#SKILL_INCREASE_COMMUNICATION#", "#SHOW_IMAGE#", "#HIDE_IMAGE#", "#REVEAL_NAME#", "#INNER_DIALOGUE_BEGIN#",
+                "#INNER_DIALOGUE_END#", "#PLAYER_TALKING_BEGIN#", "#PLAYER_TALKING_END#", "#SKILL_INCREASE_INTELLIGENCE#", "#SKILL_CHECK#",
+                "#LOAD_INTERVIEW#", "#YES#", "#NO#", "#YES_NO#", "#YES_NO_COMPLETE#", "#MULTI_START#",
+                "#MULTI_END#", "#SA1#", "#SA2#", "#FADE_OUT#", "#FADE_IN#",
+                "#loc#", "#ADD_EXPERIENCE#", "#Post#", "#ADD_SUMMARY#", "*Lead*",
+                "*Team*", "*Tech*", "*Prof*", "*Com*", "*Crit*",
+                "#showcanvas#", "#hidecanvas#", "#topic#", "#SKIP_START#", "#SKIP_END#",
+                "#BRANDING#", "#CF_Engineering#", "#CF_Business#", "#CF_Arts#", "#CF_BlueCollar#",
+                "#CF_Education#", "#OPEN_BROWSER#", "#INVOKE_EVENT#"};
+
+            for (int d = 0; d < dialouges.Length; d++) {
+                newMessage = newMessage.Replace(dialouges[d], "");
+            }
+            
             newMessage = newMessage.Replace("#triggerEndGame", "");
-
-            //career fair RepaceKeyWords
-            //added by Don Murphy
-            newMessage = newMessage.Replace("#CF_Engineering#", "");
-            newMessage = newMessage.Replace("#CF_Business#", "");
-            newMessage = newMessage.Replace("#CF_Arts#", "");
-            newMessage = newMessage.Replace("#CF_BlueCollar#", "");
-            newMessage = newMessage.Replace("#CF_Education#", "");
-
-            newMessage = newMessage.Replace("#OPEN_BROWSER#", "");
-
-
-            //Changes by Austin Greear 4/26/2020
-            newMessage = newMessage.Replace("#INVOKE_EVENT#", "");
 
             Regex getMessage = new Regex(@"\*.[^_]*\*");
 
