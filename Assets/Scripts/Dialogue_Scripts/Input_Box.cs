@@ -8,15 +8,21 @@ public class Input_Box : MonoBehaviour
 {
 
     public GameObject inputField;
+    public GameObject inputTextBox;
 
     public virtual void Start() {
-        inputField.gameObject.SetActive(false);
+        // inputField.SetActive(false);
     }
 
     public void handleDisplay() {
-        bool isDisplayed = inputField.gameObject.activeSelf;
+        Debug.Log("I'VE BEEN CALLED IN INPUTBOX");
+        bool isDisplayed = inputField.activeSelf;
 
-        inputField.gameObject.SetActive(!isDisplayed);
+        inputField.SetActive(!isDisplayed);
+    }
+
+    public void handleSubmit() {
+        Debug.Log(inputTextBox.GetComponent<Text>().text);
     }
 
 }

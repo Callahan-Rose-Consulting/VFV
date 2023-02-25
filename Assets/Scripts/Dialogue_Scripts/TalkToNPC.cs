@@ -73,6 +73,8 @@ public class TalkToNPC : MonoBehaviour
     public static int numQuestionsAsked = 0;
     public static string playerResultsFile = ""; 
 
+    public Input_Box input_box;
+
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
     //Inside the /Player Results dir a file is created when when the first frame of the world map is called
@@ -706,6 +708,11 @@ public class TalkToNPC : MonoBehaviour
 
         if (messages[messageCount].Contains("#OPEN_BROWSER#")) {
             Application.OpenURL("https://www.16personalities.com/free-personality-test");
+        }
+
+        if (messages[messageCount].Contains("#INPUT_BOX#")) {
+            end_dialogue();
+            input_box.handleDisplay();
         }
 
 
