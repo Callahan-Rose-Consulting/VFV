@@ -16,12 +16,20 @@ public class Input_Box : MonoBehaviour
         inputButton.SetActive(false);
     }
 
-    public void handleDisplay() {
-        bool fieldIsDisplayed = inputField.activeSelf;
-        bool buttonIsDisplayed = inputButton.activeSelf;
+    public void handleDisplay(ref bool displayInputBox, ref bool changeState) {
+        // display textbox and put dialouge mode so player input doesn't affect sorroundings 
+        if (inputField.activeSelf) {
+            inputField.SetActive(false);
+            inputButton.SetActive(false);
+        }
 
-        inputField.SetActive(!fieldIsDisplayed);
-        inputButton.SetActive(!buttonIsDisplayed);
+        else {
+            inputField.SetActive(true);
+            inputButton.SetActive(true);
+            displayInputBox = true;
+            changeState = false;
+        }
+
     }
 
     public void handleSubmit() {

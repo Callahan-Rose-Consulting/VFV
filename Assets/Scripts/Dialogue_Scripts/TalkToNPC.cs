@@ -68,6 +68,7 @@ public class TalkToNPC : MonoBehaviour
     public static bool dialogueActive = false;
     public static bool endGame = false;
     public static bool yesNoInstructions = true;
+    public static bool displayInputBox = false;
 
     public static int numPerfectAnswers = 0;
     public static int numQuestionsAsked = 0;
@@ -560,7 +561,7 @@ public class TalkToNPC : MonoBehaviour
     {
         if (!DayChanger.endOfDay)
         {
-            if (Input.GetButton("Interact") && other.CompareTag("Player") && !messageDone && !messageIsTyping)
+            if (Input.GetButton("Interact") && other.CompareTag("Player") && !messageDone && !messageIsTyping && !displayInputBox)
             {
                 //@CS Disable mouse click so that the user cannot unselect the dialogue choices
                 //implementation - waiting until we can fully get rid of the mouse entirely
@@ -712,7 +713,19 @@ public class TalkToNPC : MonoBehaviour
 
         if (messages[messageCount].Contains("#INPUT_BOX#")) {
             end_dialogue();
-            input_box.handleDisplay();
+
+            // displayInputBox = true;
+            // change_state = false;
+
+            // dialogueActive = true;
+            // textboxIsClosing = true;
+            // messageDone = false;
+            // messageIsTyping = true;
+            // GameManager.instance.change_game_state("Dialogue");
+            // player.canMove = false;
+
+
+            input_box.handleDisplay(ref displayInputBox, ref change_state);
         }
 
 
