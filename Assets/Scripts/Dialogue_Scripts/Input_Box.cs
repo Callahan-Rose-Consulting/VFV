@@ -9,16 +9,19 @@ public class Input_Box : MonoBehaviour
 
     public GameObject inputField;
     public GameObject inputTextBox;
+    public GameObject inputButton;
 
     public virtual void Start() {
-        // inputField.SetActive(false);
+        inputField.SetActive(false);
+        inputButton.SetActive(false);
     }
 
     public void handleDisplay() {
-        Debug.Log("I'VE BEEN CALLED IN INPUTBOX");
-        bool isDisplayed = inputField.activeSelf;
+        bool fieldIsDisplayed = inputField.activeSelf;
+        bool buttonIsDisplayed = inputButton.activeSelf;
 
-        inputField.SetActive(!isDisplayed);
+        inputField.SetActive(!fieldIsDisplayed);
+        inputButton.SetActive(!buttonIsDisplayed);
     }
 
     public void handleSubmit() {

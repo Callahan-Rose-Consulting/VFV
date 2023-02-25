@@ -4148,7 +4148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1093761}
+  m_AnchoredPosition: {x: 0, y: -1093822}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -59961,6 +59961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 550331737}
   inputTextBox: {fileID: 1535294684}
+  inputButton: {fileID: 1154297990}
 --- !u!1 &1163955676
 GameObject:
   m_ObjectHideFlags: 0
