@@ -516,6 +516,11 @@ public class TalkToNPC : MonoBehaviour
         {
             DecideWhichDialogueToShow();//Will show the next dialogue in the multimessage chain
         }
+
+        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true) {
+            displayInputBox = false;
+            change_state = true;
+        }
     }
 
     IEnumerator DialogueToggle(float time, bool messageDoneState, bool playerCanMoveState, bool isTalkingState, bool textboxIsClosingState)

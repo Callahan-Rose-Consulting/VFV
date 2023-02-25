@@ -17,23 +17,19 @@ public class Input_Box : MonoBehaviour
     }
 
     public void handleDisplay(ref bool displayInputBox, ref bool changeState) {
-        // display textbox and put dialouge mode so player input doesn't affect sorroundings 
-        if (inputField.activeSelf) {
-            inputField.SetActive(false);
-            inputButton.SetActive(false);
-        }
-
-        else {
-            inputField.SetActive(true);
-            inputButton.SetActive(true);
-            displayInputBox = true;
-            changeState = false;
-        }
-
+        inputField.SetActive(true);
+        inputButton.SetActive(true);
+        displayInputBox = true;
+        changeState = false;
     }
 
     public void handleSubmit() {
         Debug.Log(inputTextBox.GetComponent<Text>().text);
+
+        inputField.SetActive(false);
+        inputButton.SetActive(false);
+
+        GameManager.instance.change_game_state("Normal");
     }
 
 }
