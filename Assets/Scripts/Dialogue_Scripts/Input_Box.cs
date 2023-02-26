@@ -12,31 +12,27 @@ public class Input_Box : MonoBehaviour
     public GameObject inputTextBox;
     public GameObject inputButton;
     public Image personalityImage;
-    public Image infjImage; 
+    public Text userFeedback;
 
     Sprite mySprite;
 
     Texture2D tex = null;
     byte[] fileData;
 
-    private static string[] personalityTypes = {
-        "ISTJ", "ISFJ",  "INFJ",  "INTJ",  
-        "ISTP",  "ISFP",  "INFP",  "INTP", 
-        "ESTP", "ESFP", "ENFP",  "ENTP",  
-        "ESTJ",  "ESFJ",  "ENTJ", "ENFJ"};
-
     public virtual void Start() {
         inputField.SetActive(false);
         inputButton.SetActive(false);
         personalityImage.enabled = false;
-        infjImage.enabled = false;
     }
 
     public void handleDisplay(ref bool displayInputBox, ref bool changeState) {
         inputField.SetActive(true);
         inputButton.SetActive(true);
+
+        // prevent player movement while user types into box
         displayInputBox = true;
         changeState = false;
+        GameManager.instance.change_game_state("Dialogue");
     }
 
     private void hideDisplay() {
@@ -49,24 +45,26 @@ public class Input_Box : MonoBehaviour
     public void handleSubmit() {
         string userInput = inputTextBox.GetComponent<Text>().text.ToUpper();
 
-        if (userInput.Length != 4 || !personalityTypes.Contains(userInput)) {
-            Debug.Log("CAUGHT!");
+        if (userInput.Length != 4) {
+            userFeedback.text = "The code needs to be 4 letters.";
             return;
         }
 
-        string filePath = "Assets/UI/PersonalityResults/INFJ.png";
- 
+        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".png";
+
+        // create image based on personality type user entered
         if (File.Exists(filePath)) {
             fileData = File.ReadAllBytes(filePath);
             tex = new Texture2D(2, 2);
-            tex.LoadImage(fileData); //..t$$anonymous$$s will auto-resize the texture dimensions.
+            tex.LoadImage(fileData);
             mySprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
-            personalityImage.sprite = mySprite; // apply the new sprite to the image
+            personalityImage.sprite = mySprite;
 
         }
 
         else {
-            Debug.Log("NOOOOO");
+            userFeedback.text = "Invalid";
+            Debug.Log("NOOOOO"); // tell user that the code is invalid
         }
         
         // personalityImage = infjImage;
