@@ -13,6 +13,7 @@ public class Input_Box : MonoBehaviour
     public GameObject inputButton;
     public Image personalityImage;
     public Text userFeedback;
+    public Image feedbackBackground;
 
     Sprite mySprite;
 
@@ -23,6 +24,7 @@ public class Input_Box : MonoBehaviour
         inputField.SetActive(false);
         inputButton.SetActive(false);
         personalityImage.enabled = false;
+        feedbackBackground.enabled = false;
     }
 
     public void handleDisplay(ref bool displayInputBox, ref bool changeState) {
@@ -46,31 +48,36 @@ public class Input_Box : MonoBehaviour
         string userInput = inputTextBox.GetComponent<Text>().text.ToUpper();
 
         if (userInput.Length != 4) {
-            userFeedback.text = "The code needs to be 4 letters.";
+            updateFeedback("The code needs to be 4 letters", Color.red, true);
             return;
         }
 
         string filePath = "Assets/UI/PersonalityResults/" + userInput + ".png";
 
+        if (!File.Exists(filePath)) {
+            updateFeedback("Invalid Code. Try again", Color.red, true); 
+            return;
+        }
+
+
         // create image based on personality type user entered
-        if (File.Exists(filePath)) {
-            fileData = File.ReadAllBytes(filePath);
-            tex = new Texture2D(2, 2);
-            tex.LoadImage(fileData);
-            mySprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
-            personalityImage.sprite = mySprite;
-
-        }
-
-        else {
-            userFeedback.text = "Invalid";
-            Debug.Log("NOOOOO"); // tell user that the code is invalid
-        }
-        
-        // personalityImage = infjImage;
+        fileData = File.ReadAllBytes(filePath);
+        tex = new Texture2D(2, 2);
+        tex.LoadImage(fileData);
+        mySprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
+        personalityImage.sprite = mySprite;
         personalityImage.enabled = true;
-        
+
+        updateFeedback("", Color.white, false);
+
         hideDisplay(); // change game state back to normal
+        
+    }
+
+    public void updateFeedback(string text, Color color, bool enabled) {
+        userFeedback.text = text;
+        inputField.GetComponent<Image>().color = color;
+        feedbackBackground.enabled = enabled;
     }
 
 }
