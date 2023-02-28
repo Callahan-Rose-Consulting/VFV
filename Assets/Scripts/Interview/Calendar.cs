@@ -26,8 +26,6 @@ public static class Calendar
     public static void IncreaseDay()
     {
 
-       
-        // Increment the day of the week index
         CurrentDay++;
         
 
