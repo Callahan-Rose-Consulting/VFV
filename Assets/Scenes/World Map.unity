@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -917,6 +918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Software Engineer Repersentive
@@ -1488,8 +1490,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -151}
-  m_SizeDelta: {x: 264.6, y: 88.9}
+  m_AnchoredPosition: {x: 1.81, y: -132.93}
+  m_SizeDelta: {x: 268.21, y: 52.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &25804786
 MonoBehaviour:
@@ -4144,7 +4146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1086528.5}
+  m_AnchoredPosition: {x: 0, y: -1087255.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -4290,6 +4292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -4663,6 +4666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -5443,7 +5447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112.7, y: -232.6}
+  m_AnchoredPosition: {x: -95, y: -245}
   m_SizeDelta: {x: 264.6, y: 167.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136886602
@@ -5501,7 +5505,18 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: StoreSmartGoal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -5650,6 +5665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -7110,6 +7126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - Alright @, today we need to figure out how to bring in more customers.#FADE_OUT#
@@ -7512,6 +7529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello I am Tyriq. I''m an Electrical Engineer. Would you like to
     pursue this career path? #YES_NO#'
@@ -8715,6 +8733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -9518,6 +9537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -10020,6 +10040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   - 
@@ -11556,6 +11577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - '@, we have a problem. After some reviews in the paper it looks like we received
@@ -13229,6 +13251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: IT Repersentitive
@@ -13736,6 +13759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -14634,6 +14658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#You''ve got some free time now. Use it wisely!#MULTI_END##SA1#'
   NPCName: 
@@ -15530,6 +15555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -15909,6 +15935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -16955,6 +16982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -17865,6 +17893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   - 
@@ -18689,6 +18718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#I hope things go well during todays shift #MULTI_START#'
   - During the begining of the shift Bob does not show up#FADE_OUT#
@@ -19395,6 +19425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Today we will start fixing some of the bugs that where found#MULTI_START#
   - I go to my pc.#FADE_OUT#
@@ -20520,6 +20551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: HR Repersentitive
@@ -21216,6 +21248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello, I am Richard. I''m in marketing in the business world. Would
     you like to pursue this career path? #YES_NO#'
@@ -23024,6 +23057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -23872,6 +23906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START# #INVOKE_EVENT#Welcome to the book store! What would you like to
     do?'
@@ -26303,6 +26338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello my name is Alfred. I teach special education. Would you like
     to pursue this career path in education? #YES_NO#'
@@ -30783,6 +30819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages: []
   NPCName: 
   Known: 0
@@ -31982,6 +32019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Hopefuly everything goes smoothly today#MULTI_START#
   - As i enter the building i see some other people of the department just sitting
@@ -32600,6 +32638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -34480,6 +34519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -35062,6 +35102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -36049,7 +36090,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 372755045}
-        m_MethodName: GetSmartGoal
+        m_MethodName: StoreSmartGoal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36506,6 +36547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - "#REVEAL_NAME# Hello my name is Bobby. I\u2019m a steel worker. This means I\u2019m
     a blue collar worker. Would you like to pursue this career path? #YES_NO#"
@@ -37107,6 +37149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -38844,6 +38887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'Today is the carrer fair hopefully i can make good connections #MULTI_START#'
   - I head to robert after my shift so that i can go to the carrer fair#FADE_OUT#
@@ -39554,6 +39598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -39969,6 +40014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -40795,6 +40841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Spend some time in your apartment?'
   - 
@@ -41517,6 +41564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -41974,6 +42022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Study at the library?'
   - 'Thank you for visiting. See you later! '
@@ -42328,6 +42377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -43915,6 +43965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START#I wonder what''s on the other side...'
   - '#MULTI_END##YES_NO#Do you think there''s any treasure?'
@@ -44562,6 +44613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello, I am Keonte. I work in theater and arts. Would you like
     to pursue this career path? #YES_NO#'
@@ -47646,6 +47698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -47959,6 +48012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -49203,6 +49257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -50124,6 +50179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -51134,6 +51190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'I have a lot of paperwork I need to get done I better get started. #MULTI_START#'
   - I'm almost done with the paperwork#FADE_OUT#
@@ -51383,6 +51440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -51986,6 +52044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -52753,7 +52812,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1582570580}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.995
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -54731,6 +54790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -55715,6 +55775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -58704,6 +58765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello!'
   - '#PLAYER_TALKING_BEGIN#Hello Robert. How are you? Nice seeing you again.'
@@ -59606,7 +59668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150742624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 257.96, y: -112.68, z: 50}
+  m_LocalPosition: {x: -18.33, y: -8.14, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 398035479}
@@ -59818,7 +59880,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
+  - '#INPUT_SMARTGOAL#'
   - '#MULTI_START# Nice to meet you. I''m Mason. What''s your name?'
   - '....'
   - I see. Have you heard of SMART guidelines? SMART stands for specific, measurable,
@@ -60091,6 +60155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Gutsy
@@ -61318,6 +61383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Today we will review the software designs#MULTI_START#
   - My boss walks in to talk to me#FADE_OUT#
@@ -61681,6 +61747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -62077,6 +62144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -63033,6 +63101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME##MULTI_START#I am running a Pizza Workshop.  I''ll teach you how
     to make delicious pizzas.'
@@ -63840,6 +63909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#You just got a new job! Spend the rest of the day however
     you please, you''ll have work tommorrow!'
@@ -64715,6 +64785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -65746,6 +65817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - I enter the building but the lights won't turn on#FADE_OUT#
@@ -66410,6 +66482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Stefano
@@ -67763,6 +67836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - Your boss makes his way towards you during the middle of your shift.#FADE_OUT#
@@ -69383,6 +69457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - The phone rings so you go pick it up.#FADE_OUT#
@@ -70049,6 +70124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -70836,6 +70912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -71668,6 +71745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Let's get this day started#MULTI_START#
   - I head to my office.#FADE_OUT#
@@ -71923,6 +72001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -72697,6 +72776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   - 
@@ -72926,6 +73006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -73452,6 +73533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -74867,6 +74949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -75626,6 +75709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey there! How are you today?'
   - '#INNER_DIALOGUE_BEGIN#You chat with Dr.Sphinx about your day#ADD_SUMMARY#*went
@@ -77618,6 +77702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello, @!'
   - '#PLAYER_TALKING_BEGIN#Hello Jane. I am good. How about you?'
@@ -79309,6 +79394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -83697,6 +83783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -84333,6 +84420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -85368,6 +85456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -87734,6 +87823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Hopefully today is a smooth day at work#MULTI_START#
   - I enter my office#FADE_OUT#
@@ -88252,6 +88342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Today we will start developing new training materials#MULTI_START#
   - I enter my office#FADE_OUT#
@@ -90284,6 +90375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'Hope today is smooth sailing. #MULTI_START#'
   - I make my way to the back of the Pizza Place to see if everything is in shape#FADE_OUT#
@@ -90815,6 +90907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#Let''s get this shift started #MULTI_START#'
   - The day goes by fairly smoothly...#FADE_OUT#
@@ -92074,6 +92167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Let's get this day started.#MULTI_START#
   - I go to my office.#FADE_OUT#
@@ -92990,6 +93084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Rewatch the sweet spot video?'
   - 
@@ -94148,6 +94243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello!'
   - "Hey @. How are you? Haven\u2019t seen you for a while?"
@@ -98173,6 +98269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -99832,6 +99929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START# Nice to meet you. I''m Riad. What''s your name?'
   - '....'
@@ -100038,6 +100136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -100349,6 +100448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START#Hey, @!  I''m glad you made it. #INVOKE_EVENT#'
   - You are going to be talking with Tiffany today, she's great!
@@ -100654,6 +100754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -101229,6 +101330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - "#INCREASE#*Com*#MULTI_START#Yo listen to my sick beatboxing skills! \u266A\u266A
     \ \u266A  \u266A\u266A \u266A\u266A   \u266A\u266A\u266A  \u266A\u266A   \u266A\u266A
@@ -102807,6 +102909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - As I sit in my work station i hear the phone ring immediately#FADE_OUT#
@@ -103643,6 +103746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - There have been a lot of online orders today#FADE_OUT#
@@ -104058,6 +104162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -107923,6 +108028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -109569,6 +109675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey there! How are you today?
 
@@ -115179,6 +115286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey! Did you watch the game last night?'
   - '#INNER_DIALOGUE_BEGIN#You chat with Jane about sports#ADD_SUMMARY#*went to the
@@ -115331,6 +115439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello! The weather outside today is beautiful!'
   - '#INNER_DIALOGUE_BEGIN#You chat with Robert about the weather recently#ADD_SUMMARY#*went
@@ -118319,6 +118428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Dujon
@@ -118810,6 +118920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: 

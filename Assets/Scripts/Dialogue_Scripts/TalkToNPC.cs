@@ -25,6 +25,7 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
+    public InputSmartGoal inputSmartGoal;
 
 
 
@@ -770,6 +771,12 @@ public class TalkToNPC : MonoBehaviour
                     }
                 }
             }
+        }
+
+        //Created by mohsen
+        if (messages[messageCount].Contains("#INPUT_SMARTGOAL#"))
+        {
+            inputSmartGoal.StoreSmartGoal();
         }
 
         //Change by Austin Greear 5/7/2020
