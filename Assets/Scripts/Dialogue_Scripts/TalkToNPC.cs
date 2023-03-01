@@ -26,8 +26,9 @@ public class TalkToNPC : MonoBehaviour
     public static string playerFileName;
 
     public InputSmartGoal inputSmartGoal;
+    public static bool displayInputBox = false;
 
-
+    public static string fileName;
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
     //Inside the /Player Results dir a file is created when when the first frame of the world map is called
@@ -173,6 +174,7 @@ public class TalkToNPC : MonoBehaviour
     public static void UpdatePlayerResults(string resultName, string FileToUpdate)
     {
         string playerFileName = FileToUpdate;
+        fileName = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int i = -1;
@@ -487,6 +489,12 @@ public class TalkToNPC : MonoBehaviour
         {
             DecideWhichDialogueToShow();//Will show the next dialogue in the multimessage chain
         }
+
+        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true)
+        {
+            displayInputBox = false;
+            change_state = true;
+        }
     }
 
     IEnumerator DialogueToggle(float time, bool messageDoneState, bool playerCanMoveState, bool isTalkingState, bool textboxIsClosingState)
@@ -532,7 +540,7 @@ public class TalkToNPC : MonoBehaviour
     {
         if (!DayChanger.endOfDay)
         {
-            if (Input.GetButton("Interact") && other.CompareTag("Player") && !messageDone && !messageIsTyping)
+            if (Input.GetButton("Interact") && other.CompareTag("Player") && !messageDone && !messageIsTyping && !displayInputBox)
             {
                 //@CS Disable mouse click so that the user cannot unselect the dialogue choices
                 //implementation - waiting until we can fully get rid of the mouse entirely
@@ -776,7 +784,7 @@ public class TalkToNPC : MonoBehaviour
         //Created by mohsen
         if (messages[messageCount].Contains("#INPUT_SMARTGOAL#"))
         {
-            inputSmartGoal.StoreSmartGoal();
+            inputSmartGoal.handleDisplay(ref displayInputBox, ref change_state);
         }
 
         //Change by Austin Greear 5/7/2020
