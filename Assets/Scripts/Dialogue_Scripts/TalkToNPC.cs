@@ -784,7 +784,7 @@ public class TalkToNPC : MonoBehaviour
         //Created by mohsen
         if (messages[messageCount].Contains("#INPUT_SMARTGOAL#"))
         {
-            inputSmartGoal.handleDisplay(ref displayInputBox, ref change_state);
+            inputSmartGoal.handleDisplay(ref displayInputBox, ref change_state, playerFileName);
         }
 
         //Change by Austin Greear 5/7/2020
