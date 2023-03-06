@@ -10,9 +10,11 @@ public class Input_Box : MonoBehaviour
 
     public GameObject inputField;
     public GameObject inputTextBox;
-    public GameObject inputButton;
     public GameObject exitButton;
+
+    public GameObject personalityObj;
     public Image personalityImage;
+
     public Text userFeedback;
     public Image feedbackBackground;
 
@@ -22,16 +24,11 @@ public class Input_Box : MonoBehaviour
     byte[] fileData;
 
     public virtual void Start() {
-        inputField.SetActive(false);
-        inputButton.SetActive(false);
-        // personalityImage.enabled = false;
-        exitButton.SetActive(false);
         feedbackBackground.enabled = false;
     }
 
     public void handleDisplay(ref bool displayInputBox, ref bool changeState) {
         inputField.SetActive(true);
-        inputButton.SetActive(true);
 
         // prevent player movement while user types into box
         displayInputBox = true;
@@ -40,11 +37,9 @@ public class Input_Box : MonoBehaviour
     }
 
     public void hideDisplay() {
-        personalityImage.enabled = false;
-        exitButton.SetActive(false);
+        personalityObj.SetActive(false);
 
         GameManager.instance.change_game_state("Normal");
-
     }
 
     public void handleSubmit() {
@@ -62,23 +57,17 @@ public class Input_Box : MonoBehaviour
             return;
         }
 
-
         // create image based on personality type user entered
         fileData = File.ReadAllBytes(filePath);
         tex = new Texture2D(2, 2);
         tex.LoadImage(fileData);
         mySprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
         personalityImage.sprite = mySprite;
-        // personalityImage.enabled = true;
-        personalityImage.GetComponent<Canvas>().enabled = true;
+
+        inputField.SetActive(false);
+        personalityObj.SetActive(true);
 
         updateFeedback("", Color.white, false);
-        exitButton.SetActive(true);
-        inputField.SetActive(false);
-        inputButton.SetActive(false);
-
-        // hideDisplay(); // change game state back to normal
-        
     }
 
     public void updateFeedback(string text, Color color, bool enabled) {
