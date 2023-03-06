@@ -11,6 +11,7 @@ public class Input_Box : MonoBehaviour
     public GameObject inputField;
     public GameObject inputTextBox;
     public GameObject inputButton;
+    public GameObject exitButton;
     public Image personalityImage;
     public Text userFeedback;
     public Image feedbackBackground;
@@ -23,7 +24,8 @@ public class Input_Box : MonoBehaviour
     public virtual void Start() {
         inputField.SetActive(false);
         inputButton.SetActive(false);
-        personalityImage.enabled = false;
+        // personalityImage.enabled = false;
+        exitButton.SetActive(false);
         feedbackBackground.enabled = false;
     }
 
@@ -37,11 +39,12 @@ public class Input_Box : MonoBehaviour
         GameManager.instance.change_game_state("Dialogue");
     }
 
-    private void hideDisplay() {
-        inputField.SetActive(false);
-        inputButton.SetActive(false);
+    public void hideDisplay() {
+        personalityImage.enabled = false;
+        exitButton.SetActive(false);
 
         GameManager.instance.change_game_state("Normal");
+
     }
 
     public void handleSubmit() {
@@ -52,7 +55,7 @@ public class Input_Box : MonoBehaviour
             return;
         }
 
-        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".png";
+        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".jpg";
 
         if (!File.Exists(filePath)) {
             updateFeedback("Invalid Code. Try again", Color.red, true); 
@@ -66,11 +69,15 @@ public class Input_Box : MonoBehaviour
         tex.LoadImage(fileData);
         mySprite = Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
         personalityImage.sprite = mySprite;
-        personalityImage.enabled = true;
+        // personalityImage.enabled = true;
+        personalityImage.GetComponent<Canvas>().enabled = true;
 
         updateFeedback("", Color.white, false);
+        exitButton.SetActive(true);
+        inputField.SetActive(false);
+        inputButton.SetActive(false);
 
-        hideDisplay(); // change game state back to normal
+        // hideDisplay(); // change game state back to normal
         
     }
 
