@@ -30,6 +30,55 @@ public class TalkToNPC : MonoBehaviour
 
     public static string fileName;
 
+    public static string[] valueProperties = {"VISION", "ALIGNMENT", "UNDERSTAND", "ENACT"};
+    public static string[] starProperties = {"SITUATION", "TASK", "ACTION", "RESULT"};
+
+    public static int progressBarLine = 0;
+
+    private float delay;
+    private string currentMessage = "";
+    [TextArea(5, 10)]
+    public string[] messages;
+    public string NPCName;
+    private string UnknownName = "Unknown";
+    private string playerName = "You";
+    public bool Known = true;
+    public RawImage NameBox;
+    public int messageCount = 0;
+    public Image ImageToShow;
+    Canvas UICanvas;
+    AudioSource TalkSFX;
+    RawImage TextBox;
+    private TextMeshProUGUI NameBoxText;
+    private TextMeshProUGUI text;
+
+    private RawImage YesNoBox;
+
+    public Button YesButton;
+
+    public Button NoButton;
+
+    public bool messageDone = false;
+    private bool messageIsTyping = false;
+    private bool firstMessage = false;
+    private bool multipleMessages = false;
+    private bool isTalking = false;
+    private bool InnerDialogue = false;
+    public bool isItem = false;
+    private bool textboxIsClosing = false;
+    private Player_Movement player;
+    private GameManager gameManager;
+    public int EnemyCommunications;
+    public static bool interviewTaken = false;
+    public static bool dialogueActive = false;
+    public static bool endGame = false;
+    public static bool yesNoInstructions = true;
+
+    public static int numPerfectAnswers = 0;
+    public static int numQuestionsAsked = 0;
+    public static string playerResultsFile = "";
+
+
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
     //Inside the /Player Results dir a file is created when when the first frame of the world map is called
     //Example: starting the game with player named "Don" will make the file Don 1-01-2022 H13M30S32.txt"
@@ -130,23 +179,24 @@ public class TalkToNPC : MonoBehaviour
         //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
         //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Interview Performance:\n");
-        File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
-        File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
-        File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
-        File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
-        File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
-        File.AppendAllText(path, "\n");
+        File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
+        File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
+        // File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
+        // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
+        // File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
+        // File.AppendAllText(path, "\n");
+        // File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
+        // File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
+        // File.AppendAllText(path, "\n");
 
         File.AppendAllText(path, "--------------Comments---------------\n");
         File.AppendAllText(path, "\n");
@@ -171,7 +221,8 @@ public class TalkToNPC : MonoBehaviour
     //      or UpdatePlayerResults ("Final Technology", "mytext.txt")
     //NOTE: playerFileName should be used as the second parameter because that is the variable that stores the file name of the current session.
     //created by Don Murphy
-    public static void UpdatePlayerResults(string resultName, string FileToUpdate)
+    //edited by Kareem Ibrahim
+    public static void UpdatePlayerResults(string resultName, string FileToUpdate, string companyName = "", string jobTitle = "")
     {
         string playerFileName = FileToUpdate;
         fileName = FileToUpdate;
@@ -230,63 +281,84 @@ public class TalkToNPC : MonoBehaviour
                 {
                     allLines[i] = Regex.Replace(matchBook.ToString(), matchAnswerNO.ToString(), "YES");
                 }
-               
+
             }
-            // Interview Performance STAR
-            else if (line.Contains("STAR"))
-            {
+
+            else if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
+                allLines[i] = "\nInterview Results for the " + jobTitle + " role at " + companyName + ":\n\n" + allLines[i];
+                progressBarLine = i + 2;
             }
-            // Interview Performance VALUE
-            else if (line.Contains("VALUE"))
-            {
-            }
+
         }
+
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
+    public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
+        string playerFileName = FileToUpdate;
+        playerResultsFile = FileToUpdate;
+
+        var allLines = File.ReadAllLines(playerFileName); //read file into lines var
+        int lineNumber = -1;
+
+        numQuestionsAsked++;
+
+        foreach (string line in allLines) {
+            lineNumber++;
+
+            if (!line.Contains("END OF INTERVIEW PERFORMANCE:")) {
+                continue;
+            }
+
+            string original = allLines[lineNumber];
+
+            allLines[lineNumber] = "\nQuestion: " + question + "\n";
+            allLines[lineNumber] += "Feedback:\n\nYou got the " + updateType + " properties of:";
+
+            for (int k = 0; k < userWords.Length; k++) {
+                allLines[lineNumber] += " " + userWords[k];
+            }
+
+
+            if (updateType == "VALUE" && userWords.Length != valueProperties.Length) {
+                allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
+
+                for (int j = 0; j < valueProperties.Length; j++) {
+                        if (!userWords.Contains(valueProperties[j])) {
+                            allLines[lineNumber] += " " + valueProperties[j];
+                        }
+                }
+
+                allLines[lineNumber] += "\n";
+            }
+
+            // must be STAR
+            else if (updateType == "STAR" && userWords.Length != starProperties.Length) {
+                allLines[lineNumber] += "\nYou missed out on the START PROPERTY OF:";
+
+                for (int j = 0; j < starProperties.Length; j++) {
+                        if (!userWords.Contains(starProperties[j])) {
+                            allLines[lineNumber] += " " + starProperties[j];
+                        }
+                }
+
+                allLines[lineNumber] += "\n";
+            }
+
+            else {
+                numPerfectAnswers++;
+            }
+
+            allLines[lineNumber] += original;
+
+            break;
+        }
 
 
 
+        File.WriteAllLines(playerFileName, allLines); //rewerite file with update
+    }
 
-
-    private float delay;
-    private string currentMessage = "";
-    [TextArea(5, 10)]
-    public string[] messages;
-    public string NPCName;
-    private string UnknownName = "Unknown";
-    private string playerName = "You";
-    public bool Known = true;
-    public RawImage NameBox;
-    public int messageCount = 0;
-    public Image ImageToShow;
-    Canvas UICanvas;
-    AudioSource TalkSFX;
-    RawImage TextBox;
-    private TextMeshProUGUI NameBoxText;
-    private TextMeshProUGUI text;
-
-    private RawImage YesNoBox;
-
-    public Button YesButton;
-
-    public Button NoButton;
-
-    public bool messageDone = false;
-    private bool messageIsTyping = false;
-    private bool firstMessage = false;
-    private bool multipleMessages = false;
-    private bool isTalking = false;
-    private bool InnerDialogue = false;
-    public bool isItem = false;
-    private bool textboxIsClosing = false;
-    private Player_Movement player;
-    private GameManager gameManager;
-    public int EnemyCommunications;
-    public static bool interviewTaken = false;
-    public static bool dialogueActive = false;
-    public static bool endGame = false;
-    public static bool yesNoInstructions = true;
 
     public bool getIsTalking()
     {
@@ -579,7 +651,7 @@ public class TalkToNPC : MonoBehaviour
      *DecideWhichDialogueToShow looks to see if each message contains any of the keywords and then processes the message accordingly.
      *Messages can have multiple keywords, such as "#REVEAL_NAME##SA1#Hello! My name is Steve Harvey!"
      *      This message would set the NPC's name to be known, as well as take away one significant action point from the player.
-     *      
+     *
      *One of the most used keywords is #MULTI_START# and #MULTI_END#
      * #MULTI_START# begins treating the messages as a chain, and will keep displaying messages sequentially until #MULTI_END# is read in a following message.
      * Do NOT use #MULTI_START# without #MULTI_END#
@@ -801,6 +873,10 @@ public class TalkToNPC : MonoBehaviour
         //Change by Austin Greear 5/7/2020
         if (messages[messageCount].Contains("#FEEDBACK#"))
         {
+            // END OF INTERVIEW AND FEEDBACK GIVEN
+
+            UpdateProgressBar();
+
             messages[messageCount] = messages[messageCount].Replace("#FEEDBACK#", "");
             if (Experience_Reactions.instance != null)
             {
@@ -824,7 +900,7 @@ public class TalkToNPC : MonoBehaviour
             NameBox.gameObject.SetActive(false);
             InnerDialogue = true;
             // The name box is made visible before the INNER_DIALOG_BEGIN is checked
-            // 
+            //
             if (null != NameBox) StartCoroutine(ChangeSizeCoroutine(0.5f, 0f, NameBox));  // Added 8/1/2021 to remove empty name box after work event.
         }
         if (messages[messageCount].Contains("#INNER_DIALOGUE_END#"))
@@ -840,7 +916,7 @@ public class TalkToNPC : MonoBehaviour
             NameBoxText.text = playerName;
             //InnerDialogue = true;
             // The name box is made visible before the INNER_DIALOG_BEGIN is checked
-            // 
+            //
             //if (null != NameBox) StartCoroutine(ChangeSizeCoroutine(0.5f, 0f, NameBox));  // Added 8/1/2021 to remove empty name box after work event.
         }
         if (messages[messageCount].Contains("#PLAYER_TALKING_END#"))
@@ -939,7 +1015,7 @@ public class TalkToNPC : MonoBehaviour
 
         //UpdatePlayerResults does a regex search and updates the player results file accordingly
         //this function was designed with future functionality inimind. By adding a new regex search and a new update for the match, this function can update any progress that happens in-game
-        //added by Don Murphy 
+        //added by Don Murphy
         if (messages[messageCount].Contains("#INCREASE#"))
         {
             Regex getMessage = new Regex(@"\*.[^_]*\*");
@@ -1168,6 +1244,29 @@ public class TalkToNPC : MonoBehaviour
         }
     }
 
+
+    // update progress bar with results from interview
+    public static void UpdateProgressBar() {
+        if (numQuestionsAsked < 4) {
+            return;
+        }
+
+        var allLines = File.ReadAllLines(playerResultsFile); //read file into lines var
+
+        for (int i = 0; i < numPerfectAnswers; i++) {
+            allLines[progressBarLine] += "⬛";
+        }
+
+        for (int j = numPerfectAnswers; j < numQuestionsAsked; j++) {
+            allLines[progressBarLine] += "⬜";
+        }
+
+        allLines[progressBarLine] += " - " + Convert.ToInt32((numPerfectAnswers * 100) / numQuestionsAsked) + "%";
+
+        File.WriteAllLines(playerFileName, allLines); //rewerite file with update
+
+    }
+
     public UnityEvent Dialogue_Event;
 
     public UnityEvent end_dialogue_event;
@@ -1256,7 +1355,7 @@ public class TalkToNPC : MonoBehaviour
         messageCount = i;
     }
 
-    //BasicDialogue() is used for printing messages that are simple, unlike YES_NOs 
+    //BasicDialogue() is used for printing messages that are simple, unlike YES_NOs
     public void BasicDialogue()
     {
         StartCoroutine(ShowText(ReplaceKeywords(messages[messageCount])));
@@ -1440,7 +1539,7 @@ public class TalkToNPC : MonoBehaviour
     //This is done to keep the NPC stuck on the question until the player answers yes.
     //Feel free to change this up.
     //Future implementation could have the user click yes or no, it would show the yes or no message, then it would read in what to do from there.
-    //AKA the YES or NO message could include a keyword to set the messageCount back to the question message or to continue it. 
+    //AKA the YES or NO message could include a keyword to set the messageCount back to the question message or to continue it.
     public void ClickNoOption()
     {
         if (isTalking)

@@ -19,12 +19,16 @@ public class Interview_Questions : MonoBehaviour
 
         public float meter_gain;
 
+        public string[] properties;
+
         [TextArea(5, 10)]
         public string[] Reaction;
 
-        public Answer(string e, string[] r, float mg)
+        public Answer(string e, string[] r, float mg, string[] p)
         {
             entry = e;
+
+            properties = p;
 
             Reaction = r;
 
@@ -37,13 +41,17 @@ public class Interview_Questions : MonoBehaviour
     {
         public string question;
 
+        public string questionType;
+
         public Answer[] answers;
 
         //public float points_earned;
 
-        public Question(string q, Answer[] a)
+        public Question(string q, string question_type, Answer[] a)
         {
             question = q;
+
+            questionType = question_type;
 
             answers = a;
         }
@@ -91,6 +99,9 @@ public class Interview_Questions : MonoBehaviour
 
             g_object.SetActive(false);
         }
+
+
+        TalkToNPC.UpdatePlayerResults("", TalkToNPC.playerFileName, company_name, job_title);
     }
 
     public int current_question_index = 0;
@@ -100,6 +111,7 @@ public class Interview_Questions : MonoBehaviour
     //Post: populates the Answers UI with the corresponding answers from the given question
     public void populate_answers(int index) 
     {
+        
         if (index < questions.Count && index >= 0) 
         {
             current_question_index = index;
@@ -108,6 +120,7 @@ public class Interview_Questions : MonoBehaviour
             {
                 if (i < questions[index].answers.Length)
                 {
+
                     //Replacing keywords
                     questions[index].answers[i].entry = questions[index].answers[i].entry.Replace("<COMPANY_NAME>", company_name);
 
@@ -169,6 +182,7 @@ public class Interview_Questions : MonoBehaviour
                                 break;
                         }
                     }
+
                     //__________________________________________________________________________
 
                     getMessage = new Regex(@"\*.[^_]*\*");
@@ -238,7 +252,7 @@ public class Interview_Questions : MonoBehaviour
                         if (found)
                         {
                             questions[index].answers[i].entry = questions[index].answers[i].entry.Replace(x.Value, String.Empty);
-
+                            
                             load_answer(items[i], questions[index].answers[i]);
                         }
                         else 
@@ -256,6 +270,7 @@ public class Interview_Questions : MonoBehaviour
                     items[i].gameObject.SetActive(false);
                 }
             }
+
         }
     }
 
@@ -339,6 +354,8 @@ public class Interview_Questions : MonoBehaviour
 
         item.meter_amount = answer.meter_gain;
 
+        item.properties = answer.properties;
+
         item.gameObject.SetActive(true);
 
         item.anim.SetTrigger("Open");
@@ -354,6 +371,7 @@ public class Interview_Questions : MonoBehaviour
         {
             if (items_index >= 0 && items_index < items.Count) 
             {
+
                 items[items_index].load_text(talkToNPC.ReplaceKeywords(answers[i].entry));
 
                 items[items_index].Reaction = answers[i].Reaction;
@@ -373,6 +391,7 @@ public class Interview_Questions : MonoBehaviour
     //Post: clears the answers UI
     public void clear_array()
     {
+      
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i].gameObject.activeSelf)
@@ -421,10 +440,12 @@ public class Interview_Questions : MonoBehaviour
 
     //Pre: an array of strings used for loading the reaction, and a float for the influence meter gain
     //Post: loads answers into the answer UI and increments the meter by the given amount.
-    public void load_answer(string[] Reaction, float meter_gain) 
+    public void load_answer(string[] Reaction, string[] properties, float meter_gain) 
     {
         if (talkToNPC.messageDone) 
         {
+            add_answer_to_player_results(properties);
+
             menu_anim.SetTrigger("Close");
 
             increment_meter(meter_gain);
@@ -436,6 +457,21 @@ public class Interview_Questions : MonoBehaviour
             talkToNPC.DecideWhichDialogueToShow();
         }
     }
+
+    // pre condition: takes array of strings containing the interviewer reactions
+    // post condition: search array of strings for keywords that display STAR/VALUE properties and add them to the player result file
+
+    private void add_answer_to_player_results(string[] properties) {
+        string interviewType = questions[question_index].questionType;
+
+        if (interviewType != "STAR" && interviewType != "VALUE") {
+            return;
+        }
+        
+        // KAREEM
+        TalkToNPC.UpdateInterviewResults(interviewType, TalkToNPC.playerFileName, questions[question_index].question, properties);
+    }
+
 
     public void load_answer_by_index(int index)
     {
