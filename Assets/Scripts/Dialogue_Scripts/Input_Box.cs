@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Input_Box : MonoBehaviour
 {
+    public PersonalityInfo personalityInfo;
 
     public GameObject inputField;
     public GameObject inputTextBox;
@@ -68,6 +69,7 @@ public class Input_Box : MonoBehaviour
         personalityObj.SetActive(true);
 
         updateFeedback("", Color.white, false);
+        personalityInfo.OutputPersonalityType();
     }
 
     public void updateFeedback(string text, Color color, bool enabled) {
