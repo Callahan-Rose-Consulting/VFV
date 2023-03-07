@@ -303,11 +303,9 @@ public class TalkToNPC : MonoBehaviour
                 allLines[lineNumber] += " " + userWords[k];
             }
 
-            allLines[lineNumber] += "\n";
-
 
             if (updateType == "VALUE" && userWords.Length != valueProperties.Length) {
-                allLines[lineNumber] += "You missed out on the VALUE PROPERTY OF:";
+                allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
 
                 for (int j = 0; j < valueProperties.Length; j++) {
                         if (!userWords.Contains(valueProperties[j])) {
