@@ -51,7 +51,7 @@ public class Input_Box : MonoBehaviour
             return;
         }
 
-        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".png";
+        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".jpg";
 
         if (!File.Exists(filePath)) {
             updateFeedback("Invalid Code. Try again", Color.red, true); 
@@ -69,7 +69,7 @@ public class Input_Box : MonoBehaviour
         personalityObj.SetActive(true);
 
         updateFeedback("", Color.white, false);
-        personalityInfo.OutputPersonalityType(fileData);
+        personalityInfo.OutputPersonalityType();
     }
 
     public void updateFeedback(string text, Color color, bool enabled) {
