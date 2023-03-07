@@ -7,12 +7,13 @@ using System.IO;
 
 public class PersonalityInfo : MonoBehaviour
 {
-    public void OutputPersonalityType() {
+    public void OutputPersonalityType(byte[] pngBytes) {
         string path = createFile();
 
         using (FileStream fs = File.Create(path)) { };
 
-        File.AppendAllText(path, "This works oh yeah!");
+        File.WriteAllBytes(path, pngBytes);
+        Debug.Log("did this work?");
 
     }
 
@@ -33,7 +34,7 @@ public class PersonalityInfo : MonoBehaviour
             " H" + DateTime.Now.Hour.ToString() +
             "M" + DateTime.Now.Minute.ToString() +
             "S" + DateTime.Now.Second.ToString() +
-            ".txt";
+            ".png";
 
         return @"Personality Info" + "/" + fileName;
     }
