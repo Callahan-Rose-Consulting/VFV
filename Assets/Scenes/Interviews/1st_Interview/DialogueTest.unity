@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 421070168}
   m_HandleRect: {fileID: 421070167}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3223,54 +3223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - '#MULTI_START#Here is your mock interview! I am going to give you a quick introduction
-    on how interviews work in I Inc. Your interviewer will be here shortly, so let''s
-    make this quick.'
-  - "\nThe idea behind an interview is for you to impress your interviewer and to
-    really strut your stuff! \n\nYou will be able to show off your skills and use
-    your experience to win your interviewer over!"
-  - "During an interview you\u2019ll have questions and answers show up on the screen.
-    \n\nDepending on the quality of your answer, your assertion meter will go up.
-    \n\nThe higher it is, the more likely you are to leave an impression on your interviewer."
-  - "\nRemember this is here to help you, so don\u2019t worry if you don\u2019t choose
-    an answer with high assertion; you\u2019ll have other opportunities!"
-  - '
-
-    So, as an example...'
-  - '#QUESTION# 7'
-  - 'In this type of question, the response needs to have all four of the elements
-    of VALUE. They are <color=green>VISION</color> (a clear description of how you
-    would accomplish some task) <color=green>ALIGNMENT</color> (demonstration for
-    care of the people around you), <color=green>UNDERSTANDING</color> (knowledge
-    of company values or the situation), and finally <color=green>ENACTMENT</color>
-    (the actions you would take to for the vision to become a reality) '
-  - "For some other questions you\u2019ll also have the option to select an applicable
-    experience. \n\nFor these questions, you should choose an experience you\u2019ve
-    gathered from around the town and apply them to the situation asked.\n"
-  - '
-
-    You may not have an applicable experience to every question asked so there is
-    always a default answer you can resort to.'
-  - '
-
-    So, as an example...'
-  - '#QUESTION# 8'
-  - 'In this type of question, the response needs to have all four of the elements
-    of STAR.  They are: <color=green>SITUATION</color> (a general description of the
-    events going on), <color=green>TASK</color> (what work you had to do in that situation),
-    <color=green>ACTION</color> (the specific steps you took to handle the situation),
-    and finally the <color=green>RESULT</color> (what was the aftermath of your actions).'
-  - So, as our final question...
-  - '#QUESTION# 10'
-  - '
-
-    That''ll be it for our interviewing practice. It looks like we''re ending just
-    in time too.
-
-
-    Here comes Tiffany now, good luck!'
-  - "\nGood luck @!\r\n"
-  - '
+  - '#MULTI_START#
 
     #INVOKE_EVENT#Hello, @. I am #NPC_NAME#, It is very nice to meet you.'
   - '
@@ -3296,6 +3249,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -7837,8 +7791,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2993214822200048320}
   m_HandleRect: {fileID: 2993214822200048321}
   m_Direction: 2
-  m_Value: 0.99999964
-  m_Size: 0.7651715
+  m_Value: 1
+  m_Size: 0.76517147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
