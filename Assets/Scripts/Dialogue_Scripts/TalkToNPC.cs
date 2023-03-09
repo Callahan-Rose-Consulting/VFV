@@ -25,6 +25,14 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
+    //added by omega team
+    public GameObject bulletinImage;
+    void DisplayBulletin()
+    {
+        bulletinImage.SetActive(true);
+    }
+
+
 
 
 
@@ -675,6 +683,12 @@ public class TalkToNPC : MonoBehaviour
             string myFile = File.ReadAllText(playerFileName);
             string updateCareer = myFile.Replace("[No Career Fair Choice]", "Education");
             File.WriteAllText(playerFileName, updateCareer);
+        }
+
+        //added by omega team 
+        if (messages[messageCount].Contains("#BULLETIN#"))
+        {
+            DisplayBulletin();
         }
 
 
