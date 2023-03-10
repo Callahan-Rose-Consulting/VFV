@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class VideoPlayerController : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
+    public RenderTexture rt;
 
     private void Awake()
     {
@@ -20,10 +21,10 @@ public class VideoPlayerController : MonoBehaviour
         videoPlayer.Play();
     }
 
-    void EndReached(UnityEngine.Video.VideoPlayer vp)
+    void EndReached(VideoPlayer vp)
     {
-        SceneManager.LoadScene("NewMainMenu");
-    }
+       SceneManager.LoadScene("NewMainMenu");
+     }
 }
 
 
