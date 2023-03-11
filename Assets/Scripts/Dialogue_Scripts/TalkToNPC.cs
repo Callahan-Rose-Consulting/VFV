@@ -27,10 +27,7 @@ public class TalkToNPC : MonoBehaviour
 
     //added by omega team
     public GameObject bulletinImage;
-    void DisplayBulletin()
-    {
-        bulletinImage.SetActive(true);
-    }
+    
 
 
 
@@ -688,7 +685,7 @@ public class TalkToNPC : MonoBehaviour
         //added by omega team 
         if (messages[messageCount].Contains("#BULLETIN#"))
         {
-            DisplayBulletin();
+            FindObjectOfType<NewBulletinBoard>().ShowBulletin();
         }
 
 
