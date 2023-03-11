@@ -288,11 +288,15 @@ public class TalkToNPC : MonoBehaviour
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
+
+    // Pre-Condition: Update Type is either star or value and the file exists
+    // Post-Condition: Update player result file with the STAR/VALUE properties for that SPECIFIC question
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
         string playerFileName = FileToUpdate;
         playerResultsFile = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
+        // int finalLine = findMessage(allLines, "END OF INTERVIEW PERFORMANCE:");
         int lineNumber = -1;
 
         numQuestionsAsked++; 
@@ -353,6 +357,22 @@ public class TalkToNPC : MonoBehaviour
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
+    // Pre-condition: 
+    // Post-condition: 
+    private int findMessage(string[] fileLines, string message) {
+        Debug.Log("In find message talk to npc");
+        int lineNumber = 0;
+    
+        foreach (string line in fileLines) {
+            if (line.Contains(message)) {
+                break;
+            }
+
+            lineNumber++;
+        }
+
+        return lineNumber;
+    }
 
     public bool getIsTalking()
     {
