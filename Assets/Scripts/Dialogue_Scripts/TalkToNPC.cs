@@ -27,22 +27,35 @@ public class TalkToNPC : MonoBehaviour
 
     //added by omega team
     public GameObject bulletinImage;
-    
+
+    void DisplayBulletin()
+    {
+        // Show the bulletin image
+        bulletinImage.SetActive(true);
+    }
+
+    void HideBulletin()
+    {
+        // Hide the bulletin image
+        bulletinImage.SetActive(false);
+    }
 
 
 
 
 
-    //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
-    //Inside the /Player Results dir a file is created when when the first frame of the world map is called
-    //Example: starting the game with player named "Don" will make the file Don 1-01-2022 H13M30S32.txt"
-    //Note: the file name is created by using the players name + the time the file is created as in: 1-01-2022 is Jan 1st 2022 | H13 is 1pm| M30 is 30min| S32 is 32sec
-    //The reason this is done is to generate a unique file for each time the game is played, even if the same Don tries to play the game 5 times within the same min.
 
-    //The Players name, and initial stats are written to the file. Later functions are called in the game that update the created file.
-    //ref is used to pass playerFileName by reference as to update the string based on. In C# pointers aren't really used, instead use ref and it does the job of pass by reference
-    //Created by Don Murphy
-    void CreateFile(ref string playerFileName)
+
+//This function makes a Directory in the root folder of the game if /Player Results dir does not exist
+//Inside the /Player Results dir a file is created when when the first frame of the world map is called
+//Example: starting the game with player named "Don" will make the file Don 1-01-2022 H13M30S32.txt"
+//Note: the file name is created by using the players name + the time the file is created as in: 1-01-2022 is Jan 1st 2022 | H13 is 1pm| M30 is 30min| S32 is 32sec
+//The reason this is done is to generate a unique file for each time the game is played, even if the same Don tries to play the game 5 times within the same min.
+
+//The Players name, and initial stats are written to the file. Later functions are called in the game that update the created file.
+//ref is used to pass playerFileName by reference as to update the string based on. In C# pointers aren't really used, instead use ref and it does the job of pass by reference
+//Created by Don Murphy
+void CreateFile(ref string playerFileName)
     {
         //create a Directory for the player results
         string Dir = "Player Results";
@@ -685,7 +698,8 @@ public class TalkToNPC : MonoBehaviour
         //added by omega team 
         if (messages[messageCount].Contains("#BULLETIN#"))
         {
-            FindObjectOfType<NewBulletinBoard>().ShowBulletin();
+            // Display the bulletin image
+            DisplayBulletin();
         }
 
 

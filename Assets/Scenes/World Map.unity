@@ -4070,7 +4070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1086249.5}
+  m_AnchoredPosition: {x: 0, y: -1088012.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -13672,11 +13672,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletinImage: {fileID: 1838579486}
   messages:
-  - '#MULTI_START#This is the game guide...'
+  - '#BULLETIN#'
+  - '#MULTI_START#Hello I''m Mr. Guide Man...'
   - '#MULTI_END##YES_NO#Would you like to view a guide on what to do next? (This is
-    only if your lost)'
+    only if your lost in the game)'
   - Great! Keep exploring!!
-  - '#MULTI_START##BULLETIN#'
+  - Yayyyy
   NPCName: Mr. Guide Man
   Known: 0
   NameBox: {fileID: 0}
@@ -21528,7 +21529,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 749638382}
   m_HandleRect: {fileID: 749638381}
   m_Direction: 2
-  m_Value: 0.8304085
+  m_Value: 0.50047505
   m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -52483,8 +52484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.455, y: -948.9}
-  m_SizeDelta: {x: 1733.1, y: 2871.9}
+  m_AnchoredPosition: {x: -18.455, y: -2}
+  m_SizeDelta: {x: 1733.1, y: 4210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028215137
 MonoBehaviour:
@@ -52504,15 +52505,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<margin=1em><size=100%><b>User Manual</b><line-height=60%>\r\n<br>\r\n<size=80%><color=black><b>Objective</b><br>\r\n<size=70%><margin=3em><br>\r\nThe
-    object of the game is to teach you how to master skills that will help you transition
-    from a job to a career. <br>  \r\nThe game achieves this by:<margin=5em><br>\r\n*
-    Showing how networking can enhance the traditional r\xE9sum\xE9 distribution process<br>\r\n*
-    Using videos to demonstrate how to improve your personal brand<br>\r\n* Practicing
-    decision making using events that occur during your workday and how you handle
-    them<br>\r\n* Covering what to expect during an interview and simulating the interview
-    process with guidance<br>\r\n* Having you make day-to-day decisions that will
-    affect your interview<br>\r\n* Emulating the creation of a standard r\xE9sum\xE9<br>\r<br>\n<margin=1em><size=80%><b>Player
+  m_text: "<margin=1em><size=100%><b>User Manual</b><line-height=60%>\r\n<br>\r\n<size=80%><color=black><b>Game
+    Guide</b><br>\r\n<size=70%><margin=3em><br>\r\nThe object of the game is to teach
+    you how to master skills that will help you transition from a job to a career.
+    <br>  \r\nThe game achieves this by:<margin=5em><br>\r\n* Showing how networking
+    can enhance the traditional r\xE9sum\xE9 distribution process<br>\r\n* Using videos
+    to demonstrate how to improve your personal brand<br>\r\n* Practicing decision
+    making using events that occur during your workday and how you handle them<br>\r\n*
+    Covering what to expect during an interview and simulating the interview process
+    with guidance<br>\r\n* Having you make day-to-day decisions that will affect your
+    interview<br>\r\n* Emulating the creation of a standard r\xE9sum\xE9<br>\r\n<br>\r\n<margin=1em><size=80%><b>Player
     Creation</b><br>\r\n<size=70%><margin=3em>\r\nWhen the game starts, a questionnaire
     is presented.  Your responses determine your initial game attributes.<br>  \r\nThe
     questionnaire can be bypassed, and your attributes set randomly by clicking \"Finish
@@ -52544,7 +52546,23 @@ MonoBehaviour:
     player left<br>\r\n[D] or [Right Arrow] Moves the player right<br>\r\n[W] or [Up
     Arrow] Moves the player up<br>\r\n[S] or [Down Arrow] Moves the player down<br>\r\n<br>\r\n[R]
     Starts the R\xE9sum\xE9 Emulator<br>\r\n[M] Enables/Disables the mini map<br>\r\n[Call
-    Taxi] Enables/Disables the taxi menu to rapidly move to a different location.\r\n"
+    Taxi] Enables/Disables the taxi menu to rapidly move to a different location.\r\n\r\n\n<margin=1em><size=80%><b>Game
+    Progression</b>\r\n<size=70%><margin=3em><br>\r\nWeek1: Sunday <br>\r\n\t\u2022
+    Talk to Dujon for the first time To watch STAR video.<br>\r\n\t\u2022 Talk to
+    Dujon a second time To watch a VALUE video.<br>\r\n\t\u2022 Clean Gutsy's house
+    gain $50 Gutsy <br>\r\nWeek1: Monday<br>\r\n\t\u2022 Talk to Syed to watch an
+    adaptation video. <br>\r\n\t\u2022 Learn how to make better pizzas from Stefano
+    SW world map. <br>\r\nWeek1: Tuesday<br>\r\n\t\u2022 Talk to Syed to watch a personal
+    branding video. <br>\r\n\t\u2022 Attend Networking event (Talking to Syed x2 before
+    event is key component to networking event)<br>\r\nWeek1: Wednesday<br>\r\n\t\u2022
+    Talk to Jane to watch interview prep.<br>\r\n\t\u2022 Study at the library to
+    increase 1 attribute. <br>\r\n\t\u2022 Talk to Dr. Sphinx at West open world for
+    unlimited jokes/info to increase communication. <br>\r\nWeek1: Thursday<br>\r\n\t\u2022
+    Have to talk to Rob, watch the sweet spot video, and then say yes to joining pizza
+    interview (can be done any time before Thursday)<br>\r\n\t\u2022 Talk to Rob by
+    bulletin board to watch sweet spot video (same as one in library on right).<br>\r\nWeek2:
+    Monday<br>\r\n\t\u2022 Work at pizza place<br>\r\n\t\u2022 Watch learning videos<br>\r\nWeek2:
+    Tuesday<br>\r\n\t\u2022 Last day!! (Game to be continued soon)<br>\r\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -52589,7 +52607,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 899
+  m_firstOverflowCharacterIndex: 2280
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -52610,15 +52628,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 12.699585, z: 0, w: 1918.0056}
+  m_margin: {x: 0, y: 12.699585, z: 0, w: 1867.7268}
   m_textInfo:
     textComponent: {fileID: 1028215137}
-    characterCount: 2983
+    characterCount: 4077
     spriteCount: 0
-    spaceCount: 555
-    wordCount: 465
+    spaceCount: 793
+    wordCount: 640
     linkCount: 0
-    lineCount: 111
+    lineCount: 163
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -95481,7 +95499,7 @@ GameObject:
   - component: {fileID: 1838579489}
   - component: {fileID: 1838579488}
   m_Layer: 0
-  m_Name: Image
+  m_Name: bulletinImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
