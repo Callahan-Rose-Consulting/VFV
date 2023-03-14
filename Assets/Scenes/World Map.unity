@@ -212,7 +212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -918,7 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Software Engineer Repersentive
@@ -4069,7 +4067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1088649.8}
+  m_AnchoredPosition: {x: 0, y: -1089112.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -4215,7 +4213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -4589,7 +4586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -5436,7 +5432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -6897,7 +6892,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - Alright @, today we need to figure out how to bring in more customers.#FADE_OUT#
@@ -7300,7 +7294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello I am Tyriq. I''m an Electrical Engineer. Would you like to
     pursue this career path? #YES_NO#'
@@ -8504,7 +8497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -9308,7 +9300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -9811,7 +9802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   - 
@@ -11349,7 +11339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - '@, we have a problem. After some reviews in the paper it looks like we received
@@ -13023,7 +13012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: IT Repersentitive
@@ -13531,7 +13519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -14430,7 +14417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#You''ve got some free time now. Use it wisely!#MULTI_END##SA1#'
   NPCName: 
@@ -15156,7 +15142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -15536,7 +15521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -16583,7 +16567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -17494,7 +17477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   - 
@@ -18319,7 +18301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#I hope things go well during todays shift #MULTI_START#'
   - During the begining of the shift Bob does not show up#FADE_OUT#
@@ -19026,7 +19007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Today we will start fixing some of the bugs that where found#MULTI_START#
   - I go to my pc.#FADE_OUT#
@@ -20142,7 +20122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: HR Repersentitive
@@ -20802,7 +20781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello, I am Richard. I''m in marketing in the business world. Would
     you like to pursue this career path? #YES_NO#'
@@ -22553,7 +22531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -23402,7 +23379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START# #INVOKE_EVENT#Welcome to the book store! What would you like to
     do?'
@@ -25641,7 +25617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481436112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 266, y: -112, z: 50}
+  m_LocalPosition: {x: 267.76, y: -111.62, z: 50}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
   m_Children:
   - {fileID: 2038655849}
@@ -25834,7 +25810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello my name is Alfred. I teach special education. Would you like
     to pursue this career path in education? #YES_NO#'
@@ -30438,7 +30413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages: []
   NPCName: 
   Known: 0
@@ -30616,7 +30590,7 @@ PrefabInstance:
         type: 3}
       propertyPath: messages.Array.data[3]
       value: '#MULTI_END##YES_NO#Wait, would you like to watch this video? It really
-        encouraged me to embrace change of a new place.#Post#*Watch adapt video?*'
+        encouraged me to embrace change of a new place.#Post#*Watch adapt video*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -30691,8 +30665,7 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[13]
-      value: '#MULTI_END##YES_NO#Would you like to learn about branding with me?#Post#*Learn
-        branding*'
+      value: '#MULTI_END##YES_NO#Would you like to learn about branding with me?'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -31638,7 +31611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Hopefuly everything goes smoothly today#MULTI_START#
   - As i enter the building i see some other people of the department just sitting
@@ -32257,7 +32229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -34138,7 +34109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -34721,7 +34691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -35844,7 +35813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695906573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 263, y: -112, z: 50}
+  m_LocalPosition: {x: 263.02, y: -112.26, z: 50}
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
   m_Children:
   - {fileID: 1811947633}
@@ -36037,7 +36006,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - "#REVEAL_NAME# Hello my name is Bobby. I\u2019m a steel worker. This means I\u2019m
     a blue collar worker. Would you like to pursue this career path? #YES_NO#"
@@ -36639,7 +36607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -38377,7 +38344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'Today is the carrer fair hopefully i can make good connections #MULTI_START#'
   - I head to robert after my shift so that i can go to the carrer fair#FADE_OUT#
@@ -39088,7 +39054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -39504,7 +39469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -40331,7 +40295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Spend some time in your apartment?'
   - 
@@ -41054,7 +41017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -41512,7 +41474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Study at the library?'
   - 'Thank you for visiting. See you later! '
@@ -41867,7 +41828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -43455,7 +43415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START#I wonder what''s on the other side...'
   - '#MULTI_END##YES_NO#Do you think there''s any treasure?'
@@ -44103,7 +44062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello, I am Keonte. I work in theater and arts. Would you like
     to pursue this career path? #YES_NO#'
@@ -47007,7 +46965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -47321,7 +47278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -48516,7 +48472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -49288,7 +49243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -50299,7 +50253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'I have a lot of paperwork I need to get done I better get started. #MULTI_START#'
   - I'm almost done with the paperwork#FADE_OUT#
@@ -50549,7 +50502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -51153,7 +51105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -52210,22 +52161,22 @@ MonoBehaviour:
     Starts the R\xE9sum\xE9 Emulator<br>\r\n[M] Enables/Disables the mini map<br>\r\n[Call
     Taxi] Enables/Disables the taxi menu to rapidly move to a different location.\r\n\r\n\n\n<margin=1em><size=80%><b>Game
     Guide</b>\r\n<size=70%><margin=3em><br>\r\nNote: This is only if your lost in
-    the game <br>\nWeek1: Sunday <br>\r\n\t\u2022 Talk to Dujon for the first time
-    To watch STAR video.<br>\r\n\t\u2022 Talk to Dujon a second time To watch a VALUE
-    video.<br>\r\n\t\u2022 Clean Gutsy's house gain $50 Gutsy <br>\r\nWeek1: Monday<br>\r\n\t\u2022
-    Talk to Syed to watch an adaptation video. <br>\r\n\t\u2022 Learn how to make
-    better pizzas from Stefano SW world map. <br>\r\nWeek1: Tuesday<br>\r\n\t\u2022
-    Talk to Syed to watch a personal branding video. <br>\r\n\t\u2022 Attend Networking
-    event (Talking to Syed x2 before event is key component to networking event)<br>\r\nWeek1:
-    Wednesday<br>\r\n\t\u2022 Talk to Jane to watch interview prep.<br>\r\n\t\u2022
-    Study at the library to increase 1 attribute. <br>\r\n\t\u2022 Talk to Dr. Sphinx
-    at West open world for unlimited jokes/info to increase communication. <br>\r\nWeek1:
-    Thursday<br>\r\n\t\u2022 Have to talk to Rob, watch the sweet spot video, and
-    then say yes to joining pizza interview (can be done any time before Thursday)<br>\r\n\t\u2022
-    Talk to Rob by bulletin board to watch sweet spot video (same as one in library
-    on right).<br>\r\nWeek2: Monday<br>\r\n\t\u2022 Work at pizza place<br>\r\n\t\u2022
-    Watch learning videos<br>\r\nWeek2: Tuesday<br>\r\n\t\u2022 Last day!! (Game to
-    be continued soon)<br>\r\n\r"
+    the game <br>\nWeek1: Sunday <br>\r\n\t\u2022 Talk to Robert <br>\t\n\t\u2022
+    Talk to Dujon for the first time To watch STAR video.<br>\r\t\n\t\u2022 Clean
+    Gutsy's house gain $50 Gutsy <br>\r\nWeek1: Monday<br>\r\n\t\u2022 Talk to Dujon
+    a second time To watch a VALUE video.<br>\r\n\t\u2022 Talk to Syed to watch an
+    adaptation video. <br>\r\n\t\u2022 Learn how to make better pizzas from Stefano
+    SW world map. <br>\r\nWeek1: Tuesday<br>\r\n\t\u2022 Talk to Syed to watch a personal
+    branding video. <br>\r\n\t\u2022 Attend Networking event (Talking to Syed x2 before
+    event is key component to networking event)<br>\r\nWeek1: Wednesday<br>\r\n\t\u2022
+    Talk to Jane to watch interview prep.<br>\r\n\t\u2022 Study at the library to
+    increase 1 attribute. <br>\r\n\t\u2022 Talk to Dr. Sphinx at West open world for
+    unlimited jokes/info to increase communication. <br>\r\nWeek1: Thursday<br>\r\n\t\u2022
+    Have to talk to Rob, watch the sweet spot video, and then say yes to joining pizza
+    interview (can be done any time before Thursday)<br>\r\n\t\u2022 Talk to Rob by
+    bulletin board to watch sweet spot video (same as one in library on right).<br>\r\nWeek2:
+    Monday<br>\r\n\t\u2022 Work at pizza place<br>\r\n\t\u2022 Watch learning videos<br>\r\nWeek2:
+    Tuesday<br>\r\n\t\u2022 Last day!! (Game to be continued soon)<br>\r\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -52294,12 +52245,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 1001.07605, z: 0, w: 3115.0303}
   m_textInfo:
     textComponent: {fileID: 1028215137}
-    characterCount: 4118
+    characterCount: 4140
     spriteCount: 0
-    spaceCount: 806
-    wordCount: 650
+    spaceCount: 815
+    wordCount: 653
     linkCount: 0
-    lineCount: 166
+    lineCount: 168
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -53835,7 +53786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -54820,7 +54770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -57422,7 +57371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138430719}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 255, y: -110, z: 50}
+  m_LocalPosition: {x: 255, y: -109.872, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 863204173}
@@ -57810,7 +57759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello!'
   - '#PLAYER_TALKING_BEGIN#Hello Robert. How are you? Nice seeing you again.'
@@ -58714,7 +58662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156377143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 255, y: -110, z: 50}
+  m_LocalPosition: {x: 255, y: -109.863, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 1177606114}
@@ -58849,7 +58797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Gutsy
@@ -60077,7 +60024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Today we will review the software designs#MULTI_START#
   - My boss walks in to talk to me#FADE_OUT#
@@ -60441,7 +60387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -60838,7 +60783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -61795,7 +61739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#REVEAL_NAME##MULTI_START#I am running a Pizza Workshop.  I''ll teach you how
     to make delicious pizzas.'
@@ -62603,7 +62546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#You just got a new job! Spend the rest of the day however
     you please, you''ll have work tommorrow!'
@@ -63479,7 +63421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -64505,7 +64446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - I enter the building but the lights won't turn on#FADE_OUT#
@@ -65128,7 +65068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269409692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259, y: -110, z: 50}
+  m_LocalPosition: {x: 259, y: -109.915, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 1708987871}
@@ -65238,7 +65178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Stefano
@@ -66592,7 +66531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - Your boss makes his way towards you during the middle of your shift.#FADE_OUT#
@@ -68213,7 +68151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - The phone rings so you go pick it up.#FADE_OUT#
@@ -68880,7 +68817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -69681,7 +69617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -70514,7 +70449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Let's get this day started#MULTI_START#
   - I head to my office.#FADE_OUT#
@@ -70770,7 +70704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -71545,7 +71478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   - 
@@ -71775,7 +71707,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -72302,7 +72233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -73718,7 +73648,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -74285,7 +74214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398934659}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259, y: -110, z: 50}
+  m_LocalPosition: {x: 259, y: -109.882, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 1271600771}
@@ -74478,7 +74407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey there! How are you today?'
   - '#INNER_DIALOGUE_BEGIN#You chat with Dr.Sphinx about your day#ADD_SUMMARY#*went
@@ -75284,7 +75212,7 @@ PrefabInstance:
         type: 3}
       propertyPath: messages.Array.data[3]
       value: '#MULTI_END##YES_NO#Do you want to join the workshop? It''s free, but
-        it takes a few hours.#Post#*join workshop?*'
+        it takes a few hours.#Post#*Learn in Library*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -76083,7 +76011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443628026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 263, y: -110, z: 50}
+  m_LocalPosition: {x: 263.022, y: -109.875, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 23736959}
@@ -76471,7 +76399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello, @!'
   - '#PLAYER_TALKING_BEGIN#Hello Jane. I am good. How about you?'
@@ -77909,7 +77836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -127, y: -120.59}
+  m_AnchoredPosition: {x: -127.00006, y: -120.59009}
   m_SizeDelta: {x: -1488, y: -437.7}
   m_Pivot: {x: 0.4999999, y: 0.50000006}
 --- !u!114 &1476761767
@@ -78251,7 +78178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -82640,7 +82566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -83277,7 +83202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -84313,7 +84237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -86680,7 +86603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Hopefully today is a smooth day at work#MULTI_START#
   - I enter my office#FADE_OUT#
@@ -87199,7 +87121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Today we will start developing new training materials#MULTI_START#
   - I enter my office#FADE_OUT#
@@ -89232,7 +89153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'Hope today is smooth sailing. #MULTI_START#'
   - I make my way to the back of the Pizza Place to see if everything is in shape#FADE_OUT#
@@ -89764,7 +89684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#Let''s get this shift started #MULTI_START#'
   - The day goes by fairly smoothly...#FADE_OUT#
@@ -91024,7 +90943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Let's get this day started.#MULTI_START#
   - I go to my office.#FADE_OUT#
@@ -91941,7 +91859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Rewatch the sweet spot video?'
   - 
@@ -92906,7 +92823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772187338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259, y: -110, z: 50}
+  m_LocalPosition: {x: 259, y: -109.897, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 187999115}
@@ -93099,7 +93016,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello!'
   - "Hey @. How are you? Haven\u2019t seen you for a while?"
@@ -97161,7 +97077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -97626,7 +97541,7 @@ PrefabInstance:
         type: 3}
       propertyPath: messages.Array.data[3]
       value: '#MULTI_END##YES_NO#Do you want to practice it together?#Post#*Learn
-        STAR*'
+        Value from Dujon*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -97694,8 +97609,8 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[13]
-      value: '#MULTI_END##YES_NO#Do you want to practice that together too?#Post#*Learn
-        VALUE*'
+      value: '#MULTI_END##YES_NO#Do you want to practice that together too?#Post#*Talk
+        to Stefano then Syed*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -98821,7 +98736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START# Nice to meet you. I''m Riad. What''s your name?'
   - '....'
@@ -99028,7 +98942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -99340,7 +99253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START#Hey, @!  I''m glad you made it. #INVOKE_EVENT#'
   - You are going to be talking with Tiffany today, she's great!
@@ -99646,7 +99558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -100222,7 +100133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - "#INCREASE#*Com*#MULTI_START#Yo listen to my sick beatboxing skills! \u266A\u266A
     \ \u266A  \u266A\u266A \u266A\u266A   \u266A\u266A\u266A  \u266A\u266A   \u266A\u266A
@@ -101801,7 +101711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - As I sit in my work station i hear the phone ring immediately#FADE_OUT#
@@ -102638,7 +102547,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - There have been a lot of online orders today#FADE_OUT#
@@ -103054,7 +102962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -106765,7 +106672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -108412,7 +108318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey there! How are you today?
 
@@ -108998,7 +108903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7114814839188852613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 255, y: -110, z: 50}
+  m_LocalPosition: {x: 254.993, y: -109.879, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 5283140713666208788}
@@ -109136,7 +109041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7199974624104838332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 263, y: -110, z: 50}
+  m_LocalPosition: {x: 263.022, y: -109.89, z: 50}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 5190091654755098413}
@@ -114023,7 +113928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey! Did you watch the game last night?'
   - '#INNER_DIALOGUE_BEGIN#You chat with Jane about sports#ADD_SUMMARY#*went to the
@@ -114176,7 +114080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello! The weather outside today is beautiful!'
   - '#INNER_DIALOGUE_BEGIN#You chat with Robert about the weather recently#ADD_SUMMARY#*went
@@ -117165,7 +117068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Dujon
@@ -117657,7 +117559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletinImage: {fileID: 0}
   messages:
   - 
   NPCName: 
@@ -117915,12 +117816,12 @@ PrefabInstance:
     - target: {fileID: 8876067750795295179, guid: 16c1d199d4daa4148851c2bf59ccb439,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.525756
+      value: -4.408
       objectReference: {fileID: 0}
     - target: {fileID: 8876067750795295179, guid: 16c1d199d4daa4148851c2bf59ccb439,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -48.56
+      value: -48.688
       objectReference: {fileID: 0}
     - target: {fileID: 8876067750795295179, guid: 16c1d199d4daa4148851c2bf59ccb439,
         type: 3}
@@ -117970,12 +117871,12 @@ PrefabInstance:
     - target: {fileID: 8876067750795295179, guid: 16c1d199d4daa4148851c2bf59ccb439,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.45
+      value: 0.44949308
       objectReference: {fileID: 0}
     - target: {fileID: 8876067750795295179, guid: 16c1d199d4daa4148851c2bf59ccb439,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.45
+      value: 0.39668134
       objectReference: {fileID: 0}
     - target: {fileID: 8876067750795295179, guid: 16c1d199d4daa4148851c2bf59ccb439,
         type: 3}

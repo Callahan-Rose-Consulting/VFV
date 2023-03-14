@@ -25,20 +25,6 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
-    //added by omega team
-    public GameObject bulletinImage;
-
-    void DisplayBulletin()
-    {
-        // Show the bulletin image
-        bulletinImage.SetActive(true);
-    }
-
-    void HideBulletin()
-    {
-        // Hide the bulletin image
-        bulletinImage.SetActive(false);
-    }
 
 
 
@@ -694,14 +680,6 @@ void CreateFile(ref string playerFileName)
             string updateCareer = myFile.Replace("[No Career Fair Choice]", "Education");
             File.WriteAllText(playerFileName, updateCareer);
         }
-
-        //added by omega team 
-        if (messages[messageCount].Contains("#BULLETIN#"))
-        {
-            // Display the bulletin image
-            DisplayBulletin();
-        }
-
 
         //Change by Austin Greear 4/26/2020
         if (messages[messageCount].Contains("#INVOKE_EVENT#"))
