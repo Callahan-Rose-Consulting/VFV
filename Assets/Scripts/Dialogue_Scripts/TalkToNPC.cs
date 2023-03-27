@@ -112,14 +112,14 @@ public class TalkToNPC : MonoBehaviour
             "S" + DateTime.Now.Second.ToString() +
             ".txt";
 
-        //creating string for writing info in player results
+        //creating string for writing info in player results.
         string path = @"Player Results" + "/" + fileName;
 
-        //creating string for reading and writing the begining in player results
+        //creating string for reading and writing the head of the player results file.
         string head = @"Assets\\Player Inventory\\Player Result Information\\header.txt";
         string headInfo = File.ReadAllText(head);
 
-        //creating string for reading and writing the ending in player results
+        //creating string for reading and writing the ending of the player results file.
         string end = @"Assets\\Player Inventory\\Player Result Information\\ending.txt";
         string endInfo = File.ReadAllText(end);
 
