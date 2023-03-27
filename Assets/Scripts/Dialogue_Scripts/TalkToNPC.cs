@@ -117,12 +117,13 @@ public class TalkToNPC : MonoBehaviour
         using (FileStream fs = File.Create(path)) { };
         string VFV = "";
         playerFileName = path;
-        File.AppendAllText(path, "#----------------------------------------------------------#\n");
+        //File.Copy("Player Results.txt", "header.txt");
+        File.AppendAllText(path, "#----------------------------------------------------------#\n"); // start
         File.AppendAllText(path, "|Thank you for playing!                                    |\n");
         File.AppendAllText(path, "|Veterans gain free access to biginterview.com.            |\n");
         File.AppendAllText(path, "|Send this file to mike@callahanrose.com for access        |\n");
         File.AppendAllText(path, "|Linkedin Group: https://www.linkedin.com/groups/14140078/ |\n");
-        File.AppendAllText(path, "#----------------------------------------------------------#\n");
+        File.AppendAllText(path, "#----------------------------------------------------------#\n"); //end
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "---------------Performace Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
@@ -143,7 +144,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\t-Final Communication_______________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
         File.AppendAllText(path, "\t-Final Critical Thinking___________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Chosen Career Field\n");
+        File.AppendAllText(path, "*Chosen Career Field\n"); // start
         File.AppendAllText(path, "[No Career Fair Choice]\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Videos Watched:\n");
@@ -175,29 +176,9 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\t-Book:Principles of Engineering____________________: NO\n");
         File.AppendAllText(path, "\t-Book:I Inc Career Planning________________________: NO\n");
         File.AppendAllText(path, "\t-Book:Tiger in the Office__________________________: NO\n");
-        //books not listed in book store (found in Bookstore.cs BS_Items)
-        //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
-        //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
         File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
-        // File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
-        // File.AppendAllText(path, "\n");
-        // File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
-        // File.AppendAllText(path, "\n");
-
         File.AppendAllText(path, "--------------Comments---------------\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Participant Comments:\n");
@@ -211,7 +192,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
+        File.AppendAllText(path, "\n"); //end 
 
     }
     //This function takes in the name of the result to be updated and the name of the file to update.
