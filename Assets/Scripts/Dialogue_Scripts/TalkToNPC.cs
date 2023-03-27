@@ -124,15 +124,6 @@ public class TalkToNPC : MonoBehaviour
 
         //File.Copy(head, playerFileName+ Path.GetFileName(head));
 
-        try
-        {
-            File.Copy(head, fileName);
-        }
-        catch (IOException iox)
-        {
-            Console.WriteLine(iox.Message);
-        }
-
         // File.Copy(playerFileName, head);
         // Console.WriteLine(File.ReadAllText(head));
 
