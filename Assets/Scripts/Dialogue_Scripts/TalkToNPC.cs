@@ -280,7 +280,7 @@ public class TalkToNPC : MonoBehaviour
 
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
         string playerFileName = FileToUpdate;
-        playerResultsFile = FileToUpdate;
+        playerResultsFile = FileToUpdate; // save for later use
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int lineNumber = -1;
