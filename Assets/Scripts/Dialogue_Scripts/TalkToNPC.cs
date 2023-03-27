@@ -25,6 +25,11 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
+    public InputSmartGoal inputSmartGoal;
+    public static bool displayInputBox = false;
+
+    public static string fileName;
+
     public static string[] valueProperties = {"VISION", "ALIGNMENT", "UNDERSTAND", "ENACT"};
     public static string[] starProperties = {"SITUATION", "TASK", "ACTION", "RESULT"};
 
@@ -72,7 +77,7 @@ public class TalkToNPC : MonoBehaviour
 
     public static int numPerfectAnswers = 0;
     public static int numQuestionsAsked = 0;
-    public static string playerResultsFile = ""; 
+    public static string playerResultsFile = "";
 
     public Input_Box input_box;
 
@@ -179,7 +184,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
         File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
-  
+
 
         File.AppendAllText(path, "--------------Comments---------------\n");
         File.AppendAllText(path, "\n");
@@ -210,6 +215,7 @@ public class TalkToNPC : MonoBehaviour
     public static void UpdatePlayerResults(string resultName, string FileToUpdate, string companyName = "", string jobTitle = "")
     {
         string playerFileName = FileToUpdate;
+        fileName = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int i = -1;
@@ -265,7 +271,7 @@ public class TalkToNPC : MonoBehaviour
                 {
                     allLines[i] = Regex.Replace(matchBook.ToString(), matchAnswerNO.ToString(), "YES");
                 }
-               
+
             }
 
             else if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
@@ -274,7 +280,7 @@ public class TalkToNPC : MonoBehaviour
             }
 
         }
-        
+
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
@@ -285,7 +291,7 @@ public class TalkToNPC : MonoBehaviour
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int lineNumber = -1;
 
-        numQuestionsAsked++; 
+        numQuestionsAsked++;
 
         foreach (string line in allLines) {
             lineNumber++;
@@ -340,7 +346,7 @@ public class TalkToNPC : MonoBehaviour
             break;
         }
 
-        
+
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
@@ -462,7 +468,7 @@ public class TalkToNPC : MonoBehaviour
 
                 idx++;
             }
-            
+
             newMessage = newMessage.Replace("#triggerEndGame", "");
 
             Regex getMessage = new Regex(@"\*.[^_]*\*");
@@ -607,7 +613,7 @@ public class TalkToNPC : MonoBehaviour
      *DecideWhichDialogueToShow looks to see if each message contains any of the keywords and then processes the message accordingly.
      *Messages can have multiple keywords, such as "#REVEAL_NAME##SA1#Hello! My name is Steve Harvey!"
      *      This message would set the NPC's name to be known, as well as take away one significant action point from the player.
-     *      
+     *
      *One of the most used keywords is #MULTI_START# and #MULTI_END#
      * #MULTI_START# begins treating the messages as a chain, and will keep displaying messages sequentially until #MULTI_END# is read in a following message.
      * Do NOT use #MULTI_START# without #MULTI_END#
@@ -830,6 +836,12 @@ public class TalkToNPC : MonoBehaviour
             }
         }
 
+        //Created by mohsen
+        if (messages[messageCount].Contains("#INPUT_SMARTGOAL#"))
+        {
+            inputSmartGoal.handleDisplay(ref displayInputBox, ref change_state, playerFileName);
+        }
+
         //Change by Austin Greear 5/7/2020
         if (messages[messageCount].Contains("#EXPERIENCE# "))
         {
@@ -871,7 +883,7 @@ public class TalkToNPC : MonoBehaviour
             NameBox.gameObject.SetActive(false);
             InnerDialogue = true;
             // The name box is made visible before the INNER_DIALOG_BEGIN is checked
-            // 
+            //
             if (null != NameBox) StartCoroutine(ChangeSizeCoroutine(0.5f, 0f, NameBox));  // Added 8/1/2021 to remove empty name box after work event.
         }
         if (messages[messageCount].Contains("#INNER_DIALOGUE_END#"))
@@ -887,7 +899,7 @@ public class TalkToNPC : MonoBehaviour
             NameBoxText.text = playerName;
             //InnerDialogue = true;
             // The name box is made visible before the INNER_DIALOG_BEGIN is checked
-            // 
+            //
             //if (null != NameBox) StartCoroutine(ChangeSizeCoroutine(0.5f, 0f, NameBox));  // Added 8/1/2021 to remove empty name box after work event.
         }
         if (messages[messageCount].Contains("#PLAYER_TALKING_END#"))
@@ -986,7 +998,7 @@ public class TalkToNPC : MonoBehaviour
 
         //UpdatePlayerResults does a regex search and updates the player results file accordingly
         //this function was designed with future functionality inimind. By adding a new regex search and a new update for the match, this function can update any progress that happens in-game
-        //added by Don Murphy 
+        //added by Don Murphy
         if (messages[messageCount].Contains("#INCREASE#"))
         {
             Regex getMessage = new Regex(@"\*.[^_]*\*");
@@ -1216,7 +1228,7 @@ public class TalkToNPC : MonoBehaviour
     }
 
 
-    // update progress bar with results from interview 
+    // update progress bar with results from interview
     public static void UpdateProgressBar() {
         if (numQuestionsAsked < 4) {
             return;
@@ -1326,7 +1338,7 @@ public class TalkToNPC : MonoBehaviour
         messageCount = i;
     }
 
-    //BasicDialogue() is used for printing messages that are simple, unlike YES_NOs 
+    //BasicDialogue() is used for printing messages that are simple, unlike YES_NOs
     public void BasicDialogue()
     {
         StartCoroutine(ShowText(ReplaceKeywords(messages[messageCount])));
@@ -1510,7 +1522,7 @@ public class TalkToNPC : MonoBehaviour
     //This is done to keep the NPC stuck on the question until the player answers yes.
     //Feel free to change this up.
     //Future implementation could have the user click yes or no, it would show the yes or no message, then it would read in what to do from there.
-    //AKA the YES or NO message could include a keyword to set the messageCount back to the question message or to continue it. 
+    //AKA the YES or NO message could include a keyword to set the messageCount back to the question message or to continue it.
     public void ClickNoOption()
     {
         if (isTalking)
