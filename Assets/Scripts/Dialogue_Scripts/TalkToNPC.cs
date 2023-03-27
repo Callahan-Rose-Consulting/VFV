@@ -112,21 +112,23 @@ public class TalkToNPC : MonoBehaviour
             "S" + DateTime.Now.Second.ToString() +
             ".txt";
 
+        //creating string for writing info in player results
         string path = @"Player Results" + "/" + fileName;
+
+        //creating string for reading and writing the begining in player results
         string head = @"Assets\\Player Inventory\\Player Result Information\\header.txt";
+        string headInfo = File.ReadAllText(head);
+
+        //creating string for reading and writing the ending in player results
         string end = @"Assets\\Player Inventory\\Player Result Information\\ending.txt";
+        string endInfo = File.ReadAllText(end);
 
         //create blank text doc and name it according to fileName in the Player Results Directory
         using (FileStream fs = File.Create(path)) { };
         string VFV = "";
         playerFileName = path;
 
-
-        //File.Copy(head, playerFileName+ Path.GetFileName(head));
-
-        // File.Copy(playerFileName, head);
-        // Console.WriteLine(File.ReadAllText(head));
-
+        File.AppendAllText(path, headInfo);
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "---------------Performace Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
@@ -147,6 +149,7 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\t-Final Communication_______________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
         File.AppendAllText(path, "\t-Final Critical Thinking___________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
         File.AppendAllText(path, "\n");
+        File.AppendAllText(path, endInfo);
 
     }
     //This function takes in the name of the result to be updated and the name of the file to update.
