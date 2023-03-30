@@ -73,10 +73,13 @@ public class TalkToNPC : MonoBehaviour
     public static bool dialogueActive = false;
     public static bool endGame = false;
     public static bool yesNoInstructions = true;
+    public static bool displayInputBox = false;
 
     public static int numPerfectAnswers = 0;
     public static int numQuestionsAsked = 0;
     public static string playerResultsFile = "";
+
+    public Input_Box input_box;
 
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
@@ -152,6 +155,8 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, endInfo);
 
     }
+
+
     //This function takes in the name of the result to be updated and the name of the file to update.
     //This function is designed to be called when an event happens in game that would inicate some form of progression.
     //Examples:
@@ -234,7 +239,7 @@ public class TalkToNPC : MonoBehaviour
 
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
         string playerFileName = FileToUpdate;
-        playerResultsFile = FileToUpdate;
+        playerResultsFile = FileToUpdate; // save for later use
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int lineNumber = -1;
@@ -257,9 +262,11 @@ public class TalkToNPC : MonoBehaviour
                 allLines[lineNumber] += " " + userWords[k];
             }
 
+            allLines[lineNumber] += "\n";
+
 
             if (updateType == "VALUE" && userWords.Length != valueProperties.Length) {
-                allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
+                allLines[lineNumber] += "You missed out on the VALUE PROPERTY OF:";
 
                 for (int j = 0; j < valueProperties.Length; j++) {
                         if (!userWords.Contains(valueProperties[j])) {
@@ -272,7 +279,7 @@ public class TalkToNPC : MonoBehaviour
 
             // must be STAR
             else if (updateType == "STAR" && userWords.Length != starProperties.Length) {
-                allLines[lineNumber] += "\nYou missed out on the START PROPERTY OF:";
+                allLines[lineNumber] += "You missed out on the START PROPERTY OF:";
 
                 for (int j = 0; j < starProperties.Length; j++) {
                         if (!userWords.Contains(starProperties[j])) {
@@ -379,59 +386,43 @@ public class TalkToNPC : MonoBehaviour
             {
                 newMessage = newMessage.Replace("@DC", "Dream Company here...");
             }
+
             newMessage = newMessage.Replace("COMMUNICATION_SKILL", PlayerPrefs.GetInt("CommunicationLevel").ToString());
             newMessage = newMessage.Replace("COMMUNICATION_PLUS_ONE", (PlayerPrefs.GetInt("CommunicationLevel") + 1).ToString());
+            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
 
-            newMessage = newMessage.Replace("#SKILL_INCREASE_COMMUNICATION#", "");
-            newMessage = newMessage.Replace("#SHOW_IMAGE#", "");
-            newMessage = newMessage.Replace("#HIDE_IMAGE#", "");
-            newMessage = newMessage.Replace("#REVEAL_NAME#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_BEGIN#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_END#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_BEGIN#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_END#", "");
-            newMessage = newMessage.Replace("#SKILL_INCREASE_INTELLIGENCE#", "");
-            newMessage = newMessage.Replace("#SKILL_CHECK#", "");
-            newMessage = newMessage.Replace("#LOAD_INTERVIEW#", "");
-            newMessage = newMessage.Replace("#YES#", "");
-            newMessage = newMessage.Replace("#NO#", "");
-            newMessage = newMessage.Replace("#YES_NO#", "");
-            newMessage = newMessage.Replace("#YES_NO_COMPLETE#", "");
-            newMessage = newMessage.Replace("#MULTI_START#", "");
-            newMessage = newMessage.Replace("#MULTI_END#", "");
-            newMessage = newMessage.Replace("#SA1#", "");
-            newMessage = newMessage.Replace("#SA2#", "");
-            newMessage = newMessage.Replace("#FADE_OUT#", "");
-            newMessage = newMessage.Replace("#FADE_IN#", "");
-            newMessage = newMessage.Replace("#loc#", "");
-            newMessage = newMessage.Replace("#ADD_EXPERIENCE#", "");
-            newMessage = newMessage.Replace("#Post#", "");
-            newMessage = newMessage.Replace("#ADD_SUMMARY#", "");
-            newMessage = newMessage.Replace("*Lead*", "");
-            newMessage = newMessage.Replace("*Team*", "");
-            newMessage = newMessage.Replace("*Tech*", "");
-            newMessage = newMessage.Replace("*Prof*", "");
-            newMessage = newMessage.Replace("*Com*", "");
-            newMessage = newMessage.Replace("*Crit*", "");
-            newMessage = newMessage.Replace("#showcanvas#", "");
-            newMessage = newMessage.Replace("#hidecanvas#", "");
-            newMessage = newMessage.Replace("#topic#", "");
-            newMessage = newMessage.Replace("#SKIP_START#", "");
-            newMessage = newMessage.Replace("#SKIP_END#", "");
-            newMessage = newMessage.Replace("#BRANDING#", "");
+            if (Resume.current_job != null)
+            {
+                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
+            }
+
+            int idx = 0;
+            bool foundIndicator = false; // if '#' or '*' is found
+
+            string toReplace = "";
+
+            // get rid of keywords marked by '#' or '*' in string before user sees them
+            while (idx < newMessage.Length) {
+                if (newMessage[idx] == '#'|| newMessage[idx] == '*') {
+                    toReplace += newMessage[idx];
+
+                    if (foundIndicator) {
+                        newMessage = newMessage.Replace(toReplace, "");
+                        idx -= toReplace.Length; // send idx back as characters have been replaced
+                        toReplace = "";
+                    }
+
+                    foundIndicator = !foundIndicator;
+                }
+
+                else if (foundIndicator) {
+                    toReplace += newMessage[idx];
+                }
+
+                idx++;
+            }
+
             newMessage = newMessage.Replace("#triggerEndGame", "");
-
-            //career fair RepaceKeyWords
-            //added by Don Murphy
-            newMessage = newMessage.Replace("#CF_Engineering#", "");
-            newMessage = newMessage.Replace("#CF_Business#", "");
-            newMessage = newMessage.Replace("#CF_Arts#", "");
-            newMessage = newMessage.Replace("#CF_BlueCollar#", "");
-            newMessage = newMessage.Replace("#CF_Education#", "");
-
-
-            //Changes by Austin Greear 4/26/2020
-            newMessage = newMessage.Replace("#INVOKE_EVENT#", "");
 
             Regex getMessage = new Regex(@"\*.[^_]*\*");
 
@@ -442,19 +433,6 @@ public class TalkToNPC : MonoBehaviour
                 int index = 0;
 
                 newMessage = newMessage.Replace(x.Value, "");
-            }
-
-            newMessage = newMessage.Replace("#FADE_EVENT#", "");
-            newMessage = newMessage.Replace("#Disable#", "");
-            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
-            newMessage = newMessage.Replace("#FEEDBACK#", "");
-            newMessage = newMessage.Replace("#INCREASE#", "");
-            newMessage = newMessage.Replace("#CHECK#", "");
-            newMessage = newMessage.Replace("#END_WORK#", "");
-
-            if (Resume.current_job != null)
-            {
-                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
             }
         }
         return newMessage;
@@ -500,8 +478,7 @@ public class TalkToNPC : MonoBehaviour
             DecideWhichDialogueToShow();//Will show the next dialogue in the multimessage chain
         }
 
-        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true)
-        {
+        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true) {
             displayInputBox = false;
             change_state = true;
         }
@@ -694,6 +671,27 @@ public class TalkToNPC : MonoBehaviour
             string myFile = File.ReadAllText(playerFileName);
             string updateCareer = myFile.Replace("[No Career Fair Choice]", "Education");
             File.WriteAllText(playerFileName, updateCareer);
+        }
+
+        if (messages[messageCount].Contains("#OPEN_BROWSER#")) {
+            Application.OpenURL("https://www.16personalities.com/free-personality-test");
+        }
+
+        if (messages[messageCount].Contains("#INPUT_BOX#")) {
+            end_dialogue();
+
+            // displayInputBox = true;
+            // change_state = false;
+
+            // dialogueActive = true;
+            // textboxIsClosing = true;
+            // messageDone = false;
+            // messageIsTyping = true;
+            // GameManager.instance.change_game_state("Dialogue");
+            // player.canMove = false;
+
+
+            input_box.handleDisplay(ref displayInputBox, ref change_state);
         }
 
 

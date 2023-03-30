@@ -212,7 +212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -225,6 +224,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -918,7 +918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Software Engineer Repersentive
@@ -931,6 +930,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -2948,8 +2948,9 @@ RectTransform:
   - {fileID: 1305211061}
   - {fileID: 732970999}
   - {fileID: 1046922463}
-  - {fileID: 372755044}
-  - {fileID: 136886601}
+  - {fileID: 945166979}
+  - {fileID: 550331738}
+  - {fileID: 1157523144}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3663,6 +3664,83 @@ MonoBehaviour:
   - '#INNER_DIALOGUE_BEGIN#You''ve earned $#INCOME# for your day of work!#MULTI_START#'
   - Maybe i should head to the bookstore to buy some books.#MULTI_END##SA1#
   fade_out_end: 0
+--- !u!1 &94218181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94218182}
+  - component: {fileID: 94218184}
+  - component: {fileID: 94218183}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &94218182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94218181}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1154297991}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &94218183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94218181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter
+--- !u!222 &94218184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94218181}
+  m_CullTransparentMesh: 0
 --- !u!1 &95248834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,7 +4148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1094288}
+  m_AnchoredPosition: {x: 0, y: -1099647.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -4216,7 +4294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -4229,6 +4306,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -4590,7 +4668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -4603,6 +4680,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -5332,160 +5410,6 @@ Transform:
   m_Father: {fileID: 463989498}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &136886600
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 136886601}
-  - component: {fileID: 136886604}
-  - component: {fileID: 136886603}
-  - component: {fileID: 136886602}
-  m_Layer: 0
-  m_Name: InputFieldSmart
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &136886601
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136886600}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 971620665}
-  - {fileID: 837167070}
-  - {fileID: 687959086}
-  - {fileID: 1267882503}
-  - {fileID: 1458008446}
-  - {fileID: 1858692723}
-  m_Father: {fileID: 69211205}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5643e-10, y: -61.4}
-  m_SizeDelta: {x: 1920, y: 280.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &136886602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136886600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 136886603}
-  m_TextComponent: {fileID: 837167071}
-  m_Placeholder: {fileID: 971620666}
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 1
-  m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
-  m_OnEndEdit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: StoreSmartGoal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 0
---- !u!114 &136886603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136886600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &136886604
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136886600}
-  m_CullTransparentMesh: 0
 --- !u!1 &141114733
 GameObject:
   m_ObjectHideFlags: 0
@@ -5591,7 +5515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -5604,6 +5527,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -7052,7 +6976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - Alright @, today we need to figure out how to bring in more customers.#FADE_OUT#
@@ -7075,6 +6998,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -7267,7 +7191,7 @@ Transform:
   m_Children:
   - {fileID: 1482268499}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &158427565
 MonoBehaviour:
@@ -7455,7 +7379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello I am Tyriq. I''m an Electrical Engineer. Would you like to
     pursue this career path? #YES_NO#'
@@ -7480,6 +7403,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -8659,7 +8583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -8672,6 +8595,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -9358,6 +9282,80 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 187999114}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &196947448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 196947449}
+  - component: {fileID: 196947451}
+  - component: {fileID: 196947450}
+  m_Layer: 5
+  m_Name: FeedbackBackdrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &196947449
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196947448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0689657, y: 2.0689657, z: 2.0689657}
+  m_Children:
+  - {fileID: 2005678668}
+  m_Father: {fileID: 550331738}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 17.300041, y: -223.99991}
+  m_SizeDelta: {x: -330, y: -8.377563}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &196947450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196947448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &196947451
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196947448}
+  m_CullTransparentMesh: 0
 --- !u!1 &201136380
 GameObject:
   m_ObjectHideFlags: 0
@@ -9463,7 +9461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -9476,6 +9473,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -9966,7 +9964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   - 
@@ -9981,6 +9978,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -11503,7 +11501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - '@, we have a problem. After some reviews in the paper it looks like we received
@@ -11528,6 +11525,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -13177,7 +13175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: IT Repersentitive
@@ -13190,6 +13187,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -13685,7 +13683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -13698,6 +13695,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -14584,7 +14582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#You''ve got some free time now. Use it wisely!#MULTI_END##SA1#'
   NPCName: 
@@ -14597,6 +14594,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -14990,177 +14988,6 @@ Canvas:
   m_SortingLayerID: 1055670265
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &280168471
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 280168472}
-  - component: {fileID: 280168475}
-  - component: {fileID: 280168474}
-  - component: {fileID: 280168473}
-  m_Layer: 5
-  m_Name: InputField (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &280168472
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280168471}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 927325664}
-  m_Father: {fileID: 355657332}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000041962, y: 0}
-  m_SizeDelta: {x: 100, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &280168473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280168471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 280168474}
-  m_TextViewport: {fileID: 927325664}
-  m_TextComponent: {fileID: 2130356781}
-  m_Placeholder: {fileID: 1030143321}
-  m_VerticalScrollbar: {fileID: 0}
-  m_VerticalScrollbarEventHandler: {fileID: 0}
-  m_ScrollSensitivity: 1
-  m_ContentType: 0
-  m_InputType: 0
-  m_AsteriskChar: 42
-  m_KeyboardType: 0
-  m_LineType: 0
-  m_HideMobileInput: 0
-  m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
-  m_RegexValue: 
-  m_GlobalPointSize: 14
-  m_CharacterLimit: 0
-  m_OnEndEdit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnDeselect:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnTextSelection:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnEndTextSelection:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnTouchScreenKeyboardStatusChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
-  m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
-  m_ReadOnly: 0
-  m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_OnFocusSelectAll: 1
-  m_ResetOnDeActivation: 1
-  m_RestoreOriginalTextOnEscape: 1
-  m_isRichTextEditingAllowed: 0
-  m_LineLimit: 0
-  m_InputValidator: {fileID: 0}
---- !u!114 &280168474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280168471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &280168475
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280168471}
-  m_CullTransparentMesh: 0
 --- !u!1 &280426986
 GameObject:
   m_ObjectHideFlags: 0
@@ -15481,7 +15308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -15494,6 +15320,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -15861,7 +15688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -15874,6 +15700,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -16908,7 +16735,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -16921,6 +16747,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -17435,6 +17262,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303179134}
   m_CullTransparentMesh: 0
+--- !u!1 &304258564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 304258565}
+  - component: {fileID: 304258567}
+  - component: {fileID: 304258566}
+  m_Layer: 0
+  m_Name: PersonalityTypeImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &304258565
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304258564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 917331638}
+  m_Father: {fileID: 945166979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &304258566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304258564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80f82e6e24a5e4b73a29ea8b6602bfb0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &304258567
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304258564}
+  m_CullTransparentMesh: 0
 --- !u!1 &305912109
 GameObject:
   m_ObjectHideFlags: 0
@@ -17819,7 +17720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   - 
@@ -17834,6 +17734,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 1
   Dialogue_Event:
@@ -18644,7 +18545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#I hope things go well during todays shift #MULTI_START#'
   - During the begining of the shift Bob does not show up#FADE_OUT#
@@ -18662,6 +18562,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -19351,7 +19252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Today we will start fixing some of the bugs that where found#MULTI_START#
   - I go to my pc.#FADE_OUT#
@@ -19370,6 +19270,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -20285,16 +20186,6 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3159487560973173876, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 6316.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487560973173876, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 3347.3
-      objectReference: {fileID: 0}
     - target: {fileID: 3159487560973173883, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
       propertyPath: m_Camera
@@ -20477,7 +20368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: HR Repersentitive
@@ -20490,6 +20380,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -20914,43 +20805,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355255865}
   m_CullTransparentMesh: 0
---- !u!1 &355657331
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 355657332}
-  m_Layer: 5
-  m_Name: UI_Input_Window
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &355657332
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355657331}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 969412126}
-  - {fileID: 280168472}
-  m_Father: {fileID: 1257504411}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1022, y: -459}
-  m_SizeDelta: {x: 100.00001, y: 99.999985}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &362741143
 GameObject:
   m_ObjectHideFlags: 0
@@ -20986,7 +20840,7 @@ Transform:
   m_Children:
   - {fileID: 1536031431}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &362741145
 MonoBehaviour:
@@ -21174,7 +21028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello, I am Richard. I''m in marketing in the business world. Would
     you like to pursue this career path? #YES_NO#'
@@ -21202,6 +21055,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -21482,52 +21336,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.72, y: 1.05}
   m_EdgeRadius: 0
---- !u!1 &372755043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 372755044}
-  - component: {fileID: 372755045}
-  m_Layer: 0
-  m_Name: SmartGoalObj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &372755044
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372755043}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -103.400024, y: -283.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 69211205}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &372755045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372755043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d61c82cfce7e08408fb1e12deee241b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smartGoal: 
-  inputBox: {fileID: 136886600}
-  inputSmartGoal: {fileID: 837167069}
 --- !u!1 &372896606
 GameObject:
   m_ObjectHideFlags: 0
@@ -21609,7 +21417,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 749638382}
   m_HandleRect: {fileID: 749638381}
   m_Direction: 2
-  m_Value: 0.8304085
+  m_Value: 0.83040845
   m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -22581,18 +22389,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396616986}
   m_CullTransparentMesh: 0
---- !u!4 &398035479 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 879471806}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &398035480 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3159487561003474355, guid: 893d89d32d576ca4487848205f5593f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 879471806}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &398904689
 GameObject:
   m_ObjectHideFlags: 0
@@ -22983,7 +22779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -22996,6 +22791,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -23767,7 +23563,7 @@ Transform:
   - {fileID: 374665930}
   - {fileID: 586438561}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &423312566
 MonoBehaviour:
@@ -23832,7 +23628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START# #INVOKE_EVENT#Welcome to the book store! What would you like to
     do?'
@@ -23847,6 +23642,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -26076,7 +25872,7 @@ Transform:
   m_Children:
   - {fileID: 2038655849}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &481436114
 MonoBehaviour:
@@ -26264,7 +26060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello my name is Alfred. I teach special education. Would you like
     to pursue this career path in education? #YES_NO#'
@@ -26290,6 +26085,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -27209,6 +27005,122 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &523978513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 765588780}
+    m_Modifications:
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487560973173883, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 834973465}
+    - target: {fileID: 3159487561003474348, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_Name
+      value: Indicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 893d89d32d576ca4487848205f5593f5, type: 3}
+--- !u!4 &523978514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 523978513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &523978515 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3159487561003474355, guid: 893d89d32d576ca4487848205f5593f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 523978513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &525040444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
@@ -28467,6 +28379,147 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545229425}
+  m_CullTransparentMesh: 0
+--- !u!1 &550331737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550331738}
+  - component: {fileID: 550331741}
+  - component: {fileID: 550331740}
+  - component: {fileID: 550331739}
+  m_Layer: 0
+  m_Name: InputField
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &550331738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550331737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1011416573}
+  - {fileID: 1535294685}
+  - {fileID: 1154297991}
+  - {fileID: 196947449}
+  m_Father: {fileID: 69211205}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 655.8, y: 77.65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &550331739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550331737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 550331740}
+  m_TextComponent: {fileID: 1535294686}
+  m_Placeholder: {fileID: 1011416574}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+--- !u!114 &550331740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550331737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &550331741
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550331737}
   m_CullTransparentMesh: 0
 --- !u!1 &557285481
 GameObject:
@@ -30745,7 +30798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages: []
   NPCName: 
   Known: 0
@@ -30757,6 +30809,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 1
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -30845,7 +30898,7 @@ PrefabInstance:
     - target: {fileID: 2173411267149232800, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2173411267149232800, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -31945,7 +31998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Hopefuly everything goes smoothly today#MULTI_START#
   - As i enter the building i see some other people of the department just sitting
@@ -31964,6 +32016,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -32564,7 +32617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -32577,6 +32629,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -34445,7 +34498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -34458,6 +34510,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -35028,7 +35081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -35041,6 +35093,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -35933,135 +35986,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &687959085
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 687959086}
-  - component: {fileID: 687959089}
-  - component: {fileID: 687959088}
-  - component: {fileID: 687959087}
-  m_Layer: 0
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &687959086
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687959085}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1337152960}
-  m_Father: {fileID: 136886601}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 611.27, y: -370}
-  m_SizeDelta: {x: 697.46, y: 261.76}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &687959087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687959085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 687959088}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 372755045}
-        m_MethodName: StoreSmartGoal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &687959088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687959085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &687959089
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687959085}
-  m_CullTransparentMesh: 0
 --- !u!1 &688063164
 GameObject:
   m_ObjectHideFlags: 0
@@ -36285,7 +36209,7 @@ Transform:
   m_Children:
   - {fileID: 1811947633}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &695906575
 MonoBehaviour:
@@ -36473,7 +36397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - "#REVEAL_NAME# Hello my name is Bobby. I\u2019m a steel worker. This means I\u2019m
     a blue collar worker. Would you like to pursue this career path? #YES_NO#"
@@ -36501,6 +36424,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -37075,7 +36999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -37088,6 +37011,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -38813,7 +38737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'Today is the carrer fair hopefully i can make good connections #MULTI_START#'
   - I head to robert after my shift so that i can go to the carrer fair#FADE_OUT#
@@ -38833,6 +38756,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -39524,7 +39448,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -39537,6 +39460,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -39940,7 +39864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -39953,6 +39876,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -40767,7 +40691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Spend some time in your apartment?'
   - 
@@ -40816,6 +40739,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 1
   Dialogue_Event:
@@ -41037,6 +40961,357 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.071671, y: 5.253639}
   m_EdgeRadius: 0
+--- !u!1 &765588779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765588780}
+  - component: {fileID: 765588787}
+  - component: {fileID: 765588786}
+  - component: {fileID: 765588785}
+  - component: {fileID: 765588784}
+  - component: {fileID: 765588783}
+  - component: {fileID: 765588782}
+  - component: {fileID: 765588781}
+  m_Layer: 0
+  m_Name: Mr.Personality
+  m_TagString: Talk
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &765588780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.08, y: 8.82, z: 50}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_Children:
+  - {fileID: 523978514}
+  m_Father: {fileID: 1760871507}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &765588781
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &765588782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a68bb3bfd02294a9b8cb7f64b2dacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideTag: Player
+  last_other: {fileID: 0}
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 523978515}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Open
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTriggerStay:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 523978515}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Close
+          m_BoolArgument: 0
+        m_CallState: 2
+  entered: 0
+  invoke_stay_on_update: 0
+  interact_key: e
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!61 &765588783
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00018407404, y: 0.030816017}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.73, y: 3.6}
+    newSize: {x: 3.73, y: 3.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.09394236, y: 0.08836797}
+  m_EdgeRadius: 0
+--- !u!82 &765588784
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -7745693550486201360, guid: 131888687c656484db4a788ef831dd2a,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: f65c50826fdbd384ea8d02ec4783106a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &765588785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - '#MULTI_START# PERSONALITY!!!'
+  - 'INTROVERTED? EXTROVERTED? EMOTIONS OVER THOUGHT? TO JUDGE OR PERCEIVE? '
+  - ISTJ? ESTP? WHAT ARE YOU?
+  - '...'
+  - Sorry, I've calmed down.
+  - 'My name is Mr. PERSONALITY! It''s very nice to meet you @. '
+  - As you can tell by my demeanor, I'm quite extroverted. I'm a people's person!
+  - "But not everybody finds it easy to speak to others\u2013so it's always good to
+    know about your strenghts and weaknesses."
+  - '#MULTI_END##YES_NO#Do you want to take a personality test?'
+  - THAT'S FINE! You can always come back to me in this location if you change your
+    mind.
+  - '#MULTI_START# ....I see.'
+  - Well, yes, there are actually 16 personality types. You can take an assessment
+    on this third party website.
+  - Don't worry, I'll open it in your browser for you.
+  - Once you finished, make sure to come back and let me know what you got!
+  - I'll give you some tips and more information once you've finished. These will
+    also be available in the FOLDER called Personality Info.
+  - '#INPUT_BOX##OPEN_BROWSER##MULTI_END#'
+  NPCName: Mr. Personality
+  Known: 0
+  NameBox: {fileID: 0}
+  messageCount: 0
+  ImageToShow: {fileID: 0}
+  YesButton: {fileID: 0}
+  NoButton: {fileID: 0}
+  messageDone: 0
+  isItem: 0
+  EnemyCommunications: 0
+  input_box: {fileID: 1157523145}
+  change_state: 1
+  repeating_dialogue: 0
+  Dialogue_Event:
+    m_PersistentCalls:
+      m_Calls: []
+  end_dialogue_event:
+    m_PersistentCalls:
+      m_Calls: []
+  Events: []
+  target_text: {fileID: 0}
+  prev_position: {x: 0, y: 0, z: 0}
+--- !u!58 &765588786
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
+--- !u!212 &765588787
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765588779}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 3b76f9df371924dd78509e581840a72b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.73, y: 3.6}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &766581553
 GameObject:
   m_ObjectHideFlags: 0
@@ -41490,7 +41765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -41503,6 +41777,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -41948,7 +42223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Study at the library?'
   - 'Thank you for visiting. See you later! '
@@ -41965,6 +42239,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 1
   Dialogue_Event:
@@ -42303,7 +42578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -42316,6 +42590,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -43754,7 +44029,7 @@ Transform:
   m_Children:
   - {fileID: 1748826672}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &817879595
 BoxCollider2D:
@@ -43891,7 +44166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START#I wonder what''s on the other side...'
   - '#MULTI_END##YES_NO#Do you think there''s any treasure?'
@@ -43927,6 +44201,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -44351,7 +44626,7 @@ Transform:
   m_Children:
   - {fileID: 1069288209}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &828594104
 MonoBehaviour:
@@ -44539,7 +44814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME# Hello, I am Keonte. I work in theater and arts. Would you like
     to pursue this career path? #YES_NO#'
@@ -44569,6 +44843,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -44864,83 +45139,6 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1683472661170185188}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &837167069
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 837167070}
-  - component: {fileID: 837167072}
-  - component: {fileID: 837167071}
-  m_Layer: 0
-  m_Name: inputSmartGoal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &837167070
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837167069}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 136886601}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.000122, y: -26.923}
-  m_SizeDelta: {x: -10, y: 6.445}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &837167071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837167069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 0
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &837167072
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837167069}
-  m_CullTransparentMesh: 0
 --- !u!1001 &843526180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46181,110 +46379,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876044518}
   m_CullTransparentMesh: 0
---- !u!1001 &879471806
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1150742625}
-    m_Modifications:
-    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487560973173883, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 834973465}
-    - target: {fileID: 3159487561003474348, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_Name
-      value: Indicator
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159487561003474349, guid: 893d89d32d576ca4487848205f5593f5,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 893d89d32d576ca4487848205f5593f5, type: 3}
 --- !u!1001 &880724373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47624,7 +47718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -47637,6 +47730,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -47696,6 +47790,135 @@ MonoBehaviour:
         m_CallState: 2
   target_text: {fileID: 0}
   prev_position: {x: 0, y: 0, z: 0}
+--- !u!1 &917331637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917331638}
+  - component: {fileID: 917331641}
+  - component: {fileID: 917331640}
+  - component: {fileID: 917331639}
+  m_Layer: 5
+  m_Name: ExitButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &917331638
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917331637}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0689657, y: 2.0689657, z: 2.0689657}
+  m_Children:
+  - {fileID: 1073239848}
+  m_Father: {fileID: 304258565}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 210.9, y: 910.7}
+  m_SizeDelta: {x: 55.8, y: 30.6}
+  m_Pivot: {x: 2.8082952, y: 15.343391}
+--- !u!114 &917331639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917331637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 917331640}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1157523145}
+        m_MethodName: hideDisplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &917331640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917331637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &917331641
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917331637}
+  m_CullTransparentMesh: 0
 --- !u!1001 &921114479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47938,7 +48161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -47951,6 +48173,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -48176,56 +48399,6 @@ Transform:
   m_Father: {fileID: 1779400607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &927325663
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 927325664}
-  - component: {fileID: 927325665}
-  m_Layer: 5
-  m_Name: Text Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &927325664
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927325663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1030143320}
-  - {fileID: 2130356780}
-  m_Father: {fileID: 280168472}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &927325665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927325663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &930827142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48825,6 +48998,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9003587, y: 3.2466488}
   m_EdgeRadius: 0
+--- !u!1 &945166978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945166979}
+  m_Layer: 0
+  m_Name: PersonalityImgObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &945166979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945166978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 304258565}
+  m_Father: {fileID: 69211205}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &947262490
 GameObject:
   m_ObjectHideFlags: 0
@@ -49183,7 +49392,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -49196,6 +49404,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -49850,156 +50059,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &969412125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 969412126}
-  - component: {fileID: 969412128}
-  - component: {fileID: 969412127}
-  m_Layer: 5
-  m_Name: background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &969412126
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969412125}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 355657332}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000041962, y: -2.44}
-  m_SizeDelta: {x: 100, y: 76.66}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &969412127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969412125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &969412128
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969412125}
-  m_CullTransparentMesh: 0
---- !u!1 &971620664
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 971620665}
-  - component: {fileID: 971620667}
-  - component: {fileID: 971620666}
-  m_Layer: 0
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &971620665
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971620664}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 136886601}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.000122, y: -26.92501}
-  m_SizeDelta: {x: -10, y: 6.45}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &971620666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971620664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Enter your Smart Goal in a single paragraph:'
---- !u!222 &971620667
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971620664}
-  m_CullTransparentMesh: 0
 --- !u!1 &973456464
 GameObject:
   m_ObjectHideFlags: 0
@@ -50105,7 +50164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -50118,6 +50176,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -51116,7 +51175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'I have a lot of paperwork I need to get done I better get started. #MULTI_START#'
   - I'm almost done with the paperwork#FADE_OUT#
@@ -51136,6 +51194,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -51366,7 +51425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -51379,6 +51437,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -51970,7 +52029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -51983,6 +52041,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -52208,6 +52267,83 @@ Transform:
   m_Father: {fileID: 915500373}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1011416572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011416573}
+  - component: {fileID: 1011416575}
+  - component: {fileID: 1011416574}
+  m_Layer: 0
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1011416573
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011416572}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 550331738}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1011416574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011416572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enter 4 Digit Code
+--- !u!222 &1011416575
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011416572}
+  m_CullTransparentMesh: 0
 --- !u!1 &1011680810
 GameObject:
   m_ObjectHideFlags: 0
@@ -53050,161 +53186,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028215135}
-  m_CullTransparentMesh: 0
---- !u!1 &1030143319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1030143320}
-  - component: {fileID: 1030143322}
-  - component: {fileID: 1030143321}
-  m_Layer: 5
-  m_Name: Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1030143320
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030143319}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 927325664}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1030143321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030143319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Enter text...
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 2133996082
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 2
-  m_textAlignment: 257
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 1
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1030143321}
-    characterCount: 13
-    spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1030143322
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030143319}
   m_CullTransparentMesh: 0
 --- !u!1 &1031117342
 GameObject:
@@ -54716,7 +54697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -54729,6 +54709,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -55204,6 +55185,83 @@ Canvas:
   m_SortingLayerID: 1055670265
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1073239847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073239848}
+  - component: {fileID: 1073239850}
+  - component: {fileID: 1073239849}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1073239848
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073239847}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 917331638}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1073239849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073239847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 60
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: X
+--- !u!222 &1073239850
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073239847}
+  m_CullTransparentMesh: 0
 --- !u!1 &1079522901
 GameObject:
   m_ObjectHideFlags: 0
@@ -55701,7 +55759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: Manager
@@ -55714,6 +55771,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -58310,7 +58368,7 @@ Transform:
   - {fileID: 2114135614}
   - {fileID: 152916796}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1138430721
 MonoBehaviour:
@@ -58691,7 +58749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello!'
   - '#PLAYER_TALKING_BEGIN#Hello Robert. How are you? Nice seeing you again.'
@@ -58732,6 +58789,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -59563,7 +59621,7 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1150467975}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1150742624
+--- !u!1 &1154297990
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59571,348 +59629,140 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1150742625}
-  - component: {fileID: 1150742632}
-  - component: {fileID: 1150742631}
-  - component: {fileID: 1150742630}
-  - component: {fileID: 1150742629}
-  - component: {fileID: 1150742628}
-  - component: {fileID: 1150742627}
-  - component: {fileID: 1150742626}
+  - component: {fileID: 1154297991}
+  - component: {fileID: 1154297994}
+  - component: {fileID: 1154297993}
+  - component: {fileID: 1154297992}
+  - component: {fileID: 1154297995}
   m_Layer: 0
-  m_Name: Mason
-  m_TagString: Talk
+  m_Name: EnterButton
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1150742625
-Transform:
+--- !u!224 &1154297991
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
+  m_GameObject: {fileID: 1154297990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 257.26, y: -109.45, z: 50}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 398035479}
-  m_Father: {fileID: 1760871507}
-  m_RootOrder: 4
+  - {fileID: 94218182}
+  m_Father: {fileID: 550331738}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1150742626
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1150742627
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6.000023, y: -94.99997}
+  m_SizeDelta: {x: 246.1, y: 65.997}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1154297992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
+  m_GameObject: {fileID: 1154297990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23a68bb3bfd02294a9b8cb7f64b2dacd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collideTag: Player
-  last_other: {fileID: 0}
-  onTriggerEnter:
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1154297993}
+  m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 398035480}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 1157523145}
+        m_MethodName: handleSubmit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Open
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onTriggerStay:
-    m_PersistentCalls:
-      m_Calls: []
-  onTriggerExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 398035480}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Close
-          m_BoolArgument: 0
-        m_CallState: 2
-  entered: 0
-  invoke_stay_on_update: 0
-  interact_key: e
-  interactEvent:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!61 &1150742628
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00018407404, y: 0.030816017}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.25, y: 7.5}
-    newSize: {x: 0.12, y: 0.15}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.09394236, y: 0.08836797}
-  m_EdgeRadius: 0
---- !u!82 &1150742629
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -7745693550486201360, guid: 131888687c656484db4a788ef831dd2a,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: f65c50826fdbd384ea8d02ec4783106a, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 3.9416656
-  MaxDistance: 23.951672
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1150742630
+--- !u!114 &1154297993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
+  m_GameObject: {fileID: 1154297990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 372755045}
-  messages:
-  - '#MULTI_START# Nice to meet you. I''m Mason. What''s your name?'
-  - '....'
-  - I see. Have you heard of SMART guidelines? SMART stands for specific, measurable,
-    achievable, relevant, and time-bound!#REVEAL_NAME#
-  - Specific - Objective clearly states, so anyone reading it can understand what
-    will be done and who will do it.
-  - "Measurable \u2013 Objective includes how the action will be measured. Measuring
-    your objectives help you determine if you are making progress. It keeps you on
-    track and on schedule."
-  - "Achievable \u2013 Objective is realistic given the realities faced in the community.
-    Setting reasonable objectives helps set the project up for success.\r"
-  - "Relevant \u2013 A relevant objective makes sense, that is, it fits the purpose
-    of the grant, it fits the culture and structure of the community, and it addresses
-    the vision of the project."
-  - "Time-bound \u2013 Every objective has a specific timeline for completion.\r"
-  - '#MULTI_END##YES_NO# If that sounds interesting, do you want to practice your
-    own smart goal?'
-  - Bummer
-  - 'Yay!! #INPUT_SMARTGOAL#'
-  NPCName: Mason
-  Known: 0
-  NameBox: {fileID: 0}
-  messageCount: 0
-  ImageToShow: {fileID: 0}
-  YesButton: {fileID: 0}
-  NoButton: {fileID: 0}
-  messageDone: 0
-  isItem: 0
-  EnemyCommunications: 0
-  change_state: 1
-  repeating_dialogue: 0
-  Dialogue_Event:
-    m_PersistentCalls:
-      m_Calls: []
-  end_dialogue_event:
-    m_PersistentCalls:
-      m_Calls: []
-  Events: []
-  target_text: {fileID: 0}
-  prev_position: {x: 0, y: 0, z: 0}
---- !u!58 &1150742631
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.5
---- !u!212 &1150742632
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150742624}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 12013e26d02de476fa8b2d5d731b492c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.12, y: 0.15}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1154297994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154297990}
+  m_CullTransparentMesh: 0
+--- !u!114 &1154297995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154297990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6218ae5dd2a2410f9e891fe017b0c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156377143
 GameObject:
   m_ObjectHideFlags: 0
@@ -59951,7 +59801,7 @@ Transform:
   - {fileID: 1177606114}
   - {fileID: 756323869}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1156377145
 MonoBehaviour:
@@ -60080,7 +59930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Gutsy
@@ -60093,6 +59942,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -60472,6 +60322,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156548866}
   m_CullTransparentMesh: 0
+--- !u!1 &1157523143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157523144}
+  - component: {fileID: 1157523145}
+  m_Layer: 0
+  m_Name: HandleInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157523144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157523143}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -366.22903, y: -540.99725, z: 0}
+  m_LocalScale: {x: 2.0689657, y: 2.0689657, z: 2.0689657}
+  m_Children: []
+  m_Father: {fileID: 69211205}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157523145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157523143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7382177d6bef4ba6a8d8e2bd8009aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personalityInfo: {fileID: 1154297995}
+  inputField: {fileID: 550331737}
+  inputTextBox: {fileID: 1535294684}
+  exitButton: {fileID: 917331637}
+  personalityObj: {fileID: 945166978}
+  personalityImage: {fileID: 304258566}
+  userFeedback: {fileID: 2005678669}
+  feedbackBackground: {fileID: 196947450}
 --- !u!1 &1163955676
 GameObject:
   m_ObjectHideFlags: 0
@@ -61308,7 +61209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Today we will review the software designs#MULTI_START#
   - My boss walks in to talk to me#FADE_OUT#
@@ -61326,6 +61226,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -61672,7 +61573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -61685,6 +61585,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -61948,7 +61849,7 @@ Transform:
   - {fileID: 2111248233}
   - {fileID: 642898279}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1186498638
 MonoBehaviour:
@@ -62069,7 +61970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -62098,6 +61998,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -63026,7 +62927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#REVEAL_NAME##MULTI_START#I am running a Pizza Workshop.  I''ll teach you how
     to make delicious pizzas.'
@@ -63053,6 +62953,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -63834,7 +63735,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#You just got a new job! Spend the rest of the day however
     you please, you''ll have work tommorrow!'
@@ -63848,6 +63748,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -64710,7 +64611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -64723,6 +64623,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -65324,12 +65225,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254823244}
   m_CullTransparentMesh: 0
---- !u!224 &1257504411 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3159487560973173876, guid: 893d89d32d576ca4487848205f5593f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 879471806}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1258745480
 GameObject:
   m_ObjectHideFlags: 0
@@ -65742,7 +65637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - I enter the building but the lights won't turn on#FADE_OUT#
@@ -65759,6 +65653,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -66234,79 +66129,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1267882502
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1267882503}
-  - component: {fileID: 1267882505}
-  - component: {fileID: 1267882504}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1267882503
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267882502}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 136886601}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.0001, y: 373.56}
-  m_SizeDelta: {x: 1993.6, y: 514.22}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1267882504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267882502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.454902, g: 0.454902, b: 0.454902, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1267882505
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267882502}
-  m_CullTransparentMesh: 0
 --- !u!1 &1268441272
 GameObject:
   m_ObjectHideFlags: 0
@@ -66375,7 +66197,7 @@ Transform:
   m_Children:
   - {fileID: 1708987871}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1269409694
 MonoBehaviour:
@@ -66480,7 +66302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Stefano
@@ -66493,6 +66314,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -67834,7 +67656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - Your boss makes his way towards you during the middle of your shift.#FADE_OUT#
@@ -67853,6 +67674,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -69455,7 +69277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'You start your day at work. #MULTI_START#'
   - The phone rings so you go pick it up.#FADE_OUT#
@@ -69475,6 +69296,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -70122,7 +69944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -70155,6 +69976,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -70728,83 +70550,6 @@ Transform:
   m_Father: {fileID: 1954343465}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1337152959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1337152960}
-  - component: {fileID: 1337152962}
-  - component: {fileID: 1337152961}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1337152960
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337152959}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 687959086}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1337152961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337152959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 8c7a4571c87c62749b8f8e306c6ec0ad, type: 3}
-    m_FontSize: 50
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 50
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Enter
---- !u!222 &1337152962
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337152959}
-  m_CullTransparentMesh: 0
 --- !u!1 &1337402501
 GameObject:
   m_ObjectHideFlags: 0
@@ -70910,7 +70655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -70923,6 +70667,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -71743,7 +71488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Let's get this day started#MULTI_START#
   - I head to my office.#FADE_OUT#
@@ -71763,6 +71507,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -71999,7 +71744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -72012,6 +71756,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -72774,7 +72519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   - 
@@ -72789,6 +72533,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 1
   Dialogue_Event:
@@ -73004,7 +72749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -73017,6 +72761,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -73531,7 +73276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -73544,6 +73288,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -74826,7 +74571,7 @@ Transform:
   - {fileID: 1253900690}
   - {fileID: 786181109}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1391627297
 MonoBehaviour:
@@ -74947,7 +74692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
@@ -74976,6 +74720,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -75519,7 +75264,7 @@ Transform:
   m_Children:
   - {fileID: 1271600771}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1398934661
 MonoBehaviour:
@@ -75707,7 +75452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey there! How are you today?'
   - '#INNER_DIALOGUE_BEGIN#You chat with Dr.Sphinx about your day#ADD_SUMMARY#*went
@@ -75725,6 +75469,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -76435,7 +76180,7 @@ PrefabInstance:
     - target: {fileID: 2173411267149232800, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2173411267149232800, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -77319,7 +77064,7 @@ Transform:
   - {fileID: 1446941400}
   - {fileID: 1815944312}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1443628028
 MonoBehaviour:
@@ -77700,7 +77445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello, @!'
   - '#PLAYER_TALKING_BEGIN#Hello Jane. I am good. How about you?'
@@ -77741,6 +77485,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -78500,79 +78245,6 @@ Canvas:
   m_SortingLayerID: 1055670265
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1458008445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1458008446}
-  - component: {fileID: 1458008448}
-  - component: {fileID: 1458008447}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1458008446
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458008445}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 136886601}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.499939, y: -202.5}
-  m_SizeDelta: {x: 1993.6, y: 134.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1458008447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458008445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.454902, g: 0.454902, b: 0.454902, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1458008448
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458008445}
-  m_CullTransparentMesh: 0
 --- !u!1 &1462402865
 GameObject:
   m_ObjectHideFlags: 0
@@ -79465,7 +79137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -79478,6 +79149,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -81479,6 +81151,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533209501}
   m_CullTransparentMesh: 0
+--- !u!1 &1535294684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535294685}
+  - component: {fileID: 1535294687}
+  - component: {fileID: 1535294686}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1535294685
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535294684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 550331738}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -20, y: -13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1535294686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535294684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1535294687
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535294684}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1536031430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81648,9 +81397,11 @@ MonoBehaviour:
   menu_anim: {fileID: 1536961864}
   questions:
   - question: "This is bad. I didn\u2019t make that pizza. What should I do?"
+    questionType: 
     answers:
     - entry: Ask customer if they would like a new pizza
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN# I\u2019m sorry, would you like me to remake that pizza
         for you?"
@@ -81662,6 +81413,7 @@ MonoBehaviour:
         okay.#INVOKE_EVENT#"
     - entry: Call manager
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN#One moment please, I\u2019m going to call my manager
         to double check the situation. Thank you for your patience."
@@ -81685,80 +81437,97 @@ MonoBehaviour:
         acquired a new experience! #ADD_EXPERIENCE#"
     - entry: Ignore Customer
       meter_gain: 0
+      properties: []
       Reaction:
       - "I\u2019m never coming back here again!\r#INVOKE_EVENT#*2*\n"
       - "#INNER_DIALOGUE_BEGIN#Maybe I should have handled that situation differently\u2026"
   - question: What subject would you like to study?
+    questionType: 
     answers:
     - entry: Leadership
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study leadership at the library.
       - 'You feel your leadership capabilities increasing! #INCREASE#*Lead*'
     - entry: Teamwork
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study teamwork at the library.
       - 'You feel your teamworking capabilities increasing! #INCREASE#*Team*'
     - entry: Technology
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study technology at the library.
       - 'You feel your teamworking capabilities increasing! #INCREASE#*Tech*'
     - entry: Professionalism
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study professionalism at the library.
       - 'You feel your professionalism capabilities increasing! #INCREASE#*Prof*'
     - entry: Communication
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study communication at the library.
       - 'You feel your communication capabilities increasing! #INCREASE#*Com*'
     - entry: Critical Thinking
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study critical thinking at the library.
       - 'You feel your critical thinking capabilities increasing! #INCREASE#*Crit*'
   - question: 'Just as you where about to clock out, a large order is placed and the
       manager asks you to stay for another hour. Do you:'
+    questionType: 
     answers:
     - entry: Stay and help your team out
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This displays teamwork and detication to your job'
       - '#ADD_EXPERIENCE#You feel your teamwork capabilities increasing! #INCREASE#*Team*'
     - entry: Leave since your shift is up
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You leave your shift but leave your coworkers with
         the large order. This shows a lack of compassion for your team and a lower
         willingness to work with others in time of emergency.'
   - question: 'Bob is going to be late for work today and the manager asks if you
       would be willing to work a couple extra hours since he is in a real bind. '
+    questionType: 
     answers:
     - entry: Yes
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#The day was long and tiring but it felt good to help
         the team.'
       - 'You feel your teamwork capabilities increasing! #INCREASE#*Team*'
     - entry: No
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You leave your shift and leave your coworkersshort
         handed. This shows a lack of compassion for your team and a lower willingness
         to work with others in time of emergency.'
   - question: You relize that you are going to be late for work, do you
+    questionType: 
     answers:
     - entry: Arrive Late
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This is inconsiderate and places undue pressure on
         current staff. The next time you are late you should give a heads up to your
         team.'
     - entry: Call and let the manager know you will be late
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This allows the manager to notify other employees and
         retain help until you arrive'
@@ -81766,15 +81535,18 @@ MonoBehaviour:
     - entry: Call and let the manager know you will be late with an estimated arrival
         time
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This allows the manager to notify other employees and
         determine if retaining help is necessary'
       - 'You feel your communication capabilities increasing! #INCREASE#*Com*'
   - question: As you entered the workplace for work you look around and you can see
       that there is a person missing for this shift. What do you do
+    questionType: 
     answers:
     - entry: Call the person missing
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You call the missing employee and it turns out he was
         running late. He will be there soon.'
@@ -81783,6 +81555,7 @@ MonoBehaviour:
       - 'You feel your leadership capabilities increasing! #INCREASE#*Lead*'
     - entry: Wait for them to show up
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN#He shows up at a latter and you talk to him to tell
         him to tell him to inform you if he is going to be late\r\n"
@@ -81791,6 +81564,7 @@ MonoBehaviour:
         when you have the capability and authority to do so'
     - entry: "Call upper management\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You call upper management and they inform you that
         you should be able to solve this problem on your own.'
@@ -81801,9 +81575,11 @@ MonoBehaviour:
         have.'
   - question: As you were helping your employees during the rush hours then the pizza
       oven stopped working what do you do
+    questionType: 
     answers:
     - entry: "Try to fix the oven yourself\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You try to fix the oven but things don''t go too well. '
       - '#INNER_DIALOGUE_BEGIN#You showed incentive to try to fix a problem but trying
@@ -81812,6 +81588,7 @@ MonoBehaviour:
     - entry: Apologize to your customers that will be affected by the broken equipment
         then call upper management to get a professional to fix it
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By apologizing to the customers it shows that you are
         aware of the problem and informing the problem to higher management allows
@@ -81824,6 +81601,7 @@ MonoBehaviour:
 
 '
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By apologizing to the customers it shows that you are
         aware of the problem and calling the repairman shows that you recognize the
@@ -81831,10 +81609,12 @@ MonoBehaviour:
       - 'You feel your critical thinking capabilities increasing! #INCREASE#*Crit*'
   - question: As you are taking the order of another customer someone comes in yelling
       about receiving the wrong order. How do you respond?
+    questionType: 
     answers:
     - entry: Apologize to the customer and tell them that you will bring them there
         right order right away
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This shows that you are willing to take responsibility
         for issues that were created by your employees or yourself and are willing
@@ -81842,6 +81622,7 @@ MonoBehaviour:
       - 'You feel your leadership capabilities increasing! #INCREASE#*Lead*'
     - entry: "Tell the customer that they have already gave them the proper order\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You tell the customer that you already gave them thier
         order and there is nothing extra you can do for them.'
@@ -81851,6 +81632,7 @@ MonoBehaviour:
     - entry: Apologize to the customer and tell them that you will bring them there
         right order right away and give them a discount or coupon on their next order
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This shows that you are willing to take responsibility
         for issues that were created by your employees or yourself and are willing
@@ -81861,10 +81643,12 @@ MonoBehaviour:
       properly you get a call and when you answer it you realize it\u2019s a customer
       that has ordered more than an hour ago. They tell you their order has not been
       delivered yet. What do you do?"
+    questionType: 
     answers:
     - entry: "Apologize to the customer and tell them that you will give them a discount
         them upon delivery of their delivery\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This shows that you care for what the customer has
         to say and shows the customer that you are willing to compromise if something
@@ -81872,6 +81656,7 @@ MonoBehaviour:
       - 'You feel your professionalism capabilities increasing! #INCREASE#*Prof*'
     - entry: Tell the customer to wait just a bit longer
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You tell the customer to wait a bit longer and they
         seem very upset.'
@@ -81880,6 +81665,7 @@ MonoBehaviour:
     - entry: Tell your customer that they are busy and their delivery will be a little
         there as soon as possible
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Explaining to the customer the issues that are happening
         allows you to try to smooth things out but it does not solve the problem that
@@ -81887,15 +81673,18 @@ MonoBehaviour:
       - 'You feel your communication capabilities increasing! #INCREASE#*Com*'
   - question: When you are entering the building you flick on the light switch to
       only find out that there is no power. What do you do?
+    questionType: 
     answers:
     - entry: Close shop and go home
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This is an irresponsible choice that can lead to multiple
         issues. As the manager, try to use the position you were given to solve issues
         and if they are out of your scope you should contact upper management.'
     - entry: Call upper management about the issue to send an electrician to fix it
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Calling upper management shows that you are quick to
         act on a problem that is out of your control and scope and allows people who
@@ -81906,6 +81695,7 @@ MonoBehaviour:
     - entry: "Call upper management about the issue so it can be solved and call employees
         to let them know about the issue\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Calling upper management shows that you are quick to
         act on a problem that is out of your control and scope and allows people who
@@ -81916,15 +81706,18 @@ MonoBehaviour:
   - question: 'From your office you begin to hear screaming outside as you make your
       way out you see a customer is yelling at one of your employees and he is being
       rude back. What do you do in this situation? '
+    questionType: 
     answers:
     - entry: "Back up your employee and tell the customer to stop\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By ganging up on the customer it shows you do not know
         how to handle the situation and sets a bad example for future employees. Try
         to calmly talk to the customer and compromise with them.'
     - entry: Back up the customer and reprimand your employee
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By taking the customers side you can show that you
         care for them but it shows your employees that you care more for the customers
@@ -81933,6 +81726,7 @@ MonoBehaviour:
     - entry: "Talk to the customer and apologize. Then give them a coupon or discount
         then talk to that employee privately\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By compromising with the customer and talking to your
         employee you show that you are willing to see both sides of the story and
@@ -81941,9 +81735,11 @@ MonoBehaviour:
       - '#ADD_EXPERIENCE#You feel your leadership capabilities increasing! #INCREASE#*Lead*'
   - question: 'You get a call from a customer but you quickly realize that the customer
       is speaking a completely different language. What do you do? '
+    questionType: 
     answers:
     - entry: "You hang up\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN#This response shows you are not willing to go the extra
         mile to fix an issue that comes off as difficult. Hanging up also puts a bad
@@ -81952,6 +81748,7 @@ MonoBehaviour:
         around you who have experience."
     - entry: "Transfer them to someone in your department that speaks that language\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By transferring them to a coworker who knows that language
         shows that you know the limits of what you can do and are willing to ask for
@@ -81959,30 +81756,36 @@ MonoBehaviour:
       - 'You feel your critical thinking capabilities increasing! #INCREASE#*Crit*'
     - entry: "Try to understand what they are saying even a little bit\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This may seem like a good option but doing something
         that you are not skilled in may lead to further issues and could frustrate
         you and the customer that nothing is getting across to the other person.'
   - question: While you were on call trying to help a customer fix their pc the internet
       shuts down and your software stops working. What do you do?
+    questionType: 
     answers:
     - entry: "Call the department manager\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By calling the department manager you show that you
         are on top of your work and are willing to step up if there is a problem.'
       - 'You feel your professionalism capabilities increasing! #INCREASE#*Prof*'
     - entry: "Wait until it returns\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Waiting for the internet to return is not a wrong choice
         as there is not much you can do in this scenario but by doing nothing it neither
         puts you in a better position with your managers or a worse position.'
   - question: "Upon review, he states that it would work, but wouldn\u2019t it be
       inefficient to query the datastore for each record?"
+    questionType: 
     answers:
     - entry: Tell your manager that you will give it some additional thought
       meter_gain: 0
+      properties: []
       Reaction:
       - "Upon investigation, you learn that the number of titles and departments is
         relatively small and can be loaded into memory reducing the cost of the transaction.\r\n"
@@ -81990,6 +81793,7 @@ MonoBehaviour:
         for future bugs.
     - entry: Defend your design
       meter_gain: 0
+      properties: []
       Reaction:
       - You defend your design stating that there are relatively few employees so
         the cost will be minimal
@@ -81998,22 +81802,27 @@ MonoBehaviour:
   - question: 'Now that you have determined what the issue is, it is time to decide
       how to fix it.  You have decided that there are at least two ways to correct
       the problem:'
+    questionType: 
     answers:
     - entry: Ask HR to correct the title in the HRIS system
       meter_gain: 0
+      properties: []
       Reaction:
       - While this solution will work, trailing spaces may be common so the issue
         may return
     - entry: 'Trim leading and trailing spaces from all titles and departments that
         come from HRIS. '
       meter_gain: 0
+      properties: []
       Reaction:
       - This is the better long term solution as it corrects for human error as part
         of the process
   - question: Which carrer do i want to persue
+    questionType: 
     answers:
     - entry: IT Intern
       meter_gain: 0
+      properties: []
       Reaction:
       - 'Hello my name is Albert Rylander and i am the head of the IT Department in
         Helpers Hotlines and we are looking for qualified interns. #INVOKE_EVENT#*2*'
@@ -82022,6 +81831,7 @@ MonoBehaviour:
       - '#END_WORK##MULTI_END##INVOKE_EVENT#*5*'
     - entry: '*Software Engineering*Software Engineer'
       meter_gain: 0
+      properties: []
       Reaction:
       - 'Hello my name is Julius Dursk and i am the head of the development Department
         in the company savana and we are looking for qualified Software engineers.
@@ -82031,6 +81841,7 @@ MonoBehaviour:
       - '#END_WORK##MULTI_END##INVOKE_EVENT#*7*'
     - entry: '*HR Managment*HR Manager'
       meter_gain: 0
+      properties: []
       Reaction:
       - 'Hello my name is Henry Whitewood and i am the head of the HR Department in
         the company savana and we are looking for qualified interns. #INVOKE_EVENT#*3*'
@@ -82038,11 +81849,13 @@ MonoBehaviour:
         we can get started with the interview right away
       - '#END_WORK##MULTI_END##INVOKE_EVENT#*6*'
   - question: You have been tasked with developing the training materials.
+    questionType: 
     answers:
     - entry: Instead of developing my own materials, I will download a free online
         course and have everyone else in the company use it to learn how to protect
         their data. The experts know best.
       meter_gain: 0
+      properties: []
       Reaction:
       - After distributing the materials to your coworkers, the company who developed
         the course finds the numerous downloads from the same place to be suspicious,
@@ -82054,6 +81867,7 @@ MonoBehaviour:
         in place, and develop materials that specify certain technologies used by
         the company. '
       meter_gain: 0
+      properties: []
       Reaction:
       - 'You speak with the experts within the company and determine the best way
         to handle the training materials. '
@@ -82065,11 +81879,13 @@ MonoBehaviour:
       on how to implement a change in the software used for the company. When they
       pass the code between them, they end up reverting the other\u2019s changes and
       arguing that their way is best. What will you do to resolve this?"
+    questionType: 
     answers:
     - entry: Notify their manager of what the two have been doing and wasting their
         time fighting the project. The manager should be more knowledgeable and pick
         which method is more effective.
       meter_gain: 0
+      properties: []
       Reaction:
       - The two have already gone to their manager to try and resolve the issue, but
         they are still both assigned to the same task and cannot come to an agreement.
@@ -82080,6 +81896,7 @@ MonoBehaviour:
         Suggest that they work together on the project and explain why they use their
         method instead of claiming that the other person is less effective.
       meter_gain: 0
+      properties: []
       Reaction:
       - After you have them settle down, they talk out their issues with some of your
         prompts. After about an hour of talking they are able to come to an agreement
@@ -82089,11 +81906,13 @@ MonoBehaviour:
       the law currently, but that the change in the law will cost the company time
       and money, plus the mandate is getting put into effect in only a week. How do
       you react to this issue?
+    questionType: 
     answers:
     - entry: "Keep the employee handbook the same until someone points out the issue
         with HR, we don\u2019t have enough time to implement it before the mandate
         without throwing away a lot of money."
       meter_gain: 0
+      properties: []
       Reaction:
       - "It\u2019s unfair to the employees of the company if they are not given the
         opportunity to use their vacation days, the fines would not be worth the loss
@@ -82103,6 +81922,7 @@ MonoBehaviour:
         consuming for the entire team, but it\u2019s worth avoiding any issues in
         the future."
       meter_gain: 0
+      properties: []
       Reaction:
       - It takes a long time and pulls people away from their current projects, but
         you are able to put together a change for the employees vacation days before
@@ -82111,11 +81931,13 @@ MonoBehaviour:
       to develop a program to help determine performance objectives and track progress.
       With the help of the software engineering team you will be able to get it developed.
       How will you get the metrics to track performance?
+    questionType: 
     answers:
     - entry: Gather information about performance progress and objectives from employees
         around the company so that the objectives are personalized to the company
         and help encourage the use of the program.
       meter_gain: 0
+      properties: []
       Reaction:
       - After gathering feedback from employees, the software engineering team gets
         to work developing the program.
@@ -82125,6 +81947,7 @@ MonoBehaviour:
     - entry: Find similar programs available online and use their metrics, these websites
         do extensive research and changes so they should be good for our company too.
       meter_gain: 0
+      properties: []
       Reaction:
       - After producing a demo for the program and distributing it to the company,
         some of the managers responded with feedback asking for certain features to
@@ -83854,7 +83677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -83867,6 +83689,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -84491,7 +84314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -84504,6 +84326,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -85527,7 +85350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -85540,6 +85362,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -87317,7 +87140,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 694126392}
   m_HandleRect: {fileID: 694126391}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -87894,7 +87717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Hopefully today is a smooth day at work#MULTI_START#
   - I enter my office#FADE_OUT#
@@ -87912,6 +87734,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -88413,7 +88236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Today we will start developing new training materials#MULTI_START#
   - I enter my office#FADE_OUT#
@@ -88431,6 +88253,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -90446,7 +90269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'Hope today is smooth sailing. #MULTI_START#'
   - I make my way to the back of the Pizza Place to see if everything is in shape#FADE_OUT#
@@ -90465,6 +90287,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -90978,7 +90801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN#Let''s get this shift started #MULTI_START#'
   - The day goes by fairly smoothly...#FADE_OUT#
@@ -90998,6 +90820,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -92238,7 +92061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Let's get this day started.#MULTI_START#
   - I go to my office.#FADE_OUT#
@@ -92256,6 +92078,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -93155,7 +92978,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#INNER_DIALOGUE_BEGIN##YES_NO#Rewatch the sweet spot video?'
   - 
@@ -93170,6 +92992,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -93873,7 +93696,6 @@ Transform:
   - {fileID: 1319092505}
   - {fileID: 2000932182}
   - {fileID: 1212198377}
-  - {fileID: 1150742625}
   - {fileID: 1970350382}
   - {fileID: 817879594}
   - {fileID: 2173411267841522904}
@@ -93898,6 +93720,7 @@ Transform:
   - {fileID: 1138430720}
   - {fileID: 1772187339}
   - {fileID: 1443628027}
+  - {fileID: 765588780}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -94126,7 +93949,7 @@ Transform:
   m_Children:
   - {fileID: 187999115}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1772187340
 MonoBehaviour:
@@ -94314,7 +94137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello!'
   - "Hey @. How are you? Haven\u2019t seen you for a while?"
@@ -94347,6 +94169,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -96805,79 +96628,6 @@ Canvas:
   m_SortingLayerID: 1055670265
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1858692722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1858692723}
-  - component: {fileID: 1858692725}
-  - component: {fileID: 1858692724}
-  m_Layer: 0
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1858692723
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858692722}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 136886601}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.44998, y: -333.38}
-  m_SizeDelta: {x: 1260, y: 396.57}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1858692724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858692722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.454902, g: 0.454902, b: 0.454902, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1858692725
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858692722}
-  m_CullTransparentMesh: 0
 --- !u!1 &1859304847
 GameObject:
   m_ObjectHideFlags: 0
@@ -98413,7 +98163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -98426,6 +98175,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -98800,7 +98550,7 @@ PrefabInstance:
     - target: {fileID: 2173411267149232800, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2173411267149232800, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -99866,7 +99616,7 @@ Transform:
   m_Children:
   - {fileID: 1726350389}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1970350383
 Animator:
@@ -100073,7 +99823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START# Nice to meet you. I''m Riad. What''s your name?'
   - '....'
@@ -100099,6 +99848,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -100280,7 +100030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -100293,6 +100042,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -100592,7 +100342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START#Hey, @!  I''m glad you made it. #INVOKE_EVENT#'
   - You are going to be talking with Tiffany today, she's great!
@@ -100613,6 +100362,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -100898,7 +100648,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -100911,6 +100660,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -101474,7 +101224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - "#INCREASE#*Com*#MULTI_START#Yo listen to my sick beatboxing skills! \u266A\u266A
     \ \u266A  \u266A\u266A \u266A\u266A   \u266A\u266A\u266A  \u266A\u266A   \u266A\u266A
@@ -101595,6 +101344,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -101930,6 +101680,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002160677}
+  m_CullTransparentMesh: 0
+--- !u!1 &2005678667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2005678668}
+  - component: {fileID: 2005678670}
+  - component: {fileID: 2005678669}
+  m_Layer: 0
+  m_Name: InputFeedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2005678668
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005678667}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.48333332, y: 0.48333332, z: 0.48333332}
+  m_Children: []
+  m_Father: {fileID: 196947449}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.9, y: -28.6}
+  m_SizeDelta: {x: 535.9, y: 195}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2005678669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005678667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 60
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &2005678670
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005678667}
   m_CullTransparentMesh: 0
 --- !u!1001 &2007635266
 PrefabInstance:
@@ -103053,7 +102880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - As I sit in my work station i hear the phone ring immediately#FADE_OUT#
@@ -103071,6 +102897,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -103890,7 +103717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 'Let''s get this day started #MULTI_START#'
   - There have been a lot of online orders today#FADE_OUT#
@@ -103909,6 +103735,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -104306,7 +104133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Co Worker
@@ -104319,6 +104145,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -107912,161 +107739,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!1 &2130356779
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2130356780}
-  - component: {fileID: 2130356782}
-  - component: {fileID: 2130356781}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2130356780
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130356779}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 927325664}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2130356781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130356779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "\u200B"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 14
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 1
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 2130356781}
-    characterCount: 1
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2130356782
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130356779}
-  m_CullTransparentMesh: 0
 --- !u!1 &2131565533
 GameObject:
   m_ObjectHideFlags: 0
@@ -108172,7 +107844,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - The event has been progressed...#INVOKE_EVENT#
   NPCName: Customer
@@ -108185,6 +107856,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 6
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -109819,7 +109491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey there! How are you today?
 
@@ -109837,6 +109508,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -110412,7 +110084,7 @@ Transform:
   - {fileID: 3022857048433817253}
   - {fileID: 1607234034}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1785530066868566467
 PrefabInstance:
@@ -110550,7 +110222,7 @@ Transform:
   - {fileID: 2928690886784126364}
   - {fileID: 2146696598}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1871229733200506976
 Transform:
@@ -111184,7 +110856,7 @@ Transform:
   - {fileID: 763758986}
   - {fileID: 664633400}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2173411268065694655
 Transform:
@@ -111572,7 +111244,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2993214822862998839}
   m_Direction: 0
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -112769,7 +112441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2993214823102470887
@@ -113994,7 +113666,7 @@ Transform:
   - {fileID: 336752607614706505}
   - {fileID: 1680458350}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3898331985767136081
 SpriteRenderer:
@@ -114876,7 +114548,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4202066604935689632}
   m_HandleRect: {fileID: 4202066604935689635}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -115430,7 +115102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hey! Did you watch the game last night?'
   - '#INNER_DIALOGUE_BEGIN#You chat with Jane about sports#ADD_SUMMARY#*went to the
@@ -115448,6 +115119,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -115583,7 +115255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - '#MULTI_START##REVEAL_NAME#Hello! The weather outside today is beautiful!'
   - '#INNER_DIALOGUE_BEGIN#You chat with Robert about the weather recently#ADD_SUMMARY#*went
@@ -115601,6 +115272,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -116305,7 +115977,7 @@ Transform:
   - {fileID: 8591552638788773180}
   - {fileID: 1729727118}
   m_Father: {fileID: 1760871507}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5081546273120883663
 SpriteRenderer:
@@ -118572,7 +118244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - Hey there!
   NPCName: Dujon
@@ -118585,6 +118256,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
@@ -119064,7 +118736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b97c50be261773a48a31270a3dabaff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSmartGoal: {fileID: 0}
   messages:
   - 
   NPCName: 
@@ -119077,6 +118748,7 @@ MonoBehaviour:
   messageDone: 0
   isItem: 0
   EnemyCommunications: 0
+  input_box: {fileID: 0}
   change_state: 1
   repeating_dialogue: 0
   Dialogue_Event:
