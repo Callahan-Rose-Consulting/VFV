@@ -25,6 +25,11 @@ public class TalkToNPC : MonoBehaviour
     public static bool firstRun = false;
     public static string playerFileName;
 
+    public InputSmartGoal inputSmartGoal;
+    public static bool displayInputBox = false;
+
+    public static string fileName;
+
     public static string[] valueProperties = {"VISION", "ALIGNMENT", "UNDERSTAND", "ENACT"};
     public static string[] starProperties = {"SITUATION", "TASK", "ACTION", "RESULT"};
 
@@ -68,10 +73,13 @@ public class TalkToNPC : MonoBehaviour
     public static bool dialogueActive = false;
     public static bool endGame = false;
     public static bool yesNoInstructions = true;
+    public static bool displayInputBox = false;
 
     public static int numPerfectAnswers = 0;
     public static int numQuestionsAsked = 0;
-    public static string playerResultsFile = ""; 
+    public static string playerResultsFile = "";
+
+    public Input_Box input_box;
 
 
     //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
@@ -107,17 +115,23 @@ public class TalkToNPC : MonoBehaviour
             "S" + DateTime.Now.Second.ToString() +
             ".txt";
 
+        //creating string for writing info in player results.
         string path = @"Player Results" + "/" + fileName;
+
+        //creating string for reading and writing the head of the player results file.
+        string head = @"Assets\\Player Inventory\\Player Result Information\\header.txt";
+        string headInfo = File.ReadAllText(head);
+
+        //creating string for reading and writing the ending of the player results file.
+        string end = @"Assets\\Player Inventory\\Player Result Information\\ending.txt";
+        string endInfo = File.ReadAllText(end);
+
         //create blank text doc and name it according to fileName in the Player Results Directory
         using (FileStream fs = File.Create(path)) { };
         string VFV = "";
         playerFileName = path;
-        File.AppendAllText(path, "#----------------------------------------------------------#\n");
-        File.AppendAllText(path, "|Thank you for playing!                                    |\n");
-        File.AppendAllText(path, "|Veterans gain free access to biginterview.com.            |\n");
-        File.AppendAllText(path, "|Send this file to mike@callahanrose.com for access        |\n");
-        File.AppendAllText(path, "|Linkedin Group: https://www.linkedin.com/groups/14140078/ |\n");
-        File.AppendAllText(path, "#----------------------------------------------------------#\n");
+
+        File.AppendAllText(path, headInfo);
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "---------------Performace Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
@@ -138,77 +152,11 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "\t-Final Communication_______________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
         File.AppendAllText(path, "\t-Final Critical Thinking___________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Chosen Career Field\n");
-        File.AppendAllText(path, "[No Career Fair Choice]\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Videos Watched:\n");
-        File.AppendAllText(path, "\t-Video:Interview Prep______________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Personal Branding___________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Star________________________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Survive Adapt and Flourish__________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Sweet Spot__________________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Value_______________________________________: NO\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Informational Books Read:\n");
-        File.AppendAllText(path, "\t-Book:What to Say and How to Say It!_______________: NO\n");
-        File.AppendAllText(path, "\t-Book:Brain Teasers________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Team Synergy_________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Hiring Manager's Guide to Everything_________: NO\n");
-        File.AppendAllText(path, "\t-Book:Principles of Management_____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Employment Laws______________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:CompTia A plus Certification Prep Questions__: NO\n");
-        File.AppendAllText(path, "\t-Book:Intro to Hardware____________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Troubleshooting 101__________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Guide to Networking__________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:How to Be a Better Leader____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Into to Python_______________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Software Engineering Principles______________: NO\n");
-        File.AppendAllText(path, "\t-Book:Debugging 101________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Game Design__________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Working in a Team____________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Microswift Office for Dummies________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Principles of Engineering____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:I Inc Career Planning________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Tiger in the Office__________________________: NO\n");
-        //books not listed in book store (found in Bookstore.cs BS_Items)
-        //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
-        //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
-        File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
-        // File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
-        // File.AppendAllText(path, "\n");
-        // File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
-        // File.AppendAllText(path, "\n");
-
-        File.AppendAllText(path, "--------------Comments---------------\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Participant Comments:\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Counsellor Comments:\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
+        File.AppendAllText(path, endInfo);
 
     }
+
+
     //This function takes in the name of the result to be updated and the name of the file to update.
     //This function is designed to be called when an event happens in game that would inicate some form of progression.
     //Examples:
@@ -220,6 +168,7 @@ public class TalkToNPC : MonoBehaviour
     public static void UpdatePlayerResults(string resultName, string FileToUpdate, string companyName = "", string jobTitle = "")
     {
         string playerFileName = FileToUpdate;
+        fileName = FileToUpdate;
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int i = -1;
@@ -275,7 +224,7 @@ public class TalkToNPC : MonoBehaviour
                 {
                     allLines[i] = Regex.Replace(matchBook.ToString(), matchAnswerNO.ToString(), "YES");
                 }
-               
+
             }
 
             else if (line.Contains("END OF INTERVIEW PERFORMANCE:")) {
@@ -284,18 +233,18 @@ public class TalkToNPC : MonoBehaviour
             }
 
         }
-        
+
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
 
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
         string playerFileName = FileToUpdate;
-        playerResultsFile = FileToUpdate;
+        playerResultsFile = FileToUpdate; // save for later use
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int lineNumber = -1;
 
-        numQuestionsAsked++; 
+        numQuestionsAsked++;
 
         foreach (string line in allLines) {
             lineNumber++;
@@ -313,9 +262,11 @@ public class TalkToNPC : MonoBehaviour
                 allLines[lineNumber] += " " + userWords[k];
             }
 
+            allLines[lineNumber] += "\n";
+
 
             if (updateType == "VALUE" && userWords.Length != valueProperties.Length) {
-                allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
+                allLines[lineNumber] += "You missed out on the VALUE PROPERTY OF:";
 
                 for (int j = 0; j < valueProperties.Length; j++) {
                         if (!userWords.Contains(valueProperties[j])) {
@@ -328,7 +279,7 @@ public class TalkToNPC : MonoBehaviour
 
             // must be STAR
             else if (updateType == "STAR" && userWords.Length != starProperties.Length) {
-                allLines[lineNumber] += "\nYou missed out on the START PROPERTY OF:";
+                allLines[lineNumber] += "You missed out on the START PROPERTY OF:";
 
                 for (int j = 0; j < starProperties.Length; j++) {
                         if (!userWords.Contains(starProperties[j])) {
@@ -348,7 +299,7 @@ public class TalkToNPC : MonoBehaviour
             break;
         }
 
-        
+
 
         File.WriteAllLines(playerFileName, allLines); //rewerite file with update
     }
@@ -435,59 +386,43 @@ public class TalkToNPC : MonoBehaviour
             {
                 newMessage = newMessage.Replace("@DC", "Dream Company here...");
             }
+
             newMessage = newMessage.Replace("COMMUNICATION_SKILL", PlayerPrefs.GetInt("CommunicationLevel").ToString());
             newMessage = newMessage.Replace("COMMUNICATION_PLUS_ONE", (PlayerPrefs.GetInt("CommunicationLevel") + 1).ToString());
+            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
 
-            newMessage = newMessage.Replace("#SKILL_INCREASE_COMMUNICATION#", "");
-            newMessage = newMessage.Replace("#SHOW_IMAGE#", "");
-            newMessage = newMessage.Replace("#HIDE_IMAGE#", "");
-            newMessage = newMessage.Replace("#REVEAL_NAME#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_BEGIN#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_END#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_BEGIN#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_END#", "");
-            newMessage = newMessage.Replace("#SKILL_INCREASE_INTELLIGENCE#", "");
-            newMessage = newMessage.Replace("#SKILL_CHECK#", "");
-            newMessage = newMessage.Replace("#LOAD_INTERVIEW#", "");
-            newMessage = newMessage.Replace("#YES#", "");
-            newMessage = newMessage.Replace("#NO#", "");
-            newMessage = newMessage.Replace("#YES_NO#", "");
-            newMessage = newMessage.Replace("#YES_NO_COMPLETE#", "");
-            newMessage = newMessage.Replace("#MULTI_START#", "");
-            newMessage = newMessage.Replace("#MULTI_END#", "");
-            newMessage = newMessage.Replace("#SA1#", "");
-            newMessage = newMessage.Replace("#SA2#", "");
-            newMessage = newMessage.Replace("#FADE_OUT#", "");
-            newMessage = newMessage.Replace("#FADE_IN#", "");
-            newMessage = newMessage.Replace("#loc#", "");
-            newMessage = newMessage.Replace("#ADD_EXPERIENCE#", "");
-            newMessage = newMessage.Replace("#Post#", "");
-            newMessage = newMessage.Replace("#ADD_SUMMARY#", "");
-            newMessage = newMessage.Replace("*Lead*", "");
-            newMessage = newMessage.Replace("*Team*", "");
-            newMessage = newMessage.Replace("*Tech*", "");
-            newMessage = newMessage.Replace("*Prof*", "");
-            newMessage = newMessage.Replace("*Com*", "");
-            newMessage = newMessage.Replace("*Crit*", "");
-            newMessage = newMessage.Replace("#showcanvas#", "");
-            newMessage = newMessage.Replace("#hidecanvas#", "");
-            newMessage = newMessage.Replace("#topic#", "");
-            newMessage = newMessage.Replace("#SKIP_START#", "");
-            newMessage = newMessage.Replace("#SKIP_END#", "");
-            newMessage = newMessage.Replace("#BRANDING#", "");
+            if (Resume.current_job != null)
+            {
+                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
+            }
+
+            int idx = 0;
+            bool foundIndicator = false; // if '#' or '*' is found
+
+            string toReplace = "";
+
+            // get rid of keywords marked by '#' or '*' in string before user sees them
+            while (idx < newMessage.Length) {
+                if (newMessage[idx] == '#'|| newMessage[idx] == '*') {
+                    toReplace += newMessage[idx];
+
+                    if (foundIndicator) {
+                        newMessage = newMessage.Replace(toReplace, "");
+                        idx -= toReplace.Length; // send idx back as characters have been replaced
+                        toReplace = "";
+                    }
+
+                    foundIndicator = !foundIndicator;
+                }
+
+                else if (foundIndicator) {
+                    toReplace += newMessage[idx];
+                }
+
+                idx++;
+            }
+
             newMessage = newMessage.Replace("#triggerEndGame", "");
-
-            //career fair RepaceKeyWords
-            //added by Don Murphy
-            newMessage = newMessage.Replace("#CF_Engineering#", "");
-            newMessage = newMessage.Replace("#CF_Business#", "");
-            newMessage = newMessage.Replace("#CF_Arts#", "");
-            newMessage = newMessage.Replace("#CF_BlueCollar#", "");
-            newMessage = newMessage.Replace("#CF_Education#", "");
-
-
-            //Changes by Austin Greear 4/26/2020
-            newMessage = newMessage.Replace("#INVOKE_EVENT#", "");
 
             Regex getMessage = new Regex(@"\*.[^_]*\*");
 
@@ -498,19 +433,6 @@ public class TalkToNPC : MonoBehaviour
                 int index = 0;
 
                 newMessage = newMessage.Replace(x.Value, "");
-            }
-
-            newMessage = newMessage.Replace("#FADE_EVENT#", "");
-            newMessage = newMessage.Replace("#Disable#", "");
-            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
-            newMessage = newMessage.Replace("#FEEDBACK#", "");
-            newMessage = newMessage.Replace("#INCREASE#", "");
-            newMessage = newMessage.Replace("#CHECK#", "");
-            newMessage = newMessage.Replace("#END_WORK#", "");
-
-            if (Resume.current_job != null)
-            {
-                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
             }
         }
         return newMessage;
@@ -554,6 +476,11 @@ public class TalkToNPC : MonoBehaviour
         else if ((Input.GetKeyDown("return") || Input.GetKeyDown("space")) && messageDone && multipleMessages)
         {
             DecideWhichDialogueToShow();//Will show the next dialogue in the multimessage chain
+        }
+
+        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true) {
+            displayInputBox = false;
+            change_state = true;
         }
     }
 
@@ -600,7 +527,7 @@ public class TalkToNPC : MonoBehaviour
     {
         if (!DayChanger.endOfDay)
         {
-            if (Input.GetButton("Interact") && other.CompareTag("Player") && !messageDone && !messageIsTyping)
+            if (Input.GetButton("Interact") && other.CompareTag("Player") && !messageDone && !messageIsTyping && !displayInputBox)
             {
                 //@CS Disable mouse click so that the user cannot unselect the dialogue choices
                 //implementation - waiting until we can fully get rid of the mouse entirely
@@ -639,7 +566,7 @@ public class TalkToNPC : MonoBehaviour
      *DecideWhichDialogueToShow looks to see if each message contains any of the keywords and then processes the message accordingly.
      *Messages can have multiple keywords, such as "#REVEAL_NAME##SA1#Hello! My name is Steve Harvey!"
      *      This message would set the NPC's name to be known, as well as take away one significant action point from the player.
-     *      
+     *
      *One of the most used keywords is #MULTI_START# and #MULTI_END#
      * #MULTI_START# begins treating the messages as a chain, and will keep displaying messages sequentially until #MULTI_END# is read in a following message.
      * Do NOT use #MULTI_START# without #MULTI_END#
@@ -746,6 +673,27 @@ public class TalkToNPC : MonoBehaviour
             File.WriteAllText(playerFileName, updateCareer);
         }
 
+        if (messages[messageCount].Contains("#OPEN_BROWSER#")) {
+            Application.OpenURL("https://www.16personalities.com/free-personality-test");
+        }
+
+        if (messages[messageCount].Contains("#INPUT_BOX#")) {
+            end_dialogue();
+
+            // displayInputBox = true;
+            // change_state = false;
+
+            // dialogueActive = true;
+            // textboxIsClosing = true;
+            // messageDone = false;
+            // messageIsTyping = true;
+            // GameManager.instance.change_game_state("Dialogue");
+            // player.canMove = false;
+
+
+            input_box.handleDisplay(ref displayInputBox, ref change_state);
+        }
+
 
         //Change by Austin Greear 4/26/2020
         if (messages[messageCount].Contains("#INVOKE_EVENT#"))
@@ -841,6 +789,12 @@ public class TalkToNPC : MonoBehaviour
             }
         }
 
+        //Created by mohsen
+        if (messages[messageCount].Contains("#INPUT_SMARTGOAL#"))
+        {
+            inputSmartGoal.handleDisplay(ref displayInputBox, ref change_state, playerFileName);
+        }
+
         //Change by Austin Greear 5/7/2020
         if (messages[messageCount].Contains("#EXPERIENCE# "))
         {
@@ -882,7 +836,7 @@ public class TalkToNPC : MonoBehaviour
             NameBox.gameObject.SetActive(false);
             InnerDialogue = true;
             // The name box is made visible before the INNER_DIALOG_BEGIN is checked
-            // 
+            //
             if (null != NameBox) StartCoroutine(ChangeSizeCoroutine(0.5f, 0f, NameBox));  // Added 8/1/2021 to remove empty name box after work event.
         }
         if (messages[messageCount].Contains("#INNER_DIALOGUE_END#"))
@@ -898,7 +852,7 @@ public class TalkToNPC : MonoBehaviour
             NameBoxText.text = playerName;
             //InnerDialogue = true;
             // The name box is made visible before the INNER_DIALOG_BEGIN is checked
-            // 
+            //
             //if (null != NameBox) StartCoroutine(ChangeSizeCoroutine(0.5f, 0f, NameBox));  // Added 8/1/2021 to remove empty name box after work event.
         }
         if (messages[messageCount].Contains("#PLAYER_TALKING_END#"))
@@ -997,7 +951,7 @@ public class TalkToNPC : MonoBehaviour
 
         //UpdatePlayerResults does a regex search and updates the player results file accordingly
         //this function was designed with future functionality inimind. By adding a new regex search and a new update for the match, this function can update any progress that happens in-game
-        //added by Don Murphy 
+        //added by Don Murphy
         if (messages[messageCount].Contains("#INCREASE#"))
         {
             Regex getMessage = new Regex(@"\*.[^_]*\*");
@@ -1227,7 +1181,7 @@ public class TalkToNPC : MonoBehaviour
     }
 
 
-    // update progress bar with results from interview 
+    // update progress bar with results from interview
     public static void UpdateProgressBar() {
         if (numQuestionsAsked < 4) {
             return;
@@ -1337,7 +1291,7 @@ public class TalkToNPC : MonoBehaviour
         messageCount = i;
     }
 
-    //BasicDialogue() is used for printing messages that are simple, unlike YES_NOs 
+    //BasicDialogue() is used for printing messages that are simple, unlike YES_NOs
     public void BasicDialogue()
     {
         StartCoroutine(ShowText(ReplaceKeywords(messages[messageCount])));
@@ -1521,7 +1475,7 @@ public class TalkToNPC : MonoBehaviour
     //This is done to keep the NPC stuck on the question until the player answers yes.
     //Feel free to change this up.
     //Future implementation could have the user click yes or no, it would show the yes or no message, then it would read in what to do from there.
-    //AKA the YES or NO message could include a keyword to set the messageCount back to the question message or to continue it. 
+    //AKA the YES or NO message could include a keyword to set the messageCount back to the question message or to continue it.
     public void ClickNoOption()
     {
         if (isTalking)
