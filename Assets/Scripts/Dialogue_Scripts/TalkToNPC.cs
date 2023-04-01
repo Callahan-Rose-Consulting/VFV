@@ -78,21 +78,19 @@ public class TalkToNPC : MonoBehaviour
     public static int numQuestionsAsked = 0;
     public static string playerResultsFile = "";
 
+    public Input_Box input_box;
 
 
+    //This function makes a Directory in the root folder of the game if /Player Results dir does not exist
+    //Inside the /Player Results dir a file is created when when the first frame of the world map is called
+    //Example: starting the game with player named "Don" will make the file Don 1-01-2022 H13M30S32.txt"
+    //Note: the file name is created by using the players name + the time the file is created as in: 1-01-2022 is Jan 1st 2022 | H13 is 1pm| M30 is 30min| S32 is 32sec
+    //The reason this is done is to generate a unique file for each time the game is played, even if the same Don tries to play the game 5 times within the same min.
 
-
-
-//This function makes a Directory in the root folder of the game if /Player Results dir does not exist
-//Inside the /Player Results dir a file is created when when the first frame of the world map is called
-//Example: starting the game with player named "Don" will make the file Don 1-01-2022 H13M30S32.txt"
-//Note: the file name is created by using the players name + the time the file is created as in: 1-01-2022 is Jan 1st 2022 | H13 is 1pm| M30 is 30min| S32 is 32sec
-//The reason this is done is to generate a unique file for each time the game is played, even if the same Don tries to play the game 5 times within the same min.
-
-//The Players name, and initial stats are written to the file. Later functions are called in the game that update the created file.
-//ref is used to pass playerFileName by reference as to update the string based on. In C# pointers aren't really used, instead use ref and it does the job of pass by reference
-//Created by Don Murphy
-void CreateFile(ref string playerFileName)
+    //The Players name, and initial stats are written to the file. Later functions are called in the game that update the created file.
+    //ref is used to pass playerFileName by reference as to update the string based on. In C# pointers aren't really used, instead use ref and it does the job of pass by reference
+    //Created by Don Murphy
+    void CreateFile(ref string playerFileName)
     {
         //create a Directory for the player results
         string Dir = "Player Results";
@@ -116,19 +114,25 @@ void CreateFile(ref string playerFileName)
             "S" + DateTime.Now.Second.ToString() +
             ".txt";
 
+        //creating string for writing info in player results.
         string path = @"Player Results" + "/" + fileName;
+
+        //creating string for reading and writing the head of the player results file.
+        string head = @"Assets/Player Inventory/PlayerResultTemplate/header.txt";
+        string headInfo = File.ReadAllText(head);
+
+        //creating string for reading and writing the ending of the player results file.
+        string end = @"Assets/Player Inventory/PlayerResultTemplate/ending.txt";
+        string endInfo = File.ReadAllText(end);
+
         //create blank text doc and name it according to fileName in the Player Results Directory
         using (FileStream fs = File.Create(path)) { };
         string VFV = "";
         playerFileName = path;
-        File.AppendAllText(path, "#----------------------------------------------------------#\n");
-        File.AppendAllText(path, "|Thank you for playing!                                    |\n");
-        File.AppendAllText(path, "|Veterans gain free access to biginterview.com.            |\n");
-        File.AppendAllText(path, "|Send this file to mike@callahanrose.com for access        |\n");
-        File.AppendAllText(path, "|Linkedin Group: https://www.linkedin.com/groups/14140078/ |\n");
-        File.AppendAllText(path, "#----------------------------------------------------------#\n");
+
+        File.AppendAllText(path, headInfo);
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "---------------Performace Report----------------\n");
+        File.AppendAllText(path, "---------------Performance Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
         File.AppendAllText(path, "Branch of Service: " + Resume.TourBranch + '\n');
         File.AppendAllText(path, "*Initial Self Assessment:\n");
@@ -147,77 +151,11 @@ void CreateFile(ref string playerFileName)
         File.AppendAllText(path, "\t-Final Communication_______________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
         File.AppendAllText(path, "\t-Final Critical Thinking___________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Chosen Career Field\n");
-        File.AppendAllText(path, "[No Career Fair Choice]\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Videos Watched:\n");
-        File.AppendAllText(path, "\t-Video:Interview Prep______________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Personal Branding___________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Star________________________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Survive Adapt and Flourish__________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Sweet Spot__________________________________: NO\n");
-        File.AppendAllText(path, "\t-Video:Value_______________________________________: NO\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Informational Books Read:\n");
-        File.AppendAllText(path, "\t-Book:What to Say and How to Say It!_______________: NO\n");
-        File.AppendAllText(path, "\t-Book:Brain Teasers________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Team Synergy_________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Hiring Manager's Guide to Everything_________: NO\n");
-        File.AppendAllText(path, "\t-Book:Principles of Management_____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Employment Laws______________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:CompTia A plus Certification Prep Questions__: NO\n");
-        File.AppendAllText(path, "\t-Book:Intro to Hardware____________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Troubleshooting 101__________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Guide to Networking__________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:How to Be a Better Leader____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Into to Python_______________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Software Engineering Principles______________: NO\n");
-        File.AppendAllText(path, "\t-Book:Debugging 101________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Game Design__________________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Working in a Team____________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Microswift Office for Dummies________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Principles of Engineering____________________: NO\n");
-        File.AppendAllText(path, "\t-Book:I Inc Career Planning________________________: NO\n");
-        File.AppendAllText(path, "\t-Book:Tiger in the Office__________________________: NO\n");
-        //books not listed in book store (found in Bookstore.cs BS_Items)
-        //File.AppendAllText(path, "\t-Book:Intel Book_________________________________: NO\n");
-        //File.AppendAllText(path, "\t-Book:Work on Your Work Ethic!___________________: NO\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "****START OF INTERVIEW PERFORMANCE:****\n");
-        File.AppendAllText(path, "\n****END OF INTERVIEW PERFORMANCE:****\n");
-        // File.AppendAllText(path, "\t-STAR______________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-STAR:Question 1___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 2___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 3___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 4___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Question 5___________________________________:0%\n");
-        // File.AppendAllText(path, "\t-STAR:Progress Bar_________________________[******    ]\n");
-        // File.AppendAllText(path, "\n");
-        // File.AppendAllText(path, "    -VALUE___________________________________________:NO\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 1__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 2__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 3__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 4__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Question 5__________________________________:0%\n");
-        // File.AppendAllText(path, "\t-VALUE:Progress Bar_______________________[**********]\n");
-        // File.AppendAllText(path, "\n");
-
-        File.AppendAllText(path, "--------------Comments---------------\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Participant Comments:\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "*Counsellor Comments:\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "\n");
+        File.AppendAllText(path, endInfo);
 
     }
+
+
     //This function takes in the name of the result to be updated and the name of the file to update.
     //This function is designed to be called when an event happens in game that would inicate some form of progression.
     //Examples:
@@ -300,7 +238,7 @@ void CreateFile(ref string playerFileName)
 
     public static void UpdateInterviewResults(string updateType, string FileToUpdate, string question, string[] userWords) {
         string playerFileName = FileToUpdate;
-        playerResultsFile = FileToUpdate;
+        playerResultsFile = FileToUpdate; // save for later use
 
         var allLines = File.ReadAllLines(playerFileName); //read file into lines var
         int lineNumber = -1;
@@ -323,9 +261,11 @@ void CreateFile(ref string playerFileName)
                 allLines[lineNumber] += " " + userWords[k];
             }
 
+            allLines[lineNumber] += "\n";
+
 
             if (updateType == "VALUE" && userWords.Length != valueProperties.Length) {
-                allLines[lineNumber] += "\nYou missed out on the VALUE PROPERTY OF:";
+                allLines[lineNumber] += "You missed out on the VALUE PROPERTY OF:";
 
                 for (int j = 0; j < valueProperties.Length; j++) {
                         if (!userWords.Contains(valueProperties[j])) {
@@ -338,7 +278,7 @@ void CreateFile(ref string playerFileName)
 
             // must be STAR
             else if (updateType == "STAR" && userWords.Length != starProperties.Length) {
-                allLines[lineNumber] += "\nYou missed out on the START PROPERTY OF:";
+                allLines[lineNumber] += "You missed out on the START PROPERTY OF:";
 
                 for (int j = 0; j < starProperties.Length; j++) {
                         if (!userWords.Contains(starProperties[j])) {
@@ -445,59 +385,43 @@ void CreateFile(ref string playerFileName)
             {
                 newMessage = newMessage.Replace("@DC", "Dream Company here...");
             }
+
             newMessage = newMessage.Replace("COMMUNICATION_SKILL", PlayerPrefs.GetInt("CommunicationLevel").ToString());
             newMessage = newMessage.Replace("COMMUNICATION_PLUS_ONE", (PlayerPrefs.GetInt("CommunicationLevel") + 1).ToString());
+            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
 
-            newMessage = newMessage.Replace("#SKILL_INCREASE_COMMUNICATION#", "");
-            newMessage = newMessage.Replace("#SHOW_IMAGE#", "");
-            newMessage = newMessage.Replace("#HIDE_IMAGE#", "");
-            newMessage = newMessage.Replace("#REVEAL_NAME#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_BEGIN#", "");
-            newMessage = newMessage.Replace("#INNER_DIALOGUE_END#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_BEGIN#", "");
-            newMessage = newMessage.Replace("#PLAYER_TALKING_END#", "");
-            newMessage = newMessage.Replace("#SKILL_INCREASE_INTELLIGENCE#", "");
-            newMessage = newMessage.Replace("#SKILL_CHECK#", "");
-            newMessage = newMessage.Replace("#LOAD_INTERVIEW#", "");
-            newMessage = newMessage.Replace("#YES#", "");
-            newMessage = newMessage.Replace("#NO#", "");
-            newMessage = newMessage.Replace("#YES_NO#", "");
-            newMessage = newMessage.Replace("#YES_NO_COMPLETE#", "");
-            newMessage = newMessage.Replace("#MULTI_START#", "");
-            newMessage = newMessage.Replace("#MULTI_END#", "");
-            newMessage = newMessage.Replace("#SA1#", "");
-            newMessage = newMessage.Replace("#SA2#", "");
-            newMessage = newMessage.Replace("#FADE_OUT#", "");
-            newMessage = newMessage.Replace("#FADE_IN#", "");
-            newMessage = newMessage.Replace("#loc#", "");
-            newMessage = newMessage.Replace("#ADD_EXPERIENCE#", "");
-            newMessage = newMessage.Replace("#Post#", "");
-            newMessage = newMessage.Replace("#ADD_SUMMARY#", "");
-            newMessage = newMessage.Replace("*Lead*", "");
-            newMessage = newMessage.Replace("*Team*", "");
-            newMessage = newMessage.Replace("*Tech*", "");
-            newMessage = newMessage.Replace("*Prof*", "");
-            newMessage = newMessage.Replace("*Com*", "");
-            newMessage = newMessage.Replace("*Crit*", "");
-            newMessage = newMessage.Replace("#showcanvas#", "");
-            newMessage = newMessage.Replace("#hidecanvas#", "");
-            newMessage = newMessage.Replace("#topic#", "");
-            newMessage = newMessage.Replace("#SKIP_START#", "");
-            newMessage = newMessage.Replace("#SKIP_END#", "");
-            newMessage = newMessage.Replace("#BRANDING#", "");
+            if (Resume.current_job != null)
+            {
+                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
+            }
+
+            int idx = 0;
+            bool foundIndicator = false; // if '#' or '*' is found
+
+            string toReplace = "";
+
+            // get rid of keywords marked by '#' or '*' in string before user sees them
+            while (idx < newMessage.Length) {
+                if (newMessage[idx] == '#'|| newMessage[idx] == '*') {
+                    toReplace += newMessage[idx];
+
+                    if (foundIndicator) {
+                        newMessage = newMessage.Replace(toReplace, "");
+                        idx -= toReplace.Length; // send idx back as characters have been replaced
+                        toReplace = "";
+                    }
+
+                    foundIndicator = !foundIndicator;
+                }
+
+                else if (foundIndicator) {
+                    toReplace += newMessage[idx];
+                }
+
+                idx++;
+            }
+
             newMessage = newMessage.Replace("#triggerEndGame", "");
-
-            //career fair RepaceKeyWords
-            //added by Don Murphy
-            newMessage = newMessage.Replace("#CF_Engineering#", "");
-            newMessage = newMessage.Replace("#CF_Business#", "");
-            newMessage = newMessage.Replace("#CF_Arts#", "");
-            newMessage = newMessage.Replace("#CF_BlueCollar#", "");
-            newMessage = newMessage.Replace("#CF_Education#", "");
-
-
-            //Changes by Austin Greear 4/26/2020
-            newMessage = newMessage.Replace("#INVOKE_EVENT#", "");
 
             Regex getMessage = new Regex(@"\*.[^_]*\*");
 
@@ -508,19 +432,6 @@ void CreateFile(ref string playerFileName)
                 int index = 0;
 
                 newMessage = newMessage.Replace(x.Value, "");
-            }
-
-            newMessage = newMessage.Replace("#FADE_EVENT#", "");
-            newMessage = newMessage.Replace("#Disable#", "");
-            newMessage = newMessage.Replace("#NPC_NAME#", NPCName);
-            newMessage = newMessage.Replace("#FEEDBACK#", "");
-            newMessage = newMessage.Replace("#INCREASE#", "");
-            newMessage = newMessage.Replace("#CHECK#", "");
-            newMessage = newMessage.Replace("#END_WORK#", "");
-
-            if (Resume.current_job != null)
-            {
-                newMessage = newMessage.Replace("#INCOME#", "" + Resume.current_job.Income);
             }
         }
         return newMessage;
@@ -566,8 +477,7 @@ void CreateFile(ref string playerFileName)
             DecideWhichDialogueToShow();//Will show the next dialogue in the multimessage chain
         }
 
-        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true)
-        {
+        else if (GameManager.instance.game_state == "Normal" && displayInputBox == true) {
             displayInputBox = false;
             change_state = true;
         }
@@ -761,6 +671,28 @@ void CreateFile(ref string playerFileName)
             string updateCareer = myFile.Replace("[No Career Fair Choice]", "Education");
             File.WriteAllText(playerFileName, updateCareer);
         }
+
+        if (messages[messageCount].Contains("#OPEN_BROWSER#")) {
+            Application.OpenURL("https://www.16personalities.com/free-personality-test");
+        }
+
+        if (messages[messageCount].Contains("#INPUT_BOX#")) {
+            end_dialogue();
+
+            // displayInputBox = true;
+            // change_state = false;
+
+            // dialogueActive = true;
+            // textboxIsClosing = true;
+            // messageDone = false;
+            // messageIsTyping = true;
+            // GameManager.instance.change_game_state("Dialogue");
+            // player.canMove = false;
+
+
+            input_box.handleDisplay(ref displayInputBox, ref change_state);
+        }
+
 
         //Change by Austin Greear 4/26/2020
         if (messages[messageCount].Contains("#INVOKE_EVENT#"))
