@@ -13,7 +13,6 @@ public class PersonalityInfo : MonoBehaviour
         using (FileStream fs = File.Create(path)) { };
 
         File.WriteAllBytes(path, pngBytes);
-        Debug.Log("did this work?");
 
     }
 
