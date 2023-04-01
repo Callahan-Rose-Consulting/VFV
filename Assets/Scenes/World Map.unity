@@ -4070,7 +4070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1094288}
+  m_AnchoredPosition: {x: 0, y: -1094309.8}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -59808,7 +59808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSmartGoal: {fileID: 372755045}
   messages:
-  - '#MULTI_START# Nice to meet you. I''m Mason. What''s your name?'
+  - '#MULTI_START# Nice to meet you!! I''m Mason. What''s your name?'
   - '....'
   - I see. Have you heard of SMART guidelines? SMART stands for specific, measurable,
     achievable, relevant, and time-bound!#REVEAL_NAME#
@@ -81648,9 +81648,11 @@ MonoBehaviour:
   menu_anim: {fileID: 1536961864}
   questions:
   - question: "This is bad. I didn\u2019t make that pizza. What should I do?"
+    questionType: 
     answers:
     - entry: Ask customer if they would like a new pizza
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN# I\u2019m sorry, would you like me to remake that pizza
         for you?"
@@ -81662,6 +81664,7 @@ MonoBehaviour:
         okay.#INVOKE_EVENT#"
     - entry: Call manager
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN#One moment please, I\u2019m going to call my manager
         to double check the situation. Thank you for your patience."
@@ -81685,80 +81688,97 @@ MonoBehaviour:
         acquired a new experience! #ADD_EXPERIENCE#"
     - entry: Ignore Customer
       meter_gain: 0
+      properties: []
       Reaction:
       - "I\u2019m never coming back here again!\r#INVOKE_EVENT#*2*\n"
       - "#INNER_DIALOGUE_BEGIN#Maybe I should have handled that situation differently\u2026"
   - question: What subject would you like to study?
+    questionType: 
     answers:
     - entry: Leadership
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study leadership at the library.
       - 'You feel your leadership capabilities increasing! #INCREASE#*Lead*'
     - entry: Teamwork
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study teamwork at the library.
       - 'You feel your teamworking capabilities increasing! #INCREASE#*Team*'
     - entry: Technology
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study technology at the library.
       - 'You feel your teamworking capabilities increasing! #INCREASE#*Tech*'
     - entry: Professionalism
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study professionalism at the library.
       - 'You feel your professionalism capabilities increasing! #INCREASE#*Prof*'
     - entry: Communication
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study communication at the library.
       - 'You feel your communication capabilities increasing! #INCREASE#*Com*'
     - entry: Critical Thinking
       meter_gain: 0
+      properties: []
       Reaction:
       - You decided to study critical thinking at the library.
       - 'You feel your critical thinking capabilities increasing! #INCREASE#*Crit*'
   - question: 'Just as you where about to clock out, a large order is placed and the
       manager asks you to stay for another hour. Do you:'
+    questionType: 
     answers:
     - entry: Stay and help your team out
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This displays teamwork and detication to your job'
       - '#ADD_EXPERIENCE#You feel your teamwork capabilities increasing! #INCREASE#*Team*'
     - entry: Leave since your shift is up
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You leave your shift but leave your coworkers with
         the large order. This shows a lack of compassion for your team and a lower
         willingness to work with others in time of emergency.'
   - question: 'Bob is going to be late for work today and the manager asks if you
       would be willing to work a couple extra hours since he is in a real bind. '
+    questionType: 
     answers:
     - entry: Yes
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#The day was long and tiring but it felt good to help
         the team.'
       - 'You feel your teamwork capabilities increasing! #INCREASE#*Team*'
     - entry: No
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You leave your shift and leave your coworkersshort
         handed. This shows a lack of compassion for your team and a lower willingness
         to work with others in time of emergency.'
   - question: You relize that you are going to be late for work, do you
+    questionType: 
     answers:
     - entry: Arrive Late
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This is inconsiderate and places undue pressure on
         current staff. The next time you are late you should give a heads up to your
         team.'
     - entry: Call and let the manager know you will be late
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This allows the manager to notify other employees and
         retain help until you arrive'
@@ -81766,15 +81786,18 @@ MonoBehaviour:
     - entry: Call and let the manager know you will be late with an estimated arrival
         time
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This allows the manager to notify other employees and
         determine if retaining help is necessary'
       - 'You feel your communication capabilities increasing! #INCREASE#*Com*'
   - question: As you entered the workplace for work you look around and you can see
       that there is a person missing for this shift. What do you do
+    questionType: 
     answers:
     - entry: Call the person missing
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You call the missing employee and it turns out he was
         running late. He will be there soon.'
@@ -81783,6 +81806,7 @@ MonoBehaviour:
       - 'You feel your leadership capabilities increasing! #INCREASE#*Lead*'
     - entry: Wait for them to show up
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN#He shows up at a latter and you talk to him to tell
         him to tell him to inform you if he is going to be late\r\n"
@@ -81791,6 +81815,7 @@ MonoBehaviour:
         when you have the capability and authority to do so'
     - entry: "Call upper management\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You call upper management and they inform you that
         you should be able to solve this problem on your own.'
@@ -81801,9 +81826,11 @@ MonoBehaviour:
         have.'
   - question: As you were helping your employees during the rush hours then the pizza
       oven stopped working what do you do
+    questionType: 
     answers:
     - entry: "Try to fix the oven yourself\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You try to fix the oven but things don''t go too well. '
       - '#INNER_DIALOGUE_BEGIN#You showed incentive to try to fix a problem but trying
@@ -81812,6 +81839,7 @@ MonoBehaviour:
     - entry: Apologize to your customers that will be affected by the broken equipment
         then call upper management to get a professional to fix it
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By apologizing to the customers it shows that you are
         aware of the problem and informing the problem to higher management allows
@@ -81824,6 +81852,7 @@ MonoBehaviour:
 
 '
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By apologizing to the customers it shows that you are
         aware of the problem and calling the repairman shows that you recognize the
@@ -81831,10 +81860,12 @@ MonoBehaviour:
       - 'You feel your critical thinking capabilities increasing! #INCREASE#*Crit*'
   - question: As you are taking the order of another customer someone comes in yelling
       about receiving the wrong order. How do you respond?
+    questionType: 
     answers:
     - entry: Apologize to the customer and tell them that you will bring them there
         right order right away
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This shows that you are willing to take responsibility
         for issues that were created by your employees or yourself and are willing
@@ -81842,6 +81873,7 @@ MonoBehaviour:
       - 'You feel your leadership capabilities increasing! #INCREASE#*Lead*'
     - entry: "Tell the customer that they have already gave them the proper order\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You tell the customer that you already gave them thier
         order and there is nothing extra you can do for them.'
@@ -81851,6 +81883,7 @@ MonoBehaviour:
     - entry: Apologize to the customer and tell them that you will bring them there
         right order right away and give them a discount or coupon on their next order
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This shows that you are willing to take responsibility
         for issues that were created by your employees or yourself and are willing
@@ -81861,10 +81894,12 @@ MonoBehaviour:
       properly you get a call and when you answer it you realize it\u2019s a customer
       that has ordered more than an hour ago. They tell you their order has not been
       delivered yet. What do you do?"
+    questionType: 
     answers:
     - entry: "Apologize to the customer and tell them that you will give them a discount
         them upon delivery of their delivery\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This shows that you care for what the customer has
         to say and shows the customer that you are willing to compromise if something
@@ -81872,6 +81907,7 @@ MonoBehaviour:
       - 'You feel your professionalism capabilities increasing! #INCREASE#*Prof*'
     - entry: Tell the customer to wait just a bit longer
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#You tell the customer to wait a bit longer and they
         seem very upset.'
@@ -81880,6 +81916,7 @@ MonoBehaviour:
     - entry: Tell your customer that they are busy and their delivery will be a little
         there as soon as possible
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Explaining to the customer the issues that are happening
         allows you to try to smooth things out but it does not solve the problem that
@@ -81887,15 +81924,18 @@ MonoBehaviour:
       - 'You feel your communication capabilities increasing! #INCREASE#*Com*'
   - question: When you are entering the building you flick on the light switch to
       only find out that there is no power. What do you do?
+    questionType: 
     answers:
     - entry: Close shop and go home
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This is an irresponsible choice that can lead to multiple
         issues. As the manager, try to use the position you were given to solve issues
         and if they are out of your scope you should contact upper management.'
     - entry: Call upper management about the issue to send an electrician to fix it
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Calling upper management shows that you are quick to
         act on a problem that is out of your control and scope and allows people who
@@ -81906,6 +81946,7 @@ MonoBehaviour:
     - entry: "Call upper management about the issue so it can be solved and call employees
         to let them know about the issue\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Calling upper management shows that you are quick to
         act on a problem that is out of your control and scope and allows people who
@@ -81916,15 +81957,18 @@ MonoBehaviour:
   - question: 'From your office you begin to hear screaming outside as you make your
       way out you see a customer is yelling at one of your employees and he is being
       rude back. What do you do in this situation? '
+    questionType: 
     answers:
     - entry: "Back up your employee and tell the customer to stop\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By ganging up on the customer it shows you do not know
         how to handle the situation and sets a bad example for future employees. Try
         to calmly talk to the customer and compromise with them.'
     - entry: Back up the customer and reprimand your employee
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By taking the customers side you can show that you
         care for them but it shows your employees that you care more for the customers
@@ -81933,6 +81977,7 @@ MonoBehaviour:
     - entry: "Talk to the customer and apologize. Then give them a coupon or discount
         then talk to that employee privately\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By compromising with the customer and talking to your
         employee you show that you are willing to see both sides of the story and
@@ -81941,9 +81986,11 @@ MonoBehaviour:
       - '#ADD_EXPERIENCE#You feel your leadership capabilities increasing! #INCREASE#*Lead*'
   - question: 'You get a call from a customer but you quickly realize that the customer
       is speaking a completely different language. What do you do? '
+    questionType: 
     answers:
     - entry: "You hang up\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - "#INNER_DIALOGUE_BEGIN#This response shows you are not willing to go the extra
         mile to fix an issue that comes off as difficult. Hanging up also puts a bad
@@ -81952,6 +81999,7 @@ MonoBehaviour:
         around you who have experience."
     - entry: "Transfer them to someone in your department that speaks that language\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By transferring them to a coworker who knows that language
         shows that you know the limits of what you can do and are willing to ask for
@@ -81959,30 +82007,36 @@ MonoBehaviour:
       - 'You feel your critical thinking capabilities increasing! #INCREASE#*Crit*'
     - entry: "Try to understand what they are saying even a little bit\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#This may seem like a good option but doing something
         that you are not skilled in may lead to further issues and could frustrate
         you and the customer that nothing is getting across to the other person.'
   - question: While you were on call trying to help a customer fix their pc the internet
       shuts down and your software stops working. What do you do?
+    questionType: 
     answers:
     - entry: "Call the department manager\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#By calling the department manager you show that you
         are on top of your work and are willing to step up if there is a problem.'
       - 'You feel your professionalism capabilities increasing! #INCREASE#*Prof*'
     - entry: "Wait until it returns\r\n"
       meter_gain: 0
+      properties: []
       Reaction:
       - '#INNER_DIALOGUE_BEGIN#Waiting for the internet to return is not a wrong choice
         as there is not much you can do in this scenario but by doing nothing it neither
         puts you in a better position with your managers or a worse position.'
   - question: "Upon review, he states that it would work, but wouldn\u2019t it be
       inefficient to query the datastore for each record?"
+    questionType: 
     answers:
     - entry: Tell your manager that you will give it some additional thought
       meter_gain: 0
+      properties: []
       Reaction:
       - "Upon investigation, you learn that the number of titles and departments is
         relatively small and can be loaded into memory reducing the cost of the transaction.\r\n"
@@ -81990,6 +82044,7 @@ MonoBehaviour:
         for future bugs.
     - entry: Defend your design
       meter_gain: 0
+      properties: []
       Reaction:
       - You defend your design stating that there are relatively few employees so
         the cost will be minimal
@@ -81998,22 +82053,27 @@ MonoBehaviour:
   - question: 'Now that you have determined what the issue is, it is time to decide
       how to fix it.  You have decided that there are at least two ways to correct
       the problem:'
+    questionType: 
     answers:
     - entry: Ask HR to correct the title in the HRIS system
       meter_gain: 0
+      properties: []
       Reaction:
       - While this solution will work, trailing spaces may be common so the issue
         may return
     - entry: 'Trim leading and trailing spaces from all titles and departments that
         come from HRIS. '
       meter_gain: 0
+      properties: []
       Reaction:
       - This is the better long term solution as it corrects for human error as part
         of the process
   - question: Which carrer do i want to persue
+    questionType: 
     answers:
     - entry: IT Intern
       meter_gain: 0
+      properties: []
       Reaction:
       - 'Hello my name is Albert Rylander and i am the head of the IT Department in
         Helpers Hotlines and we are looking for qualified interns. #INVOKE_EVENT#*2*'
@@ -82022,6 +82082,7 @@ MonoBehaviour:
       - '#END_WORK##MULTI_END##INVOKE_EVENT#*5*'
     - entry: '*Software Engineering*Software Engineer'
       meter_gain: 0
+      properties: []
       Reaction:
       - 'Hello my name is Julius Dursk and i am the head of the development Department
         in the company savana and we are looking for qualified Software engineers.
@@ -82031,6 +82092,7 @@ MonoBehaviour:
       - '#END_WORK##MULTI_END##INVOKE_EVENT#*7*'
     - entry: '*HR Managment*HR Manager'
       meter_gain: 0
+      properties: []
       Reaction:
       - 'Hello my name is Henry Whitewood and i am the head of the HR Department in
         the company savana and we are looking for qualified interns. #INVOKE_EVENT#*3*'
@@ -82038,11 +82100,13 @@ MonoBehaviour:
         we can get started with the interview right away
       - '#END_WORK##MULTI_END##INVOKE_EVENT#*6*'
   - question: You have been tasked with developing the training materials.
+    questionType: 
     answers:
     - entry: Instead of developing my own materials, I will download a free online
         course and have everyone else in the company use it to learn how to protect
         their data. The experts know best.
       meter_gain: 0
+      properties: []
       Reaction:
       - After distributing the materials to your coworkers, the company who developed
         the course finds the numerous downloads from the same place to be suspicious,
@@ -82054,6 +82118,7 @@ MonoBehaviour:
         in place, and develop materials that specify certain technologies used by
         the company. '
       meter_gain: 0
+      properties: []
       Reaction:
       - 'You speak with the experts within the company and determine the best way
         to handle the training materials. '
@@ -82065,11 +82130,13 @@ MonoBehaviour:
       on how to implement a change in the software used for the company. When they
       pass the code between them, they end up reverting the other\u2019s changes and
       arguing that their way is best. What will you do to resolve this?"
+    questionType: 
     answers:
     - entry: Notify their manager of what the two have been doing and wasting their
         time fighting the project. The manager should be more knowledgeable and pick
         which method is more effective.
       meter_gain: 0
+      properties: []
       Reaction:
       - The two have already gone to their manager to try and resolve the issue, but
         they are still both assigned to the same task and cannot come to an agreement.
@@ -82080,6 +82147,7 @@ MonoBehaviour:
         Suggest that they work together on the project and explain why they use their
         method instead of claiming that the other person is less effective.
       meter_gain: 0
+      properties: []
       Reaction:
       - After you have them settle down, they talk out their issues with some of your
         prompts. After about an hour of talking they are able to come to an agreement
@@ -82089,11 +82157,13 @@ MonoBehaviour:
       the law currently, but that the change in the law will cost the company time
       and money, plus the mandate is getting put into effect in only a week. How do
       you react to this issue?
+    questionType: 
     answers:
     - entry: "Keep the employee handbook the same until someone points out the issue
         with HR, we don\u2019t have enough time to implement it before the mandate
         without throwing away a lot of money."
       meter_gain: 0
+      properties: []
       Reaction:
       - "It\u2019s unfair to the employees of the company if they are not given the
         opportunity to use their vacation days, the fines would not be worth the loss
@@ -82103,6 +82173,7 @@ MonoBehaviour:
         consuming for the entire team, but it\u2019s worth avoiding any issues in
         the future."
       meter_gain: 0
+      properties: []
       Reaction:
       - It takes a long time and pulls people away from their current projects, but
         you are able to put together a change for the employees vacation days before
@@ -82111,11 +82182,13 @@ MonoBehaviour:
       to develop a program to help determine performance objectives and track progress.
       With the help of the software engineering team you will be able to get it developed.
       How will you get the metrics to track performance?
+    questionType: 
     answers:
     - entry: Gather information about performance progress and objectives from employees
         around the company so that the objectives are personalized to the company
         and help encourage the use of the program.
       meter_gain: 0
+      properties: []
       Reaction:
       - After gathering feedback from employees, the software engineering team gets
         to work developing the program.
@@ -82125,6 +82198,7 @@ MonoBehaviour:
     - entry: Find similar programs available online and use their metrics, these websites
         do extensive research and changes so they should be good for our company too.
       meter_gain: 0
+      properties: []
       Reaction:
       - After producing a demo for the program and distributing it to the company,
         some of the managers responded with feedback asking for certain features to
