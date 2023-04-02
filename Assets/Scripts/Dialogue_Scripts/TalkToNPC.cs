@@ -118,11 +118,11 @@ public class TalkToNPC : MonoBehaviour
         string path = @"Player Results" + "/" + fileName;
 
         //creating string for reading and writing the head of the player results file.
-        string head = @"Assets/Player Inventory/PlayerResultTemplate/header.txt";
+        string head = "Assets/UI/PlayerResultTemplate/header.txt";
         string headInfo = File.ReadAllText(head);
 
         //creating string for reading and writing the ending of the player results file.
-        string end = @"Assets/Player Inventory/PlayerResultTemplate/ending.txt";
+        string end = "Assets/UI/PlayerResultTemplate/ending.txt";
         string endInfo = File.ReadAllText(end);
 
         //create blank text doc and name it according to fileName in the Player Results Directory
