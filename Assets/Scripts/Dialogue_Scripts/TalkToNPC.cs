@@ -73,7 +73,6 @@ public class TalkToNPC : MonoBehaviour
     public static bool dialogueActive = false;
     public static bool endGame = false;
     public static bool yesNoInstructions = true;
-    public static bool displayInputBox = false;
 
     public static int numPerfectAnswers = 0;
     public static int numQuestionsAsked = 0;
