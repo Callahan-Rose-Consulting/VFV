@@ -679,17 +679,6 @@ public class TalkToNPC : MonoBehaviour
         if (messages[messageCount].Contains("#INPUT_BOX#")) {
             end_dialogue();
 
-            // displayInputBox = true;
-            // change_state = false;
-
-            // dialogueActive = true;
-            // textboxIsClosing = true;
-            // messageDone = false;
-            // messageIsTyping = true;
-            // GameManager.instance.change_game_state("Dialogue");
-            // player.canMove = false;
-
-
             input_box.handleDisplay(ref displayInputBox, ref change_state);
         }
 
