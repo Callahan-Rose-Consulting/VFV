@@ -43,15 +43,22 @@ public class Input_Box : MonoBehaviour
         GameManager.instance.change_game_state("Normal");
     }
 
+    public void hideInput() {
+        inputField.SetActive(false);
+
+        GameManager.instance.change_game_state("Normal");
+    }
+
     public void handleSubmit() {
         string userInput = inputTextBox.GetComponent<Text>().text.ToUpper();
+        Debug.Log("KAREEM " + userInput);
 
         if (userInput.Length != 4) {
             updateFeedback("The code needs to be 4 letters", Color.red, true);
             return;
         }
 
-        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".png";
+        string filePath = System.IO.Path.Combine(Application.streamingAssetsPath, "PersonalityResults/" + userInput + ".png");
 
         if (!File.Exists(filePath)) {
             updateFeedback("Invalid Code. Try again", Color.red, true); 

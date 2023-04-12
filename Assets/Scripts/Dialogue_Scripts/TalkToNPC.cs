@@ -118,11 +118,11 @@ public class TalkToNPC : MonoBehaviour
         string path = @"Player Results" + "/" + fileName;
 
         //creating string for reading and writing the head of the player results file.
-        string head = @"Assets/Player Inventory/PlayerResultTemplate/header.txt";
+        string head = System.IO.Path.Combine(Application.streamingAssetsPath, "PlayerResultTemplate/header.txt");
         string headInfo = File.ReadAllText(head);
 
         //creating string for reading and writing the ending of the player results file.
-        string end = @"Assets/Player Inventory/PlayerResultTemplate/ending.txt";
+        string end = System.IO.Path.Combine(Application.streamingAssetsPath, "PlayerResultTemplate/ending.txt");
         string endInfo = File.ReadAllText(end);
 
         //create blank text doc and name it according to fileName in the Player Results Directory
@@ -678,17 +678,6 @@ public class TalkToNPC : MonoBehaviour
 
         if (messages[messageCount].Contains("#INPUT_BOX#")) {
             end_dialogue();
-
-            // displayInputBox = true;
-            // change_state = false;
-
-            // dialogueActive = true;
-            // textboxIsClosing = true;
-            // messageDone = false;
-            // messageIsTyping = true;
-            // GameManager.instance.change_game_state("Dialogue");
-            // player.canMove = false;
-
 
             input_box.handleDisplay(ref displayInputBox, ref change_state);
         }
