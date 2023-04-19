@@ -51,7 +51,6 @@ public class Input_Box : MonoBehaviour
 
     public void handleSubmit() {
         string userInput = inputTextBox.GetComponent<Text>().text.ToUpper();
-        Debug.Log("KAREEM " + userInput);
 
         if (userInput.Length != 4) {
             updateFeedback("The code needs to be 4 letters", Color.red, true);
@@ -76,7 +75,7 @@ public class Input_Box : MonoBehaviour
         personalityObj.SetActive(true);
 
         updateFeedback("", Color.white, false);
-        personalityInfo.OutputPersonalityType(fileData);
+        // personalityInfo.OutputPersonalityType(fileData); caused error on windows, see if this can be fixed next team
     }
 
     public void updateFeedback(string text, Color color, bool enabled) {
