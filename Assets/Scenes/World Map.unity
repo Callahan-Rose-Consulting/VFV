@@ -4076,7 +4076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1090771.8}
+  m_AnchoredPosition: {x: 0, y: -1090944.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -87374,8 +87374,7 @@ MonoBehaviour:
     on this third party website.
   - Don't worry, I'll open it in your browser for you.
   - Once you finished, make sure to come back and let me know what you got!
-  - I'll give you some tips and more information once you've finished. These will
-    also be available in the FOLDER called Personality Info.
+  - 'I''ll give you some tips and more information once you''ve finished. '
   - '#INPUT_BOX##OPEN_BROWSER##MULTI_END#'
   NPCName: Mr. Personality
   Known: 0
@@ -87719,6 +87718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909035075950753209, guid: aab707e5193704e2facc95ed130b1319,
+        type: 3}
+      propertyPath: messages.Array.data[14]
+      value: 'I''ll give you some tips and more information once you''ve finished. '
       objectReference: {fileID: 0}
     - target: {fileID: 8068379422805911477, guid: aab707e5193704e2facc95ed130b1319,
         type: 3}
