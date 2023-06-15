@@ -73,7 +73,6 @@ public class TalkToNPC : MonoBehaviour
     public static bool dialogueActive = false;
     public static bool endGame = false;
     public static bool yesNoInstructions = true;
-    public static bool displayInputBox = false;
 
     public static int numPerfectAnswers = 0;
     public static int numQuestionsAsked = 0;
@@ -119,11 +118,11 @@ public class TalkToNPC : MonoBehaviour
         string path = @"Player Results" + "/" + fileName;
 
         //creating string for reading and writing the head of the player results file.
-        string head = @"Assets\\Player Inventory\\Player Result Information\\header.txt";
+        string head = System.IO.Path.Combine(Application.streamingAssetsPath, "PlayerResultTemplate/header.txt");
         string headInfo = File.ReadAllText(head);
 
         //creating string for reading and writing the ending of the player results file.
-        string end = @"Assets\\Player Inventory\\Player Result Information\\ending.txt";
+        string end = System.IO.Path.Combine(Application.streamingAssetsPath, "PlayerResultTemplate/ending.txt");
         string endInfo = File.ReadAllText(end);
 
         //create blank text doc and name it according to fileName in the Player Results Directory
@@ -133,7 +132,7 @@ public class TalkToNPC : MonoBehaviour
 
         File.AppendAllText(path, headInfo);
         File.AppendAllText(path, "\n");
-        File.AppendAllText(path, "---------------Performace Report----------------\n");
+        File.AppendAllText(path, "---------------Performance Report----------------\n");
         File.AppendAllText(path, "Player name: " + playerName + '\n');
         File.AppendAllText(path, "Branch of Service: " + Resume.TourBranch + '\n');
         File.AppendAllText(path, "*Initial Self Assessment:\n");
@@ -679,17 +678,6 @@ public class TalkToNPC : MonoBehaviour
 
         if (messages[messageCount].Contains("#INPUT_BOX#")) {
             end_dialogue();
-
-            // displayInputBox = true;
-            // change_state = false;
-
-            // dialogueActive = true;
-            // textboxIsClosing = true;
-            // messageDone = false;
-            // messageIsTyping = true;
-            // GameManager.instance.change_game_state("Dialogue");
-            // player.canMove = false;
-
 
             input_box.handleDisplay(ref displayInputBox, ref change_state);
         }

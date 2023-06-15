@@ -43,6 +43,12 @@ public class Input_Box : MonoBehaviour
         GameManager.instance.change_game_state("Normal");
     }
 
+    public void hideInput() {
+        inputField.SetActive(false);
+
+        GameManager.instance.change_game_state("Normal");
+    }
+
     public void handleSubmit() {
         string userInput = inputTextBox.GetComponent<Text>().text.ToUpper();
 
@@ -51,7 +57,7 @@ public class Input_Box : MonoBehaviour
             return;
         }
 
-        string filePath = "Assets/UI/PersonalityResults/" + userInput + ".png";
+        string filePath = System.IO.Path.Combine(Application.streamingAssetsPath, "PersonalityResults/" + userInput + ".png");
 
         if (!File.Exists(filePath)) {
             updateFeedback("Invalid Code. Try again", Color.red, true); 
@@ -69,7 +75,7 @@ public class Input_Box : MonoBehaviour
         personalityObj.SetActive(true);
 
         updateFeedback("", Color.white, false);
-        personalityInfo.OutputPersonalityType(fileData);
+        // personalityInfo.OutputPersonalityType(fileData); caused error on windows, see if this can be fixed next team
     }
 
     public void updateFeedback(string text, Color color, bool enabled) {
