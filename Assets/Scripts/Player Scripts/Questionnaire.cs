@@ -12,12 +12,12 @@ using TMPro;
 public class Questionnaire : MonoBehaviour
 {
 
-    Skill Leadership = new Skill("Leadership", 5);
-    Skill Teamwork = new Skill("Teamwork", 5);
-    Skill Technology = new Skill("Technology", 5);
-    Skill Professionalism = new Skill("Professionalism", 5);
-    Skill Communication = new Skill("Communication", 5);
-    Skill CritThinking = new Skill("Critical Thinking", 5);
+    Skill Leadership = new Skill("Leadership", 0);
+    Skill Teamwork = new Skill("Teamwork", 0);
+    Skill Technology = new Skill("Technology", 0);
+    Skill Professionalism = new Skill("Professionalism", 0);
+    Skill Communication = new Skill("Communication", 0);
+    Skill CritThinking = new Skill("Critical Thinking", 0);
 
     float agreeLeadership = 0;
     float agreeTeamwork = 0;
@@ -28,6 +28,7 @@ public class Questionnaire : MonoBehaviour
 
     Canvas canvas;
     public GameObject SkillsQuestion;
+    public GameObject SkipQuestion;
     public GameObject SkillEntry;
     public GameObject Summary;
     AudioSource click;
@@ -128,7 +129,8 @@ public class Questionnaire : MonoBehaviour
     {
         click = GetComponent<AudioSource>();
         canvas = GameObject.Find("CharacterCreation").GetComponent<Canvas>();
-        SkillsQuestion.SetActive(true);
+        SkipQuestion.SetActive(true);
+        SkillsQuestion.SetActive(false);
         SkillEntry.SetActive(false);
         Summary.SetActive(false);
 
@@ -272,90 +274,83 @@ public class Questionnaire : MonoBehaviour
         click.Play();
     }
 
-    public void CalculateStats()
-    {
-                
-        int points = 8;
-        //if they have the same stats for all of them then give each 1 more points
-        if (agreeLeadership == agreeTeamwork
-            && agreeTeamwork == agreeTechnology
-            && agreeTechnology == agreeProfessionalism
-            && agreeProfessionalism == agreeCommunication
-            && agreeCommunication == agreeCritThinking)
-        {
-            Leadership.Level = 6;
-            Teamwork.Level = 6;
-            Technology.Level = 6;
-            Professionalism.Level = 6;
-            Communication.Level = 6;
-            CritThinking.Level = 6;
-            points = 2;
-            while (points > 0)
-            {
-                points--;
-                RandomStatAssign();
-            }
-        }
-        else
-        {
-            float total = agreeLeadership + agreeTeamwork + agreeTechnology + agreeProfessionalism + agreeCommunication + agreeCritThinking;
+    /* public void CalculateStats()          // temporarily commented out to use later for the new Nine Metrics by Abdallah Abulaban
+     {
 
-            Leadership.Level += Mathf.RoundToInt((agreeLeadership / total) * points);
-            Teamwork.Level += Mathf.RoundToInt(agreeTeamwork / total * points);
-            Technology.Level += Mathf.RoundToInt(agreeTechnology / total * points);
-            Professionalism.Level += Mathf.RoundToInt(agreeProfessionalism / total * points);
-            Communication.Level += Mathf.RoundToInt(agreeCommunication / total * points);
-            CritThinking.Level += Mathf.RoundToInt(agreeCritThinking / total * points);
-        }
-        points = points - Leadership.Level - Teamwork.Level - Technology.Level - Communication.Level - Professionalism.Level - CritThinking.Level;
-        while(points > 0)
-        {
-            points--;
-            RandomStatAssign();
-        }
+         int points = 8;
+         //if they have the same stats for all of them then give each 1 more points
+         if (agreeLeadership == agreeTeamwork
+             && agreeTeamwork == agreeTechnology
+             && agreeTechnology == agreeProfessionalism
+             && agreeProfessionalism == agreeCommunication
+             && agreeCommunication == agreeCritThinking)
+         {
+             Leadership.Level = 0;
+             Teamwork.Level = 0;
+             Technology.Level = 0;
+             Professionalism.Level = 0;
+             Communication.Level = 0;
+             CritThinking.Level = 0;
+             points = 2;
+             while (points > 0)
+             {
+                 points--;
+                 RandomStatAssign();
+             }
+         }
+         else
+         {
+             float total = agreeLeadership + agreeTeamwork + agreeTechnology + agreeProfessionalism + agreeCommunication + agreeCritThinking;
 
-    }
+             Leadership.Level += Mathf.RoundToInt((agreeLeadership / total) * points);
+             Teamwork.Level += Mathf.RoundToInt(agreeTeamwork / total * points);
+             Technology.Level += Mathf.RoundToInt(agreeTechnology / total * points);
+             Professionalism.Level += Mathf.RoundToInt(agreeProfessionalism / total * points);
+             Communication.Level += Mathf.RoundToInt(agreeCommunication / total * points);
+             CritThinking.Level += Mathf.RoundToInt(agreeCritThinking / total * points);
+         }
+        /* points = points - Leadership.Level - Teamwork.Level - Technology.Level - Communication.Level - Professionalism.Level - CritThinking.Level;
+         while(points > 0)
+         {
+             points--;
+             RandomStatAssign();
+         }
 
-    public void RandomAllStatAssign()
-    {
-        int points = 8;
-        while (points > 0)
-        {
-            points--;
-            RandomStatAssign();
-        }
-    }
+     }*/
 
     //randomly assigns points
     public void RandomStatAssign()
     {
         int rand = Random.Range(0, 6);
-        switch (rand)
+        while (Leadership.Level == 0 && Teamwork.Level == 0 && Technology.Level == 0 &&
+               Professionalism.Level == 0 && Communication.Level == 0 && CritThinking.Level == 0)
         {
-            case 0:
-                Leadership.Level++;
-                break;
-            case 1:
-                Teamwork.Level++;
-                break;
-            case 2:
-                Technology.Level++;
-                break;
-            case 3:
-                Professionalism.Level++;
-                break;
-            case 4:
-                Communication.Level++;
-                break;
-            case 5:
-                CritThinking.Level++;
-                break;
+            switch (rand)
+            {
+                case 0:
+                    Leadership.Level++;
+                    break;
+                case 1:
+                    Teamwork.Level++;
+                    break;
+                case 2:
+                    Technology.Level++;
+                    break;
+                case 3:
+                    Professionalism.Level++;
+                    break;
+                case 4:
+                    Communication.Level++;
+                    break;
+                case 5:
+                    CritThinking.Level++;
+                    break;
+            }
         }
     }
 
     public void FinishWithoutQuestionnaire()
     {
-        RandomAllStatAssign();
         SkillsQuestion.SetActive(false);
         SkillEntry.SetActive(true);
         Summary.SetActive(false);
@@ -372,7 +367,7 @@ public class Questionnaire : MonoBehaviour
         }
         else
         {
-            CalculateStats();
+            //CalculateStats();                 // temporarily commented out to use later for the new Nine Metrics by Abdallah Abulaban
             //disable Questionnaire
             SkillsQuestion.SetActive(false);
             //enable skill entry page
