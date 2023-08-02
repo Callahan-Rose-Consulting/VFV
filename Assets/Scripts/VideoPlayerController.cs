@@ -16,6 +16,14 @@ public class VideoPlayerController : MonoBehaviour
         videoPlayer.loopPointReached += EndReached;
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape) || Input.GetKey(KeyCode.E))
+        {
+            videoPlayer.Stop();
+            SceneManager.LoadScene("NewMainMenu");
+        }
+    }
     void Start()
     {
         videoPlayer.Play();
