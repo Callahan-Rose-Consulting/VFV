@@ -789,6 +789,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -801,6 +816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -1294,6 +1314,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -1306,6 +1341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -4447,7 +4487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1094622.1}
+  m_AnchoredPosition: {x: 0, y: -1094743.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -7172,6 +7212,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -7184,6 +7239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -10118,6 +10178,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -10130,6 +10205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -10870,25 +10950,25 @@ MonoBehaviour:
     make a choice now?#YES_NO#
   - '#NO#This is certainly an important decision to make. Please return when you
     are comfortable with making your choice.'
-  - '#YES#Would your choice of career path happen to be Electrical Engineering?#YES_NO#'
-  - '#NO#Then would it be the career choice of Marketing?#YES_NO#'
-  - '#YES#Then I will record your choice of career as Electrical Engineering! I wish
+  - '#YES#The current choice of career is Electrical Engineering. Should I change
+    this choice?#YES_NO#'
+  - '#NO#Then I will record your choice of career as Electrical Engineering! I wish
     you success in your career.#CF_Engineering#'
-  - '#NO#Then would it be the career choice of Theatre?#YES_NO#'
-  - '#YES#Then I will record your choice of career as Marketing! I wish you success
+  - '#YES#The current choice of career is Marketing. Should I change this choice?#YES_NO#'
+  - '#NO#Then I will record your choice of career as Marketing! I wish you success
     in your career.#CF_Business#'
-  - '#NO#Then would it be the career choice of Steel Working?#YES_NO#'
-  - '#YES#Then I will record your choice of career as Theatre! I wish you success
-    in your career.#CF_Arts#
-
-'
-  - '#NO#Then would it be the career choice of Special Education Teacher?#YES_NO#'
-  - '#YES#Then I will record your choice of career as Steel Working! I wish you success
+  - '#YES#The current choice of career is Theatre. Should I change this choice?#YES_NO#'
+  - '#NO#Then I will record your choice of career as Theatre! I wish you success
+    in your career.#CF_Arts#'
+  - '#YES#The current choice of career is Steel Working. Should I change this choice?#YES_NO#'
+  - '#NO#Then I will record your choice of career as Steel Working! I wish you success
     in your career.#CF_BlueCollar#'
-  - '#NO#This is certainly an important decision to make. Please return when you
-    are comfortable with making your choice.'
-  - '#YES#Then I will record your choice of career as a Special Education Teacher!
+  - '#YES#The current choice of career is Electrical Engineering. This is the last
+    choice I can give currently. Do you wish to come back later?#YES_NO#'
+  - '#NO#Then I will record your choice of career as a Special Education Teacher!
     I wish you success in your career.#CF_Education#'
+  - '#YES#This is certainly an important decision to make. Please return when you
+    are comfortable with making your choice.'
   NPCName: Tyrell
   Known: 0
   NameBox: {fileID: 0}
@@ -22696,6 +22776,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -22708,6 +22803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -28524,7 +28624,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &461534429
 Canvas:
   m_ObjectHideFlags: 0
@@ -28757,6 +28857,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -28769,6 +28884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -33343,6 +33463,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -33355,6 +33490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -51440,6 +51580,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -51452,6 +51607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -52297,6 +52457,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -52309,6 +52484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -56411,6 +56591,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -56423,6 +56618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -59661,6 +59861,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -59673,6 +59888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -60276,6 +60496,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -60288,6 +60523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -60620,6 +60860,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -60632,6 +60887,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -63345,7 +63605,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1106646313
 Canvas:
   m_ObjectHideFlags: 0
@@ -65314,7 +65574,7 @@ MonoBehaviour:
     in whatever I do. I listen to people around me and work well with the team. In
     any given situation I would always strive to stand out and lead my team.
 
-    
+
 
 '
   - '#PLAYER_TALKING_END#I always knew you were a gem. Good luck with your interview.'
@@ -66236,6 +66496,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -66248,6 +66523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -69525,6 +69805,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -69537,6 +69832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -70204,13 +70504,12 @@ MonoBehaviour:
     might help me in future be more responsive to customer needs.
 
 
-    -SKILLS
-    INCREASED-
+    -SKILLS INCREASED-
 
 
-    Personality: +1, Teamwork: +2, Independence: +1, Problem Solving:
-    +1, Time Management: +1, Communication: +2, Food: +5, Art: +2; Science: +1, Technology:
-    +1 *'
+    Personality:
+    +1, Teamwork: +2, Independence: +1, Problem Solving: +1, Time Management: +1,
+    Communication: +2, Food: +5, Art: +2; Science: +1, Technology: +1 *'
   - You made some great tasting pizzas, @!
   NPCName: Stefano
   Known: 1
@@ -81599,6 +81898,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -81611,6 +81925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -85140,7 +85459,7 @@ PrefabInstance:
         a workshop with Jane which helped the newcomers like me better understand
         how to prepare for an interview.
 
-        
+
 
         -SKILLS INCREASED-
 
@@ -90347,6 +90666,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -90359,6 +90693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -90534,6 +90873,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -90546,6 +90900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -94214,6 +94573,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -94226,6 +94600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -99896,6 +100275,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -99908,6 +100302,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -100035,6 +100434,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -100047,6 +100461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -101941,6 +102360,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -101953,6 +102387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -102947,6 +103386,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -102959,6 +103413,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -104271,11 +104730,11 @@ Transform:
   - {fileID: 1867852308410030366}
   - {fileID: 5076804201423466942}
   - {fileID: 158427564}
-  - {fileID: 201973860}
   - {fileID: 362741144}
   - {fileID: 828594103}
   - {fileID: 695906574}
   - {fileID: 481436113}
+  - {fileID: 201973860}
   - {fileID: 1138430720}
   - {fileID: 1772187339}
   - {fileID: 1443628027}
@@ -104292,6 +104751,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -104304,6 +104778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -105721,6 +106200,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -105733,6 +106227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -105841,6 +106340,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -105853,6 +106367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -110231,12 +110750,12 @@ PrefabInstance:
     - target: {fileID: 7140931545531663879, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.18
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 7140931545531663879, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.54
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 7217301017941432066, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -114729,6 +115248,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -114741,6 +115275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -117251,6 +117790,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 0
       objectReference: {fileID: 0}
@@ -117263,6 +117817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159487559093608492, guid: 893d89d32d576ca4487848205f5593f5,
         type: 3}
@@ -124928,7 +125487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015258789, y: 330708.5}
+  m_AnchoredPosition: {x: 0.000015258789, y: 338975.78}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2993214823102470887
