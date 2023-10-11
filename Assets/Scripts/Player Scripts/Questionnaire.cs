@@ -61,10 +61,14 @@ public class Questionnaire : MonoBehaviour
     Toggle TwoYrDegreeTog;
     Toggle FourYrDegreeTog;
     Toggle TourofDutyTog;
-    Toggle VolunteerTog;
+    Toggle VolunteerTog1;
+    Toggle VolunteerTog2;
+    Toggle VolunteerTog3;
     InputField TourInput;
     InputField TourBranchInput;
-    InputField VolunteerInput;
+    InputField VolunteerInput1;
+    InputField VolunteerInput2;
+    InputField VolunteerInput3;
 
     //This function is called once after the player enters their name to remove characters that aren't allowed in file names.
     //This funciton also removes characters to the in-game player name and can be checked by talking to Rob in the center of the world map at game start.
@@ -178,10 +182,14 @@ public class Questionnaire : MonoBehaviour
         TwoYrDegreeTog = SkillEntry.transform.Find("TwoYrDegreeTog").GetComponent<Toggle>();
         FourYrDegreeTog = SkillEntry.transform.Find("FourYrDegreeTog").GetComponent<Toggle>();
         TourofDutyTog = SkillEntry.transform.Find("TourofDutyTog").GetComponent<Toggle>();
-        VolunteerTog = SkillEntry.transform.Find("VolunteerTog").GetComponent<Toggle>();
+        VolunteerTog1 = SkillEntry.transform.Find("VolunteerTog1").GetComponent<Toggle>();
+        VolunteerTog2 = SkillEntry.transform.Find("VolunteerTog2").GetComponent<Toggle>();
+        VolunteerTog3 = SkillEntry.transform.Find("VolunteerTog3").GetComponent<Toggle>();
         TourInput = SkillEntry.transform.Find("TourInput").GetComponent<InputField>();
         TourBranchInput = SkillEntry.transform.Find("TourBranchInput").GetComponent<InputField>();
-        VolunteerInput = SkillEntry.transform.Find("VolunteerInput").GetComponent<InputField>();
+        VolunteerInput1 = SkillEntry.transform.Find("VolunteerInput1").GetComponent<InputField>();
+        VolunteerInput2 = SkillEntry.transform.Find("VolunteerInput2").GetComponent<InputField>();
+        VolunteerInput3 = SkillEntry.transform.Find("VolunteerInput3").GetComponent<InputField>();
     }
 
     // Update is called once per frame
@@ -408,14 +416,28 @@ public class Questionnaire : MonoBehaviour
             Resume.TourBranch = TourBranchInput.text;
         }
 
-        if (VolunteerTog.isOn)
+        if (VolunteerTog1.isOn)
         {
-            SkillsTxt.text += "\nVolunteer as " + VolunteerInput.text;
-            Resume.VolunteerBool = true;
-            Resume.VolunteerTitle = VolunteerInput.text;
+            SkillsTxt.text += "\nVolunteer as " + VolunteerInput1.text;
+            Resume.VolunteerBool1 = true;
+            Resume.VolunteerTitle1 = VolunteerInput1.text;
         }
-        
-        
+
+        if (VolunteerTog2.isOn)
+        {
+            SkillsTxt.text += "\nVolunteer as " + VolunteerInput2.text;
+            Resume.VolunteerBool2 = true;
+            Resume.VolunteerTitle2 = VolunteerInput2.text;
+        }
+
+        if (VolunteerTog3.isOn)
+        {
+            SkillsTxt.text += "\nVolunteer as " + VolunteerInput3.text;
+            Resume.VolunteerBool3 = true;
+            Resume.VolunteerTitle3 = VolunteerInput3.text;
+        }
+
+
 
         DisplaySkills();
     }

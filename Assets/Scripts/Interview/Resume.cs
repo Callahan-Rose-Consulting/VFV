@@ -30,8 +30,12 @@ public static class Resume
     public static bool TourofDutyBool = false;
     public static string TourName = "";
     public static string TourBranch = "";
-    public static bool VolunteerBool = false;
-    public static string VolunteerTitle = "";
+    public static bool VolunteerBool1 = false;
+    public static string VolunteerTitle1 = "";
+    public static bool VolunteerBool2 = false;
+    public static string VolunteerTitle2 = "";
+    public static bool VolunteerBool3 = false;
+    public static string VolunteerTitle3 = "";
 
 
     public static void CreateExperiences()

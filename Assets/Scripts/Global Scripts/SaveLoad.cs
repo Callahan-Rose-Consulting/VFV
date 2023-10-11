@@ -69,8 +69,12 @@ public class SaveLoad : MonoBehaviour
         public  bool TourofDutyBool;
         public  string TourName;
         public  string TourBranch;
-        public  bool VolunteerBool;
-        public  string VolunteerTitle;
+        public  bool VolunteerBool1;
+        public  string VolunteerTitle1;
+        public bool VolunteerBool2;
+        public string VolunteerTitle2;
+        public bool VolunteerBool3;
+        public string VolunteerTitle3;
 
         // TextSpeedSet.cs
         public float TextSpeed;
@@ -148,8 +152,12 @@ public class SaveLoad : MonoBehaviour
         data.FourYearDegree = Resume.FourYearDegree;
         data.TourofDutyBool = Resume.TourofDutyBool;
         data.TourName = Resume.TourName;
-        data.VolunteerBool = Resume.VolunteerBool;
-        data.VolunteerTitle = Resume.VolunteerTitle;
+        data.VolunteerBool1 = Resume.VolunteerBool1;
+        data.VolunteerTitle1 = Resume.VolunteerTitle1;
+        data.VolunteerBool2 = Resume.VolunteerBool2;
+        data.VolunteerTitle2 = Resume.VolunteerTitle2;
+        data.VolunteerBool3 = Resume.VolunteerBool3;
+        data.VolunteerTitle3 = Resume.VolunteerTitle3;
 
         // TextSpeedSet.cs
         data.TextSpeed = PlayerPrefs.GetFloat("TextSpeed");
@@ -243,8 +251,12 @@ public class SaveLoad : MonoBehaviour
         Resume.FourYearDegree = data.FourYearDegree;
         Resume.TourofDutyBool = data.TourofDutyBool;
         Resume.TourName = data.TourName;
-        Resume.VolunteerBool = data.VolunteerBool;
-        Resume.VolunteerTitle = data.VolunteerTitle;
+        Resume.VolunteerBool1 = data.VolunteerBool1;
+        Resume.VolunteerTitle1 = data.VolunteerTitle1;
+        Resume.VolunteerBool2 = data.VolunteerBool2;
+        Resume.VolunteerTitle2 = data.VolunteerTitle2;
+        Resume.VolunteerBool3 = data.VolunteerBool3;
+        Resume.VolunteerTitle3 = data.VolunteerTitle3;
 
         // TextSpeedSet.cs
         PlayerPrefs.SetFloat("TextSpeed", data.TextSpeed);

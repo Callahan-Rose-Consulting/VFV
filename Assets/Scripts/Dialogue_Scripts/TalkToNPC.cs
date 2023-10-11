@@ -681,6 +681,11 @@ public class TalkToNPC : MonoBehaviour
             Application.OpenURL("https://www.16personalities.com/free-personality-test");
         }
 
+        if (messages[messageCount].Contains("#OPEN_BROWSER_AI#"))
+        {
+            //Application.OpenURL("new site here");
+        }
+
         if (messages[messageCount].Contains("#INPUT_BOX#")) {
             end_dialogue();
 
