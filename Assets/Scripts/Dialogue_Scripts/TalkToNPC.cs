@@ -127,7 +127,6 @@ public class TalkToNPC : MonoBehaviour
 
         //create blank text doc and name it according to fileName in the Player Results Directory
         using (FileStream fs = File.Create(path)) { };
-        string VFV = "";
         playerFileName = path;
 
         File.AppendAllText(path, headInfo);
@@ -429,8 +428,6 @@ public class TalkToNPC : MonoBehaviour
 
             if (x.Success)
             {
-                int index = 0;
-
                 newMessage = newMessage.Replace(x.Value, "");
             }
         }

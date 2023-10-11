@@ -317,39 +317,8 @@ public class Questionnaire : MonoBehaviour
          }
 
      }*/
-
-    //randomly assigns points
-    public void RandomStatAssign()
-    {
-        int rand = Random.Range(0, 6);
-        while (Leadership.Level == 0 && Teamwork.Level == 0 && Technology.Level == 0 &&
-               Professionalism.Level == 0 && Communication.Level == 0 && CritThinking.Level == 0)
-        {
-            switch (rand)
-            {
-                case 0:
-                    Leadership.Level++;
-                    break;
-                case 1:
-                    Teamwork.Level++;
-                    break;
-                case 2:
-                    Technology.Level++;
-                    break;
-                case 3:
-                    Professionalism.Level++;
-                    break;
-                case 4:
-                    Communication.Level++;
-                    break;
-                case 5:
-                    CritThinking.Level++;
-                    break;
-            }
-        }
-    }
-
-    public void FinishWithoutQuestionnaire()
+    
+    public void FinishWithoutQuestionnaire()    // used for the sticky note in the main page
     {
         SkillsQuestion.SetActive(false);
         SkillEntry.SetActive(true);
