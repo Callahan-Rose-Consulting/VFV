@@ -135,20 +135,28 @@ public class TalkToNPC : MonoBehaviour
         File.AppendAllText(path, "Player name: " + playerName + '\n');
         File.AppendAllText(path, "Branch of Service: " + Resume.TourBranch + '\n');
         File.AppendAllText(path, "*Initial Self Assessment:\n");
-        File.AppendAllText(path, "\t-Initial Leadership________________________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
-        File.AppendAllText(path, "\t-Initial Teamwork__________________________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
-        File.AppendAllText(path, "\t-Initial Technology________________________________:" + Questionnaire.PrintStartingStat("technology") + "\n");
-        File.AppendAllText(path, "\t-Initial Professionalism___________________________:" + Questionnaire.PrintStartingStat("professionalism") + "\n");
-        File.AppendAllText(path, "\t-Initial Communication_____________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
-        File.AppendAllText(path, "\t-Initial Critical Thinking_________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
+        File.AppendAllText(path, "\t-Initial Self Assessment___________________________:" + Questionnaire.PrintStartingStat("self assessment") + "\n");
+        File.AppendAllText(path, "\t-Initial Entreprenureal Mindset____________________:" + Questionnaire.PrintStartingStat("entreprenureal mindset") + "\n");
+        File.AppendAllText(path, "\t-Initial Survive, Adapt, Flourish__________________:" + Questionnaire.PrintStartingStat("SAF") + "\n");
+        File.AppendAllText(path, "\t-Initial Personal Brand____________________________:" + Questionnaire.PrintStartingStat("personal brand") + "\n");
+        File.AppendAllText(path, "\t-Initial Personal Value Proposition________________:" + Questionnaire.PrintStartingStat("PFP") + "\n");
+        File.AppendAllText(path, "\t-Initial Underserved Need__________________________:" + Questionnaire.PrintStartingStat("underserved need") + "\n");
+        File.AppendAllText(path, "\t-Initial Written Form______________________________:" + Questionnaire.PrintStartingStat("written form") + "\n");
+        File.AppendAllText(path, "\t-Initial Oral Form_________________________________:" + Questionnaire.PrintStartingStat("oral form") + "\n");
+        File.AppendAllText(path, "\t-Initial Social Media______________________________:" + Questionnaire.PrintStartingStat("social media") + "\n");
+       
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, "*Final Self Assesment:\n");
-        File.AppendAllText(path, "\t-Final Leadership__________________________________:" + Questionnaire.PrintStartingStat("leadership") + "\n");
-        File.AppendAllText(path, "\t-Final Teamwork____________________________________:" + Questionnaire.PrintStartingStat("teamwork") + "\n");
-        File.AppendAllText(path, "\t-Final Technology__________________________________:" + Questionnaire.PrintStartingStat("technology") + "\n");
-        File.AppendAllText(path, "\t-Final Professionalism_____________________________:" + Questionnaire.PrintStartingStat("professionalism") + "\n");
-        File.AppendAllText(path, "\t-Final Communication_______________________________:" + Questionnaire.PrintStartingStat("communication") + "\n");
-        File.AppendAllText(path, "\t-Final Critical Thinking___________________________:" + Questionnaire.PrintStartingStat("critical thinking") + "\n");
+        File.AppendAllText(path, "\t-Final Self Assessment_____________________________:" + Questionnaire.PrintStartingStat("self assessment") + "\n");
+        File.AppendAllText(path, "\t-Final Entreprenureal Mindset______________________:" + Questionnaire.PrintStartingStat("entreprenureal mindset") + "\n");
+        File.AppendAllText(path, "\t-Final Survive, Adapt, Flourish____________________:" + Questionnaire.PrintStartingStat("SAF") + "\n");
+        File.AppendAllText(path, "\t-Final Personal Brand______________________________:" + Questionnaire.PrintStartingStat("personal brand") + "\n");
+        File.AppendAllText(path, "\t-Final Personal Value Proposition__________________:" + Questionnaire.PrintStartingStat("PFP") + "\n");
+        File.AppendAllText(path, "\t-Final Underserved Need____________________________:" + Questionnaire.PrintStartingStat("underserved need") + "\n");
+        File.AppendAllText(path, "\t-Final Written Form________________________________:" + Questionnaire.PrintStartingStat("written form") + "\n");
+        File.AppendAllText(path, "\t-Final Oral Form___________________________________:" + Questionnaire.PrintStartingStat("oral form") + "\n");
+        File.AppendAllText(path, "\t-Final Social Media________________________________:" + Questionnaire.PrintStartingStat("social media") + "\n");
+        
         File.AppendAllText(path, "\n");
         File.AppendAllText(path, endInfo);
 

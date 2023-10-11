@@ -12,20 +12,24 @@ using TMPro;
 public class Questionnaire : MonoBehaviour
 {
 
-    Skill Leadership = new Skill("Leadership", 0);
-    Skill Teamwork = new Skill("Teamwork", 0);
-    Skill Technology = new Skill("Technology", 0);
-    Skill Professionalism = new Skill("Professionalism", 0);
-    Skill Communication = new Skill("Communication", 0);
-    Skill CritThinking = new Skill("Critical Thinking", 0);
+    Skill SelfAssessment = new Skill("Self Assessment", 0);
+    Skill EntreprenurealMindset = new Skill("Entreprenureal Mindset", 0);
+    Skill SAF = new Skill("Survive, Adapt, Flourish", 0);
+    Skill PersonalBrand = new Skill("Personal Brand", 0);
+    Skill PFP = new Skill("PFP", 0);
+    Skill UnderservedNeed = new Skill("Underserved Need", 0);
+    Skill WrittenForm = new Skill("Written Form", 0);
+    Skill OralForm = new Skill("Oral Form", 0);
+    Skill SocialMedia = new Skill("Social Media", 0);
 
+    /*
     float agreeLeadership = 0;
     float agreeTeamwork = 0;
     float agreeTechnology = 0;
     float agreeProfessionalism = 0;
     float agreeCommunication = 0;
     float agreeCritThinking = 0;
-
+    */
     Canvas canvas;
     public GameObject SkillsQuestion;
     public GameObject SkipQuestion;
@@ -41,12 +45,15 @@ public class Questionnaire : MonoBehaviour
 
 
     //for Summary Display
-    Text LeadershipTxt;
-    Text TeamworkTxt;
-    Text TechnologyTxt;
-    Text ProfessionalismTxt;
-    Text CommunicationTxt;
-    Text CritThinkingTxt;
+    Text SelfAssessmentTxt;
+    Text EntreprenurealMindsetTxt;
+    Text SAFTxt;
+    Text PersonalBrandTxt;
+    Text PFPTxt;
+    Text UnderservedNeedTxt;
+    Text WrittenFormTxt;
+    Text OralFormTxt;
+    Text SocialMediaTxt;
     Text SkillsTxt;
     //Text PointsTxt;
     Toggle HSDTog;
@@ -77,29 +84,41 @@ public class Questionnaire : MonoBehaviour
 
     public static string PrintStartingStat(string choice)
     {
-        if (choice == "leadership")
+        if (choice == "self assessment")
         {
-            return PlayerPrefs.GetInt("LeadershipLevel").ToString();
+            return PlayerPrefs.GetInt("SelfAssessmentLevel").ToString();
         }
-        else if (choice == "teamwork")
+        else if (choice == "entreprenureal mindset")
         {
-            return PlayerPrefs.GetInt("TeamworkLevel").ToString();
+            return PlayerPrefs.GetInt("EntreprenurealMindsetLevel").ToString();
         }
-        else if (choice == "technology")
+        else if (choice == "SAF")
         {
-            return PlayerPrefs.GetInt("TechnologyLevel").ToString();
+            return PlayerPrefs.GetInt("SAFLevel").ToString();
         }
-        else if (choice == "professionalism")
+        else if (choice == "personal brand")
         {
-            return PlayerPrefs.GetInt("ProfessionalismLevel").ToString();
+            return PlayerPrefs.GetInt("PersonalBrandLevel").ToString();
         }
-        else if (choice == "communication")
+        else if (choice == "PFP")
         {
-            return PlayerPrefs.GetInt("CommunicationLevel").ToString();
+            return PlayerPrefs.GetInt("PFPLevel").ToString();
         }
-        else if (choice == "critical thinking")
+        else if (choice == "underserved need")
         {
-            return PlayerPrefs.GetInt("CritThinkingLevel").ToString();
+            return PlayerPrefs.GetInt("UnderservedNeedLevel").ToString();
+        }
+        else if (choice == "written form")
+        {
+            return PlayerPrefs.GetInt("WrittenFormLevel").ToString();
+        }
+        else if (choice == "oral form")
+        {
+            return PlayerPrefs.GetInt("OralFormLevel").ToString();
+        }
+        else if (choice == "social media")
+        {
+            return PlayerPrefs.GetInt("SocialMediaLevel").ToString();
         }
         else
         {
@@ -107,7 +126,7 @@ public class Questionnaire : MonoBehaviour
         }
     }
 
-
+    /*
     //Questionnaire Questions
     const string Leadership1 = "I set high standards for myself, and expect others to meet those standards too";
     const string Leadership2 = "I’m good at helping people to change direction";
@@ -122,7 +141,7 @@ public class Questionnaire : MonoBehaviour
     const string CritThink1 = "I enjoy solving problems and puzzles";
     const string CritThink2 = "I like to observe and reflect on my observations";
 
-  
+  */
 
     // Start is called before the first frame update
     void Start()
@@ -137,12 +156,16 @@ public class Questionnaire : MonoBehaviour
         Button btnCancel = SkillsQuestion.transform.Find("MostlyAgree").GetComponent<Button>();
         btnCancel.Select();
 
-        LeadershipTxt = Summary.transform.Find("LeadershipTxt").GetComponent<Text>();
-        TeamworkTxt = Summary.transform.Find("TeamworkTxt").GetComponent<Text>();
-        TechnologyTxt = Summary.transform.Find("TechnologyTxt").GetComponent<Text>();
-        ProfessionalismTxt = Summary.transform.Find("ProfessionalismTxt").GetComponent<Text>();
-        CommunicationTxt = Summary.transform.Find("CommunicationTxt").GetComponent<Text>();
-        CritThinkingTxt = Summary.transform.Find("CritThinkingTxt").GetComponent<Text>();
+        SelfAssessmentTxt = Summary.transform.Find("SelfAssessmentTxt").GetComponent<Text>();
+        EntreprenurealMindsetTxt = Summary.transform.Find("EntreprenurealMindsetTxt").GetComponent<Text>();
+        SAFTxt = Summary.transform.Find("SAFTxt").GetComponent<Text>();
+        PersonalBrandTxt = Summary.transform.Find("PersonalBrandTxt").GetComponent<Text>();
+        PFPTxt = Summary.transform.Find("PFPTxt").GetComponent<Text>();
+        UnderservedNeedTxt = Summary.transform.Find("UnderservedNeedTxt").GetComponent<Text>();
+        WrittenFormTxt = Summary.transform.Find("WrittenFormTxt").GetComponent<Text>();
+        OralFormTxt = Summary.transform.Find("OralFormTxt").GetComponent<Text>();
+        SocialMediaTxt = Summary.transform.Find("SocialMediaTxt").GetComponent<Text>();
+
         //PointsTxt = canvas.transform.GetChild(2).GetComponent<Text>();
 
         NameInputField = SkillEntry.transform.Find("NameInput").GetComponent<InputField>();
@@ -165,14 +188,17 @@ public class Questionnaire : MonoBehaviour
     void Update()
     {
         
-        LeadershipTxt.text = "Leadership: " + Leadership.Level;
-        TeamworkTxt.text = "Teamwork: " + Teamwork.Level;
-        TechnologyTxt.text = "Technology: " + Technology.Level;
-        ProfessionalismTxt.text = "Professionalism: " + Professionalism.Level;
-        CommunicationTxt.text = "Communication: " + Communication.Level;
-        CritThinkingTxt.text = "Critical Thinking: " + CritThinking.Level;
+        SelfAssessmentTxt.text = "Self Assessment: " + SelfAssessment.Level;
+        EntreprenurealMindsetTxt.text = "Entreprenureal Mindset: " + EntreprenurealMindset.Level;
+        SAFTxt.text = "Survive, Adapt, Flourish: " + SAF.Level;
+        PersonalBrandTxt.text = "PersonalBrand: " + PersonalBrand.Level;
+        PFPTxt.text = "Personal Value Proposition: " + PFP.Level;
+        UnderservedNeedTxt.text = "Underserved Need: " + UnderservedNeed.Level;
+        WrittenFormTxt.text = "Written Form: " + WrittenForm.Level;
+        OralFormTxt.text = "Oral Form: " + OralForm.Level;
+        SocialMediaTxt.text = "Social Media: " + SocialMedia.Level;
         //PointsTxt.text = "Points Left: " + Points;
-        
+
     }
 
     public void SaveStats()
@@ -184,12 +210,15 @@ public class Questionnaire : MonoBehaviour
         {
             NameInputField.text = "Player";
         }
-        PlayerPrefs.SetInt("LeadershipLevel", Leadership.Level);
-        PlayerPrefs.SetInt("TeamworkLevel", Teamwork.Level);
-        PlayerPrefs.SetInt("TechnologyLevel", Technology.Level);
-        PlayerPrefs.SetInt("ProfessionalismLevel", Professionalism.Level);
-        PlayerPrefs.SetInt("CommunicationLevel", Communication.Level);
-        PlayerPrefs.SetInt("CritThinkingLevel", CritThinking.Level);
+        PlayerPrefs.SetInt("SelfAssessmentLevel", SelfAssessment.Level);
+        PlayerPrefs.SetInt("EntreprenurealMindsetLevel", EntreprenurealMindset.Level);
+        PlayerPrefs.SetInt("SAFLevel", SAF.Level);
+        PlayerPrefs.SetInt("PersonalBrandLevel", PersonalBrand.Level);
+        PlayerPrefs.SetInt("PFPLevel", PFP.Level);
+        PlayerPrefs.SetInt("UnderservedNeedLevel", UnderservedNeed.Level);
+        PlayerPrefs.SetInt("WrittenFormLevel", WrittenForm.Level);
+        PlayerPrefs.SetInt("OralFormLevel", OralForm.Level);
+        PlayerPrefs.SetInt("SocialMediaLevel", SocialMedia.Level);
         PlayerPrefs.SetString("PlayerName", CleanString(NameInputField.text)); //change by Don Murphy to clean name input
         PlayerPrefs.Save();
         print("Saved Player Data");
@@ -201,7 +230,7 @@ public class Questionnaire : MonoBehaviour
         click.pitch = Random.Range(0.75f, 1f);
         click.Play();
     }
-
+    /*
     public void MostlyAgree()
     {
         //add 1 to the tally for that stat
@@ -262,8 +291,8 @@ public class Questionnaire : MonoBehaviour
         SetQuestion();
         click.pitch = 1;
         click.Play();
-    }
-
+    }*/
+    /*
     public void MostlyDisagree()
     {
         //add 0 then move to next screen
@@ -272,7 +301,7 @@ public class Questionnaire : MonoBehaviour
         SetQuestion();
         click.pitch = 0.75f;
         click.Play();
-    }
+    }*/
 
     /* public void CalculateStats()          // temporarily commented out to use later for the new Nine Metrics by Abdallah Abulaban
      {
@@ -324,7 +353,7 @@ public class Questionnaire : MonoBehaviour
         SkillEntry.SetActive(true);
         Summary.SetActive(false);
     }
-
+    /*
     public void SetQuestion()
     {
         string[] Questions = new string[12] {Leadership1, Leadership2, Teamwork1, Teamwork2, Tech1, Tech2,
@@ -345,7 +374,7 @@ public class Questionnaire : MonoBehaviour
             NameInputField.Select();
         }
     }
-
+    */
     public void SaveSkills()
     {
         if (HSDTog.isOn)
