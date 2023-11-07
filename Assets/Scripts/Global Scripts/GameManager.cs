@@ -13,12 +13,12 @@ public class GameManager : MonoBehaviour
     //Player script for ease of access
     public Player_Movement player_character;
 
-    public Skill Leadership { get; set; }
-    public Skill Teamwork { get; set; }
-    public Skill Technology { get; set; }
-    public Skill Professionalism { get; set; }
-    public Skill Communication { get; set; }
-    public Skill CritThinking { get; set; }
+    public Skill selfAssessment { get; set; }
+    public Skill Entre_thinking { get; set; }
+    public Skill SAF { get; set; }
+    public Skill Brand { get; set; }
+    public Skill PFP { get; set; }
+    public Skill Under_Need { get; set; }
     public Skill HumanResources { get; private set; }
     public Skill IT { get; private set; }
     public Skill SoftwareDevelopment { get; private set; }
@@ -87,12 +87,12 @@ public class GameManager : MonoBehaviour
         EventDrSphinxBranding = GameObject.Find("EventDrSphinxBranding");
         EventJaneBranding = GameObject.Find("EventJaneBranding");
 
-        Leadership = new Skill("Leadership", PlayerPrefs.GetInt("LeadershipLevel"));
-        Teamwork = new Skill("Teamwork", PlayerPrefs.GetInt("TeamworkLevel"));
-        Technology = new Skill("Technology", PlayerPrefs.GetInt("TechnologyLevel"));
-        Professionalism = new Skill("Professionalism", PlayerPrefs.GetInt("ProfessionalismLevel"));
-        Communication = new Skill("Communication", PlayerPrefs.GetInt("CommunicationLevel"));
-        CritThinking = new Skill("Critical Thinking", PlayerPrefs.GetInt("CritThinkingLevel"));
+        selfAssessment = new Skill("Leadership", PlayerPrefs.GetInt("LeadershipLevel"));
+        Entre_thinking = new Skill("Teamwork", PlayerPrefs.GetInt("TeamworkLevel"));
+        SAF = new Skill("Technology", PlayerPrefs.GetInt("TechnologyLevel"));
+        Brand = new Skill("Professionalism", PlayerPrefs.GetInt("ProfessionalismLevel"));
+        PFP = new Skill("Communication", PlayerPrefs.GetInt("CommunicationLevel"));
+        Under_Need = new Skill("Critical Thinking", PlayerPrefs.GetInt("CritThinkingLevel"));
         //job skills added here -Rachel
         HumanResources = new Skill("Human Resources", 0);
         IT = new Skill("IT", 0);
@@ -303,17 +303,17 @@ public class GameManager : MonoBehaviour
     {
         List<Skill> skills = new List<Skill>();
 
-        skills.Add(Leadership);
+        skills.Add(selfAssessment);
 
-        skills.Add(Teamwork);
+        skills.Add(Entre_thinking);
 
-        skills.Add(Technology);
+        skills.Add(SAF);
 
-        skills.Add(Professionalism);
+        skills.Add(Brand);
 
-        skills.Add(Communication);
+        skills.Add(PFP);
 
-        skills.Add(CritThinking);
+        skills.Add(Under_Need);
         //job skills added here -Rachel
         skills.Add(IT);
 

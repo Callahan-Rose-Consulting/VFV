@@ -31,12 +31,12 @@ public static class SceneChange
             items = Player_Inventory.instance.items;
 
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            leadership = gameManager.Leadership;
-            teamwork = gameManager.Teamwork;
-            technology = gameManager.Technology;
-            professionalism = gameManager.Professionalism;
-            communication = gameManager.Communication;
-            critThinking = gameManager.CritThinking;
+            leadership = gameManager.selfAssessment;
+            teamwork = gameManager.Entre_thinking;
+            technology = gameManager.SAF;
+            professionalism = gameManager.Brand;
+            communication = gameManager.PFP;
+            critThinking = gameManager.Under_Need;
 
             playerName = gameManager.Name;
 
@@ -53,12 +53,12 @@ public static class SceneChange
 
         //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager = GameManager.instance;
-        leadership = gameManager.Leadership;
-        teamwork = gameManager.Teamwork;
-        technology = gameManager.Technology;
-        professionalism = gameManager.Professionalism;
-        communication = gameManager.Communication;
-        critThinking = gameManager.CritThinking;
+        leadership = gameManager.selfAssessment;
+        teamwork = gameManager.Entre_thinking;
+        technology = gameManager.SAF;
+        professionalism = gameManager.Brand;
+        communication = gameManager.PFP;
+        critThinking = gameManager.Under_Need;
 
         playerName = gameManager.Name;
     }
@@ -72,12 +72,12 @@ public static class SceneChange
         GameManager.instance.player_character.gameObject.transform.position = playerLoc;
 
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        gameManager.Leadership = leadership;
-        gameManager.Teamwork = teamwork;
-        gameManager.Technology = technology;
-        gameManager.Professionalism = professionalism;
-        gameManager.Communication = communication;
-        gameManager.CritThinking = critThinking;
+        gameManager.selfAssessment = leadership;
+        gameManager.Entre_thinking = teamwork;
+        gameManager.SAF = technology;
+        gameManager.Brand = professionalism;
+        gameManager.PFP = communication;
+        gameManager.Under_Need = critThinking;
     }
 
     public static void RefreshInventoryUI()

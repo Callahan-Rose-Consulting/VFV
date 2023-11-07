@@ -962,40 +962,40 @@ public class TalkToNPC : MonoBehaviour
 
                 switch (final_val)
                 {
-                    case "*Lead*":
-                        SkillIncreaseGenericDialogue(gameManager.Leadership);
+                    case "*Self*":
+                        SkillIncreaseGenericDialogue(gameManager.selfAssessment);   // changing to Self Assessment
                         //change by Don Murphy
-                        UpdatePlayerResults("Final Leadership", playerFileName);
+                        UpdatePlayerResults("Final Self-Assessment", playerFileName);
                         break;
 
-                    case "*Team*":
-                        SkillIncreaseGenericDialogue(gameManager.Teamwork);
+                    case "*ENT*":
+                        SkillIncreaseGenericDialogue(gameManager.Entre_thinking);     // changing to Entreprenureal Mindset
                         //change by Don Murphy
-                        UpdatePlayerResults("Final Teamwork", playerFileName);
+                        UpdatePlayerResults("Final Entreprenureal Mindset", playerFileName);
                         break;
 
-                    case "*Tech*":
-                        SkillIncreaseGenericDialogue(gameManager.Technology);
+                    case "*SAF*":
+                        SkillIncreaseGenericDialogue(gameManager.SAF);   // changing to SAF
                         //change by Don Murphy
-                        UpdatePlayerResults("Final Technology", playerFileName);
+                        UpdatePlayerResults("Final SAF", playerFileName);   // Survive, Adapt, Flourish
                         break;
 
-                    case "*Prof*":
-                        SkillIncreaseGenericDialogue(gameManager.Professionalism);
+                    case "*Brand*":
+                        SkillIncreaseGenericDialogue(gameManager.Brand);  // changing to Personal Brand
                         //change by Don Murphy
-                        UpdatePlayerResults("Final Professionalism", playerFileName);
+                        UpdatePlayerResults("Final Personal Brand", playerFileName);
                         break;
 
-                    case "*Com*":
-                        SkillIncreaseGenericDialogue(gameManager.Communication);
+                    case "*PFP*":
+                        SkillIncreaseGenericDialogue(gameManager.PFP);    // changing from communication to pfp
                         //change by Don Murphy
-                        UpdatePlayerResults("Final Communication", playerFileName);
+                        UpdatePlayerResults("Final PFP", playerFileName);   // Personal Value Proposition
                         break;
 
-                    case "*Crit*":
-                        SkillIncreaseGenericDialogue(gameManager.CritThinking);
+                    case "*Under*":
+                        SkillIncreaseGenericDialogue(gameManager.Under_Need); // changing from critical thinking to Underserved Need
                         //change by Don Murphy
-                        UpdatePlayerResults("Final Critical Thinking", playerFileName);
+                        UpdatePlayerResults("Final Underserved Need", playerFileName);
                         break;
 
                     case "*Hr*":
@@ -1011,8 +1011,8 @@ public class TalkToNPC : MonoBehaviour
                         break;
 
                     default:
-                        SkillIncreaseGenericDialogue(gameManager.CritThinking);
-                        UpdatePlayerResults("Final Critical Thinking", playerFileName);
+                        SkillIncreaseGenericDialogue(gameManager.selfAssessment);
+                        UpdatePlayerResults("Final Self Assessment", playerFileName);
                         break;
                 }
             }
@@ -1034,29 +1034,27 @@ public class TalkToNPC : MonoBehaviour
                 switch (final_val)
                 {
                     case "*Lead*":
-                        SkillCheckGenericDialogue(gameManager.Leadership);
-
-
+                        SkillCheckGenericDialogue(gameManager.selfAssessment);
                         break;
 
                     case "*Team*":
-                        SkillCheckGenericDialogue(gameManager.Teamwork);
+                        SkillCheckGenericDialogue(gameManager.Entre_thinking);
                         break;
 
                     case "*Tech*":
-                        SkillCheckGenericDialogue(gameManager.Technology);
+                        SkillCheckGenericDialogue(gameManager.SAF);
                         break;
 
                     case "*Prof*":
-                        SkillCheckGenericDialogue(gameManager.Professionalism);
+                        SkillCheckGenericDialogue(gameManager.Brand);
                         break;
 
-                    case "*Com*":
-                        SkillCheckGenericDialogue(gameManager.Communication);
+                    case "*PFP*":
+                        SkillCheckGenericDialogue(gameManager.PFP);
                         break;
 
-                    case "*Crit*":
-                        SkillCheckGenericDialogue(gameManager.CritThinking);
+                    case "*Under*":
+                        SkillCheckGenericDialogue(gameManager.Under_Need);
                         break;
 
                     case "*Hr*":
@@ -1073,7 +1071,7 @@ public class TalkToNPC : MonoBehaviour
 
 
                     default:
-                        SkillCheckGenericDialogue(gameManager.CritThinking);
+                        SkillCheckGenericDialogue(gameManager.selfAssessment);
                         break;
                 }
             }
@@ -1092,11 +1090,11 @@ public class TalkToNPC : MonoBehaviour
         }
         else if (messages[messageCount].Contains("#SKILL_INCREASE_INTELLIGENCE#"))
         {
-            SkillIncreaseDialogue(gameManager.Leadership);
+            SkillIncreaseDialogue(gameManager.selfAssessment);
         }
         else if (messages[messageCount].Contains("#SKILL_INCREASE_COMMUNICATION#"))
         {
-            SkillIncreaseDialogue(gameManager.Professionalism);
+            SkillIncreaseDialogue(gameManager.Brand);
         }
         else if (messages[messageCount].Contains("#YES_NO#"))
         {
@@ -1331,7 +1329,7 @@ public class TalkToNPC : MonoBehaviour
 
     void SkillCheckDialogue()
     {
-        if (!gameManager.Communication.SkillCheck(EnemyCommunications)) //fails CHARISMA ONLY check
+        if (!gameManager.PFP.SkillCheck(EnemyCommunications)) //fails CHARISMA ONLY check
         {
             StartCoroutine(ShowText(ReplaceKeywords(messages[messageCount])));
         }

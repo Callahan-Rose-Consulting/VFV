@@ -4487,7 +4487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1095475.1}
+  m_AnchoredPosition: {x: 0, y: -1097924.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &112026564
@@ -12251,15 +12251,15 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[10]
-      value: "I can feel my critical thinking skills increase!#ADD_SUMMARY#*watched
-        a \u201Csweet spot\u201D video suggested by Robert which helped to increase
-        my critical thinking.*"
+      value: My understanding of what the Sweet Spot is has  increased!#ADD_SUMMARY#*watched
+        a video suggested by Robert which helped increase my understanding of the
+        Sweet Spot.*
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[11]
       value: '#hidecanvas##ADD_EXPERIENCE##INNER_DIALOGUE_END##FADE_IN#Great job
-        today, I can tell you are in need of a job.#INCREASE#*Crit*'
+        today, I can tell you are in need of a job.#INCREASE#*Under*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -35012,23 +35012,15 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[8]
-      value: 'I can feel my critical thinking skills increase!#ADD_SUMMARY#*watched
-        the adaptation video with Syed which taught me about how to adapt and flourish
-        in a new environment.
-
-
-        -SKILLS INCREASED-
-
-
-        Personality:
-        +2, Teamwork: +1, Independence: +2, Problem Solving: +1, Time Management:
-        +1, Communication: +1*'
+      value: My understanding of Survive, Adapt, Flourish method has increased! !#ADD_SUMMARY#*watched
+        a video about Survive, Adapt, Flourish  with Syed which taught me about how
+        to adapt and flourish in a new environment.
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[9]
       value: '#hidecanvas##ADD_EXPERIENCE##INNER_DIALOGUE_END##FADE_IN#I hope you
-        flourish here in your new home.#INCREASE#*Crit*'
+        flourish here in your new home.#INCREASE#*Under*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -35077,23 +35069,15 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[18]
-      value: 'I can feel my communication skills increase!#ADD_SUMMARY#*watched the
-        "Personal Branding" video with Syed and learned about how to manage my own
+      value: I now understand the importance of having a Personal Brand!#ADD_SUMMARY#*watched
+        the "Personal Brand" video with Syed and learned about how to manage my own
         personal brand.
-
-
-        -SKILLS INCREASED-
-
-
-        Personality: +2, Teamwork:
-        +1, Independence: +2, Problem Solving: +1, Time Management: +1, Communication:
-        +1*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[19]
       value: '#hidecanvas##ADD_EXPERIENCE##INNER_DIALOGUE_END##FADE_IN#I hope that
-        was very informative for you.#INCREASE#*Crit*#MULTI_END#'
+        was very informative for you.#INCREASE#**#MULTI_END#'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -49645,14 +49629,7 @@ MonoBehaviour:
   - Nah, I'll leave him be.
   - '#MULTI_START#Sure, I''ll wait to see what''s on his mind.'
   - '#FADE_OUT#I wait around for a little bit.#ADD_SUMMARY#*talked with Jacob and
-    increased my communication skills.
-
-
-    -SKILLS INCREASED-
-
-
-    Communication:
-    +2*'
+    increased my Personal Value Proposition.'
   - '#FADE_IN##INNER_DIALOGUE_END#Sorry I was so lost in thought. I just realized
     I haven''t even introduced myself.'
   - '#REVEAL_NAME#My name is Jacob, nice to meet you! Thanks for waiting around,
@@ -66117,17 +66094,7 @@ MonoBehaviour:
 '
   - '#PLAYER_TALKING_END##INNER_DIALOGUE_BEGIN#You talk to Robert about your personal
     brand#ADD_SUMMARY#*went to the networking event and chatted with Robert. I was
-    well prepared for the event and found it very meaningful
-
-
-    -SKILLS INCREASED-
-
-
-    Personality:
-    +2, Independence: +2, Empathy: +1, Problem Solving: +2, Time Management: +1,
-    Communication: +3*
-
-    #INNER_DIALOGUE_END#  #MULTI_END#'
+    well prepared for the event and found it very meaningful'
   NPCName: Robert
   Known: 0
   NameBox: {fileID: 0}
@@ -67433,8 +67400,8 @@ MonoBehaviour:
   - ....
   - I see. Have you heard of SMART guidelines? SMART stands for specific, measurable,
     achievable, relevant, and time-bound!#REVEAL_NAME#
-  - Specific - Objective clearly states, so anyone reading it can understand what
-    will be done and who will do it.
+  - Specific - Objectives are clearly stated, so anyone reading it can understand
+    what will be done and who will do it.
   - "Measurable \u2013 Objective includes how the action will be measured. Measuring
     your objectives help you determine if you are making progress. It keeps you on
     track and on schedule."
@@ -67443,7 +67410,7 @@ MonoBehaviour:
   - "Relevant \u2013 A relevant objective makes sense, that is, it fits the purpose
     of the grant, it fits the culture and structure of the community, and it addresses
     the vision of the project."
-  - "Time-bound \u2013 Every objective has a specific timeline for completion.\r"
+  - "Time-bound \u2013 Every objective has a specific deadline for completion.\r"
   - '#MULTI_END##YES_NO# If that sounds interesting, do you want to practice your
     own smart goal?'
   - Bummer
@@ -69923,23 +69890,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSmartGoal: {fileID: 0}
   messages:
-  - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
+  - '#SKILL_CHECK#Hey! You don''t have a Personal Brand yet. Come talk to me again
+    once you''ve learned a thing or two.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
   - Aw, okay...
-  - '#REVEAL_NAME##MULTI_START#Awesome! My name is Gutsy.  I''m glad we can be friends,
+  - '#REVEAL_NAME##MULTI_START#Awesome! My name is Gutsy. I''m glad we can be friends,
     @!'
-  - Hey...I know we just became friends and all but I wanna ask you something.
-  - '#YES_NO##MULTI_END#Could you clean my house for me? I can''t really do it for
+  - Hey...I know we just met, but could I ask for a big favor?
+  - '#YES_NO##MULTI_END#Could you help me clean my house? I can''t really do it by
     myself anymore...'
-  - Okay...I understand.  Have a good day, @.
-  - '#MULTI_START#You are a life saver, @!  What would I do without you?  Let me
-    show you inside.'
+  - Okay...I understand. Have a good day, @.
+  - '#MULTI_START#You are a life saver, @! What would I do without you? Let me show
+    you inside.'
   - '#FADE_OUT##INNER_DIALOGUE_BEGIN#Gutsy shows me inside her house, its pretty
     messy, but remember @ you took the job anyway!'
   - '#SA1##ADD_EXPERIENCE#The house is super clean now!'
-  - '#FADE_IN##INNER_DIALOGUE_END#Thank you so much, @!  You are truly a great friend.'
-  - '#INVOKE_EVENT##MULTI_END#Here''s $50 for your troubles.  Have a good day!'
-  - Thank you again, @!  You're a great friend.
+  - '#FADE_IN##INNER_DIALOGUE_END#Thank you so much, @! You truly are a great friend.'
+  - '#INVOKE_EVENT##MULTI_END#Here''s $50 for your troubles. Have a good day!'
+  - Thank you again, @! You're a great friend.
   NPCName: Work Out Lady
   Known: 0
   NameBox: {fileID: 0}
@@ -71035,15 +71003,7 @@ MonoBehaviour:
   - '#ADD_EXPERIENCE#(I feel like this experience will help me in the future.)'
   - '#INNER_DIALOGUE_END##FADE_IN##MULTI_END#Wow, @!  Your pizza is delicious!  Good
     job today!#ADD_SUMMARY#*learned  how to make delicious pizza with Stefano which
-    might help me in future be more responsive to customer needs.
-
-
-    -SKILLS INCREASED-
-
-
-    Personality:
-    +1, Teamwork: +2, Independence: +1, Problem Solving: +1, Time Management: +1,
-    Communication: +2, Food: +5, Art: +2; Science: +1, Technology: +1 *'
+    might help me be more responsive to customer needs in the future.'
   - You made some great tasting pizzas, @!
   NPCName: Stefano
   Known: 1
@@ -79031,30 +78991,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSmartGoal: {fileID: 0}
   messages:
-  - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
+  - '#SKILL_CHECK#Hey! You don''t have the Value Proposition skills to talk to ME.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
   - Aw, okay...
   - '#REVEAL_NAME##MULTI_START#Awesome! My name is Gutsy.  I''m glad we can be friends,
     @!'
   - Hey...I know we just became friends and all but I wanna ask you something.
-  - '#YES_NO##MULTI_END#Could you clean my house for me? I can''t really do it for
+  - '#YES_NO##MULTI_END#Could you clean my house for me? I can''t really do it by
     myself anymore...'
   - Okay...I understand.  Have a good day, @.
   - '#MULTI_START#You are a life saver, @!  What would I do without you?  Let me
     show you inside.'
   - '#FADE_OUT##INNER_DIALOGUE_BEGIN#Gutsy shows me inside her house, its pretty
     messy, but remember @ you took the job anyway!'
-  - '#ADD_EXPERIENCE#The house is super clean now! #ADD_SUMMARY#*became friends with
-    gutsy and helped her clean her house which helped me gain some experience in
+  - '#ADD_EXPERIENCE#The house is super clean now! #ADD_SUMMARY#*Became friends with
+    Gutsy and helped her clean her house which helped me gain some experience in
     helping others.
-
-
-    -SKILLS INCREASED-
-
-
-    Personality: +1, Teamwork: +1,
-    Independence: +5, Leadership: +3, Empathy: +5, Problem Solving: +3, Time Management:
-    +2, Communication: +2*
 
 '
   - '#FADE_IN##INNER_DIALOGUE_END#Thank you so much, @!  You are truly a great friend.'
@@ -84351,23 +84303,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSmartGoal: {fileID: 0}
   messages:
-  - '#SKILL_CHECK#Hey! You don''t have the COMMUNICATION skills to talk to ME.'
+  - '#SKILL_CHECK#Hey! You don''t have a Personal Brand yet. Come talk to me again
+    once you''ve learned a thing or two.'
   - '#YES_NO#Oh...wow. You''re so likeable. Can I be your friend?'
   - Aw, okay...
   - '#REVEAL_NAME##MULTI_START#Awesome! My name is Gutsy.  I''m glad we can be friends,
     @!'
   - Hey...I know we just became friends and all but I wanna ask you something.
-  - '#YES_NO##MULTI_END#Could you clean my house for me? I can''t really do it for
+  - '#YES_NO##MULTI_END#Could you help me clean my house? I can''t really do it by
     myself anymore...'
-  - Okay...I understand.  Have a good day, @.
-  - '#MULTI_START#You are a life saver, @!  What would I do without you?  Let me
-    show you inside.'
+  - Okay...I understand. Have a good day, @.
+  - '#MULTI_START#You are a life saver, @! What would I do without you?  Let me show
+    you inside.'
   - '#FADE_OUT##INNER_DIALOGUE_BEGIN#Gutsy shows me inside her house, its pretty
     messy, but remember @ you took the job anyway!'
   - '#SA1##ADD_EXPERIENCE#The house is super clean now!'
-  - '#FADE_IN##INNER_DIALOGUE_END#Thank you so much, @!  You are truly a great friend.'
-  - '#INVOKE_EVENT##MULTI_END#Here''s $50 for your troubles.  Have a good day!'
-  - Thank you again, @!  You're a great friend.
+  - '#FADE_IN##INNER_DIALOGUE_END#Thank you so much, @! You truly are a great friend.'
+  - '#INVOKE_EVENT##MULTI_END#Here''s $50 for your troubles. Have a good day!'
+  - Thank you again, @! You're a great friend.
   NPCName: Library Lady
   Known: 0
   NameBox: {fileID: 0}
@@ -86096,26 +86049,15 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[8]
-      value: 'I can feel my professionalism skills increase!#ADD_SUMMARY#*attended
+      value: I feel my understanding of the Underserved Need has increased!!#ADD_SUMMARY#*attended
         a workshop with Jane which helped the newcomers like me better understand
         how to prepare for an interview.
-
-
-
-        -SKILLS INCREASED-
-
-
-        Personality:
-        +2, Teamwork: +1, Independence: +2, Empathy: +1, Problem Solving: +1, Time
-        Management: +1, Communication: +2*
-
-'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[9]
       value: '#hidecanvas##ADD_EXPERIENCE##INNER_DIALOGUE_END##FADE_IN#How was that?
-        I hope you learned something new for your next interview.#INCREASE#*Prof*#MULTI_END#'
+        I hope you learned something new for your next interview.#INCREASE#*Under*#MULTI_END#'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -87351,18 +87293,7 @@ MonoBehaviour:
   - '#PLAYER_TALKING_BEGIN#See you soon.#PLAYER_TALKING_END#'
   - '#INNER_DIALOGUE_BEGIN#You talk to Jane about your personal brand#ADD_SUMMARY#*went
     to the networking event and chatted with Jane. I was well prepared for the event
-    and found it very meaningfull
-
-
-    -SKILLS INCREASED-
-
-
-    Personality: +2,
-    Independence: +2, Empathy: +1, Problem Solving: +2, Time Management: +1, Communication:
-    +3*
-
-
-    #INNER_DIALOGUE_END# #MULTI_END#'
+    and found it very meaningfull'
   NPCName: Jane
   Known: 0
   NameBox: {fileID: 0}
@@ -105861,8 +105792,8 @@ MonoBehaviour:
   - "#PLAYER_TALKING_BEGIN#What has hands, but can\u2019t clap?\r\n"
   - '#PLAYER_TALKING_END#......'
   - ' #PLAYER_TALKING_BEGIN#A Clock'
-  - '#PLAYER_TALKING_END#Clap clap clap. Nice one. You are a smart boy. '
-  - '#PLAYER_TALKING_BEGIN#I learned from the smartest Dr.'
+  - '#PLAYER_TALKING_END#Clap clap clap. Nice one. You''re really smart. '
+  - '#PLAYER_TALKING_BEGIN#I learned from the best!'
   - '#PLAYER_TALKING_END#I wish you all the best for your future.'
   - '#PLAYER_TALKING_BEGIN#Thank you Dr. Sphinx.'
   - '#PLAYER_TALKING_END#Ok see you soon.
@@ -111124,17 +111055,15 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[8]
-      value: "I can feel my communication skills increase!#ADD_SUMMARY#*watched the
-        \u201CSTAR\u201D video with Dujon and learned about how to approach the behavioral
-        questions with the star method.\n\r\n-SKILLS INCREASED-\n\nPersonality: +2,
-        Teamwork: +1, Independence: +2, Empathy: +1, Problem Solving: +1, Time Management:
-        +1, Communication: +2*"
+      value: "I can feel my understanding of the STAR approach increase!!#ADD_SUMMARY#*watched
+        the \u201CSTAR\u201D video with Dujon and learned about how to approach the
+        behavioral questions with the star method."
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[9]
       value: '#hidecanvas##ADD_EXPERIENCE##INNER_DIALOGUE_END##FADE_IN# Thanks for
-        joining me, @. #INCREASE#*Com*'
+        joining me, @. #INCREASE#*ENT*'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -111181,18 +111110,16 @@ PrefabInstance:
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[18]
-      value: "I can feel my communication skills increase!#ADD_SUMMARY#*watched the
-        \u201CVALUE\u201D video with Dujon and learned about how to approach the
-        situational  questions with the VALUE method.\r\n\n-SKILLS INCREASED-\n\nPersonality:
-        +2, Teamwork: +1, Independence: +2, Empathy: +1, Problem Solving: +1, Time
-        Management: +1, Communication: +2*"
+      value: "I can feel my understanding of the VALUE approach increase!!#ADD_SUMMARY#*watched
+        the \u201CVALUE\u201D video with Dujon and learned about how to approach
+        the situational  questions with the VALUE method.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
       propertyPath: messages.Array.data[19]
       value: '#hidecanvas##ADD_EXPERIENCE##INNER_DIALOGUE_END##FADE_IN#I think I
         can walk into an interview a lot more prepared now. Thanks for joining me,
-        @.#INCREASE#*Com*#MULTI_END#'
+        @.#INCREASE#*SAF*#MULTI_END#'
       objectReference: {fileID: 0}
     - target: {fileID: 4424317100304845888, guid: 7bf3c8cf763f5bc41aeaf1997ccaeffe,
         type: 3}
@@ -112548,8 +112475,10 @@ MonoBehaviour:
     group and connect with other players?'
   - Bummer, it's a free chance to get a lot of cool features. Come back if you change
     your mind....
-  - "Great! Here is the join link: www.linkedin.com/groups/14140078/\nDon't forget
-    this link will also be in your Results File. \n\n"
+  - 'Great! Here is the join link: www.linkedin.com/groups/14140078/
+
+    Don''t
+    forget, this can also be used for your resume!'
   NPCName: Riad
   Known: 0
   NameBox: {fileID: 0}
@@ -113153,8 +113082,8 @@ MonoBehaviour:
   - I'll be here whenever you are ready!
   - '#MULTI_START##FADE_OUT#Great!  Follow me!'
   - '#INNER_DIALOGUE_BEGIN#I follow Robert to Pizza Planet to meet with Tiffany.'
-  - '#MULTI_END##LOAD_INTERVIEW##ADD_SUMMARY#*had my first interview and it ws a
-    good experience.*'
+  - '#MULTI_END##LOAD_INTERVIEW##ADD_SUMMARY#*had my first interview. It was scary,
+    but a good learning experience.*'
   NPCName: Robert
   Known: 1
   NameBox: {fileID: 0}
@@ -114098,7 +114027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputSmartGoal: {fileID: 0}
   messages:
-  - "#INCREASE#*Com*#MULTI_START#Yo listen to my sick beatboxing skills! \u266A\u266A 
+  - "#INCREASE#*PFP*#MULTI_START#Yo listen to my sick beatboxing skills! \u266A\u266A 
     \u266A  \u266A\u266A \u266A\u266A   \u266A\u266A\u266A  \u266A\u266A   \u266A\u266A 
     \u266A \u266A   \u266A\u266A"
   - '#MULTI_END#Hey, thanks for listening, @. It takes a lot of charisma to talk
@@ -114113,17 +114042,10 @@ MonoBehaviour:
   - For me, riddles are a great way to get the mind thinking and I can use them to
     talk to strangers like yourself.
   - '#INNER_DIALOGUE_BEGIN#Dr. Sphinx and I chatted for a while and got to know each
-    other. #ADD_SUMMARY#*met with Dr. Sphinx and got to know each other which helped
-    me increase my thinking skills.
-
-
-    -SKILLS INCREASED-
-
-
-    Communication:
-    +2*'
-  - '#MULTI_END##INCREASE#*Com*It was fun getting to learn about someone new and
-    it helped me build my communication skills!'
+    other. #ADD_SUMMARY#*Met with Dr. Sphinx and got to know each other which helped
+    me increase my understanding of my Self-Assessment.'
+  - '#MULTI_END##INCREASE#*PFP*It was fun getting to learn about someone new and
+    it helped me build my Personal Value Proposition skills!'
   - '#INNER_DIALOGUE_END#Feel free to come by if you want another riddle from the
     good doctor!'
   - '#YES_NO#Hey there @! Got enough time for another riddle?'
@@ -114135,19 +114057,12 @@ MonoBehaviour:
     and rewatch any old videos that you might want to study again.
   - Not only that, but you can study certain books there to boost your skills and
     I heard that there are people there that you can learn a thing or two from.
-  - '#INCREASE#*Crit*#INNER_DIALOGUE_BEGIN#Dr Sphinx''s riddle this time wasn''t
+  - '#INCREASE#*Under*#INNER_DIALOGUE_BEGIN#Dr Sphinx''s riddle this time wasn''t
     as funny as the doctor one, but it''s good to know more about my town and helped
-    me to learn to think critically.'
+    me realize some Underserved Needs.'
   - '#MULTI_END#We spent some time discussing popular books that might be found at
-    the library. #ADD_SUMMARY#*met with Dr. Sphinx and got to know about the library
-    where I could read books to increase my skills.
-
-
-    -SKILLS INCREASED-
-
-
-    Communication:
-    +2*'
+    the library. #ADD_SUMMARY#*Met with Dr. Sphinx and got to know about the library
+    where I could read books to increase my skills and understanding of certain criteria.'
   - '#INNER_DIALOGUE_END##YES_NO#@! I got a new riddle, fresh off the press! Ready
     for it?'
   - Come by when you're ready for me to unleash this mental challenge upon you.
@@ -114157,23 +114072,14 @@ MonoBehaviour:
   - No really, the answer is "wrong"!
   - '#INNER_DIALOGUE_BEGIN#Dr. Sphinx laughs at his own mind puzzle. Hopefully these
     riddles can''t get any worse.'
-  - 'We spend some time talking about if comedy could be used in interviews. We both
+  - We spend some time talking about if comedy could be used in interviews. We both
     agree that should probably never happen, but we laugh thinking about the possibility.
-    #ADD_SUMMARY#*met with Dr. Sphinx and joked for a while. We concluded that comedy
-    should probably never happen during an interview.
-
-
-    -SKILLS INCREASED-
-
-
-    Communication:
-    +2*
-
-'
-  - '#INCREASE#*Com*Joking around with Dr. Sphinx wasn''t the most educational activity
+    #ADD_SUMMARY#*Met with Dr. Sphinx and joked for a while. We concluded that comedy
+    should probably never be used during an interview.
+  - '#INCREASE#*PFP*Joking around with Dr. Sphinx wasn''t the most educational activity
     for today, but maybe I learned about what not to do in an interview. '
-  - '#MULTI_END#Nonetheless it was nice talking with a friend. I feel like my communication
-    skills have increased!'
+  - '#MULTI_END#Nonetheless it was nice talking with a friend. I feel like my Value
+    Proposition skills have increased!'
   - '#INNER_DIALOGUE_END##YES_NO#Hey there @! I got a nice riddle for you that can
     teach you more about the town, wanna try it out?'
   - That's fine if you can't chat now. Come by soon buddy!
@@ -114187,19 +114093,13 @@ MonoBehaviour:
   - Check the bulletin board each day to see if there's going to be a lecture held
     soon!
   - '#INNER_DIALOGUE_BEGIN#These lectures sound like they are pretty important. I
-    could see whatever is taught there being helpful to me in the future. #ADD_SUMMARY#*met
+    could see whatever is taught there being helpful to me in the future. #ADD_SUMMARY#*Met
     Dr. Sphinx and got to know about events and lectures happening in schools. Also,
     I got to know about the bulletin board, where the events that are happening are
-    posted.
-
-
-    -SKILLS INCREASED-
-
-
-    Communication: +2*'
-  - '#MULTI_END##INCREASE#*Crit*Dr Sphinx and I chatted for a while longer, talking
-    about the intricacies of riddle creation. I could feel my critical thinking skills
-    increase!'
+    posted.'
+  - '#MULTI_END##INCREASE#*Under*Dr Sphinx and I chatted for a while longer, talking
+    about the intricacies of riddle creation. My recognition for Underserved Needs
+    increased!'
   - '#INNER_DIALOGUE_END##YES_NO#How''s it going, @? I know you''ve been climbing
     the career ladder so you''ll love this next riddle. Are you ready for it?'
   - That's alright my friend. Come by some time. It would be nice to chat with you
@@ -114210,20 +114110,11 @@ MonoBehaviour:
   - '#INNER_DIALOGUE_BEGIN#We both laugh together about Dr. Sphinx''s job related
     humor. '
   - '#SA1#We talk for some time about how important it is to not only get a job,
-    but to get a job that you actually enjoy. #ADD_SUMMARY#*met Dr. Sphinx and discussed
-    about just having a job is desirable,  ok but having an enjoyable job is preferable.
-
-
-    -SKILLS
-    INCREASED-
-
-
-    Communication: +2*
-
-'
-  - '#INCREASE#*Com*#MULTI_END#After that, we both talk about where we want to be
+    but to get a job that you enjoy. #ADD_SUMMARY#*Met Dr. Sphinx and discussed about
+    just having a job is desirable, but having an enjoyable job is preferable.'
+  - '#INCREASE#*PFP*#MULTI_END#After that, we both talk about where we want to be
     at the end of our careers. Thinking with Dr. Sphinx about my future goals helped
-    me build my communcations skills!'
+    me understand my Personal Value Proposition some more!'
   - No more riddles from me at the moment! But it's always great to see you @!
   NPCName: Dr. Sphinx
   Known: 0
@@ -126218,7 +126109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015258789, y: 403514.34}
+  m_AnchoredPosition: {x: 0.000015258789, y: 643648.56}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2993214823102470887

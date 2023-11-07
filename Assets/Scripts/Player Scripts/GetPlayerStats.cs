@@ -30,12 +30,12 @@ public class GetPlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        leadership = manager.Leadership;
-        teamwork = manager.Teamwork;
-        technology = manager.Technology;
-        professionalism = manager.Professionalism;
-        communication = manager.Communication;
-        critThinking = manager.CritThinking;
+        leadership = manager.selfAssessment;
+        teamwork = manager.Entre_thinking;
+        technology = manager.SAF;
+        professionalism = manager.Brand;
+        communication = manager.PFP;
+        critThinking = manager.Under_Need;
         statNames.SetText(leadership.Name + "\n" + teamwork.Name + "\n" + technology.Name + "\n" + professionalism.Name + "\n" + communication.Name + "\n" + critThinking.Name);
         statValues.SetText(leadership.Level + "\n" + teamwork.Level + "\n" + technology.Level + "\n" + professionalism.Level + "\n" + communication.Level + "\n" + critThinking.Level);
     }

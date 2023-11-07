@@ -284,7 +284,7 @@ public class Interview_Questions : MonoBehaviour
         {
             case "Leadership":
 
-                if (value <= GameManager.instance.Leadership.Level) 
+                if (value <= GameManager.instance.selfAssessment.Level) 
                 {
                     passed = true;
                 }
@@ -293,7 +293,7 @@ public class Interview_Questions : MonoBehaviour
 
             case "Teamwork":
 
-                if (value <= GameManager.instance.Teamwork.Level)
+                if (value <= GameManager.instance.Entre_thinking.Level)
                 {
                     passed = true;
                 }
@@ -302,7 +302,7 @@ public class Interview_Questions : MonoBehaviour
 
             case "Technology":
 
-                if (value <= GameManager.instance.Technology.Level)
+                if (value <= GameManager.instance.SAF.Level)
                 {
                     passed = true;
                 }
@@ -311,7 +311,7 @@ public class Interview_Questions : MonoBehaviour
 
             case "Professionalism":
 
-                if (value <= GameManager.instance.Professionalism.Level)
+                if (value <= GameManager.instance.Brand.Level)
                 {
                     passed = true;
                 }
@@ -320,7 +320,7 @@ public class Interview_Questions : MonoBehaviour
 
             case "Communication":
 
-                if (value <= GameManager.instance.Communication.Level)
+                if (value <= GameManager.instance.PFP.Level)
                 {
                     passed = true;
                 }
@@ -329,7 +329,7 @@ public class Interview_Questions : MonoBehaviour
 
             case "CritThinking":
 
-                if (value <= GameManager.instance.CritThinking.Level)
+                if (value <= GameManager.instance.Under_Need.Level)
                 {
                     passed = true;
                 }

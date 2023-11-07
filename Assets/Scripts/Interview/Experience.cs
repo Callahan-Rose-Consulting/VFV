@@ -69,15 +69,5 @@ public class Experience
         art = 0;
         science = 0;
         technology = 0;
-
-        
-
     }
-
-
-
-
-    
-
-
 }
